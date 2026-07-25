@@ -1,0 +1,3624 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1493,
+              35.427600000000005
+            ],
+            [
+              7.157299999999999,
+              35.427600000000005
+            ],
+            [
+              7.157299999999999,
+              35.4356
+            ],
+            [
+              7.1493,
+              35.4356
+            ],
+            [
+              7.1493,
+              35.427600000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-01-1",
+        "name": "الوسط",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "الوسط",
+        "population": 47200,
+        "containers": 244,
+        "openSpots": 9,
+        "fillRate": 82,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1221000000000005,
+              35.403600000000004
+            ],
+            [
+              7.1301,
+              35.403600000000004
+            ],
+            [
+              7.1301,
+              35.4116
+            ],
+            [
+              7.1221000000000005,
+              35.4116
+            ],
+            [
+              7.1221000000000005,
+              35.403600000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-01-2",
+        "name": "النصر",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "النصر",
+        "population": 59000,
+        "containers": 306,
+        "openSpots": 18,
+        "fillRate": 79,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.224,
+              35.38400000000001
+            ],
+            [
+              7.231999999999999,
+              35.38400000000001
+            ],
+            [
+              7.231999999999999,
+              35.392
+            ],
+            [
+              7.224,
+              35.392
+            ],
+            [
+              7.224,
+              35.38400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-02-1",
+        "name": "النور",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "النور",
+        "population": 5600,
+        "containers": 26,
+        "openSpots": 1,
+        "fillRate": 71,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1968000000000005,
+              35.36000000000001
+            ],
+            [
+              7.2048,
+              35.36000000000001
+            ],
+            [
+              7.2048,
+              35.368
+            ],
+            [
+              7.1968000000000005,
+              35.368
+            ],
+            [
+              7.1968000000000005,
+              35.36000000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-02-2",
+        "name": "الأمل",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "الأمل",
+        "population": 7000,
+        "containers": 32,
+        "openSpots": 2,
+        "fillRate": 68,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.24,
+              35.400000000000006
+            ],
+            [
+              7.247999999999999,
+              35.400000000000006
+            ],
+            [
+              7.247999999999999,
+              35.408
+            ],
+            [
+              7.24,
+              35.408
+            ],
+            [
+              7.24,
+              35.400000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-02-3",
+        "name": "البركة",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "البركة",
+        "population": 8400,
+        "containers": 39,
+        "openSpots": 4,
+        "fillRate": 65,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0840000000000005,
+              35.394000000000005
+            ],
+            [
+              7.092,
+              35.394000000000005
+            ],
+            [
+              7.092,
+              35.402
+            ],
+            [
+              7.0840000000000005,
+              35.402
+            ],
+            [
+              7.0840000000000005,
+              35.394000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-03-1",
+        "name": "الوحدة",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "الوحدة",
+        "population": 3600,
+        "containers": 16,
+        "openSpots": 0,
+        "fillRate": 68,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.056800000000001,
+              35.370000000000005
+            ],
+            [
+              7.0648,
+              35.370000000000005
+            ],
+            [
+              7.0648,
+              35.378
+            ],
+            [
+              7.056800000000001,
+              35.378
+            ],
+            [
+              7.056800000000001,
+              35.370000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-03-2",
+        "name": "الفتح",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "الفتح",
+        "population": 4500,
+        "containers": 21,
+        "openSpots": 1,
+        "fillRate": 65,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1000000000000005,
+              35.410000000000004
+            ],
+            [
+              7.108,
+              35.410000000000004
+            ],
+            [
+              7.108,
+              35.418
+            ],
+            [
+              7.1000000000000005,
+              35.418
+            ],
+            [
+              7.1000000000000005,
+              35.410000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-03-3",
+        "name": "القدس",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "القدس",
+        "population": 5400,
+        "containers": 25,
+        "openSpots": 2,
+        "fillRate": 62,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0376,
+              35.354000000000006
+            ],
+            [
+              7.045599999999999,
+              35.354000000000006
+            ],
+            [
+              7.045599999999999,
+              35.362
+            ],
+            [
+              7.0376,
+              35.362
+            ],
+            [
+              7.0376,
+              35.354000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-03-4",
+        "name": "الورود",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "الورود",
+        "population": 6300,
+        "containers": 29,
+        "openSpots": 3,
+        "fillRate": 59,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.184,
+              35.364000000000004
+            ],
+            [
+              7.191999999999999,
+              35.364000000000004
+            ],
+            [
+              7.191999999999999,
+              35.372
+            ],
+            [
+              7.184,
+              35.372
+            ],
+            [
+              7.184,
+              35.364000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-04-1",
+        "name": "الورود",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "الورود",
+        "population": 9600,
+        "containers": 44,
+        "openSpots": 3,
+        "fillRate": 74,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1568000000000005,
+              35.34
+            ],
+            [
+              7.1648,
+              35.34
+            ],
+            [
+              7.1648,
+              35.348
+            ],
+            [
+              7.1568000000000005,
+              35.348
+            ],
+            [
+              7.1568000000000005,
+              35.34
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-04-2",
+        "name": "الزهور",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "الزهور",
+        "population": 12000,
+        "containers": 56,
+        "openSpots": 6,
+        "fillRate": 71,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.224,
+              35.444
+            ],
+            [
+              7.231999999999999,
+              35.444
+            ],
+            [
+              7.231999999999999,
+              35.452
+            ],
+            [
+              7.224,
+              35.452
+            ],
+            [
+              7.224,
+              35.444
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-05-1",
+        "name": "النهضة",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "النهضة",
+        "population": 8533,
+        "containers": 41,
+        "openSpots": 2,
+        "fillRate": 79,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1968000000000005,
+              35.42
+            ],
+            [
+              7.2048,
+              35.42
+            ],
+            [
+              7.2048,
+              35.428
+            ],
+            [
+              7.1968000000000005,
+              35.428
+            ],
+            [
+              7.1968000000000005,
+              35.42
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-05-2",
+        "name": "الإخاء",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "الإخاء",
+        "population": 10666,
+        "containers": 52,
+        "openSpots": 5,
+        "fillRate": 76,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.24,
+              35.46
+            ],
+            [
+              7.247999999999999,
+              35.46
+            ],
+            [
+              7.247999999999999,
+              35.467999999999996
+            ],
+            [
+              7.24,
+              35.467999999999996
+            ],
+            [
+              7.24,
+              35.46
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-05-3",
+        "name": "الفردوس",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "الفردوس",
+        "population": 12800,
+        "containers": 62,
+        "openSpots": 8,
+        "fillRate": 73,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.064,
+              35.414
+            ],
+            [
+              7.071999999999999,
+              35.414
+            ],
+            [
+              7.071999999999999,
+              35.422
+            ],
+            [
+              7.064,
+              35.422
+            ],
+            [
+              7.064,
+              35.414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-06-1",
+        "name": "البرج",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "البرج",
+        "population": 3200,
+        "containers": 14,
+        "openSpots": 0,
+        "fillRate": 65,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0368,
+              35.39
+            ],
+            [
+              7.0447999999999995,
+              35.39
+            ],
+            [
+              7.0447999999999995,
+              35.397999999999996
+            ],
+            [
+              7.0368,
+              35.397999999999996
+            ],
+            [
+              7.0368,
+              35.39
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-06-2",
+        "name": "الصباح",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "الصباح",
+        "population": 4000,
+        "containers": 18,
+        "openSpots": 1,
+        "fillRate": 62,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.08,
+              35.43
+            ],
+            [
+              7.087999999999999,
+              35.43
+            ],
+            [
+              7.087999999999999,
+              35.437999999999995
+            ],
+            [
+              7.08,
+              35.437999999999995
+            ],
+            [
+              7.08,
+              35.43
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-06-3",
+        "name": "الغابة",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "الغابة",
+        "population": 4800,
+        "containers": 21,
+        "openSpots": 1,
+        "fillRate": 59,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0176,
+              35.374
+            ],
+            [
+              7.025599999999999,
+              35.374
+            ],
+            [
+              7.025599999999999,
+              35.382
+            ],
+            [
+              7.0176,
+              35.382
+            ],
+            [
+              7.0176,
+              35.374
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-06-4",
+        "name": "الحدائق",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "الحدائق",
+        "population": 5600,
+        "containers": 25,
+        "openSpots": 2,
+        "fillRate": 56,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.104,
+              35.354000000000006
+            ],
+            [
+              7.111999999999999,
+              35.354000000000006
+            ],
+            [
+              7.111999999999999,
+              35.362
+            ],
+            [
+              7.104,
+              35.362
+            ],
+            [
+              7.104,
+              35.354000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-07-1",
+        "name": "الحدائق",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "الحدائق",
+        "population": 5600,
+        "containers": 25,
+        "openSpots": 1,
+        "fillRate": 63,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0768,
+              35.330000000000005
+            ],
+            [
+              7.0847999999999995,
+              35.330000000000005
+            ],
+            [
+              7.0847999999999995,
+              35.338
+            ],
+            [
+              7.0768,
+              35.338
+            ],
+            [
+              7.0768,
+              35.330000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-07-2",
+        "name": "النخيل",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "النخيل",
+        "population": 7000,
+        "containers": 32,
+        "openSpots": 3,
+        "fillRate": 60,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.204000000000001,
+              35.304
+            ],
+            [
+              7.212,
+              35.304
+            ],
+            [
+              7.212,
+              35.312
+            ],
+            [
+              7.204000000000001,
+              35.312
+            ],
+            [
+              7.204000000000001,
+              35.304
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-08-1",
+        "name": "الشريف",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "الشريف",
+        "population": 3200,
+        "containers": 14,
+        "openSpots": 0,
+        "fillRate": 60,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.241Z",
+        "updatedAt": "2026-07-23T16:09:57.241Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.176800000000001,
+              35.28
+            ],
+            [
+              7.1848,
+              35.28
+            ],
+            [
+              7.1848,
+              35.288
+            ],
+            [
+              7.176800000000001,
+              35.288
+            ],
+            [
+              7.176800000000001,
+              35.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-08-2",
+        "name": "الوسط",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "الوسط",
+        "population": 4000,
+        "containers": 18,
+        "openSpots": 1,
+        "fillRate": 57,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.220000000000001,
+              35.32
+            ],
+            [
+              7.228,
+              35.32
+            ],
+            [
+              7.228,
+              35.327999999999996
+            ],
+            [
+              7.220000000000001,
+              35.327999999999996
+            ],
+            [
+              7.220000000000001,
+              35.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-08-3",
+        "name": "النصر",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "النصر",
+        "population": 4800,
+        "containers": 21,
+        "openSpots": 2,
+        "fillRate": 54,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2540000000000004,
+              35.334
+            ],
+            [
+              7.262,
+              35.334
+            ],
+            [
+              7.262,
+              35.342
+            ],
+            [
+              7.2540000000000004,
+              35.342
+            ],
+            [
+              7.2540000000000004,
+              35.334
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-09-1",
+        "name": "السلام",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "السلام",
+        "population": 1800,
+        "containers": 8,
+        "openSpots": 0,
+        "fillRate": 58,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.226800000000001,
+              35.31
+            ],
+            [
+              7.2348,
+              35.31
+            ],
+            [
+              7.2348,
+              35.318
+            ],
+            [
+              7.226800000000001,
+              35.318
+            ],
+            [
+              7.226800000000001,
+              35.31
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-09-2",
+        "name": "النور",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "النور",
+        "population": 2250,
+        "containers": 10,
+        "openSpots": 0,
+        "fillRate": 55,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2700000000000005,
+              35.35
+            ],
+            [
+              7.278,
+              35.35
+            ],
+            [
+              7.278,
+              35.358
+            ],
+            [
+              7.2700000000000005,
+              35.358
+            ],
+            [
+              7.2700000000000005,
+              35.35
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-09-3",
+        "name": "الأمل",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "الأمل",
+        "population": 2700,
+        "containers": 12,
+        "openSpots": 0,
+        "fillRate": 52,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2076,
+              35.294000000000004
+            ],
+            [
+              7.215599999999999,
+              35.294000000000004
+            ],
+            [
+              7.215599999999999,
+              35.302
+            ],
+            [
+              7.2076,
+              35.302
+            ],
+            [
+              7.2076,
+              35.294000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-09-4",
+        "name": "البركة",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "البركة",
+        "population": 3150,
+        "containers": 14,
+        "openSpots": 1,
+        "fillRate": 49,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.284000000000001,
+              35.38400000000001
+            ],
+            [
+              7.292,
+              35.38400000000001
+            ],
+            [
+              7.292,
+              35.392
+            ],
+            [
+              7.284000000000001,
+              35.392
+            ],
+            [
+              7.284000000000001,
+              35.38400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-10-1",
+        "name": "البركة",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "البركة",
+        "population": 4400,
+        "containers": 19,
+        "openSpots": 1,
+        "fillRate": 62,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.256800000000001,
+              35.36000000000001
+            ],
+            [
+              7.2648,
+              35.36000000000001
+            ],
+            [
+              7.2648,
+              35.368
+            ],
+            [
+              7.256800000000001,
+              35.368
+            ],
+            [
+              7.256800000000001,
+              35.36000000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-10-2",
+        "name": "الوحدة",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "الوحدة",
+        "population": 5500,
+        "containers": 24,
+        "openSpots": 2,
+        "fillRate": 59,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.154000000000001,
+              35.284000000000006
+            ],
+            [
+              7.162,
+              35.284000000000006
+            ],
+            [
+              7.162,
+              35.292
+            ],
+            [
+              7.154000000000001,
+              35.292
+            ],
+            [
+              7.154000000000001,
+              35.284000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-11-1",
+        "name": "القدس",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "القدس",
+        "population": 2133,
+        "containers": 9,
+        "openSpots": 0,
+        "fillRate": 55,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.126800000000001,
+              35.260000000000005
+            ],
+            [
+              7.1348,
+              35.260000000000005
+            ],
+            [
+              7.1348,
+              35.268
+            ],
+            [
+              7.126800000000001,
+              35.268
+            ],
+            [
+              7.126800000000001,
+              35.260000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-11-2",
+        "name": "الورود",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "الورود",
+        "population": 2666,
+        "containers": 12,
+        "openSpots": 0,
+        "fillRate": 52,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.170000000000001,
+              35.300000000000004
+            ],
+            [
+              7.178,
+              35.300000000000004
+            ],
+            [
+              7.178,
+              35.308
+            ],
+            [
+              7.170000000000001,
+              35.308
+            ],
+            [
+              7.170000000000001,
+              35.300000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-11-3",
+        "name": "الزهور",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "الزهور",
+        "population": 3200,
+        "containers": 14,
+        "openSpots": 1,
+        "fillRate": 49,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0840000000000005,
+              35.45400000000001
+            ],
+            [
+              7.092,
+              35.45400000000001
+            ],
+            [
+              7.092,
+              35.462
+            ],
+            [
+              7.0840000000000005,
+              35.462
+            ],
+            [
+              7.0840000000000005,
+              35.45400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-12-1",
+        "name": "الريان",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "الريان",
+        "population": 2600,
+        "containers": 11,
+        "openSpots": 0,
+        "fillRate": 64,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.056800000000001,
+              35.43000000000001
+            ],
+            [
+              7.0648,
+              35.43000000000001
+            ],
+            [
+              7.0648,
+              35.438
+            ],
+            [
+              7.056800000000001,
+              35.438
+            ],
+            [
+              7.056800000000001,
+              35.43000000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-12-2",
+        "name": "النهضة",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "النهضة",
+        "population": 3250,
+        "containers": 14,
+        "openSpots": 1,
+        "fillRate": 61,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1000000000000005,
+              35.470000000000006
+            ],
+            [
+              7.108,
+              35.470000000000006
+            ],
+            [
+              7.108,
+              35.478
+            ],
+            [
+              7.1000000000000005,
+              35.478
+            ],
+            [
+              7.1000000000000005,
+              35.470000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-12-3",
+        "name": "الإخاء",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "الإخاء",
+        "population": 3900,
+        "containers": 17,
+        "openSpots": 2,
+        "fillRate": 58,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0376,
+              35.41400000000001
+            ],
+            [
+              7.045599999999999,
+              35.41400000000001
+            ],
+            [
+              7.045599999999999,
+              35.422000000000004
+            ],
+            [
+              7.0376,
+              35.422000000000004
+            ],
+            [
+              7.0376,
+              35.41400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-12-4",
+        "name": "الفردوس",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "الفردوس",
+        "population": 4550,
+        "containers": 20,
+        "openSpots": 3,
+        "fillRate": 55,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.224,
+              35.264
+            ],
+            [
+              7.231999999999999,
+              35.264
+            ],
+            [
+              7.231999999999999,
+              35.272
+            ],
+            [
+              7.224,
+              35.272
+            ],
+            [
+              7.224,
+              35.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-13-1",
+        "name": "الفردوس",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "الفردوس",
+        "population": 2800,
+        "containers": 12,
+        "openSpots": 0,
+        "fillRate": 57,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1968000000000005,
+              35.24
+            ],
+            [
+              7.2048,
+              35.24
+            ],
+            [
+              7.2048,
+              35.248
+            ],
+            [
+              7.1968000000000005,
+              35.248
+            ],
+            [
+              7.1968000000000005,
+              35.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-13-2",
+        "name": "البرج",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "البرج",
+        "population": 3500,
+        "containers": 16,
+        "openSpots": 1,
+        "fillRate": 54,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1240000000000006,
+              35.484
+            ],
+            [
+              7.132,
+              35.484
+            ],
+            [
+              7.132,
+              35.492
+            ],
+            [
+              7.1240000000000006,
+              35.492
+            ],
+            [
+              7.1240000000000006,
+              35.484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-14-1",
+        "name": "الغابة",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "الغابة",
+        "population": 1600,
+        "containers": 7,
+        "openSpots": 0,
+        "fillRate": 54,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.096800000000001,
+              35.46
+            ],
+            [
+              7.1048,
+              35.46
+            ],
+            [
+              7.1048,
+              35.467999999999996
+            ],
+            [
+              7.096800000000001,
+              35.467999999999996
+            ],
+            [
+              7.096800000000001,
+              35.46
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-14-2",
+        "name": "الحدائق",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "الحدائق",
+        "population": 2000,
+        "containers": 9,
+        "openSpots": 0,
+        "fillRate": 51,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.140000000000001,
+              35.5
+            ],
+            [
+              7.148,
+              35.5
+            ],
+            [
+              7.148,
+              35.507999999999996
+            ],
+            [
+              7.140000000000001,
+              35.507999999999996
+            ],
+            [
+              7.140000000000001,
+              35.5
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-14-3",
+        "name": "النخيل",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "النخيل",
+        "population": 2400,
+        "containers": 11,
+        "openSpots": 1,
+        "fillRate": 48,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.204000000000001,
+              35.504000000000005
+            ],
+            [
+              7.212,
+              35.504000000000005
+            ],
+            [
+              7.212,
+              35.512
+            ],
+            [
+              7.204000000000001,
+              35.512
+            ],
+            [
+              7.204000000000001,
+              35.504000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-15-1",
+        "name": "الأطلس",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "الأطلس",
+        "population": 1000,
+        "containers": 4,
+        "openSpots": 0,
+        "fillRate": 52,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.176800000000001,
+              35.480000000000004
+            ],
+            [
+              7.1848,
+              35.480000000000004
+            ],
+            [
+              7.1848,
+              35.488
+            ],
+            [
+              7.176800000000001,
+              35.488
+            ],
+            [
+              7.176800000000001,
+              35.480000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-15-2",
+        "name": "الشريف",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "الشريف",
+        "population": 1250,
+        "containers": 6,
+        "openSpots": 0,
+        "fillRate": 49,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.220000000000001,
+              35.52
+            ],
+            [
+              7.228,
+              35.52
+            ],
+            [
+              7.228,
+              35.528
+            ],
+            [
+              7.220000000000001,
+              35.528
+            ],
+            [
+              7.220000000000001,
+              35.52
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-15-3",
+        "name": "الوسط",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "الوسط",
+        "population": 1500,
+        "containers": 7,
+        "openSpots": 0,
+        "fillRate": 46,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1576,
+              35.464000000000006
+            ],
+            [
+              7.1655999999999995,
+              35.464000000000006
+            ],
+            [
+              7.1655999999999995,
+              35.472
+            ],
+            [
+              7.1576,
+              35.472
+            ],
+            [
+              7.1576,
+              35.464000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-15-4",
+        "name": "النصر",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "النصر",
+        "population": 1750,
+        "containers": 8,
+        "openSpots": 1,
+        "fillRate": 43,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.054,
+              35.52400000000001
+            ],
+            [
+              7.061999999999999,
+              35.52400000000001
+            ],
+            [
+              7.061999999999999,
+              35.532000000000004
+            ],
+            [
+              7.054,
+              35.532000000000004
+            ],
+            [
+              7.054,
+              35.52400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-16-1",
+        "name": "النصر",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "النصر",
+        "population": 2200,
+        "containers": 10,
+        "openSpots": 0,
+        "fillRate": 53,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.026800000000001,
+              35.50000000000001
+            ],
+            [
+              7.0348,
+              35.50000000000001
+            ],
+            [
+              7.0348,
+              35.508
+            ],
+            [
+              7.026800000000001,
+              35.508
+            ],
+            [
+              7.026800000000001,
+              35.50000000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-16-2",
+        "name": "السلام",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "السلام",
+        "population": 2750,
+        "containers": 13,
+        "openSpots": 1,
+        "fillRate": 50,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0840000000000005,
+              35.24400000000001
+            ],
+            [
+              7.092,
+              35.24400000000001
+            ],
+            [
+              7.092,
+              35.252
+            ],
+            [
+              7.0840000000000005,
+              35.252
+            ],
+            [
+              7.0840000000000005,
+              35.24400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-17-1",
+        "name": "الأمل",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "الأمل",
+        "population": 1200,
+        "containers": 5,
+        "openSpots": 0,
+        "fillRate": 50,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.056800000000001,
+              35.220000000000006
+            ],
+            [
+              7.0648,
+              35.220000000000006
+            ],
+            [
+              7.0648,
+              35.228
+            ],
+            [
+              7.056800000000001,
+              35.228
+            ],
+            [
+              7.056800000000001,
+              35.220000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-17-2",
+        "name": "البركة",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "البركة",
+        "population": 1500,
+        "containers": 7,
+        "openSpots": 0,
+        "fillRate": 47,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1000000000000005,
+              35.260000000000005
+            ],
+            [
+              7.108,
+              35.260000000000005
+            ],
+            [
+              7.108,
+              35.268
+            ],
+            [
+              7.1000000000000005,
+              35.268
+            ],
+            [
+              7.1000000000000005,
+              35.260000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-17-3",
+        "name": "الوحدة",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "الوحدة",
+        "population": 1800,
+        "containers": 8,
+        "openSpots": 0,
+        "fillRate": 44,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.184,
+              35.224000000000004
+            ],
+            [
+              7.191999999999999,
+              35.224000000000004
+            ],
+            [
+              7.191999999999999,
+              35.232
+            ],
+            [
+              7.184,
+              35.232
+            ],
+            [
+              7.184,
+              35.224000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-18-1",
+        "name": "الفتح",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "الفتح",
+        "population": 800,
+        "containers": 4,
+        "openSpots": 0,
+        "fillRate": 49,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1568000000000005,
+              35.2
+            ],
+            [
+              7.1648,
+              35.2
+            ],
+            [
+              7.1648,
+              35.208
+            ],
+            [
+              7.1568000000000005,
+              35.208
+            ],
+            [
+              7.1568000000000005,
+              35.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-18-2",
+        "name": "القدس",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "القدس",
+        "population": 1000,
+        "containers": 5,
+        "openSpots": 0,
+        "fillRate": 46,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2,
+              35.24
+            ],
+            [
+              7.207999999999999,
+              35.24
+            ],
+            [
+              7.207999999999999,
+              35.248
+            ],
+            [
+              7.2,
+              35.248
+            ],
+            [
+              7.2,
+              35.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-18-3",
+        "name": "الورود",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "الورود",
+        "population": 1200,
+        "containers": 6,
+        "openSpots": 0,
+        "fillRate": 43,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1376,
+              35.184000000000005
+            ],
+            [
+              7.145599999999999,
+              35.184000000000005
+            ],
+            [
+              7.145599999999999,
+              35.192
+            ],
+            [
+              7.1376,
+              35.192
+            ],
+            [
+              7.1376,
+              35.184000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-18-4",
+        "name": "الزهور",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "الزهور",
+        "population": 1400,
+        "containers": 7,
+        "openSpots": 0,
+        "fillRate": 40,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2540000000000004,
+              35.554
+            ],
+            [
+              7.262,
+              35.554
+            ],
+            [
+              7.262,
+              35.562
+            ],
+            [
+              7.2540000000000004,
+              35.562
+            ],
+            [
+              7.2540000000000004,
+              35.554
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-19-1",
+        "name": "الزهور",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "الزهور",
+        "population": 1400,
+        "containers": 7,
+        "openSpots": 0,
+        "fillRate": 48,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.226800000000001,
+              35.53
+            ],
+            [
+              7.2348,
+              35.53
+            ],
+            [
+              7.2348,
+              35.538
+            ],
+            [
+              7.226800000000001,
+              35.538
+            ],
+            [
+              7.226800000000001,
+              35.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-19-2",
+        "name": "الريان",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "الريان",
+        "population": 1750,
+        "containers": 9,
+        "openSpots": 0,
+        "fillRate": 45,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.284000000000001,
+              35.464000000000006
+            ],
+            [
+              7.292,
+              35.464000000000006
+            ],
+            [
+              7.292,
+              35.472
+            ],
+            [
+              7.284000000000001,
+              35.472
+            ],
+            [
+              7.284000000000001,
+              35.464000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-20-1",
+        "name": "الإخاء",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "الإخاء",
+        "population": 4000,
+        "containers": 18,
+        "openSpots": 0,
+        "fillRate": 66,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.256800000000001,
+              35.440000000000005
+            ],
+            [
+              7.2648,
+              35.440000000000005
+            ],
+            [
+              7.2648,
+              35.448
+            ],
+            [
+              7.256800000000001,
+              35.448
+            ],
+            [
+              7.256800000000001,
+              35.440000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-20-2",
+        "name": "الفردوس",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "الفردوس",
+        "population": 5000,
+        "containers": 22,
+        "openSpots": 1,
+        "fillRate": 63,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.300000000000001,
+              35.480000000000004
+            ],
+            [
+              7.308,
+              35.480000000000004
+            ],
+            [
+              7.308,
+              35.488
+            ],
+            [
+              7.300000000000001,
+              35.488
+            ],
+            [
+              7.300000000000001,
+              35.480000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-20-3",
+        "name": "البرج",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "البرج",
+        "population": 6000,
+        "containers": 27,
+        "openSpots": 2,
+        "fillRate": 60,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.154000000000001,
+              35.584
+            ],
+            [
+              7.162,
+              35.584
+            ],
+            [
+              7.162,
+              35.592
+            ],
+            [
+              7.154000000000001,
+              35.592
+            ],
+            [
+              7.154000000000001,
+              35.584
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-21-1",
+        "name": "الصباح",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "الصباح",
+        "population": 760,
+        "containers": 3,
+        "openSpots": 0,
+        "fillRate": 47,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.126800000000001,
+              35.56
+            ],
+            [
+              7.1348,
+              35.56
+            ],
+            [
+              7.1348,
+              35.568
+            ],
+            [
+              7.126800000000001,
+              35.568
+            ],
+            [
+              7.126800000000001,
+              35.56
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-21-2",
+        "name": "الغابة",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "الغابة",
+        "population": 950,
+        "containers": 4,
+        "openSpots": 0,
+        "fillRate": 44,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.170000000000001,
+              35.6
+            ],
+            [
+              7.178,
+              35.6
+            ],
+            [
+              7.178,
+              35.608
+            ],
+            [
+              7.170000000000001,
+              35.608
+            ],
+            [
+              7.170000000000001,
+              35.6
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-21-3",
+        "name": "الحدائق",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "الحدائق",
+        "population": 1140,
+        "containers": 5,
+        "openSpots": 0,
+        "fillRate": 41,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.107600000000001,
+              35.544000000000004
+            ],
+            [
+              7.1156,
+              35.544000000000004
+            ],
+            [
+              7.1156,
+              35.552
+            ],
+            [
+              7.107600000000001,
+              35.552
+            ],
+            [
+              7.107600000000001,
+              35.544000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-21-4",
+        "name": "النخيل",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "النخيل",
+        "population": 1330,
+        "containers": 6,
+        "openSpots": 0,
+        "fillRate": 38,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.064,
+              35.31400000000001
+            ],
+            [
+              7.071999999999999,
+              35.31400000000001
+            ],
+            [
+              7.071999999999999,
+              35.322
+            ],
+            [
+              7.064,
+              35.322
+            ],
+            [
+              7.064,
+              35.31400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-22-1",
+        "name": "النخيل",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "النخيل",
+        "population": 4000,
+        "containers": 18,
+        "openSpots": 0,
+        "fillRate": 59,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0368,
+              35.290000000000006
+            ],
+            [
+              7.0447999999999995,
+              35.290000000000006
+            ],
+            [
+              7.0447999999999995,
+              35.298
+            ],
+            [
+              7.0368,
+              35.298
+            ],
+            [
+              7.0368,
+              35.290000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-22-2",
+        "name": "الأطلس",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "الأطلس",
+        "population": 5000,
+        "containers": 23,
+        "openSpots": 1,
+        "fillRate": 56,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2540000000000004,
+              35.20400000000001
+            ],
+            [
+              7.262,
+              35.20400000000001
+            ],
+            [
+              7.262,
+              35.212
+            ],
+            [
+              7.2540000000000004,
+              35.212
+            ],
+            [
+              7.2540000000000004,
+              35.20400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-23-1",
+        "name": "الوسط",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "الوسط",
+        "population": 1120,
+        "containers": 5,
+        "openSpots": 0,
+        "fillRate": 51,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.226800000000001,
+              35.18000000000001
+            ],
+            [
+              7.2348,
+              35.18000000000001
+            ],
+            [
+              7.2348,
+              35.188
+            ],
+            [
+              7.226800000000001,
+              35.188
+            ],
+            [
+              7.226800000000001,
+              35.18000000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-23-2",
+        "name": "النصر",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "النصر",
+        "population": 1400,
+        "containers": 6,
+        "openSpots": 0,
+        "fillRate": 48,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.2700000000000005,
+              35.220000000000006
+            ],
+            [
+              7.278,
+              35.220000000000006
+            ],
+            [
+              7.278,
+              35.228
+            ],
+            [
+              7.2700000000000005,
+              35.228
+            ],
+            [
+              7.2700000000000005,
+              35.220000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-23-3",
+        "name": "السلام",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "السلام",
+        "population": 1680,
+        "containers": 8,
+        "openSpots": 0,
+        "fillRate": 45,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.054,
+              35.604000000000006
+            ],
+            [
+              7.061999999999999,
+              35.604000000000006
+            ],
+            [
+              7.061999999999999,
+              35.612
+            ],
+            [
+              7.054,
+              35.612
+            ],
+            [
+              7.054,
+              35.604000000000006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-24-1",
+        "name": "النور",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "النور",
+        "population": 640,
+        "containers": 3,
+        "openSpots": 0,
+        "fillRate": 46,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.026800000000001,
+              35.580000000000005
+            ],
+            [
+              7.0348,
+              35.580000000000005
+            ],
+            [
+              7.0348,
+              35.588
+            ],
+            [
+              7.026800000000001,
+              35.588
+            ],
+            [
+              7.026800000000001,
+              35.580000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-24-2",
+        "name": "الأمل",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "الأمل",
+        "population": 800,
+        "containers": 4,
+        "openSpots": 0,
+        "fillRate": 43,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.07,
+              35.620000000000005
+            ],
+            [
+              7.077999999999999,
+              35.620000000000005
+            ],
+            [
+              7.077999999999999,
+              35.628
+            ],
+            [
+              7.07,
+              35.628
+            ],
+            [
+              7.07,
+              35.620000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-24-3",
+        "name": "البركة",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "البركة",
+        "population": 960,
+        "containers": 4,
+        "openSpots": 0,
+        "fillRate": 40,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0076,
+              35.56400000000001
+            ],
+            [
+              7.015599999999999,
+              35.56400000000001
+            ],
+            [
+              7.015599999999999,
+              35.572
+            ],
+            [
+              7.0076,
+              35.572
+            ],
+            [
+              7.0076,
+              35.56400000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-24-4",
+        "name": "الوحدة",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "الوحدة",
+        "population": 1120,
+        "containers": 5,
+        "openSpots": 0,
+        "fillRate": 37,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.104,
+              35.184000000000005
+            ],
+            [
+              7.111999999999999,
+              35.184000000000005
+            ],
+            [
+              7.111999999999999,
+              35.192
+            ],
+            [
+              7.104,
+              35.192
+            ],
+            [
+              7.104,
+              35.184000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-25-1",
+        "name": "الوحدة",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "الوحدة",
+        "population": 1120,
+        "containers": 5,
+        "openSpots": 0,
+        "fillRate": 45,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0768,
+              35.160000000000004
+            ],
+            [
+              7.0847999999999995,
+              35.160000000000004
+            ],
+            [
+              7.0847999999999995,
+              35.168
+            ],
+            [
+              7.0768,
+              35.168
+            ],
+            [
+              7.0768,
+              35.160000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-25-2",
+        "name": "الفتح",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "الفتح",
+        "population": 1400,
+        "containers": 7,
+        "openSpots": 0,
+        "fillRate": 42,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.304,
+              35.434000000000005
+            ],
+            [
+              7.311999999999999,
+              35.434000000000005
+            ],
+            [
+              7.311999999999999,
+              35.442
+            ],
+            [
+              7.304,
+              35.442
+            ],
+            [
+              7.304,
+              35.434000000000005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-26-1",
+        "name": "الورود",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "الورود",
+        "population": 1386,
+        "containers": 6,
+        "openSpots": 0,
+        "fillRate": 56,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.276800000000001,
+              35.410000000000004
+            ],
+            [
+              7.2848,
+              35.410000000000004
+            ],
+            [
+              7.2848,
+              35.418
+            ],
+            [
+              7.276800000000001,
+              35.418
+            ],
+            [
+              7.276800000000001,
+              35.410000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-26-2",
+        "name": "الزهور",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "الزهور",
+        "population": 1733,
+        "containers": 8,
+        "openSpots": 0,
+        "fillRate": 53,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.32,
+              35.45
+            ],
+            [
+              7.327999999999999,
+              35.45
+            ],
+            [
+              7.327999999999999,
+              35.458
+            ],
+            [
+              7.32,
+              35.458
+            ],
+            [
+              7.32,
+              35.45
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "N-M-26-3",
+        "name": "الريان",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "الريان",
+        "population": 2080,
+        "containers": 9,
+        "openSpots": 1,
+        "fillRate": 50,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.242Z",
+        "updatedAt": "2026-07-23T16:09:57.242Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

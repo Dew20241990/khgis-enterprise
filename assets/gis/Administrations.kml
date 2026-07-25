@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Administrations - Khenchela</name>
+    <description>Etablissements administratifs de la commune de Khenchela</description>
+    <Style id="admin">
+      <IconStyle><color>ff0F4C81</color><scale>1.0</scale>
+        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/info.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Placemark><name>Wilaya de Khenchela</name><description>مديرية الولاية - مقر الولاية</description><styleUrl>#admin</styleUrl><Point><coordinates>7.1450,35.4230,0</coordinates></Point></Placemark>
+    <Placemark><name>APC Khenchela</name><description>البلدية - المجلس الشعبي البلدي</description><styleUrl>#admin</styleUrl><Point><coordinates>7.1430,35.4200,0</coordinates></Point></Placemark>
+    <Placemark><name>Direction de l'Environnement</name><description>مديرية البيئة</description><styleUrl>#admin</styleUrl><Point><coordinates>7.1480,35.4250,0</coordinates></Point></Placemark>
+    <Placemark><name>Tribunal de Khenchela</name><description>المحكمة</description><styleUrl>#admin</styleUrl><Point><coordinates>7.1520,35.4180,0</coordinates></Point></Placemark>
+    <Placemark><name>Gendarmerie Nationale</name><description>الدرك الوطني</description><styleUrl>#admin</styleUrl><Point><coordinates>7.1380,35.4280,0</coordinates></Point></Placemark>
+    <Placemark><name>Protection Civile</name><description>الحماية المدنية</description><styleUrl>#admin</styleUrl><Point><coordinates>7.1550,35.4150,0</coordinates></Point></Placemark>
+    <Placemark><name>Poste de Khenchela</name><description>مكتب البريد</description><styleUrl>#admin</styleUrl><Point><coordinates>7.1450,35.4180,0</coordinates></Point></Placemark>
+    <Placemark><name>Siege de Daïra</name><description>مقر الدائرة</description><styleUrl>#admin</styleUrl><Point><coordinates>7.1410,35.4210,0</coordinates></Point></Placemark>
+  </Document>
+</kml>

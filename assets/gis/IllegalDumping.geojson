@@ -1,0 +1,761 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.146264197949526,
+          35.419845971527955
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5001",
+        "code": "ID-5001",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 1، خنشلة",
+        "volume": 2,
+        "type": "construction",
+        "status": "reported",
+        "reportedAt": "2026-07-01T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2126677791258835,
+          35.37031426615665
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5002",
+        "code": "ID-5002",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 2، بوحمامة",
+        "volume": 3,
+        "type": "household",
+        "status": "scheduled",
+        "reportedAt": "2026-07-02T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.084231022180792,
+          35.39558028669378
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5003",
+        "code": "ID-5003",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 3، الحمامة",
+        "volume": 4,
+        "type": "industrial",
+        "status": "cleared",
+        "reportedAt": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1776865149098095,
+          35.36638461024487
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5004",
+        "code": "ID-5004",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 4، بقاية",
+        "volume": 5,
+        "type": "mixed",
+        "status": "reported",
+        "reportedAt": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2105817434412405,
+          35.44057119895318
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5005",
+        "code": "ID-5005",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 5، قايس",
+        "volume": 6,
+        "type": "construction",
+        "status": "scheduled",
+        "reportedAt": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0601106177511035,
+          35.419105583324
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5006",
+        "code": "ID-5006",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 6، رميلة",
+        "volume": 7,
+        "type": "household",
+        "status": "cleared",
+        "reportedAt": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.09419830676772,
+          35.35565998492376
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5007",
+        "code": "ID-5007",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 7، عين التوية",
+        "volume": 8,
+        "type": "industrial",
+        "status": "reported",
+        "reportedAt": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.198967177901106,
+          35.29538439446261
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5008",
+        "code": "ID-5008",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 8، بابار",
+        "volume": 9,
+        "type": "mixed",
+        "status": "scheduled",
+        "reportedAt": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.247114572971735,
+          35.3204789738362
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5009",
+        "code": "ID-5009",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 9، تامزة",
+        "volume": 10,
+        "type": "construction",
+        "status": "cleared",
+        "reportedAt": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.283203860417801,
+          35.380542478223845
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5010",
+        "code": "ID-5010",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 10، الولجة",
+        "volume": 11,
+        "type": "household",
+        "status": "reported",
+        "reportedAt": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.150399306106828,
+          35.27395543841015
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5011",
+        "code": "ID-5011",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 11، بوزينة",
+        "volume": 12,
+        "type": "industrial",
+        "status": "scheduled",
+        "reportedAt": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.071017768697327,
+          35.45325318364518
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5012",
+        "code": "ID-5012",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 12، شرشار",
+        "volume": 13,
+        "type": "mixed",
+        "status": "cleared",
+        "reportedAt": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.215145349119479,
+          35.262033331977634
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5013",
+        "code": "ID-5013",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 13، جلال",
+        "volume": 14,
+        "type": "construction",
+        "status": "reported",
+        "reportedAt": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.120408639898326,
+          35.4745403835343
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5014",
+        "code": "ID-5014",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 14، المحمل",
+        "volume": 15,
+        "type": "household",
+        "status": "scheduled",
+        "reportedAt": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.197202261945642,
+          35.49522070405967
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5015",
+        "code": "ID-5015",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 15، المسارة",
+        "volume": 16,
+        "type": "industrial",
+        "status": "cleared",
+        "reportedAt": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.055418693237074,
+          35.51417306463733
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5016",
+        "code": "ID-5016",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 16، يابوس",
+        "volume": 2,
+        "type": "mixed",
+        "status": "reported",
+        "reportedAt": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.071383007212673,
+          35.24127892822431
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5017",
+        "code": "ID-5017",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 17، خيران",
+        "volume": 3,
+        "type": "construction",
+        "status": "scheduled",
+        "reportedAt": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.17557566557675,
+          35.22893013108184
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5018",
+        "code": "ID-5018",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 18، تازغروت",
+        "volume": 4,
+        "type": "household",
+        "status": "cleared",
+        "reportedAt": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.253285479747899,
+          35.55944676233439
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5019",
+        "code": "ID-5019",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 19، تليسنة",
+        "volume": 5,
+        "type": "industrial",
+        "status": "reported",
+        "reportedAt": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.273864419559237,
+          35.46139787140311
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5020",
+        "code": "ID-5020",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 20، سيدي عقبة",
+        "volume": 6,
+        "type": "mixed",
+        "status": "scheduled",
+        "reportedAt": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.145166144573724,
+          35.57801426118265
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5021",
+        "code": "ID-5021",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 21، المسارة الشرقية",
+        "volume": 7,
+        "type": "construction",
+        "status": "cleared",
+        "reportedAt": "2026-07-01T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.050061955225034,
+          35.312912966031455
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5022",
+        "code": "ID-5022",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 22، أولاد رشاش",
+        "volume": 8,
+        "type": "household",
+        "status": "reported",
+        "reportedAt": "2026-07-02T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.252503545905553,
+          35.207692037298955
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5023",
+        "code": "ID-5023",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 23، لمسين",
+        "volume": 9,
+        "type": "industrial",
+        "status": "scheduled",
+        "reportedAt": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.040527418082181,
+          35.60090355822752
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5024",
+        "code": "ID-5024",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 24، البلالة",
+        "volume": 10,
+        "type": "mixed",
+        "status": "cleared",
+        "reportedAt": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.096966205847179,
+          35.18739744026212
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5025",
+        "code": "ID-5025",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 25، عنسيغة",
+        "volume": 11,
+        "type": "construction",
+        "status": "reported",
+        "reportedAt": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.294156752077799,
+          35.42529938642228
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5026",
+        "code": "ID-5026",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 26، قايس أولاد يحيى",
+        "volume": 12,
+        "type": "household",
+        "status": "scheduled",
+        "reportedAt": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.149374695927527,
+          35.430371370473345
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5027",
+        "code": "ID-5027",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 27، خنشلة",
+        "volume": 13,
+        "type": "industrial",
+        "status": "cleared",
+        "reportedAt": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.212258517348779,
+          35.3797698381499
+        ]
+      },
+      "properties": {
+        "uuid": "ID-5028",
+        "code": "ID-5028",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "location": "منطقة 28، بوحمامة",
+        "volume": 14,
+        "type": "mixed",
+        "status": "reported",
+        "reportedAt": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

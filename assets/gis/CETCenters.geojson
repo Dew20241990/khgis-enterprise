@@ -1,0 +1,86 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.08,
+          35.38
+        ]
+      },
+      "properties": {
+        "uuid": "CET-1",
+        "name": "مركز الطرح التقني خنشلة",
+        "city": "خنشلة",
+        "capacityTpd": 800,
+        "currentLoadTpd": 620,
+        "status": "operational",
+        "manager": "ك. عثماني",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.22,
+          35.44
+        ]
+      },
+      "properties": {
+        "uuid": "CET-2",
+        "name": "مركز الطرح قايس",
+        "city": "قايس",
+        "capacityTpd": 500,
+        "currentLoadTpd": 470,
+        "status": "near-capacity",
+        "manager": "س. لعروسي",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.18,
+          35.36
+        ]
+      },
+      "properties": {
+        "uuid": "CET-3",
+        "name": "مركز الطرح بقاية",
+        "city": "بقاية",
+        "capacityTpd": 350,
+        "currentLoadTpd": 180,
+        "status": "operational",
+        "manager": "م. قاووس",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: #F8FAFC;
+}
+
+html.dark body {
+  background: #0F172A;
+}
+
+html[dir='rtl'] body {
+  font-family: 'IBM Plex Sans Arabic', 'Inter', sans-serif;
+}
+
+/* Premium scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(100,116,139,0.25); border-radius: 999px; border: 2px solid transparent; background-clip: content-box; }
+::-webkit-scrollbar-thumb:hover { background: rgba(15,76,129,0.4); background-clip: content-box; }
+
+@layer components {
+  .glass {
+    @apply bg-white/70 dark:bg-ink-900/70 backdrop-blur-xl border border-ink-200/60 dark:border-ink-800/60;
+  }
+  .glass-strong {
+    @apply bg-white/85 dark:bg-ink-900/85 backdrop-blur-2xl border border-ink-200/70 dark:border-ink-800/70;
+  }
+  .card {
+    @apply bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-xl2 shadow-card;
+  }
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lifted hover:-translate-y-0.5;
+  }
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-ink-600 dark:text-ink-300 transition-all duration-150 hover:bg-ink-100 dark:hover:bg-ink-800/60 hover:text-ink-900 dark:hover:text-white cursor-pointer;
+  }
+  .nav-item-active {
+    @apply bg-brand-50 dark:bg-brand-600/15 text-brand-700 dark:text-brand-300 hover:bg-brand-50 dark:hover:bg-brand-600/20 hover:text-brand-700 dark:hover:text-brand-300;
+  }
+  .input {
+    @apply w-full rounded-xl border border-ink-200 dark:border-ink-700 bg-white dark:bg-ink-900 px-3.5 py-2.5 text-sm text-ink-900 dark:text-ink-100 placeholder-ink-400 dark:placeholder-ink-500 focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500 transition;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-150 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-primary {
+    @apply btn bg-brand-500 text-white hover:bg-brand-600 shadow-soft;
+  }
+  .btn-ghost {
+    @apply btn text-ink-700 dark:text-ink-200 hover:bg-ink-100 dark:hover:bg-ink-800;
+  }
+  .btn-outline {
+    @apply btn border border-ink-200 dark:border-ink-700 text-ink-700 dark:text-ink-200 hover:bg-ink-50 dark:hover:bg-ink-800;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium;
+  }
+  .skeleton {
+    @apply bg-gradient-to-r from-ink-100 via-ink-200 to-ink-100 dark:from-ink-800 dark:via-ink-700 dark:to-ink-800 bg-[length:200%_100%] animate-shimmer;
+  }
+}
+
+/* Leaflet tweaks for dark mode */
+.leaflet-container {
+  background: #e5e7eb;
+  font-family: inherit;
+}
+html.dark .leaflet-container {
+  background: #0b1220;
+}
+.leaflet-control-zoom a {
+  background: #fff !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+  border-radius: 8px !important;
+  margin-bottom: 2px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+}
+html.dark .leaflet-control-zoom a {
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #334155 !important;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.15);
+}
+.leaflet-popup-content {
+  margin: 0;
+  padding: 0;
+}
+
+/* Premium map controls */
+.leaflet-bar {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Compass rotation */
+@keyframes compass-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

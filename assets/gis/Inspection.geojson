@@ -1,0 +1,569 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.135517623999448,
+            35.42525693711077
+          ],
+          [
+            7.149859540679487,
+            35.41860056459968
+          ],
+          [
+            7.146156722907978,
+            35.424958169123975
+          ],
+          [
+            7.139279854318284,
+            35.42074636863137
+          ],
+          [
+            7.151824566026237,
+            35.42796763493752
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6001",
+        "code": "RT-6001",
+        "name": "مسار خنشلة 1",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1000-23",
+        "driver": "السائق 1",
+        "stops": 12,
+        "distanceKm": 8,
+        "status": "planned",
+        "progress": 0,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.212258820052292,
+            35.3702465281567
+          ],
+          [
+            7.226614032527655,
+            35.380568543901084
+          ],
+          [
+            7.213592018629334,
+            35.37423323726051
+          ],
+          [
+            7.228183463200835,
+            35.38962106198958
+          ],
+          [
+            7.214979349908679,
+            35.378618313053515
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6002",
+        "code": "RT-6002",
+        "name": "مسار بوحمامة 2",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1001-23",
+        "driver": "السائق 2",
+        "stops": 13,
+        "distanceKm": 9,
+        "status": "active",
+        "progress": 45,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.089210194307039,
+            35.3938407179785
+          ],
+          [
+            7.076334250227677,
+            35.39497302051099
+          ],
+          [
+            7.083058186962703,
+            35.387699591035414
+          ],
+          [
+            7.073785735778185,
+            35.38473855965815
+          ],
+          [
+            7.081847674777588,
+            35.387443524185386
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6003",
+        "code": "RT-6003",
+        "name": "مسار الحمامة 3",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1002-23",
+        "driver": "السائق 3",
+        "stops": 14,
+        "distanceKm": 10,
+        "status": "completed",
+        "progress": 100,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.186772658380949,
+            35.36134853923351
+          ],
+          [
+            7.189071842998198,
+            35.362374558091055
+          ],
+          [
+            7.187229499887783,
+            35.35367546623055
+          ],
+          [
+            7.189092279691592,
+            35.36335006558698
+          ],
+          [
+            7.176565382608136,
+            35.363582105518766
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6004",
+        "code": "RT-6004",
+        "name": "مسار بقاية 4",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1003-23",
+        "driver": "السائق 4",
+        "stops": 15,
+        "distanceKm": 11,
+        "status": "delayed",
+        "progress": 30,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.210315219296022,
+            35.44735785521563
+          ],
+          [
+            7.211691011979306,
+            35.44539839535252
+          ],
+          [
+            7.220093919499995,
+            35.432896494769345
+          ],
+          [
+            7.218266488661083,
+            35.436069786339715
+          ],
+          [
+            7.210733430331999,
+            35.44207595764589
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6005",
+        "code": "RT-6005",
+        "name": "مسار قايس 5",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1004-23",
+        "driver": "السائق 5",
+        "stops": 16,
+        "distanceKm": 12,
+        "status": "planned",
+        "progress": 0,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.0657020964629496,
+            35.40689058493599
+          ],
+          [
+            7.06300197648849,
+            35.40731237364317
+          ],
+          [
+            7.053035602770269,
+            35.41165881021698
+          ],
+          [
+            7.067662665690594,
+            35.403380781641715
+          ],
+          [
+            7.059941641749789,
+            35.4071720780676
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6006",
+        "code": "RT-6006",
+        "name": "مسار رميلة 6",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1005-23",
+        "driver": "السائق 6",
+        "stops": 17,
+        "distanceKm": 13,
+        "status": "active",
+        "progress": 45,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.093531303673931,
+            35.346150165593336
+          ],
+          [
+            7.10502723372599,
+            35.34581228772114
+          ],
+          [
+            7.1043798677509455,
+            35.35562378478938
+          ],
+          [
+            7.094972368347807,
+            35.35923991894124
+          ],
+          [
+            7.097803488848439,
+            35.34364775873083
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6007",
+        "code": "RT-6007",
+        "name": "مسار عين التوية 7",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1006-23",
+        "driver": "السائق 7",
+        "stops": 18,
+        "distanceKm": 14,
+        "status": "completed",
+        "progress": 100,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.193780998374728,
+            35.30958123139983
+          ],
+          [
+            7.193189554837926,
+            35.297052945052314
+          ],
+          [
+            7.198033973193923,
+            35.30696066062475
+          ],
+          [
+            7.208851777171743,
+            35.30804754101494
+          ],
+          [
+            7.192185567612857,
+            35.30165730598823
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6008",
+        "code": "RT-6008",
+        "name": "مسار بابار 8",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1007-23",
+        "driver": "السائق 8",
+        "stops": 19,
+        "distanceKm": 15,
+        "status": "delayed",
+        "progress": 30,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.2552620697609065,
+            35.337415822298624
+          ],
+          [
+            7.25334531027789,
+            35.33456951297629
+          ],
+          [
+            7.256425105344256,
+            35.3395118449016
+          ],
+          [
+            7.253380996795437,
+            35.33374031428357
+          ],
+          [
+            7.254460980372513,
+            35.337064265895556
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6009",
+        "code": "RT-6009",
+        "name": "مسار تامزة 9",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1008-23",
+        "driver": "السائق 9",
+        "stops": 20,
+        "distanceKm": 16,
+        "status": "planned",
+        "progress": 0,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.2778610866411375,
+            35.3783865333365
+          ],
+          [
+            7.282897553449506,
+            35.38508301927562
+          ],
+          [
+            7.280770172015307,
+            35.38271436161103
+          ],
+          [
+            7.270215410237146,
+            35.37132879311597
+          ],
+          [
+            7.279012787553026,
+            35.37806468118891
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6010",
+        "code": "RT-6010",
+        "name": "مسار الولجة 10",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1009-23",
+        "driver": "السائق 10",
+        "stops": 21,
+        "distanceKm": 17,
+        "status": "active",
+        "progress": 45,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.1450781253609215,
+            35.27161064148861
+          ],
+          [
+            7.1410072320219955,
+            35.28931562336746
+          ],
+          [
+            7.1474913504291155,
+            35.275654939894864
+          ],
+          [
+            7.143445923495659,
+            35.27766043295662
+          ],
+          [
+            7.154524123050356,
+            35.27315700149625
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6011",
+        "code": "RT-6011",
+        "name": "مسار بوزينة 11",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1010-23",
+        "driver": "السائق 11",
+        "stops": 22,
+        "distanceKm": 18,
+        "status": "completed",
+        "progress": 100,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.0801344447431696,
+            35.44110848337123
+          ],
+          [
+            7.0801308159837415,
+            35.44401152071371
+          ],
+          [
+            7.082915843652921,
+            35.44724715216287
+          ],
+          [
+            7.072663510405875,
+            35.45463879647613
+          ],
+          [
+            7.071634907247578,
+            35.45968530031442
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "R-6012",
+        "code": "RT-6012",
+        "name": "مسار شرشار 12",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "vehicle": "40-1011-23",
+        "driver": "السائق 12",
+        "stops": 23,
+        "distanceKm": 19,
+        "status": "delayed",
+        "progress": 30,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

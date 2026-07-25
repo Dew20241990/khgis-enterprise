@@ -1,0 +1,181 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.128,
+              35.428
+            ],
+            [
+              7.151999999999999,
+              35.428
+            ],
+            [
+              7.151999999999999,
+              35.452
+            ],
+            [
+              7.128,
+              35.452
+            ],
+            [
+              7.128,
+              35.428
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "Z-01",
+        "name": "المنطقة الشمالية",
+        "nameFr": "Zone Nord",
+        "municipality": "خنشلا",
+        "zone": "المنطقة الشمالية",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.128,
+              35.388
+            ],
+            [
+              7.151999999999999,
+              35.388
+            ],
+            [
+              7.151999999999999,
+              35.412
+            ],
+            [
+              7.128,
+              35.412
+            ],
+            [
+              7.128,
+              35.388
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "Z-02",
+        "name": "المنطقة الجنوبية",
+        "nameFr": "Zone Sud",
+        "municipality": "خنشلا",
+        "zone": "المنطقة الجنوبية",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.158,
+              35.408
+            ],
+            [
+              7.1819999999999995,
+              35.408
+            ],
+            [
+              7.1819999999999995,
+              35.432
+            ],
+            [
+              7.158,
+              35.432
+            ],
+            [
+              7.158,
+              35.408
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "Z-03",
+        "name": "المنطقة الشرقية",
+        "nameFr": "Zone Est",
+        "municipality": "خنشلا",
+        "zone": "المنطقة الشرقية",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.098000000000001,
+              35.408
+            ],
+            [
+              7.122,
+              35.408
+            ],
+            [
+              7.122,
+              35.432
+            ],
+            [
+              7.098000000000001,
+              35.432
+            ],
+            [
+              7.098000000000001,
+              35.408
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "Z-04",
+        "name": "المنطقة الغربية",
+        "nameFr": "Zone Ouest",
+        "municipality": "خنشلا",
+        "zone": "المنطقة الغربية",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

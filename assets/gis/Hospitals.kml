@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Hospitals - Khenchela</name>
+    <description>Etablissements de sante de la commune de Khenchela</description>
+    <Style id="hospital">
+      <IconStyle><color>ffDC2626</color><scale>1.0</scale>
+        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/hospitals.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="health">
+      <IconStyle><color>ffF59E0B</color><scale>0.8</scale>
+        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/info_circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Placemark><name>EPH Khenchela</name><description>مستشفى خنشلة - Etablissement Public Hospitalier</description><styleUrl>#hospital</styleUrl><Point><coordinates>7.1380,35.4300,0</coordinates></Point></Placemark>
+    <Placemark><name>EPSP Khenchela</name><description>الصحة العمومية - Etablissement Public de Sante de Proximite</description><styleUrl>#hospital</styleUrl><Point><coordinates>7.1500,35.4150,0</coordinates></Point></Placemark>
+    <Placemark><name>Centre de Sante El Houria</name><description>مركز صحي الحرية</description><styleUrl>#health</styleUrl><Point><coordinates>7.1430,35.4250,0</coordinates></Point></Placemark>
+    <Placemark><name>Clinique Ennour</name><description>عيادة النور</description><styleUrl>#health</styleUrl><Point><coordinates>7.1550,35.4220,0</coordinates></Point></Placemark>
+    <Placemark><name>Centre de Sante Remila</name><description>مركز صحي رميلة</description><styleUrl>#health</styleUrl><Point><coordinates>7.1250,35.4100,0</coordinates></Point></Placemark>
+    <Placemark><name>Polyclinique Khenchela</name><description>عيادة متعددة الخدمات</description><styleUrl>#health</styleUrl><Point><coordinates>7.1480,35.4200,0</coordinates></Point></Placemark>
+  </Document>
+</kml>

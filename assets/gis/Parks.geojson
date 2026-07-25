@@ -1,0 +1,137 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.139,
+              35.422
+            ],
+            [
+              7.1450000000000005,
+              35.422
+            ],
+            [
+              7.1450000000000005,
+              35.428
+            ],
+            [
+              7.139,
+              35.428
+            ],
+            [
+              7.139,
+              35.422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "PRK-1",
+        "name": "الحديقة العمومية",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "park",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.147,
+              35.427
+            ],
+            [
+              7.1530000000000005,
+              35.427
+            ],
+            [
+              7.1530000000000005,
+              35.433
+            ],
+            [
+              7.147,
+              35.433
+            ],
+            [
+              7.147,
+              35.427
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "PRK-2",
+        "name": "منتزه الترفيه",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "park",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.248Z",
+        "updatedAt": "2026-07-23T16:09:57.248Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.132,
+              35.412
+            ],
+            [
+              7.138,
+              35.412
+            ],
+            [
+              7.138,
+              35.418
+            ],
+            [
+              7.132,
+              35.418
+            ],
+            [
+              7.132,
+              35.412
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "PRK-3",
+        "name": "الغابة البلدية",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "park",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.248Z",
+        "updatedAt": "2026-07-23T16:09:57.248Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

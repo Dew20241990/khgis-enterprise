@@ -1,0 +1,2325 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.151103556637311,
+          35.42169567961675
+        ]
+      },
+      "properties": {
+        "uuid": "S-3001",
+        "name": "محل 1 - خنشلة",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "active",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 0,
+        "lastInspection": "2026-07-01T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.216330955884438,
+          35.38505087477563
+        ]
+      },
+      "properties": {
+        "uuid": "S-3002",
+        "name": "محل 2 - بوحمامة",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 1,
+        "lastInspection": "2026-07-02T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.086368642565305,
+          35.39601539698724
+        ]
+      },
+      "properties": {
+        "uuid": "S-3003",
+        "name": "محل 3 - الحمامة",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 2,
+        "lastInspection": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.184811101460574,
+          35.35701791588856
+        ]
+      },
+      "properties": {
+        "uuid": "S-3004",
+        "name": "محل 4 - بقاية",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 3,
+        "lastInspection": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.215307974190227,
+          35.43519666350233
+        ]
+      },
+      "properties": {
+        "uuid": "S-3005",
+        "name": "محل 5 - قايس",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "expired",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 4,
+        "lastInspection": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0628098724127995,
+          35.400702948659095
+        ]
+      },
+      "properties": {
+        "uuid": "S-3006",
+        "name": "محل 6 - رميلة",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 5,
+        "lastInspection": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.096674428664489,
+          35.35486801882536
+        ]
+      },
+      "properties": {
+        "uuid": "S-3007",
+        "name": "محل 7 - عين التوية",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 0,
+        "lastInspection": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.191151502916164,
+          35.29124643777342
+        ]
+      },
+      "properties": {
+        "uuid": "S-3008",
+        "name": "محل 8 - بابار",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 1,
+        "lastInspection": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.258706765343716,
+          35.33905711638418
+        ]
+      },
+      "properties": {
+        "uuid": "S-3009",
+        "name": "محل 9 - تامزة",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "pending",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 2,
+        "lastInspection": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.276835675923262,
+          35.38885868055718
+        ]
+      },
+      "properties": {
+        "uuid": "S-3010",
+        "name": "محل 10 - الولجة",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 3,
+        "lastInspection": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.14033706820582,
+          35.28907612638751
+        ]
+      },
+      "properties": {
+        "uuid": "S-3011",
+        "name": "محل 11 - بوزينة",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 4,
+        "lastInspection": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.073068202843491,
+          35.453189972272696
+        ]
+      },
+      "properties": {
+        "uuid": "S-3012",
+        "name": "محل 12 - شرشار",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 5,
+        "lastInspection": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.21340856678733,
+          35.260866255802384
+        ]
+      },
+      "properties": {
+        "uuid": "S-3013",
+        "name": "محل 13 - جلال",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "active",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 0,
+        "lastInspection": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.12151528693344,
+          35.48744639515788
+        ]
+      },
+      "properties": {
+        "uuid": "S-3014",
+        "name": "محل 14 - المحمل",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 1,
+        "lastInspection": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.20503493558736,
+          35.497438490567845
+        ]
+      },
+      "properties": {
+        "uuid": "S-3015",
+        "name": "محل 15 - المسارة",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 2,
+        "lastInspection": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.051895900484385,
+          35.51159004340989
+        ]
+      },
+      "properties": {
+        "uuid": "S-3016",
+        "name": "محل 16 - يابوس",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 3,
+        "lastInspection": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.073924969098958,
+          35.248870609976194
+        ]
+      },
+      "properties": {
+        "uuid": "S-3017",
+        "name": "محل 17 - خيران",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "expired",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 4,
+        "lastInspection": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.181603078864857,
+          35.222877856263665
+        ]
+      },
+      "properties": {
+        "uuid": "S-3018",
+        "name": "محل 18 - تازغروت",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 5,
+        "lastInspection": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.244161220824385,
+          35.54265930431286
+        ]
+      },
+      "properties": {
+        "uuid": "S-3019",
+        "name": "محل 19 - تليسنة",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 0,
+        "lastInspection": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.270206610344103,
+          35.462431696731706
+        ]
+      },
+      "properties": {
+        "uuid": "S-3020",
+        "name": "محل 20 - سيدي عقبة",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 1,
+        "lastInspection": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.148637257909762,
+          35.58894806345077
+        ]
+      },
+      "properties": {
+        "uuid": "S-3021",
+        "name": "محل 21 - المسارة الشرقية",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "pending",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 2,
+        "lastInspection": "2026-07-21T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.062619289485053,
+          35.30858562217918
+        ]
+      },
+      "properties": {
+        "uuid": "S-3022",
+        "name": "محل 22 - أولاد رشاش",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 3,
+        "lastInspection": "2026-07-22T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.252910857181687,
+          35.20946869422976
+        ]
+      },
+      "properties": {
+        "uuid": "S-3023",
+        "name": "محل 23 - لمسين",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 4,
+        "lastInspection": "2026-07-23T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.051591876054901,
+          35.59037195765136
+        ]
+      },
+      "properties": {
+        "uuid": "S-3024",
+        "name": "محل 24 - البلالة",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 5,
+        "lastInspection": "2026-07-24T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.097836875054808,
+          35.17654152575042
+        ]
+      },
+      "properties": {
+        "uuid": "S-3025",
+        "name": "محل 25 - عنسيغة",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "active",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 0,
+        "lastInspection": "2026-07-25T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.299015658359201,
+          35.4229847933515
+        ]
+      },
+      "properties": {
+        "uuid": "S-3026",
+        "name": "محل 26 - قايس أولاد يحيى",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 1,
+        "lastInspection": "2026-07-01T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.143720293403151,
+          35.41602993662397
+        ]
+      },
+      "properties": {
+        "uuid": "S-3027",
+        "name": "محل 27 - خنشلة",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 2,
+        "lastInspection": "2026-07-02T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.229145798267505,
+          35.37605746084202
+        ]
+      },
+      "properties": {
+        "uuid": "S-3028",
+        "name": "محل 28 - بوحمامة",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 3,
+        "lastInspection": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.073494162570231,
+          35.396918943823195
+        ]
+      },
+      "properties": {
+        "uuid": "S-3029",
+        "name": "محل 29 - الحمامة",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "expired",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 4,
+        "lastInspection": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.179440842254701,
+          35.35829417375951
+        ]
+      },
+      "properties": {
+        "uuid": "S-3030",
+        "name": "محل 30 - بقاية",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 5,
+        "lastInspection": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2233225730163815,
+          35.44900689096846
+        ]
+      },
+      "properties": {
+        "uuid": "S-3031",
+        "name": "محل 31 - قايس",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 0,
+        "lastInspection": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.053727175288951,
+          35.40206115785682
+        ]
+      },
+      "properties": {
+        "uuid": "S-3032",
+        "name": "محل 32 - رميلة",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 1,
+        "lastInspection": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.090989112812423,
+          35.356920578305235
+        ]
+      },
+      "properties": {
+        "uuid": "S-3033",
+        "name": "محل 33 - عين التوية",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "pending",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 2,
+        "lastInspection": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.206603283634726,
+          35.294786298065425
+        ]
+      },
+      "properties": {
+        "uuid": "S-3034",
+        "name": "محل 34 - بابار",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 3,
+        "lastInspection": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.256610007430173,
+          35.321203429462656
+        ]
+      },
+      "properties": {
+        "uuid": "S-3035",
+        "name": "محل 35 - تامزة",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 4,
+        "lastInspection": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.28182273441383,
+          35.37958179385726
+        ]
+      },
+      "properties": {
+        "uuid": "S-3036",
+        "name": "محل 36 - الولجة",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 5,
+        "lastInspection": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.147434368259992,
+          35.28546382226161
+        ]
+      },
+      "properties": {
+        "uuid": "S-3037",
+        "name": "محل 37 - بوزينة",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "active",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 0,
+        "lastInspection": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.080561233205967,
+          35.45223870044926
+        ]
+      },
+      "properties": {
+        "uuid": "S-3038",
+        "name": "محل 38 - شرشار",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 1,
+        "lastInspection": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.220282586256847,
+          35.25507683362299
+        ]
+      },
+      "properties": {
+        "uuid": "S-3039",
+        "name": "محل 39 - جلال",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 2,
+        "lastInspection": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.113734891220647,
+          35.475583678522334
+        ]
+      },
+      "properties": {
+        "uuid": "S-3040",
+        "name": "محل 40 - المحمل",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 3,
+        "lastInspection": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.20160348623893,
+          35.497865302675486
+        ]
+      },
+      "properties": {
+        "uuid": "S-3041",
+        "name": "محل 41 - المسارة",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "expired",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 4,
+        "lastInspection": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.040157449783242,
+          35.52368991225086
+        ]
+      },
+      "properties": {
+        "uuid": "S-3042",
+        "name": "محل 42 - يابوس",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 5,
+        "lastInspection": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.086406470128552,
+          35.24032120504548
+        ]
+      },
+      "properties": {
+        "uuid": "S-3043",
+        "name": "محل 43 - خيران",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 0,
+        "lastInspection": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.174980647831515,
+          35.228865667948526
+        ]
+      },
+      "properties": {
+        "uuid": "S-3044",
+        "name": "محل 44 - تازغروت",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 1,
+        "lastInspection": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2434530221143225,
+          35.54762932463651
+        ]
+      },
+      "properties": {
+        "uuid": "S-3045",
+        "name": "محل 45 - تليسنة",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "pending",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 2,
+        "lastInspection": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.283657429715561,
+          35.46433804983345
+        ]
+      },
+      "properties": {
+        "uuid": "S-3046",
+        "name": "محل 46 - سيدي عقبة",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 3,
+        "lastInspection": "2026-07-21T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.153596918572038,
+          35.58984805560992
+        ]
+      },
+      "properties": {
+        "uuid": "S-3047",
+        "name": "محل 47 - المسارة الشرقية",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 4,
+        "lastInspection": "2026-07-22T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.058429838995056,
+          35.30939192570932
+        ]
+      },
+      "properties": {
+        "uuid": "S-3048",
+        "name": "محل 48 - أولاد رشاش",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 5,
+        "lastInspection": "2026-07-23T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.253187999958564,
+          35.2070416421625
+        ]
+      },
+      "properties": {
+        "uuid": "S-3049",
+        "name": "محل 49 - لمسين",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "active",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 0,
+        "lastInspection": "2026-07-24T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.054453184612248,
+          35.59133755061727
+        ]
+      },
+      "properties": {
+        "uuid": "S-3050",
+        "name": "محل 50 - البلالة",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 1,
+        "lastInspection": "2026-07-25T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.107523201359764,
+          35.17017742315642
+        ]
+      },
+      "properties": {
+        "uuid": "S-3051",
+        "name": "محل 51 - عنسيغة",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 2,
+        "lastInspection": "2026-07-01T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3046697604956,
+          35.436929259847126
+        ]
+      },
+      "properties": {
+        "uuid": "S-3052",
+        "name": "محل 52 - قايس أولاد يحيى",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 3,
+        "lastInspection": "2026-07-02T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.145690352646245,
+          35.4296216241892
+        ]
+      },
+      "properties": {
+        "uuid": "S-3053",
+        "name": "محل 53 - خنشلة",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "expired",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 4,
+        "lastInspection": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.218496481636162,
+          35.376937124888904
+        ]
+      },
+      "properties": {
+        "uuid": "S-3054",
+        "name": "محل 54 - بوحمامة",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 5,
+        "lastInspection": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.081010669337827,
+          35.39140551244809
+        ]
+      },
+      "properties": {
+        "uuid": "S-3055",
+        "name": "محل 55 - الحمامة",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 0,
+        "lastInspection": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.181941835573942,
+          35.36587389668674
+        ]
+      },
+      "properties": {
+        "uuid": "S-3056",
+        "name": "محل 56 - بقاية",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 1,
+        "lastInspection": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.213313110168234,
+          35.44353045462413
+        ]
+      },
+      "properties": {
+        "uuid": "S-3057",
+        "name": "محل 57 - قايس",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "pending",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 2,
+        "lastInspection": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.068318116290186,
+          35.4018618477932
+        ]
+      },
+      "properties": {
+        "uuid": "S-3058",
+        "name": "محل 58 - رميلة",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 3,
+        "lastInspection": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.107195203184172,
+          35.355428412489985
+        ]
+      },
+      "properties": {
+        "uuid": "S-3059",
+        "name": "محل 59 - عين التوية",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 4,
+        "lastInspection": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.193039816070346,
+          35.30498136913986
+        ]
+      },
+      "properties": {
+        "uuid": "S-3060",
+        "name": "محل 60 - بابار",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 5,
+        "lastInspection": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.255041972552313,
+          35.329227788292044
+        ]
+      },
+      "properties": {
+        "uuid": "S-3061",
+        "name": "محل 61 - تامزة",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "active",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 0,
+        "lastInspection": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.277189971535725,
+          35.37497108587257
+        ]
+      },
+      "properties": {
+        "uuid": "S-3062",
+        "name": "محل 62 - الولجة",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 1,
+        "lastInspection": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.150455012718626,
+          35.28902295962759
+        ]
+      },
+      "properties": {
+        "uuid": "S-3063",
+        "name": "محل 63 - بوزينة",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 2,
+        "lastInspection": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0811578422816535,
+          35.44588613091019
+        ]
+      },
+      "properties": {
+        "uuid": "S-3064",
+        "name": "محل 64 - شرشار",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 3,
+        "lastInspection": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.219464547536038,
+          35.25019561237674
+        ]
+      },
+      "properties": {
+        "uuid": "S-3065",
+        "name": "محل 65 - جلال",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "expired",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 4,
+        "lastInspection": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.110930854380496,
+          35.486466380743096
+        ]
+      },
+      "properties": {
+        "uuid": "S-3066",
+        "name": "محل 66 - المحمل",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 5,
+        "lastInspection": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.19118173980163,
+          35.50232675616539
+        ]
+      },
+      "properties": {
+        "uuid": "S-3067",
+        "name": "محل 67 - المسارة",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 0,
+        "lastInspection": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.04740490901501,
+          35.522720888110186
+        ]
+      },
+      "properties": {
+        "uuid": "S-3068",
+        "name": "محل 68 - يابوس",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 1,
+        "lastInspection": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.078184386695814,
+          35.242803369462266
+        ]
+      },
+      "properties": {
+        "uuid": "S-3069",
+        "name": "محل 69 - خيران",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "pending",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 2,
+        "lastInspection": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.177971859897015,
+          35.218471349843824
+        ]
+      },
+      "properties": {
+        "uuid": "S-3070",
+        "name": "محل 70 - تازغروت",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 3,
+        "lastInspection": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.249846862772593,
+          35.55120420818265
+        ]
+      },
+      "properties": {
+        "uuid": "S-3071",
+        "name": "محل 71 - تليسنة",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 4,
+        "lastInspection": "2026-07-21T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.288616766116132,
+          35.454445712058956
+        ]
+      },
+      "properties": {
+        "uuid": "S-3072",
+        "name": "محل 72 - سيدي عقبة",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 5,
+        "lastInspection": "2026-07-22T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.141374169559105,
+          35.580253582797674
+        ]
+      },
+      "properties": {
+        "uuid": "S-3073",
+        "name": "محل 73 - المسارة الشرقية",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "active",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 0,
+        "lastInspection": "2026-07-23T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.067845880858977,
+          35.300589386421606
+        ]
+      },
+      "properties": {
+        "uuid": "S-3074",
+        "name": "محل 74 - أولاد رشاش",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملحمة",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 1,
+        "lastInspection": "2026-07-24T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.256307507316867,
+          35.19796390896745
+        ]
+      },
+      "properties": {
+        "uuid": "S-3075",
+        "name": "محل 75 - لمسين",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "خباز",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 2,
+        "lastInspection": "2026-07-25T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.059284166744535,
+          35.60774399360946
+        ]
+      },
+      "properties": {
+        "uuid": "S-3076",
+        "name": "محل 76 - البلالة",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "صيدلية",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 3,
+        "lastInspection": "2026-07-01T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.102987606809777,
+          35.17612414683835
+        ]
+      },
+      "properties": {
+        "uuid": "S-3077",
+        "name": "محل 77 - عنسيغة",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "ملابس",
+        "contractStatus": "expired",
+        "feePaid": false,
+        "containers": 1,
+        "inspections": 4,
+        "lastInspection": "2026-07-02T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.292536029967874,
+          35.43172741769123
+        ]
+      },
+      "properties": {
+        "uuid": "S-3078",
+        "name": "محل 78 - قايس أولاد يحيى",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مطعم",
+        "contractStatus": "pending",
+        "feePaid": true,
+        "containers": 2,
+        "inspections": 5,
+        "lastInspection": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.141316930039338,
+          35.417582678694316
+        ]
+      },
+      "properties": {
+        "uuid": "S-3079",
+        "name": "محل 79 - خنشلة",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "مقهى",
+        "contractStatus": "active",
+        "feePaid": true,
+        "containers": 3,
+        "inspections": 0,
+        "lastInspection": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.215025802560439,
+          35.37855602758451
+        ]
+      },
+      "properties": {
+        "uuid": "S-3080",
+        "name": "محل 80 - بوحمامة",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "category": "سوبر ماركت",
+        "contractStatus": "expired",
+        "feePaid": true,
+        "containers": 4,
+        "inspections": 1,
+        "lastInspection": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.245Z",
+        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.15,
+              35.43
+            ],
+            [
+              7.16,
+              35.43
+            ],
+            [
+              7.16,
+              35.440000000000005
+            ],
+            [
+              7.15,
+              35.440000000000005
+            ],
+            [
+              7.15,
+              35.43
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "IND-1",
+        "name": "المنطقة الصناعية خنشلة",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "industrial",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.248Z",
+        "updatedAt": "2026-07-23T16:09:57.248Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.215,
+              35.44
+            ],
+            [
+              7.225,
+              35.44
+            ],
+            [
+              7.225,
+              35.45
+            ],
+            [
+              7.215,
+              35.45
+            ],
+            [
+              7.215,
+              35.44
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "IND-2",
+        "name": "المنطقة الصناعية قايس",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "industrial",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.248Z",
+        "updatedAt": "2026-07-23T16:09:57.248Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Commune Boundary - Khenchela</name>
+    <description>Administrative boundary of Khenchela commune, Wilaya of Khenchela, Algeria</description>
+    <Style id="boundary">
+      <LineStyle><color>ff0F4C81</color><width>3</width></LineStyle>
+      <PolyStyle><color>1a0F4C81</color><fill>1</fill></PolyStyle>
+    </Style>
+    <Placemark>
+      <name>Khenchela</name>
+      <description>Limites administratives de la commune de Khenchela</description>
+      <styleUrl>#boundary</styleUrl>
+      <Polygon>
+        <tessellate>1</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              7.1050,35.4550,0 7.1250,35.4600,0 7.1550,35.4500,0 7.1750,35.4350,0
+              7.1850,35.4150,0 7.1800,35.4000,0 7.1650,35.3900,0 7.1450,35.3850,0
+              7.1250,35.3900,0 7.1100,35.4000,0 7.0950,35.4150,0 7.0900,35.4350,0
+              7.1000,35.4500,0 7.1050,35.4550,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

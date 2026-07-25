@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Markets - Khenchela</name>
+    <description>Marches et zones commerciales de la commune de Khenchela</description>
+    <Style id="market">
+      <IconStyle><color>ff14B8A6</color><scale>1.0</scale>
+        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/shopping.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Placemark><name>Marche de Khenchela</name><description>السوق البلدي - Marche hebdomadaire</description><styleUrl>#market</styleUrl><Point><coordinates>7.1400,35.4150,0</coordinates></Point></Placemark>
+    <Placemark><name>Marche de Gros</name><description>سوق الجملة</description><styleUrl>#market</styleUrl><Point><coordinates>7.1600,35.4250,0</coordinates></Point></Placemark>
+    <Placemark><name>Zone Commerciale Centre</name><description>المنطقة التجارية المركز</description><styleUrl>#market</styleUrl><Point><coordinates>7.1450,35.4200,0</coordinates></Point></Placemark>
+    <Placemark><name>Semaine Marche El Houria</name><description>السوق الأسبوعي الحرية</description><styleUrl>#market</styleUrl><Point><coordinates>7.1300,35.4180,0</coordinates></Point></Placemark>
+    <Placemark><name>Petit Marche El Birr</name><description>السوق الصغير البر</description><styleUrl>#market</styleUrl><Point><coordinates>7.1500,35.4280,0</coordinates></Point></Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,901 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.148654056187681,
+          35.433322928501234
+        ]
+      },
+      "properties": {
+        "uuid": "V-4001",
+        "plate": "40-1000-23",
+        "type": "truck",
+        "capacity": 6,
+        "status": "active",
+        "driver": "السائق 1",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 46,
+        "mileage": 45000,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.212241547680359,
+          35.37002354274631
+        ]
+      },
+      "properties": {
+        "uuid": "V-4002",
+        "plate": "40-1001-23",
+        "type": "compactor",
+        "capacity": 12,
+        "status": "idle",
+        "driver": "السائق 2",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 13,
+        "mileage": 46234,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.082041974530648,
+          35.38173673923299
+        ]
+      },
+      "properties": {
+        "uuid": "V-4003",
+        "plate": "40-1002-23",
+        "type": "sweeper",
+        "capacity": 8,
+        "status": "maintenance",
+        "driver": "السائق 3",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 19,
+        "mileage": 47468,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1818094144911395,
+          35.363981648651595
+        ]
+      },
+      "properties": {
+        "uuid": "V-4004",
+        "plate": "40-1003-23",
+        "type": "van",
+        "capacity": 3,
+        "status": "offline",
+        "driver": "السائق 4",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 32,
+        "mileage": 48702,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.223502994296816,
+          35.44380839459063
+        ]
+      },
+      "properties": {
+        "uuid": "V-4005",
+        "plate": "40-1004-23",
+        "type": "truck",
+        "capacity": 6,
+        "status": "active",
+        "driver": "السائق 5",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 31,
+        "mileage": 49936,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.059081267763079,
+          35.41136861113703
+        ]
+      },
+      "properties": {
+        "uuid": "V-4006",
+        "plate": "40-1005-23",
+        "type": "compactor",
+        "capacity": 12,
+        "status": "idle",
+        "driver": "السائق 6",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 12,
+        "mileage": 51170,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.102135060473496,
+          35.35379546087113
+        ]
+      },
+      "properties": {
+        "uuid": "V-4007",
+        "plate": "40-1006-23",
+        "type": "sweeper",
+        "capacity": 8,
+        "status": "maintenance",
+        "driver": "السائق 7",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 43,
+        "mileage": 52404,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.203314102060171,
+          35.30488228341704
+        ]
+      },
+      "properties": {
+        "uuid": "V-4008",
+        "plate": "40-1007-23",
+        "type": "van",
+        "capacity": 3,
+        "status": "offline",
+        "driver": "السائق 8",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 19,
+        "mileage": 53638,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.246418599991235,
+          35.33119181169626
+        ]
+      },
+      "properties": {
+        "uuid": "V-4009",
+        "plate": "40-1008-23",
+        "type": "truck",
+        "capacity": 6,
+        "status": "active",
+        "driver": "السائق 9",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 16,
+        "mileage": 54872,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2751745344802305,
+          35.385209372053446
+        ]
+      },
+      "properties": {
+        "uuid": "V-4010",
+        "plate": "40-1009-23",
+        "type": "compactor",
+        "capacity": 12,
+        "status": "idle",
+        "driver": "السائق 10",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 56,
+        "mileage": 56106,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.151619347156506,
+          35.27794332201076
+        ]
+      },
+      "properties": {
+        "uuid": "V-4011",
+        "plate": "40-1010-23",
+        "type": "sweeper",
+        "capacity": 8,
+        "status": "maintenance",
+        "driver": "السائق 11",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 61,
+        "mileage": 57340,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.084981232545167,
+          35.441457029437636
+        ]
+      },
+      "properties": {
+        "uuid": "V-4012",
+        "plate": "40-1011-23",
+        "type": "van",
+        "capacity": 3,
+        "status": "offline",
+        "driver": "السائق 12",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 96,
+        "mileage": 58574,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.226648579343607,
+          35.26204024584952
+        ]
+      },
+      "properties": {
+        "uuid": "V-4013",
+        "plate": "40-1012-23",
+        "type": "truck",
+        "capacity": 6,
+        "status": "active",
+        "driver": "السائق 13",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 1,
+        "mileage": 59808,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.119674259924651,
+          35.47308529879384
+        ]
+      },
+      "properties": {
+        "uuid": "V-4014",
+        "plate": "40-1013-23",
+        "type": "compactor",
+        "capacity": 12,
+        "status": "idle",
+        "driver": "السائق 14",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 91,
+        "mileage": 61042,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.190568674854063,
+          35.49040258639559
+        ]
+      },
+      "properties": {
+        "uuid": "V-4015",
+        "plate": "40-1014-23",
+        "type": "sweeper",
+        "capacity": 8,
+        "status": "maintenance",
+        "driver": "السائق 15",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 53,
+        "mileage": 62276,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0504729926335745,
+          35.51830433841813
+        ]
+      },
+      "properties": {
+        "uuid": "V-4016",
+        "plate": "40-1015-23",
+        "type": "van",
+        "capacity": 3,
+        "status": "offline",
+        "driver": "السائق 16",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 56,
+        "mileage": 63510,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.079084114341921,
+          35.23787483040251
+        ]
+      },
+      "properties": {
+        "uuid": "V-4017",
+        "plate": "40-1016-23",
+        "type": "truck",
+        "capacity": 6,
+        "status": "active",
+        "driver": "السائق 17",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 65,
+        "mileage": 64744,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.187943698945892,
+          35.21402652802321
+        ]
+      },
+      "properties": {
+        "uuid": "V-4018",
+        "plate": "40-1017-23",
+        "type": "compactor",
+        "capacity": 12,
+        "status": "idle",
+        "driver": "السائق 18",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 2,
+        "mileage": 65978,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.257414131697964,
+          35.54148423673634
+        ]
+      },
+      "properties": {
+        "uuid": "V-4019",
+        "plate": "40-1018-23",
+        "type": "sweeper",
+        "capacity": 8,
+        "status": "maintenance",
+        "driver": "السائق 19",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 95,
+        "mileage": 67212,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.283814160939462,
+          35.46520773263991
+        ]
+      },
+      "properties": {
+        "uuid": "V-4020",
+        "plate": "40-1019-23",
+        "type": "van",
+        "capacity": 3,
+        "status": "offline",
+        "driver": "السائق 20",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 49,
+        "mileage": 68446,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1440583780416125,
+          35.58931806954755
+        ]
+      },
+      "properties": {
+        "uuid": "V-4021",
+        "plate": "40-1020-23",
+        "type": "truck",
+        "capacity": 6,
+        "status": "active",
+        "driver": "السائق 21",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 89,
+        "mileage": 69680,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.053403271828235,
+          35.31773939060482
+        ]
+      },
+      "properties": {
+        "uuid": "V-4022",
+        "plate": "40-1021-23",
+        "type": "compactor",
+        "capacity": 12,
+        "status": "idle",
+        "driver": "السائق 22",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 38,
+        "mileage": 70914,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.243792003342703,
+          35.20634881587302
+        ]
+      },
+      "properties": {
+        "uuid": "V-4023",
+        "plate": "40-1022-23",
+        "type": "sweeper",
+        "capacity": 8,
+        "status": "maintenance",
+        "driver": "السائق 23",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 60,
+        "mileage": 72148,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.051079234750514,
+          35.5999056014575
+        ]
+      },
+      "properties": {
+        "uuid": "V-4024",
+        "plate": "40-1023-23",
+        "type": "van",
+        "capacity": 3,
+        "status": "offline",
+        "driver": "السائق 24",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 18,
+        "mileage": 73382,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.104481090799729,
+          35.172240926256016
+        ]
+      },
+      "properties": {
+        "uuid": "V-4025",
+        "plate": "40-1024-23",
+        "type": "truck",
+        "capacity": 6,
+        "status": "active",
+        "driver": "السائق 25",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 6,
+        "mileage": 74616,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.296210757922993,
+          35.43401242576729
+        ]
+      },
+      "properties": {
+        "uuid": "V-4026",
+        "plate": "40-1025-23",
+        "type": "compactor",
+        "capacity": 12,
+        "status": "idle",
+        "driver": "السائق 26",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 32,
+        "mileage": 75850,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.145375094025767,
+          35.42513437964704
+        ]
+      },
+      "properties": {
+        "uuid": "V-4027",
+        "plate": "40-1026-23",
+        "type": "sweeper",
+        "capacity": 8,
+        "status": "maintenance",
+        "driver": "السائق 27",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 64,
+        "mileage": 77084,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.220859103832907,
+          35.376843825072825
+        ]
+      },
+      "properties": {
+        "uuid": "V-4028",
+        "plate": "40-1027-23",
+        "type": "van",
+        "capacity": 3,
+        "status": "offline",
+        "driver": "السائق 28",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 62,
+        "mileage": 78318,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.073903442121304,
+          35.392947130066894
+        ]
+      },
+      "properties": {
+        "uuid": "V-4029",
+        "plate": "40-1028-23",
+        "type": "truck",
+        "capacity": 6,
+        "status": "active",
+        "driver": "السائق 29",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 86,
+        "mileage": 79552,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.189901272889576,
+          35.36410225889144
+        ]
+      },
+      "properties": {
+        "uuid": "V-4030",
+        "plate": "40-1029-23",
+        "type": "compactor",
+        "capacity": 12,
+        "status": "idle",
+        "driver": "السائق 30",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 57,
+        "mileage": 80786,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.228763853509087,
+          35.44311530258183
+        ]
+      },
+      "properties": {
+        "uuid": "V-4031",
+        "plate": "40-1030-23",
+        "type": "sweeper",
+        "capacity": 8,
+        "status": "maintenance",
+        "driver": "السائق 31",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 76,
+        "mileage": 82020,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.052799466442612,
+          35.40913602001582
+        ]
+      },
+      "properties": {
+        "uuid": "V-4032",
+        "plate": "40-1031-23",
+        "type": "van",
+        "capacity": 3,
+        "status": "offline",
+        "driver": "السائق 32",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "fuel": 1,
+        "mileage": 83254,
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.246Z",
+        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,1725 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.130325158414713,
+              35.41060605187022
+            ],
+            [
+              7.131925158414713,
+              35.41060605187022
+            ],
+            [
+              7.131925158414713,
+              35.412206051870214
+            ],
+            [
+              7.130325158414713,
+              35.412206051870214
+            ],
+            [
+              7.130325158414713,
+              35.41060605187022
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-1",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.134042418482693,
+              35.41972322537219
+            ],
+            [
+              7.135642418482693,
+              35.41972322537219
+            ],
+            [
+              7.135642418482693,
+              35.421323225372184
+            ],
+            [
+              7.134042418482693,
+              35.421323225372184
+            ],
+            [
+              7.134042418482693,
+              35.41972322537219
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-2",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.156177786917372,
+              35.411689976921004
+            ],
+            [
+              7.1577777869173715,
+              35.411689976921004
+            ],
+            [
+              7.1577777869173715,
+              35.413289976921
+            ],
+            [
+              7.156177786917372,
+              35.413289976921
+            ],
+            [
+              7.156177786917372,
+              35.411689976921004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-3",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.146425714898827,
+              35.4258565643754
+            ],
+            [
+              7.148025714898827,
+              35.4258565643754
+            ],
+            [
+              7.148025714898827,
+              35.4274565643754
+            ],
+            [
+              7.146425714898827,
+              35.4274565643754
+            ],
+            [
+              7.146425714898827,
+              35.4258565643754
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-4",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.137114103845857,
+              35.424399077692314
+            ],
+            [
+              7.138714103845857,
+              35.424399077692314
+            ],
+            [
+              7.138714103845857,
+              35.42599907769231
+            ],
+            [
+              7.137114103845857,
+              35.42599907769231
+            ],
+            [
+              7.137114103845857,
+              35.424399077692314
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-5",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.155300354089865,
+              35.421960437511586
+            ],
+            [
+              7.156900354089865,
+              35.421960437511586
+            ],
+            [
+              7.156900354089865,
+              35.42356043751158
+            ],
+            [
+              7.155300354089865,
+              35.42356043751158
+            ],
+            [
+              7.155300354089865,
+              35.421960437511586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-6",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.156652277815931,
+              35.40993951485336
+            ],
+            [
+              7.158252277815931,
+              35.40993951485336
+            ],
+            [
+              7.158252277815931,
+              35.41153951485336
+            ],
+            [
+              7.156652277815931,
+              35.41153951485336
+            ],
+            [
+              7.156652277815931,
+              35.40993951485336
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-7",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.145384701678496,
+              35.43461485915284
+            ],
+            [
+              7.1469847016784955,
+              35.43461485915284
+            ],
+            [
+              7.1469847016784955,
+              35.436214859152834
+            ],
+            [
+              7.145384701678496,
+              35.436214859152834
+            ],
+            [
+              7.145384701678496,
+              35.43461485915284
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-8",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.14325305662893,
+              35.42823483782433
+            ],
+            [
+              7.1448530566289294,
+              35.42823483782433
+            ],
+            [
+              7.1448530566289294,
+              35.42983483782432
+            ],
+            [
+              7.14325305662893,
+              35.42983483782432
+            ],
+            [
+              7.14325305662893,
+              35.42823483782433
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-9",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.131074439624116,
+              35.415587019964015
+            ],
+            [
+              7.1326744396241155,
+              35.415587019964015
+            ],
+            [
+              7.1326744396241155,
+              35.41718701996401
+            ],
+            [
+              7.131074439624116,
+              35.41718701996401
+            ],
+            [
+              7.131074439624116,
+              35.415587019964015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-10",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.145678779281044,
+              35.41023912705869
+            ],
+            [
+              7.147278779281044,
+              35.41023912705869
+            ],
+            [
+              7.147278779281044,
+              35.411839127058684
+            ],
+            [
+              7.145678779281044,
+              35.411839127058684
+            ],
+            [
+              7.145678779281044,
+              35.41023912705869
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-11",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.145476866759044,
+              35.429857990323235
+            ],
+            [
+              7.147076866759043,
+              35.429857990323235
+            ],
+            [
+              7.147076866759043,
+              35.43145799032323
+            ],
+            [
+              7.145476866759044,
+              35.43145799032323
+            ],
+            [
+              7.145476866759044,
+              35.429857990323235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-12",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.133927682382551,
+              35.41050872046401
+            ],
+            [
+              7.135527682382551,
+              35.41050872046401
+            ],
+            [
+              7.135527682382551,
+              35.412108720464005
+            ],
+            [
+              7.133927682382551,
+              35.412108720464005
+            ],
+            [
+              7.133927682382551,
+              35.41050872046401
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-13",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.138883878493929,
+              35.43575045922057
+            ],
+            [
+              7.140483878493929,
+              35.43575045922057
+            ],
+            [
+              7.140483878493929,
+              35.43735045922057
+            ],
+            [
+              7.138883878493929,
+              35.43735045922057
+            ],
+            [
+              7.138883878493929,
+              35.43575045922057
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-14",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.130249412100291,
+              35.425819874645356
+            ],
+            [
+              7.131849412100291,
+              35.425819874645356
+            ],
+            [
+              7.131849412100291,
+              35.42741987464535
+            ],
+            [
+              7.130249412100291,
+              35.42741987464535
+            ],
+            [
+              7.130249412100291,
+              35.425819874645356
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-15",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.156303291218546,
+              35.42502308296726
+            ],
+            [
+              7.157903291218545,
+              35.42502308296726
+            ],
+            [
+              7.157903291218545,
+              35.426623082967254
+            ],
+            [
+              7.156303291218546,
+              35.426623082967254
+            ],
+            [
+              7.156303291218546,
+              35.42502308296726
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-16",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.142415466225921,
+              35.42546324357557
+            ],
+            [
+              7.1440154662259205,
+              35.42546324357557
+            ],
+            [
+              7.1440154662259205,
+              35.42706324357557
+            ],
+            [
+              7.142415466225921,
+              35.42706324357557
+            ],
+            [
+              7.142415466225921,
+              35.42546324357557
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-17",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.141168431168519,
+              35.43312418773398
+            ],
+            [
+              7.142768431168519,
+              35.43312418773398
+            ],
+            [
+              7.142768431168519,
+              35.43472418773398
+            ],
+            [
+              7.141168431168519,
+              35.43472418773398
+            ],
+            [
+              7.141168431168519,
+              35.43312418773398
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-18",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.142184767088,
+              35.43721408485937
+            ],
+            [
+              7.1437847670879995,
+              35.43721408485937
+            ],
+            [
+              7.1437847670879995,
+              35.43881408485937
+            ],
+            [
+              7.142184767088,
+              35.43881408485937
+            ],
+            [
+              7.142184767088,
+              35.43721408485937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-19",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.15446010577498,
+              35.43288449883949
+            ],
+            [
+              7.15606010577498,
+              35.43288449883949
+            ],
+            [
+              7.15606010577498,
+              35.43448449883949
+            ],
+            [
+              7.15446010577498,
+              35.43448449883949
+            ],
+            [
+              7.15446010577498,
+              35.43288449883949
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-20",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.153259112602008,
+              35.42192657074355
+            ],
+            [
+              7.154859112602008,
+              35.42192657074355
+            ],
+            [
+              7.154859112602008,
+              35.42352657074355
+            ],
+            [
+              7.153259112602008,
+              35.42352657074355
+            ],
+            [
+              7.153259112602008,
+              35.42192657074355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-21",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.131105679061033,
+              35.4283430642907
+            ],
+            [
+              7.132705679061033,
+              35.4283430642907
+            ],
+            [
+              7.132705679061033,
+              35.4299430642907
+            ],
+            [
+              7.131105679061033,
+              35.4299430642907
+            ],
+            [
+              7.131105679061033,
+              35.4283430642907
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-22",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.153835936389542,
+              35.43121489575602
+            ],
+            [
+              7.155435936389542,
+              35.43121489575602
+            ],
+            [
+              7.155435936389542,
+              35.43281489575602
+            ],
+            [
+              7.153835936389542,
+              35.43281489575602
+            ],
+            [
+              7.153835936389542,
+              35.43121489575602
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-23",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.139444556201946,
+              35.435743743105
+            ],
+            [
+              7.141044556201946,
+              35.435743743105
+            ],
+            [
+              7.141044556201946,
+              35.437343743105
+            ],
+            [
+              7.139444556201946,
+              35.437343743105
+            ],
+            [
+              7.139444556201946,
+              35.435743743105
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-24",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1554622881570165,
+              35.42202020232223
+            ],
+            [
+              7.157062288157016,
+              35.42202020232223
+            ],
+            [
+              7.157062288157016,
+              35.423620202322226
+            ],
+            [
+              7.1554622881570165,
+              35.423620202322226
+            ],
+            [
+              7.1554622881570165,
+              35.42202020232223
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-25",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.140444891447233,
+              35.43686235811076
+            ],
+            [
+              7.142044891447233,
+              35.43686235811076
+            ],
+            [
+              7.142044891447233,
+              35.438462358110755
+            ],
+            [
+              7.140444891447233,
+              35.438462358110755
+            ],
+            [
+              7.140444891447233,
+              35.43686235811076
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-26",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.145628287487166,
+              35.43317557284453
+            ],
+            [
+              7.147228287487166,
+              35.43317557284453
+            ],
+            [
+              7.147228287487166,
+              35.43477557284453
+            ],
+            [
+              7.145628287487166,
+              35.43477557284453
+            ],
+            [
+              7.145628287487166,
+              35.43317557284453
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-27",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.144615424936059,
+              35.41338039126989
+            ],
+            [
+              7.1462154249360585,
+              35.41338039126989
+            ],
+            [
+              7.1462154249360585,
+              35.414980391269886
+            ],
+            [
+              7.144615424936059,
+              35.414980391269886
+            ],
+            [
+              7.144615424936059,
+              35.41338039126989
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-28",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.146601879049337,
+              35.43544201021532
+            ],
+            [
+              7.148201879049337,
+              35.43544201021532
+            ],
+            [
+              7.148201879049337,
+              35.437042010215315
+            ],
+            [
+              7.146601879049337,
+              35.437042010215315
+            ],
+            [
+              7.146601879049337,
+              35.43544201021532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-29",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.140399235342072,
+              35.43348446742101
+            ],
+            [
+              7.141999235342072,
+              35.43348446742101
+            ],
+            [
+              7.141999235342072,
+              35.43508446742101
+            ],
+            [
+              7.140399235342072,
+              35.43508446742101
+            ],
+            [
+              7.140399235342072,
+              35.43348446742101
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-30",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.146143165700826,
+              35.430003026647015
+            ],
+            [
+              7.147743165700826,
+              35.430003026647015
+            ],
+            [
+              7.147743165700826,
+              35.43160302664701
+            ],
+            [
+              7.146143165700826,
+              35.43160302664701
+            ],
+            [
+              7.146143165700826,
+              35.430003026647015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-31",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.140412856712129,
+              35.413945942308985
+            ],
+            [
+              7.142012856712129,
+              35.413945942308985
+            ],
+            [
+              7.142012856712129,
+              35.41554594230898
+            ],
+            [
+              7.140412856712129,
+              35.41554594230898
+            ],
+            [
+              7.140412856712129,
+              35.413945942308985
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-32",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.150352434865837,
+              35.42387998565331
+            ],
+            [
+              7.151952434865837,
+              35.42387998565331
+            ],
+            [
+              7.151952434865837,
+              35.425479985653304
+            ],
+            [
+              7.150352434865837,
+              35.425479985653304
+            ],
+            [
+              7.150352434865837,
+              35.42387998565331
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-33",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.140498722230609,
+              35.4163000113441
+            ],
+            [
+              7.1420987222306085,
+              35.4163000113441
+            ],
+            [
+              7.1420987222306085,
+              35.417900011344095
+            ],
+            [
+              7.140498722230609,
+              35.417900011344095
+            ],
+            [
+              7.140498722230609,
+              35.4163000113441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-34",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.1320079091589035,
+              35.42126820976227
+            ],
+            [
+              7.133607909158903,
+              35.42126820976227
+            ],
+            [
+              7.133607909158903,
+              35.422868209762264
+            ],
+            [
+              7.1320079091589035,
+              35.422868209762264
+            ],
+            [
+              7.1320079091589035,
+              35.42126820976227
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-35",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.151677923995643,
+              35.42815660310991
+            ],
+            [
+              7.153277923995643,
+              35.42815660310991
+            ],
+            [
+              7.153277923995643,
+              35.42975660310991
+            ],
+            [
+              7.151677923995643,
+              35.42975660310991
+            ],
+            [
+              7.151677923995643,
+              35.42815660310991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-36",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.151107831848162,
+              35.427901642843665
+            ],
+            [
+              7.152707831848161,
+              35.427901642843665
+            ],
+            [
+              7.152707831848161,
+              35.42950164284366
+            ],
+            [
+              7.151107831848162,
+              35.42950164284366
+            ],
+            [
+              7.151107831848162,
+              35.427901642843665
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-37",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.157029304483743,
+              35.412423814329514
+            ],
+            [
+              7.158629304483743,
+              35.412423814329514
+            ],
+            [
+              7.158629304483743,
+              35.41402381432951
+            ],
+            [
+              7.157029304483743,
+              35.41402381432951
+            ],
+            [
+              7.157029304483743,
+              35.412423814329514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-38",
+        "type": "commercial",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.144131691216262,
+              35.43596936102689
+            ],
+            [
+              7.145731691216262,
+              35.43596936102689
+            ],
+            [
+              7.145731691216262,
+              35.43756936102689
+            ],
+            [
+              7.144131691216262,
+              35.43756936102689
+            ],
+            [
+              7.144131691216262,
+              35.43596936102689
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-39",
+        "type": "public",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.129540730313125,
+              35.42208358182332
+            ],
+            [
+              7.131140730313125,
+              35.42208358182332
+            ],
+            [
+              7.131140730313125,
+              35.42368358182332
+            ],
+            [
+              7.129540730313125,
+              35.42368358182332
+            ],
+            [
+              7.129540730313125,
+              35.42208358182332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "uuid": "BLD-40",
+        "type": "residential",
+        "municipality": "خنشلا",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.247Z",
+        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "status": "active",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}

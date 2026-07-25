@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Schools - Khenchela</name>
+    <description>Etablissements scolaires de la commune de Khenchela</description>
+    <Style id="school">
+      <IconStyle><color>ff8B5CF6</color><scale>1.0</scale>
+        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/schools.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Placemark><name>Ecole Primaire El Houria</name><description>ابتدائية الحرية</description><styleUrl>#school</styleUrl><Point><coordinates>7.1420,35.4250,0</coordinates></Point></Placemark>
+    <Placemark><name>Ecole Primaire Ennour</name><description>ابتدائية النور</description><styleUrl>#school</styleUrl><Point><coordinates>7.1480,35.4180,0</coordinates></Point></Placemark>
+    <Placemark><name>Ecole Primaire Ibn Sina</name><description>ابتدائية ابن سينا</description><styleUrl>#school</styleUrl><Point><coordinates>7.1350,35.4220,0</coordinates></Point></Placemark>
+    <Placemark><name>CEM El Feth</name><description>متوسطة الفتح</description><styleUrl>#school</styleUrl><Point><coordinates>7.1520,35.4200,0</coordinates></Point></Placemark>
+    <Placemark><name>CEM Abdelhamid Ben Badis</name><description>متوسطة عبد الحميد بن باديس</description><styleUrl>#school</styleUrl><Point><coordinates>7.1380,35.4150,0</coordinates></Point></Placemark>
+    <Placemark><name>Lycee Cheikh Mokrani</name><description>ثانوية الشيخ المقراني</description><styleUrl>#school</styleUrl><Point><coordinates>7.1550,35.4280,0</coordinates></Point></Placemark>
+    <Placemark><name>Lycee Massinissa</name><description>ثانوية ماسينيسا</description><styleUrl>#school</styleUrl><Point><coordinates>7.1400,35.4320,0</coordinates></Point></Placemark>
+    <Placemark><name>Lycee Ahmed Ben Yahya</name><description>ثانوية أحمد بن يحيى</description><styleUrl>#school</styleUrl><Point><coordinates>7.1600,35.4150,0</coordinates></Point></Placemark>
+    <Placemark><name>Ecole Primaire Erryadh</name><description>ابتدائية الرياض</description><styleUrl>#school</styleUrl><Point><coordinates>7.1250,35.4200,0</coordinates></Point></Placemark>
+    <Placemark><name>CEM Khenchela Centre</name><description>متوسطة خنشلة المركز</description><styleUrl>#school</styleUrl><Point><coordinates>7.1450,35.4280,0</coordinates></Point></Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Routes - Khenchela</name>
+    <description>Principal road network of Khenchela commune</description>
+    <Style id="road-major">
+      <LineStyle><color>ff0F4C81</color><width>4</width></LineStyle>
+    </Style>
+    <Style id="road-secondary">
+      <LineStyle><color>ff16A34A</color><width>2</width></LineStyle>
+    </Style>
+    <Placemark>
+      <name>National Road RN3 - North</name>
+      <description>RN3 vers Batna / Ain Beida</description>
+      <styleUrl>#road-major</styleUrl>
+      <LineString><tessellate>1</tessellate>
+        <coordinates>
+          7.1450,35.4200,0 7.1450,35.4350,0 7.1480,35.4500,0 7.1500,35.4650,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>National Road RN3 - South</name>
+      <description>RN3 vers Biskra</description>
+      <styleUrl>#road-major</styleUrl>
+      <LineString><tessellate>1</tessellate>
+        <coordinates>
+          7.1450,35.4200,0 7.1420,35.4050,0 7.1380,35.3900,0 7.1350,35.3750,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>CW Road to Bouhmama</name>
+      <description>Chemin wilaya vers Bouhmama</description>
+      <styleUrl>#road-secondary</styleUrl>
+      <LineString><tessellate>1</tessellate>
+        <coordinates>
+          7.1450,35.4200,0 7.1650,35.4250,0 7.1850,35.4300,0 7.2000,35.4350,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>CW Road to Kais</name>
+      <description>Chemin wilaya vers Kais</description>
+      <styleUrl>#road-secondary</styleUrl>
+      <LineString><tessellate>1</tessellate>
+        <coordinates>
+          7.1450,35.4200,0 7.1600,35.4350,0 7.1750,35.4450,0 7.1900,35.4550,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Route El Hamma</name>
+      <description>Vers El Hamma / Remila</description>
+      <styleUrl>#road-secondary</styleUrl>
+      <LineString><tessellate>1</tessellate>
+        <coordinates>
+          7.1450,35.4200,0 7.1300,35.4150,0 7.1150,35.4100,0 7.1000,35.4050,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Avenue de l'Independance</name>
+      <description>Artere principale centre-ville</description>
+      <styleUrl>#road-secondary</styleUrl>
+      <LineString><tessellate>1</tessellate>
+        <coordinates>
+          7.1300,35.4180,0 7.1400,35.4200,0 7.1500,35.4220,0 7.1600,35.4200,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Rue de la Poste</name>
+      <description>Rue commerciale centre-ville</description>
+      <styleUrl>#road-secondary</styleUrl>
+      <LineString><tessellate>1</tessellate>
+        <coordinates>
+          7.1400,35.4150,0 7.1450,35.4200,0 7.1480,35.4250,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

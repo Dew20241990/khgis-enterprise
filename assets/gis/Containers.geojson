@@ -1,0 +1,4325 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.159220611541863,
+          35.431986359084355
+        ]
+      },
+      "properties": {
+        "uuid": "C-2001",
+        "code": "CTN-2001",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 17,
+        "status": "damaged",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2253863297425855,
+          35.394265112927165
+        ]
+      },
+      "properties": {
+        "uuid": "C-2002",
+        "code": "CTN-2002",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 62,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.070233725592226,
+          35.37586857484269
+        ]
+      },
+      "properties": {
+        "uuid": "C-2003",
+        "code": "CTN-2003",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 54,
+        "status": "ok",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.180324484785472,
+          35.35087375940561
+        ]
+      },
+      "properties": {
+        "uuid": "C-2004",
+        "code": "CTN-2004",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 20,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.22832113520578,
+          35.44769004812012
+        ]
+      },
+      "properties": {
+        "uuid": "C-2005",
+        "code": "CTN-2005",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 5,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.051268895846504,
+          35.41683908456641
+        ]
+      },
+      "properties": {
+        "uuid": "C-2006",
+        "code": "CTN-2006",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 85,
+        "status": "ok",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1080938305205,
+          35.35547718877004
+        ]
+      },
+      "properties": {
+        "uuid": "C-2007",
+        "code": "CTN-2007",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 40,
+        "status": "ok",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.19509767648319,
+          35.29642672335614
+        ]
+      },
+      "properties": {
+        "uuid": "C-2008",
+        "code": "CTN-2008",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 78,
+        "status": "ok",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.246650083506047,
+          35.321740402900275
+        ]
+      },
+      "properties": {
+        "uuid": "C-2009",
+        "code": "CTN-2009",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 17,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.274441638737575,
+          35.36693641444706
+        ]
+      },
+      "properties": {
+        "uuid": "C-2010",
+        "code": "CTN-2010",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 79,
+        "status": "ok",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.139685218934899,
+          35.275962214585164
+        ]
+      },
+      "properties": {
+        "uuid": "C-2011",
+        "code": "CTN-2011",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 31,
+        "status": "ok",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0732591624325085,
+          35.45398216600769
+        ]
+      },
+      "properties": {
+        "uuid": "C-2012",
+        "code": "CTN-2012",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 82,
+        "status": "ok",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.221123057751635,
+          35.249146214055074
+        ]
+      },
+      "properties": {
+        "uuid": "C-2013",
+        "code": "CTN-2013",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 12,
+        "status": "ok",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.126935956619849,
+          35.49388278563446
+        ]
+      },
+      "properties": {
+        "uuid": "C-2014",
+        "code": "CTN-2014",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 27,
+        "status": "ok",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.199318403515094,
+          35.49685655136786
+        ]
+      },
+      "properties": {
+        "uuid": "C-2015",
+        "code": "CTN-2015",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 81,
+        "status": "ok",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.051834907380217,
+          35.514335745870845
+        ]
+      },
+      "properties": {
+        "uuid": "C-2016",
+        "code": "CTN-2016",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 54,
+        "status": "ok",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.068992713418211,
+          35.25452712379184
+        ]
+      },
+      "properties": {
+        "uuid": "C-2017",
+        "code": "CTN-2017",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 30,
+        "status": "ok",
+        "lastEmptied": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.176636398023318,
+          35.21335181580961
+        ]
+      },
+      "properties": {
+        "uuid": "C-2018",
+        "code": "CTN-2018",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 57,
+        "status": "damaged",
+        "lastEmptied": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.253533500592097,
+          35.55525843006308
+        ]
+      },
+      "properties": {
+        "uuid": "C-2019",
+        "code": "CTN-2019",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 32,
+        "status": "ok",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.285031278060809,
+          35.454499684789916
+        ]
+      },
+      "properties": {
+        "uuid": "C-2020",
+        "code": "CTN-2020",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 67,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.140362408415807,
+          35.582932618555
+        ]
+      },
+      "properties": {
+        "uuid": "C-2021",
+        "code": "CTN-2021",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 65,
+        "status": "ok",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.071457201831331,
+          35.315268470395786
+        ]
+      },
+      "properties": {
+        "uuid": "C-2022",
+        "code": "CTN-2022",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 60,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.262301949021768,
+          35.211153706198004
+        ]
+      },
+      "properties": {
+        "uuid": "C-2023",
+        "code": "CTN-2023",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 45,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0402904026352555,
+          35.59118728777075
+        ]
+      },
+      "properties": {
+        "uuid": "C-2024",
+        "code": "CTN-2024",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 82,
+        "status": "maintenance",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.092820619128853,
+          35.16791984605964
+        ]
+      },
+      "properties": {
+        "uuid": "C-2025",
+        "code": "CTN-2025",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 75,
+        "status": "ok",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.299873065071779,
+          35.425717668566975
+        ]
+      },
+      "properties": {
+        "uuid": "C-2026",
+        "code": "CTN-2026",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 30,
+        "status": "ok",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.15033910935771,
+          35.411028786082205
+        ]
+      },
+      "properties": {
+        "uuid": "C-2027",
+        "code": "CTN-2027",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 64,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.233792145022136,
+          35.388737986456995
+        ]
+      },
+      "properties": {
+        "uuid": "C-2028",
+        "code": "CTN-2028",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 48,
+        "status": "ok",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.079522686072107,
+          35.39777883111209
+        ]
+      },
+      "properties": {
+        "uuid": "C-2029",
+        "code": "CTN-2029",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 88,
+        "status": "ok",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.178038149858645,
+          35.34606847724073
+        ]
+      },
+      "properties": {
+        "uuid": "C-2030",
+        "code": "CTN-2030",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 58,
+        "status": "ok",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.21048807242177,
+          35.43391432534545
+        ]
+      },
+      "properties": {
+        "uuid": "C-2031",
+        "code": "CTN-2031",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 14,
+        "status": "ok",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.045798789750945,
+          35.409938981164196
+        ]
+      },
+      "properties": {
+        "uuid": "C-2032",
+        "code": "CTN-2032",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 70,
+        "status": "ok",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.098406925457255,
+          35.35139761830079
+        ]
+      },
+      "properties": {
+        "uuid": "C-2033",
+        "code": "CTN-2033",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 92,
+        "status": "full",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.186380871672379,
+          35.30997140098089
+        ]
+      },
+      "properties": {
+        "uuid": "C-2034",
+        "code": "CTN-2034",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 41,
+        "status": "ok",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.24050228303397,
+          35.335141504952134
+        ]
+      },
+      "properties": {
+        "uuid": "C-2035",
+        "code": "CTN-2035",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 36,
+        "status": "damaged",
+        "lastEmptied": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.278145048480788,
+          35.37559944150503
+        ]
+      },
+      "properties": {
+        "uuid": "C-2036",
+        "code": "CTN-2036",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 86,
+        "status": "ok",
+        "lastEmptied": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.156025915172126,
+          35.2753897789488
+        ]
+      },
+      "properties": {
+        "uuid": "C-2037",
+        "code": "CTN-2037",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 91,
+        "status": "full",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.080871513546034,
+          35.44033844683767
+        ]
+      },
+      "properties": {
+        "uuid": "C-2038",
+        "code": "CTN-2038",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 45,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.205380148334847,
+          35.268878300174705
+        ]
+      },
+      "properties": {
+        "uuid": "C-2039",
+        "code": "CTN-2039",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 89,
+        "status": "ok",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.121820869431157,
+          35.47228523890861
+        ]
+      },
+      "properties": {
+        "uuid": "C-2040",
+        "code": "CTN-2040",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 30,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2101939343986015,
+          35.49072270391788
+        ]
+      },
+      "properties": {
+        "uuid": "C-2041",
+        "code": "CTN-2041",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 25,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0648696480192585,
+          35.50509043640264
+        ]
+      },
+      "properties": {
+        "uuid": "C-2042",
+        "code": "CTN-2042",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 6,
+        "status": "ok",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.068112956687448,
+          35.22574875880519
+        ]
+      },
+      "properties": {
+        "uuid": "C-2043",
+        "code": "CTN-2043",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 85,
+        "status": "ok",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1776972078291905,
+          35.21380983650679
+        ]
+      },
+      "properties": {
+        "uuid": "C-2044",
+        "code": "CTN-2044",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 51,
+        "status": "ok",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.235503611750485,
+          35.55353526733833
+        ]
+      },
+      "properties": {
+        "uuid": "C-2045",
+        "code": "CTN-2045",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 59,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.283475075957203,
+          35.45862488751434
+        ]
+      },
+      "properties": {
+        "uuid": "C-2046",
+        "code": "CTN-2046",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 58,
+        "status": "ok",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.137986654358769,
+          35.589480048077704
+        ]
+      },
+      "properties": {
+        "uuid": "C-2047",
+        "code": "CTN-2047",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 87,
+        "status": "maintenance",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.067599706492592,
+          35.31666548315114
+        ]
+      },
+      "properties": {
+        "uuid": "C-2048",
+        "code": "CTN-2048",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 54,
+        "status": "ok",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.24188071075923,
+          35.18899760308256
+        ]
+      },
+      "properties": {
+        "uuid": "C-2049",
+        "code": "CTN-2049",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 21,
+        "status": "ok",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.054748197939487,
+          35.61186162878694
+        ]
+      },
+      "properties": {
+        "uuid": "C-2050",
+        "code": "CTN-2050",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 7,
+        "status": "ok",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.104457483923052,
+          35.189703566487616
+        ]
+      },
+      "properties": {
+        "uuid": "C-2051",
+        "code": "CTN-2051",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 63,
+        "status": "ok",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.294029963597201,
+          35.42588687985067
+        ]
+      },
+      "properties": {
+        "uuid": "C-2052",
+        "code": "CTN-2052",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 77,
+        "status": "damaged",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.159837555350107,
+          35.43853290067935
+        ]
+      },
+      "properties": {
+        "uuid": "C-2053",
+        "code": "CTN-2053",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 10,
+        "status": "ok",
+        "lastEmptied": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2231380207229,
+          35.375817021143526
+        ]
+      },
+      "properties": {
+        "uuid": "C-2054",
+        "code": "CTN-2054",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 96,
+        "status": "full",
+        "lastEmptied": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.084805813297471,
+          35.38754766692163
+        ]
+      },
+      "properties": {
+        "uuid": "C-2055",
+        "code": "CTN-2055",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 3,
+        "status": "ok",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.191356435437264,
+          35.357992841424945
+        ]
+      },
+      "properties": {
+        "uuid": "C-2056",
+        "code": "CTN-2056",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 6,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.217891114582521,
+          35.43545641810557
+        ]
+      },
+      "properties": {
+        "uuid": "C-2057",
+        "code": "CTN-2057",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 82,
+        "status": "ok",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.050472103852302,
+          35.397590089047355
+        ]
+      },
+      "properties": {
+        "uuid": "C-2058",
+        "code": "CTN-2058",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 10,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.109976262154273,
+          35.34519734001143
+        ]
+      },
+      "properties": {
+        "uuid": "C-2059",
+        "code": "CTN-2059",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 59,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.205134865195689,
+          35.310321269466904
+        ]
+      },
+      "properties": {
+        "uuid": "C-2060",
+        "code": "CTN-2060",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 7,
+        "status": "ok",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.257049287926725,
+          35.34435340818314
+        ]
+      },
+      "properties": {
+        "uuid": "C-2061",
+        "code": "CTN-2061",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 51,
+        "status": "ok",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.286692958210751,
+          35.38905997197038
+        ]
+      },
+      "properties": {
+        "uuid": "C-2062",
+        "code": "CTN-2062",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 71,
+        "status": "ok",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.155488483240232,
+          35.28809004734935
+        ]
+      },
+      "properties": {
+        "uuid": "C-2063",
+        "code": "CTN-2063",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 30,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.072723537320416,
+          35.45148234426369
+        ]
+      },
+      "properties": {
+        "uuid": "C-2064",
+        "code": "CTN-2064",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 36,
+        "status": "ok",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.230429436794846,
+          35.25694559867633
+        ]
+      },
+      "properties": {
+        "uuid": "C-2065",
+        "code": "CTN-2065",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 34,
+        "status": "ok",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.127534491144765,
+          35.466958432638435
+        ]
+      },
+      "properties": {
+        "uuid": "C-2066",
+        "code": "CTN-2066",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 73,
+        "status": "ok",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.205061517022169,
+          35.5145061594879
+        ]
+      },
+      "properties": {
+        "uuid": "C-2067",
+        "code": "CTN-2067",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 8,
+        "status": "ok",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.036204606738797,
+          35.525215554819496
+        ]
+      },
+      "properties": {
+        "uuid": "C-2068",
+        "code": "CTN-2068",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 82,
+        "status": "ok",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.083453359880041,
+          35.22646236893948
+        ]
+      },
+      "properties": {
+        "uuid": "C-2069",
+        "code": "CTN-2069",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 96,
+        "status": "full",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.187280950755479,
+          35.21550254801895
+        ]
+      },
+      "properties": {
+        "uuid": "C-2070",
+        "code": "CTN-2070",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 51,
+        "status": "maintenance",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.244882171274223,
+          35.54849928516212
+        ]
+      },
+      "properties": {
+        "uuid": "C-2071",
+        "code": "CTN-2071",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 47,
+        "status": "ok",
+        "lastEmptied": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.288706343289618,
+          35.45459436388278
+        ]
+      },
+      "properties": {
+        "uuid": "C-2072",
+        "code": "CTN-2072",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 57,
+        "status": "ok",
+        "lastEmptied": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.140715858347829,
+          35.57673671430893
+        ]
+      },
+      "properties": {
+        "uuid": "C-2073",
+        "code": "CTN-2073",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 50,
+        "status": "ok",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.074361720233525,
+          35.31599483282534
+        ]
+      },
+      "properties": {
+        "uuid": "C-2074",
+        "code": "CTN-2074",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 26,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.252484445156239,
+          35.18643088463928
+        ]
+      },
+      "properties": {
+        "uuid": "C-2075",
+        "code": "CTN-2075",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 68,
+        "status": "ok",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.050538236874705,
+          35.61066031413527
+        ]
+      },
+      "properties": {
+        "uuid": "C-2076",
+        "code": "CTN-2076",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 68,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.097089327992166,
+          35.1786750244857
+        ]
+      },
+      "properties": {
+        "uuid": "C-2077",
+        "code": "CTN-2077",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 5,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.285929237510317,
+          35.433776399240124
+        ]
+      },
+      "properties": {
+        "uuid": "C-2078",
+        "code": "CTN-2078",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 1,
+        "status": "ok",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.153021730184947,
+          35.428271090341745
+        ]
+      },
+      "properties": {
+        "uuid": "C-2079",
+        "code": "CTN-2079",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 15,
+        "status": "ok",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.206538784547721,
+          35.383523205211816
+        ]
+      },
+      "properties": {
+        "uuid": "C-2080",
+        "code": "CTN-2080",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 79,
+        "status": "ok",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.080334600159035,
+          35.379328908152125
+        ]
+      },
+      "properties": {
+        "uuid": "C-2081",
+        "code": "CTN-2081",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 35,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1782684112009845,
+          35.372162803536106
+        ]
+      },
+      "properties": {
+        "uuid": "C-2082",
+        "code": "CTN-2082",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 23,
+        "status": "ok",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.233947078510132,
+          35.43123755319753
+        ]
+      },
+      "properties": {
+        "uuid": "C-2083",
+        "code": "CTN-2083",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 5,
+        "status": "ok",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.05631448612828,
+          35.40718442874945
+        ]
+      },
+      "properties": {
+        "uuid": "C-2084",
+        "code": "CTN-2084",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 65,
+        "status": "ok",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1059718871844195,
+          35.34624177631436
+        ]
+      },
+      "properties": {
+        "uuid": "C-2085",
+        "code": "CTN-2085",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 26,
+        "status": "ok",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.200949180909624,
+          35.29023602966644
+        ]
+      },
+      "properties": {
+        "uuid": "C-2086",
+        "code": "CTN-2086",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 61,
+        "status": "damaged",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2478336364974,
+          35.33764592370336
+        ]
+      },
+      "properties": {
+        "uuid": "C-2087",
+        "code": "CTN-2087",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 44,
+        "status": "ok",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.272921123948249,
+          35.38302270970074
+        ]
+      },
+      "properties": {
+        "uuid": "C-2088",
+        "code": "CTN-2088",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 6,
+        "status": "ok",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.142181439882708,
+          35.28601333002739
+        ]
+      },
+      "properties": {
+        "uuid": "C-2089",
+        "code": "CTN-2089",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 67,
+        "status": "ok",
+        "lastEmptied": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.076817872912967,
+          35.451408129780454
+        ]
+      },
+      "properties": {
+        "uuid": "C-2090",
+        "code": "CTN-2090",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 18,
+        "status": "ok",
+        "lastEmptied": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.226851303649459,
+          35.27091215080804
+        ]
+      },
+      "properties": {
+        "uuid": "C-2091",
+        "code": "CTN-2091",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 23,
+        "status": "ok",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.117520067851425,
+          35.494149093870774
+        ]
+      },
+      "properties": {
+        "uuid": "C-2092",
+        "code": "CTN-2092",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 14,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.202508497700448,
+          35.487875868814776
+        ]
+      },
+      "properties": {
+        "uuid": "C-2093",
+        "code": "CTN-2093",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 27,
+        "status": "maintenance",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.05182142577455,
+          35.51161375373821
+        ]
+      },
+      "properties": {
+        "uuid": "C-2094",
+        "code": "CTN-2094",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 22,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.088847123473114,
+          35.237833791710514
+        ]
+      },
+      "properties": {
+        "uuid": "C-2095",
+        "code": "CTN-2095",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 62,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.177449386960664,
+          35.206066522406346
+        ]
+      },
+      "properties": {
+        "uuid": "C-2096",
+        "code": "CTN-2096",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 52,
+        "status": "ok",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.238981373473509,
+          35.54197336431957
+        ]
+      },
+      "properties": {
+        "uuid": "C-2097",
+        "code": "CTN-2097",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 67,
+        "status": "ok",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.26703254346743,
+          35.468493813537656
+        ]
+      },
+      "properties": {
+        "uuid": "C-2098",
+        "code": "CTN-2098",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 50,
+        "status": "ok",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.162237214436131,
+          35.59408893519199
+        ]
+      },
+      "properties": {
+        "uuid": "C-2099",
+        "code": "CTN-2099",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 22,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.045348267914683,
+          35.32302038735167
+        ]
+      },
+      "properties": {
+        "uuid": "C-2100",
+        "code": "CTN-2100",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 16,
+        "status": "ok",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2527599626221635,
+          35.21248222081159
+        ]
+      },
+      "properties": {
+        "uuid": "C-2101",
+        "code": "CTN-2101",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 0,
+        "status": "ok",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.036898295269617,
+          35.59688415406129
+        ]
+      },
+      "properties": {
+        "uuid": "C-2102",
+        "code": "CTN-2102",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 62,
+        "status": "ok",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.096652521031276,
+          35.16984236173255
+        ]
+      },
+      "properties": {
+        "uuid": "C-2103",
+        "code": "CTN-2103",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 26,
+        "status": "damaged",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.303590624775053,
+          35.442136747363705
+        ]
+      },
+      "properties": {
+        "uuid": "C-2104",
+        "code": "CTN-2104",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 4,
+        "status": "ok",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.156183180206906,
+          35.41951857376629
+        ]
+      },
+      "properties": {
+        "uuid": "C-2105",
+        "code": "CTN-2105",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 25,
+        "status": "ok",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.209221583316556,
+          35.365682392312415
+        ]
+      },
+      "properties": {
+        "uuid": "C-2106",
+        "code": "CTN-2106",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 38,
+        "status": "ok",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.06990406638737,
+          35.38258161900594
+        ]
+      },
+      "properties": {
+        "uuid": "C-2107",
+        "code": "CTN-2107",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 19,
+        "status": "ok",
+        "lastEmptied": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.19249722010555,
+          35.3725442401658
+        ]
+      },
+      "properties": {
+        "uuid": "C-2108",
+        "code": "CTN-2108",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 1,
+        "status": "ok",
+        "lastEmptied": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.222349598749609,
+          35.43415725496689
+        ]
+      },
+      "properties": {
+        "uuid": "C-2109",
+        "code": "CTN-2109",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 71,
+        "status": "ok",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.062730806614318,
+          35.402195723505216
+        ]
+      },
+      "properties": {
+        "uuid": "C-2110",
+        "code": "CTN-2110",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 50,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.103148926945288,
+          35.352357353372746
+        ]
+      },
+      "properties": {
+        "uuid": "C-2111",
+        "code": "CTN-2111",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 76,
+        "status": "ok",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.214932152705503,
+          35.29802349762256
+        ]
+      },
+      "properties": {
+        "uuid": "C-2112",
+        "code": "CTN-2112",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 8,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.239232686705104,
+          35.330589321207974
+        ]
+      },
+      "properties": {
+        "uuid": "C-2113",
+        "code": "CTN-2113",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 36,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.268756434371632,
+          35.38678008138656
+        ]
+      },
+      "properties": {
+        "uuid": "C-2114",
+        "code": "CTN-2114",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 71,
+        "status": "ok",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.141176070068463,
+          35.2826120541719
+        ]
+      },
+      "properties": {
+        "uuid": "C-2115",
+        "code": "CTN-2115",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 99,
+        "status": "full",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.073944341397333,
+          35.45984495286677
+        ]
+      },
+      "properties": {
+        "uuid": "C-2116",
+        "code": "CTN-2116",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 71,
+        "status": "maintenance",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.220461239676908,
+          35.27385052403827
+        ]
+      },
+      "properties": {
+        "uuid": "C-2117",
+        "code": "CTN-2117",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 51,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.13498204849396,
+          35.47971767102941
+        ]
+      },
+      "properties": {
+        "uuid": "C-2118",
+        "code": "CTN-2118",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 90,
+        "status": "ok",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1945277344939305,
+          35.48704015263912
+        ]
+      },
+      "properties": {
+        "uuid": "C-2119",
+        "code": "CTN-2119",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 90,
+        "status": "ok",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.046586627192595,
+          35.51134590975881
+        ]
+      },
+      "properties": {
+        "uuid": "C-2120",
+        "code": "CTN-2120",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 61,
+        "status": "damaged",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.067961964798953,
+          35.226984395132284
+        ]
+      },
+      "properties": {
+        "uuid": "C-2121",
+        "code": "CTN-2121",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 41,
+        "status": "ok",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.175777024801414,
+          35.216566181679156
+        ]
+      },
+      "properties": {
+        "uuid": "C-2122",
+        "code": "CTN-2122",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 71,
+        "status": "ok",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.250613075457289,
+          35.553114708239484
+        ]
+      },
+      "properties": {
+        "uuid": "C-2123",
+        "code": "CTN-2123",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 30,
+        "status": "ok",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.29428969220758,
+          35.450899969220394
+        ]
+      },
+      "properties": {
+        "uuid": "C-2124",
+        "code": "CTN-2124",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 25,
+        "status": "ok",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.143787080234457,
+          35.5711539495679
+        ]
+      },
+      "properties": {
+        "uuid": "C-2125",
+        "code": "CTN-2125",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 78,
+        "status": "ok",
+        "lastEmptied": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.061830410899332,
+          35.32357409207248
+        ]
+      },
+      "properties": {
+        "uuid": "C-2126",
+        "code": "CTN-2126",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 52,
+        "status": "ok",
+        "lastEmptied": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.262322623556843,
+          35.21338918392962
+        ]
+      },
+      "properties": {
+        "uuid": "C-2127",
+        "code": "CTN-2127",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 32,
+        "status": "ok",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.035036763918672,
+          35.612599068974
+        ]
+      },
+      "properties": {
+        "uuid": "C-2128",
+        "code": "CTN-2128",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 1,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1146038313241045,
+          35.187128220031774
+        ]
+      },
+      "properties": {
+        "uuid": "C-2129",
+        "code": "CTN-2129",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 46,
+        "status": "ok",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.290355126421626,
+          35.42917423079609
+        ]
+      },
+      "properties": {
+        "uuid": "C-2130",
+        "code": "CTN-2130",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 70,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.130860068840974,
+          35.43648803119402
+        ]
+      },
+      "properties": {
+        "uuid": "C-2131",
+        "code": "CTN-2131",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 47,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2219151626673534,
+          35.37144848062401
+        ]
+      },
+      "properties": {
+        "uuid": "C-2132",
+        "code": "CTN-2132",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 92,
+        "status": "full",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0936237277285175,
+          35.37956464059808
+        ]
+      },
+      "properties": {
+        "uuid": "C-2133",
+        "code": "CTN-2133",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 70,
+        "status": "ok",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.166128546991478,
+          35.35285673874034
+        ]
+      },
+      "properties": {
+        "uuid": "C-2134",
+        "code": "CTN-2134",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 83,
+        "status": "ok",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.221302029696523,
+          35.43383009457948
+        ]
+      },
+      "properties": {
+        "uuid": "C-2135",
+        "code": "CTN-2135",
+        "municipality": "قايس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 14,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.072429588863167,
+          35.39530284133065
+        ]
+      },
+      "properties": {
+        "uuid": "C-2136",
+        "code": "CTN-2136",
+        "municipality": "رميلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 10,
+        "status": "ok",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.106109741057352,
+          35.35811705182715
+        ]
+      },
+      "properties": {
+        "uuid": "C-2137",
+        "code": "CTN-2137",
+        "municipality": "عين التوية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 11,
+        "status": "damaged",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.20061369793347,
+          35.28582132928276
+        ]
+      },
+      "properties": {
+        "uuid": "C-2138",
+        "code": "CTN-2138",
+        "municipality": "بابار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 88,
+        "status": "ok",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.253686360295184,
+          35.33483908088232
+        ]
+      },
+      "properties": {
+        "uuid": "C-2139",
+        "code": "CTN-2139",
+        "municipality": "تامزة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 22,
+        "status": "maintenance",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.265601916791872,
+          35.38770869989049
+        ]
+      },
+      "properties": {
+        "uuid": "C-2140",
+        "code": "CTN-2140",
+        "municipality": "الولجة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 90,
+        "status": "ok",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.144126490714962,
+          35.26572084742652
+        ]
+      },
+      "properties": {
+        "uuid": "C-2141",
+        "code": "CTN-2141",
+        "municipality": "بوزينة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 56,
+        "status": "ok",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0733679272655126,
+          35.44532964477981
+        ]
+      },
+      "properties": {
+        "uuid": "C-2142",
+        "code": "CTN-2142",
+        "municipality": "شرشار",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 7,
+        "status": "ok",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.206117540748343,
+          35.25858394121957
+        ]
+      },
+      "properties": {
+        "uuid": "C-2143",
+        "code": "CTN-2143",
+        "municipality": "جلال",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 44,
+        "status": "ok",
+        "lastEmptied": "2026-07-04T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.123133310264068,
+          35.471355610909015
+        ]
+      },
+      "properties": {
+        "uuid": "C-2144",
+        "code": "CTN-2144",
+        "municipality": "المحمل",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 63,
+        "status": "ok",
+        "lastEmptied": "2026-07-03T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.202947302304387,
+          35.489770060059975
+        ]
+      },
+      "properties": {
+        "uuid": "C-2145",
+        "code": "CTN-2145",
+        "municipality": "المسارة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 77,
+        "status": "ok",
+        "lastEmptied": "2026-07-20T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.045662636018564,
+          35.53497110327191
+        ]
+      },
+      "properties": {
+        "uuid": "C-2146",
+        "code": "CTN-2146",
+        "municipality": "يابوس",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 52,
+        "status": "ok",
+        "lastEmptied": "2026-07-19T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.08395585217553,
+          35.249638090891075
+        ]
+      },
+      "properties": {
+        "uuid": "C-2147",
+        "code": "CTN-2147",
+        "municipality": "خيران",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 1,
+        "status": "ok",
+        "lastEmptied": "2026-07-18T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.194223026766363,
+          35.215071071923184
+        ]
+      },
+      "properties": {
+        "uuid": "C-2148",
+        "code": "CTN-2148",
+        "municipality": "تازغروت",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 14,
+        "status": "ok",
+        "lastEmptied": "2026-07-17T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.241537887491887,
+          35.536748603898445
+        ]
+      },
+      "properties": {
+        "uuid": "C-2149",
+        "code": "CTN-2149",
+        "municipality": "تليسنة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 87,
+        "status": "ok",
+        "lastEmptied": "2026-07-16T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.270792913591648,
+          35.46354622740833
+        ]
+      },
+      "properties": {
+        "uuid": "C-2150",
+        "code": "CTN-2150",
+        "municipality": "سيدي عقبة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 64,
+        "status": "ok",
+        "lastEmptied": "2026-07-15T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.141514734290927,
+          35.58736889266846
+        ]
+      },
+      "properties": {
+        "uuid": "C-2151",
+        "code": "CTN-2151",
+        "municipality": "المسارة الشرقية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 20,
+        "status": "ok",
+        "lastEmptied": "2026-07-14T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.058770162901158,
+          35.30730454396422
+        ]
+      },
+      "properties": {
+        "uuid": "C-2152",
+        "code": "CTN-2152",
+        "municipality": "أولاد رشاش",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 50,
+        "status": "ok",
+        "lastEmptied": "2026-07-13T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.261165353102098,
+          35.19482687856331
+        ]
+      },
+      "properties": {
+        "uuid": "C-2153",
+        "code": "CTN-2153",
+        "municipality": "لمسين",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 56,
+        "status": "ok",
+        "lastEmptied": "2026-07-12T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.037179139849756,
+          35.60160242821545
+        ]
+      },
+      "properties": {
+        "uuid": "C-2154",
+        "code": "CTN-2154",
+        "municipality": "البلالة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 20,
+        "status": "damaged",
+        "lastEmptied": "2026-07-11T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.085286342770025,
+          35.17938222709627
+        ]
+      },
+      "properties": {
+        "uuid": "C-2155",
+        "code": "CTN-2155",
+        "municipality": "عنسيغة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 27,
+        "status": "ok",
+        "lastEmptied": "2026-07-10T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.290890459330015,
+          35.43909046768015
+        ]
+      },
+      "properties": {
+        "uuid": "C-2156",
+        "code": "CTN-2156",
+        "municipality": "قايس أولاد يحيى",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 19,
+        "status": "ok",
+        "lastEmptied": "2026-07-09T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1470335148540896,
+          35.43066928504096
+        ]
+      },
+      "properties": {
+        "uuid": "C-2157",
+        "code": "CTN-2157",
+        "municipality": "خنشلة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "standard",
+        "capacity": 240,
+        "fillLevel": 81,
+        "status": "ok",
+        "lastEmptied": "2026-07-08T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.213757107357507,
+          35.366958307480544
+        ]
+      },
+      "properties": {
+        "uuid": "C-2158",
+        "code": "CTN-2158",
+        "municipality": "بوحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "underground",
+        "capacity": 660,
+        "fillLevel": 92,
+        "status": "full",
+        "lastEmptied": "2026-07-07T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.087417489038829,
+          35.393133423495875
+        ]
+      },
+      "properties": {
+        "uuid": "C-2159",
+        "code": "CTN-2159",
+        "municipality": "الحمامة",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "recycling",
+        "capacity": 1100,
+        "fillLevel": 40,
+        "status": "ok",
+        "lastEmptied": "2026-07-06T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1866975865613965,
+          35.374697328677804
+        ]
+      },
+      "properties": {
+        "uuid": "C-2160",
+        "code": "CTN-2160",
+        "municipality": "بقاية",
+        "zone": "Zone A",
+        "neighborhood": "",
+        "type": "organic",
+        "capacity": 3300,
+        "fillLevel": 70,
+        "status": "ok",
+        "lastEmptied": "2026-07-05T00:00:00.000Z",
+        "createdBy": "system",
+        "createdAt": "2026-07-23T16:09:57.243Z",
+        "updatedAt": "2026-07-23T16:09:57.243Z",
+        "attachments": [],
+        "history": []
+      }
+    }
+  ]
+}
