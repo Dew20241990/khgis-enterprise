@@ -1,13 +1,16 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "khgis-enterprise",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "KhGIS Enterprise - Smart GIS Platform for Urban Sanitation Management - Wilaya of Khenchela",
+  "author": "Hatem Khellaf",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
   },
   "dependencies": {
