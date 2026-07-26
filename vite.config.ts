@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
-    base: '/khgis-enterprise/',
+  // GitHub Pages
+  base: '/khgis-enterprise/',
+
   plugins: [react()],
 
   resolve: {
@@ -30,14 +32,6 @@ export default defineConfig({
       'wellknown',
       'leaflet',
       'react-leaflet',
-      'leaflet-draw',
-      'leaflet.markercluster',
-      'proj4',
-      'papaparse',
-      'xlsx',
-      'jspdf',
-      'jspdf-autotable',
-      'file-saver',
       'lucide-react',
     ],
   },
@@ -49,9 +43,6 @@ export default defineConfig({
     '**/*.kmz',
     '**/*.gpx',
     '**/*.wkt',
-    '**/*.csv',
-    '**/*.xlsx',
-    '**/*.pdf',
     '**/*.png',
     '**/*.jpg',
     '**/*.jpeg',
@@ -79,34 +70,24 @@ export default defineConfig({
             '@mantine/core',
             '@mantine/hooks',
             '@mantine/dates',
+            '@mantine/notifications',
           ],
 
           leaflet: [
             'leaflet',
             'react-leaflet',
-            'leaflet-draw',
-            'leaflet.markercluster',
           ],
 
           gis: [
             '@turf/turf',
             '@tmcw/togeojson',
             'wellknown',
-            'proj4',
           ],
 
           charts: [
             'recharts',
             'apexcharts',
             'react-apexcharts',
-          ],
-
-          export: [
-            'xlsx',
-            'papaparse',
-            'jspdf',
-            'jspdf-autotable',
-            'file-saver',
           ],
         },
       },
