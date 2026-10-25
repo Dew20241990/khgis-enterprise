@@ -1,9 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import { AlertTriangle, MapPin, Camera, MessageSquare, Eye } from 'lucide-react';
+import { AlertTriangle, MapPin, Camera, MessageSquare } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
 import { PriorityBadge, StatusBadge } from '@/components/ui/Badge';
 import { StatCard } from '@/components/ui/StatCard';
-import { Modal } from '@/components/ui/Modal';
 import { blackSpots, municipalities, type BlackSpot } from '@/data/mockData';
 import { useApp } from '@/store/appStore';
 

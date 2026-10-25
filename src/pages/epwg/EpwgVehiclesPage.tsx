@@ -1,10 +1,11 @@
 import { useState, useMemo } from 'react';
 import { Truck, Navigation, Gauge, Plus, Download } from 'lucide-react';
 import { PageHeader, StatCard, EnterpriseDataTable, type EnterpriseColumn, type FilterConfig, Modal, SmartForm, type FormField } from '@/components/ui';
-import { epwgVehicles, epwgFacilities, type EpwgVehicle, type VehicleStatus, type VehicleType } from '@/data/epwgData';
+import { epwgVehicles, epwgFacilities, VEHICLE_TYPES, type EpwgVehicle, type VehicleStatus, type VehicleType } from '@/data/epwgData';
+import { num, oneOf, str, type FormValues } from '@/lib/formValues';
 import { useApp } from '@/store/appStore';
 import { vehicleStatusColor, vehicleStatusLabel } from './epwgHelpers';
-import { toast } from '@/components/ui/Toast';
+import { toast } from '@/components/ui/toastStore';
 
 export function EpwgVehiclesPage() {
   const { t, locale } = useApp();
@@ -77,15 +78,15 @@ export function EpwgVehiclesPage() {
     { key: 'driver', label: locale === 'ar' ? 'السائق' : 'Driver', type: 'text' },
   ];
 
-  const handleSubmit = (values: Record<string, any>) => {
+  const handleSubmit = (values: FormValues) => {
     const newV: EpwgVehicle = {
       id: `EV-${Date.now().toString().slice(-3)}`,
-      plate: values.plate,
-      type: values.type, typeAr: values.type,
-      facilityId: values.facilityId,
-      capacityTons: values.capacityTons ?? 0,
+      plate: str(values.plate),
+      type: oneOf(values.type, VEHICLE_TYPES, 'tipper'), typeAr: str(values.type),
+      facilityId: str(values.facilityId),
+      capacityTons: num(values.capacityTons),
       status: 'active',
-      driver: values.driver ?? '—', driverAr: values.driver ?? '—',
+      driver: str(values.driver, '—'), driverAr: str(values.driver, '—'),
       odometer: 0,
       lastMaintenance: new Date().toISOString().slice(0, 10),
     };

@@ -2,44 +2,11 @@
  * Toast notification system — success, warning, error, info toasts with auto-dismiss.
  */
 
-import { create } from 'zustand';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, AlertTriangle, XCircle, Info, X } from 'lucide-react';
 import { cn } from '@/lib/cn';
+import { useToastStore, type ToastType } from './toastStore';
 
-type ToastType = 'success' | 'warning' | 'error' | 'info';
-
-interface Toast {
-  id: string;
-  type: ToastType;
-  title: string;
-  message?: string;
-  duration?: number;
-}
-
-interface ToastStore {
-  toasts: Toast[];
-  add: (toast: Omit<Toast, 'id'>) => void;
-  remove: (id: string) => void;
-}
-
-const useToastStore = create<ToastStore>((set) => ({
-  toasts: [],
-  add: (toast) => {
-    const id = Math.random().toString(36).slice(2);
-    set((s) => ({ toasts: [...s.toasts, { ...toast, id }] }));
-    const duration = toast.duration ?? 4000;
-    if (duration > 0) setTimeout(() => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })), duration);
-  },
-  remove: (id) => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })),
-}));
-
-export const toast = {
-  success: (title: string, message?: string) => useToastStore.getState().add({ type: 'success', title, message }),
-  warning: (title: string, message?: string) => useToastStore.getState().add({ type: 'warning', title, message }),
-  error: (title: string, message?: string) => useToastStore.getState().add({ type: 'error', title, message, duration: 6000 }),
-  info: (title: string, message?: string) => useToastStore.getState().add({ type: 'info', title, message }),
-};
 
 const config: Record<ToastType, { icon: React.ReactNode; bg: string; text: string; border: string }> = {
   success: { icon: <CheckCircle2 className="w-5 h-5" />, bg: 'bg-success-50 dark:bg-success-600/15', text: 'text-success-700 dark:text-success-300', border: 'border-success-200 dark:border-success-600/30' },

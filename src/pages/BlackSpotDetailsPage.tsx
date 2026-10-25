@@ -1,12 +1,9 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet';
-import {
-  ArrowRight, MapPin, Calendar, User, AlertTriangle, Camera, FileText, MessageSquare,
-  History, Image as ImageIcon, Paperclip, CheckCircle2, Clock, Navigation, Phone, Download,
-} from 'lucide-react';
+import { ArrowRight, MapPin, Calendar, User, AlertTriangle, Camera, FileText, MessageSquare, History, Image as ImageIcon, CheckCircle2, Clock, Navigation, Download } from 'lucide-react';
 import { Card, CardHeader, CardBody } from '@/components/ui/Card';
-import { Badge, StatusBadge, PriorityBadge } from '@/components/ui/Badge';
+import { StatusBadge, PriorityBadge } from '@/components/ui/Badge';
 import { blackSpots } from '@/data/mockData';
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';

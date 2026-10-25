@@ -1,12 +1,8 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import {
-  Factory, Trash2, Recycle, Building2, Gauge, Truck, Wrench, AlertTriangle,
-  MapPin, TrendingUp, Activity, ShieldCheck, ArrowLeft, Flame, Droplets,
-  Cloud, ClipboardCheck, Layers, Boxes,
-} from 'lucide-react';
-import { MapContainer, TileLayer, CircleMarker, Popup, Polygon, ScaleControl } from 'react-leaflet';
+import { Factory, Trash2, Recycle, Building2, Gauge, Truck, Wrench, AlertTriangle, MapPin, TrendingUp, Activity, ShieldCheck, ArrowLeft, Flame, Droplets, Cloud, ClipboardCheck, Boxes } from 'lucide-react';
+import { MapContainer, CircleMarker, Popup, ScaleControl } from 'react-leaflet';
 import {
   AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell, RadialBarChart, RadialBar,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
@@ -17,23 +13,16 @@ import {
   epwgWasteByFacility, epwgRecyclingRate, EPWG_CENTER,
 } from '@/data/epwgData';
 import { useApp } from '@/store/appStore';
+import { BasemapTileLayer } from '@/components/gis/BasemapTileLayer';
+import { SIMPLE_LAYER_TO_BASEMAP } from '@/lib/basemaps';
 import { cn } from '@/lib/cn';
-import {
-  facilityTypeColor, facilityTypeTone, statusColor, envStatusColor,
-  fillRateColor, statusLabel, envStatusLabel,
-} from './epwgHelpers';
+import { facilityTypeColor, facilityTypeTone, statusColor, fillRateColor, statusLabel } from './epwgHelpers';
 
 const fadeUp = { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } };
 
 export function EpwgDashboardPage() {
   const { t, locale } = useApp();
   const [baseLayer, setBaseLayer] = useState<'street' | 'satellite' | 'dark'>('street');
-
-  const baseLayerUrl = {
-    street: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    satellite: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-    dark: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-  };
 
   const utilizationRate = Math.round((epwgStats.currentWasteVolume / epwgStats.totalCapacity) * 100);
 
@@ -97,7 +86,7 @@ export function EpwgDashboardPage() {
           <CardBody>
             <div className="h-[420px] rounded-xl2 overflow-hidden border border-ink-200/60 dark:border-ink-800/60">
               <MapContainer center={EPWG_CENTER} zoom={9} className="w-full h-full" zoomControl>
-                <TileLayer key={baseLayer} url={baseLayerUrl[baseLayer]} attribution="EPWG GIS" />
+                <BasemapTileLayer id={SIMPLE_LAYER_TO_BASEMAP[baseLayer]} />
                 <ScaleControl position="bottomleft" />
                 {epwgFacilities.map((f) => (
                   <CircleMarker key={f.id} center={[f.lat, f.lng]} radius={f.type === 'cet' ? 12 : f.type === 'controlled' ? 9 : 7}

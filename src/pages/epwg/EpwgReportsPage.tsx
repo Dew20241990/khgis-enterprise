@@ -1,8 +1,5 @@
 import { motion } from 'framer-motion';
-import {
-  FileText, FileBarChart, FileSpreadsheet, Calendar, Download, Printer,
-  Building, Gauge, Leaf, FileWarning,
-} from 'lucide-react';
+import { FileText, FileBarChart, FileSpreadsheet, Calendar, Download, Printer, Building, Gauge, Leaf } from 'lucide-react';
 import { PageHeader, Card, CardHeader, CardBody, Badge } from '@/components/ui';
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';

@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -9,8 +10,9 @@ import {
 } from 'lucide-react';
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';
+import type { Permission } from '@/lib/auth';
 
-const items = [
+const items: { to: string; key: string; icon: ReactNode; end?: boolean; perm: Permission }[] = [
   { to: '/', key: 'dashboard', icon: <LayoutDashboard className="w-5 h-5" />, end: true, perm: 'dashboard' },
   { to: '/gis', key: 'gisMap', icon: <Map className="w-5 h-5" />, perm: 'gis' },
   { to: '/municipalities', key: 'municipalities', icon: <Building2 className="w-5 h-5" />, perm: 'municipalities' },
@@ -42,7 +44,7 @@ const items = [
 
 export function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { t, hasPermission } = useApp();
-  const visibleItems = items.filter((it) => hasPermission(it.perm as any));
+  const visibleItems = items.filter((it) => hasPermission(it.perm));
   return (
     <AnimatePresence>
       {open && (

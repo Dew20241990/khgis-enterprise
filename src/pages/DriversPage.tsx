@@ -1,11 +1,9 @@
-import { User, Star, Phone } from 'lucide-react';
+import { User, Star } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
 import { StatusBadge } from '@/components/ui/Badge';
 import { StatCard } from '@/components/ui/StatCard';
 import { drivers, vehicles, type Driver } from '@/data/mockData';
 import { useApp } from '@/store/appStore';
-
-const statusLabels: Record<string, string> = { 'on-duty': 'في الخدمة', 'off-duty': 'خارج الخدمة', 'leave': 'إجازة' };
 
 export function DriversPage() {
   const { t } = useApp();

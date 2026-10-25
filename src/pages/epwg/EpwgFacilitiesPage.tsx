@@ -1,10 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import {
-  Factory, Trash2, Recycle, Building2, MapPin, Gauge, Users, Wrench, Truck,
-  Search, Filter, Leaf, Flame, Droplets, Cloud, ShieldCheck, TreePine, Link2,
-  ChevronLeft, Calendar,
-} from 'lucide-react';
+import { Factory, Trash2, Recycle, MapPin, Users, Wrench, Truck, Search, Leaf, TreePine, Link2, Calendar } from 'lucide-react';
 import { PageHeader, Card, CardBody, Badge, Modal } from '@/components/ui';
 import {
   epwgFacilities, type EpwgFacility, type FacilityType,

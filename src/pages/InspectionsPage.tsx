@@ -1,24 +1,13 @@
 import { useState, useMemo, useCallback } from 'react';
-import {
-  MapContainer, TileLayer, CircleMarker, Popup, ScaleControl,
-} from 'react-leaflet';
+import { MapContainer, CircleMarker, Popup, ScaleControl } from 'react-leaflet';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  ClipboardCheck, MapPin, Plus, X, Eye, Clock, AlertTriangle, CheckCircle2,
-  Activity, FileText, Camera, Navigation, ChevronLeft, Filter, Map as MapIcon,
-  List, Calendar, User, Building2, Layers, AlertCircle, Trash2, Link2,
-} from 'lucide-react';
+import { ClipboardCheck, MapPin, Plus, Eye, Clock, AlertTriangle, CheckCircle2, Activity, FileText, Camera, Navigation, Map as MapIcon, List, User, Building2, Layers, AlertCircle, Link2 } from 'lucide-react';
 import { useApp } from '@/store/appStore';
-import { toast } from '@/components/ui/Toast';
+import { BasemapTileLayer } from '@/components/gis/BasemapTileLayer';
+import { toast } from '@/components/ui/toastStore';
 import { Modal, StatCard, Badge } from '@/components/ui';
 import { municipalities, neighborhoods, KHENCHELA_CENTER } from '@/data/mockData';
-import {
-  workflowInspections, workflowObservations, workflowWorkOrders,
-  statusColors, statusLabels, priorityLabels, riskLabels,
-  observationTypeData, responsibleEntityLabels,
-  type Observation, type ObservationStatus, type Priority, type RiskLevel,
-  type ObservationType, type ResponsibleEntity, type TimelineEvent,
-} from '@/data/workflowData';
+import { workflowObservations, workflowWorkOrders, statusColors, statusLabels, priorityLabels, riskLabels, observationTypeData, responsibleEntityLabels, type Observation, type Priority, type RiskLevel, type ObservationType, type ResponsibleEntity, type TimelineEvent } from '@/data/workflowData';
 import { cn } from '@/lib/cn';
 
 const priorityTone: Record<string, 'danger' | 'warning' | 'info' | 'neutral'> = {
@@ -517,7 +506,7 @@ export function InspectionsPage() {
       {view === 'map' && (
         <div className="card overflow-hidden relative h-[600px]">
           <MapContainer center={KHENCHELA_CENTER} zoom={11} className="w-full h-full" zoomControl={true}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="OSM" />
+            <BasemapTileLayer id="osm" />
             <ScaleControl position="bottomleft" />
             {filtered.map((obs) => (
               <CircleMarker

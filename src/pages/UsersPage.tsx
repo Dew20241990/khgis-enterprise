@@ -13,7 +13,7 @@ export interface User {
   lastLogin: string;
 }
 
-export const users: User[] = [
+const users: User[] = [
   { id: 'U-1', name: 'سفيان بن عمر', email: 's.benomar@khenchela.dz', role: 'مدير النظافة', department: 'مديرية البيئة', status: 'active', lastLogin: '2026-07-21T08:00:00Z' },
   { id: 'U-2', name: 'محمد خليفي', email: 'm.khelifi@khenchela.dz', role: 'مفتش بيئي', department: 'مديرية البيئة', status: 'active', lastLogin: '2026-07-21T07:30:00Z' },
   { id: 'U-3', name: 'عبد الرحمن مرزوق', email: 'a.merzoug@khenchela.dz', role: 'مفتش بيئي', department: 'مديرية البيئة', status: 'active', lastLogin: '2026-07-20T16:00:00Z' },

@@ -1,25 +1,14 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { MapPin, Layers, Factory, Trash2, TreePine, Link2, Route, AlertTriangle, ClipboardCheck, Wrench } from 'lucide-react';
-import { MapContainer, TileLayer, CircleMarker, Popup, Polygon, Polyline, ScaleControl, LayersControl } from 'react-leaflet';
-import { PageHeader, Card, CardHeader, CardBody, Badge } from '@/components/ui';
-import {
-  epwgFacilities, epwgServiceAreas, epwgCollectionRoutes,
-  EPWG_CENTER, type FacilityType,
-} from '@/data/epwgData';
+import { MapPin, Layers, Factory, Route, AlertTriangle, ClipboardCheck, Wrench } from 'lucide-react';
+import { MapContainer, CircleMarker, Popup, Polygon, Polyline, ScaleControl, LayersControl } from 'react-leaflet';
+import { PageHeader, Card, CardHeader, CardBody } from '@/components/ui';
+import { epwgFacilities, epwgServiceAreas, epwgCollectionRoutes, EPWG_CENTER } from '@/data/epwgData';
 import { blackSpots, inspections } from '@/data/mockData';
 import { useApp } from '@/store/appStore';
+import { BasemapTileLayer } from '@/components/gis/BasemapTileLayer';
+import { SIMPLE_LAYER_TO_BASEMAP } from '@/lib/basemaps';
 import { cn } from '@/lib/cn';
 import { facilityTypeColor, statusColor, statusLabel } from './epwgHelpers';
-
-const fadeUp = { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } };
-
-const typeIcon: Record<FacilityType, React.ReactNode> = {
-  cet: <Factory className="w-4 h-4" />,
-  controlled: <Trash2 className="w-4 h-4" />,
-  forest: <TreePine className="w-4 h-4" />,
-  special: <Link2 className="w-4 h-4" />,
-};
 
 export function EpwgGisPage() {
   const { t, locale } = useApp();
@@ -28,13 +17,6 @@ export function EpwgGisPage() {
     facilities: true, serviceAreas: true, routes: true, municipalities: true,
     blackSpots: false, inspections: false, workOrders: false,
   });
-
-  const baseLayerUrl = {
-    street: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    satellite: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-    dark: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-    terrain: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
-  };
 
   const layerToggles: { key: keyof typeof layers; label: string; icon: React.ReactNode; color: string }[] = [
     { key: 'facilities', label: t('epwgFacilities'), icon: <Factory className="w-3.5 h-3.5" />, color: '#0F4C81' },
@@ -123,10 +105,10 @@ export function EpwgGisPage() {
               <MapContainer center={EPWG_CENTER} zoom={9} className="w-full h-full" zoomControl>
                 <LayersControl position="topright">
                   <LayersControl.BaseLayer checked name="Street">
-                    <TileLayer url={baseLayerUrl[baseLayer]} attribution="EPWG GIS" />
+                    <BasemapTileLayer id={SIMPLE_LAYER_TO_BASEMAP[baseLayer]} />
                   </LayersControl.BaseLayer>
                 </LayersControl>
-                <TileLayer key={baseLayer} url={baseLayerUrl[baseLayer]} attribution="EPWG GIS" />
+                <BasemapTileLayer id={SIMPLE_LAYER_TO_BASEMAP[baseLayer]} />
                 <ScaleControl position="bottomleft" />
 
                 {/* Service areas */}

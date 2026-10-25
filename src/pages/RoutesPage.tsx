@@ -1,4 +1,4 @@
-import { Route as RouteIcon, Play, CheckCircle, Clock, AlertCircle } from 'lucide-react';
+import { Route as RouteIcon, Play, CheckCircle, AlertCircle } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
 import { StatusBadge } from '@/components/ui/Badge';
 import { StatCard } from '@/components/ui/StatCard';

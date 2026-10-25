@@ -2,26 +2,24 @@
 // Run: npx tsx scripts/gen-geojson.ts
 import { writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
-import {
-  municipalities, neighborhoods, blackSpots, containers, shops,
-  vehicles, cetCenters, illegalDumps, routes, inspections,
-  KHENCHELA_CENTER,
-} from '../src/data/mockData';
+import { municipalities, neighborhoods, blackSpots, containers, shops, vehicles, cetCenters, illegalDumps, routes, KHENCHELA_CENTER } from '../src/data/mockData';
 
 const OUT = join(process.cwd(), 'assets', 'gis');
 mkdirSync(OUT, { recursive: true });
 
-function point(lat: number, lng: number, props: Record<string, any>): GeoJSON.Feature {
+type Props = Record<string, unknown>;
+
+function point(lat: number, lng: number, props: Props): GeoJSON.Feature {
   return { type: 'Feature', geometry: { type: 'Point', coordinates: [lng, lat] }, properties: { ...props, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: props.status || 'active', attachments: [], history: [] } };
 }
 
-function polygon(coords: [number, number][], props: Record<string, any>): GeoJSON.Feature {
+function polygon(coords: [number, number][], props: Props): GeoJSON.Feature {
   const ring = coords.map(([lat, lng]) => [lng, lat]);
   ring.push(ring[0]);
   return { type: 'Feature', geometry: { type: 'Polygon', coordinates: [ring] }, properties: { ...props, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: props.status || 'active', attachments: [], history: [] } };
 }
 
-function lineString(coords: [number, number][], props: Record<string, any>): GeoJSON.Feature {
+function lineString(coords: [number, number][], props: Props): GeoJSON.Feature {
   return { type: 'Feature', geometry: { type: 'LineString', coordinates: coords.map(([lat, lng]) => [lng, lat]) }, properties: { ...props, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: props.status || 'active', attachments: [], history: [] } };
 }
 
@@ -29,9 +27,9 @@ function fc(features: GeoJSON.Feature[]): GeoJSON.FeatureCollection {
   return { type: 'FeatureCollection', features };
 }
 
-function write(name: string, data: any) {
+function write(name: string, data: GeoJSON.FeatureCollection) {
   writeFileSync(join(OUT, name), JSON.stringify(data, null, 2));
-  console.log(`  ${name}: ${data.features?.length || 0} features`);
+  console.log(`  ${name}: ${data.features.length} features`);
 }
 
 // 1. Neighborhoods
@@ -99,7 +97,7 @@ write('Commercial.geojson', fc(shops.map(s =>
 // 6. Inspection Routes (as LineStrings)
 write('Inspection.geojson', fc(routes.slice(0, 12).map((r, i) => {
   const m = municipalities[i % municipalities.length];
-  const pts: [number, number][] = Array.from({ length: 5 }, (_, j) => [
+  const pts: [number, number][] = Array.from({ length: 5 }, () => [
     m.center[0] + (Math.random() - 0.5) * 0.02,
     m.center[1] + (Math.random() - 0.5) * 0.02,
   ] as [number, number]);

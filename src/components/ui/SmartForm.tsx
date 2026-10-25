@@ -1,18 +1,19 @@
 /**
  * SmartForm — reusable form framework with validation, auto-save, draft mode.
- * Supports: text, number, select, date, time, textarea, GPS picker, map selection,
+ * Supports: text, number, select, date, time, textarea, GPS coordinates,
  * image/video/file upload, autocomplete dropdown search.
  */
 
-import { useState, useRef, useCallback, useEffect, useMemo, type ReactNode } from 'react';
-import {
-  MapPin, Upload, X, FileText, Image as ImageIcon, Video, File, Calendar,
-  Clock, Search, Check, AlertCircle, Loader2, Save, RotateCcw, ChevronDown,
-} from 'lucide-react';
+import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
+import { MapPin, X, FileText, Image as ImageIcon, Video, File, Calendar, Clock, Search, Check, AlertCircle, Loader2, Save, RotateCcw, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/cn';
+import { validatePosition } from '@/lib/geometry';
+import { isEmptyValue, isGpsValue, type FormValues, type GpsValue } from '@/lib/formValues';
 
-export type FieldType = 'text' | 'number' | 'select' | 'date' | 'time' | 'textarea' | 'gps' | 'map' | 'image' | 'video' | 'file' | 'autocomplete' | 'checkbox' | 'color' | 'password';
+export type { FormValues } from '@/lib/formValues';
+
+export type FieldType = 'text' | 'number' | 'select' | 'date' | 'time' | 'textarea' | 'gps' | 'image' | 'video' | 'file' | 'autocomplete' | 'checkbox' | 'color' | 'password';
 
 export interface FormField {
   key: string;
@@ -21,20 +22,21 @@ export interface FormField {
   required?: boolean;
   placeholder?: string;
   options?: { value: string; label: string }[];
-  defaultValue?: any;
+  defaultValue?: unknown;
   min?: number;
   max?: number;
   step?: number;
   helpText?: string;
   colSpan?: 1 | 2;
-  visible?: (values: Record<string, any>) => boolean;
-  validate?: (value: any, values: Record<string, any>) => string | null;
+  visible?: (values: FormValues) => boolean;
+  validate?: (value: unknown, values: FormValues) => string | null;
 }
 
 interface SmartFormProps {
   fields: FormField[];
-  initialValues?: Record<string, any>;
-  onSubmit: (values: Record<string, any>) => void | Promise<void>;
+  /** Any record-like object; it is only spread into the form state. */
+  initialValues?: object;
+  onSubmit: (values: FormValues) => void | Promise<void>;
   onCancel?: () => void;
   autoSave?: boolean;
   autoSaveKey?: string;
@@ -44,22 +46,38 @@ interface SmartFormProps {
   layout?: 'grid' | 'stacked';
 }
 
+/** Field types whose values must never be written to the localStorage draft. */
+const NON_DRAFTABLE: ReadonlySet<FieldType> = new Set<FieldType>(['password', 'image', 'video', 'file']);
+
+function buildDefaults(fields: FormField[]): FormValues {
+  const defaults: FormValues = {};
+  fields.forEach((f) => { defaults[f.key] = f.defaultValue ?? ''; });
+  return defaults;
+}
+
+/** Picks only the values that are safe to persist as a draft (no secrets, no File objects). */
+function draftValues(fields: FormField[], values: FormValues): FormValues {
+  const out: FormValues = {};
+  for (const f of fields) {
+    if (!NON_DRAFTABLE.has(f.type) && f.key in values) out[f.key] = values[f.key];
+  }
+  return out;
+}
+
 export function SmartForm({
   fields, initialValues = {}, onSubmit, onCancel,
   autoSave = false, autoSaveKey,
   submitLabel = 'حفظ', cancelLabel = 'إلغاء',
   title, layout = 'grid',
 }: SmartFormProps) {
-  const [values, setValues] = useState<Record<string, any>>(() => {
-    const defaults: Record<string, any> = {};
-    fields.forEach((f) => { defaults[f.key] = f.defaultValue ?? ''; });
-    return { ...defaults, ...initialValues };
-  });
+  const [values, setValues] = useState<FormValues>(() => ({ ...buildDefaults(fields), ...(initialValues as FormValues) }));
+  const valuesRef = useRef<FormValues>(values);
+  valuesRef.current = values;
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [touched, setTouched] = useState<Set<string>>(new Set());
   const [submitting, setSubmitting] = useState(false);
   const [savedAt, setSavedAt] = useState<Date | null>(null);
-  const [history, setHistory] = useState<Record<string, any>[]>([]);
+  const [history, setHistory] = useState<FormValues[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -68,37 +86,41 @@ export function SmartForm({
     if (!autoSave || !autoSaveKey) return;
     if (saveTimer.current) clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(() => {
-      localStorage.setItem(`draft_${autoSaveKey}`, JSON.stringify(values));
-      setSavedAt(new Date());
+      try {
+        localStorage.setItem(`draft_${autoSaveKey}`, JSON.stringify(draftValues(fields, values)));
+        setSavedAt(new Date());
+      } catch { /* storage unavailable or full: skip the draft */ }
     }, 1000);
     return () => { if (saveTimer.current) clearTimeout(saveTimer.current); };
-  }, [values, autoSave, autoSaveKey]);
+  }, [values, fields, autoSave, autoSaveKey]);
 
   // Load draft on mount
   useEffect(() => {
     if (!autoSave || !autoSaveKey) return;
-    const draft = localStorage.getItem(`draft_${autoSaveKey}`);
-    if (draft) {
-      try { setValues((v) => ({ ...v, ...JSON.parse(draft) })); } catch { /* ignore */ }
-    }
+    let restored: FormValues = valuesRef.current;
+    try {
+      const draft = localStorage.getItem(`draft_${autoSaveKey}`);
+      if (draft) {
+        const parsed: unknown = JSON.parse(draft);
+        if (typeof parsed === 'object' && parsed !== null && !Array.isArray(parsed)) {
+          restored = { ...restored, ...draftValues(fields, parsed as FormValues) };
+          setValues(restored);
+        }
+      }
+    } catch { /* corrupt draft: ignore */ }
     // Push initial state to history
-    setHistory([values]);
+    setHistory([restored]);
     setHistoryIndex(0);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const setField = useCallback((key: string, value: any) => {
-    setValues((prev) => {
-      const next = { ...prev, [key]: value };
-      // History for undo/redo
-      setHistory((h) => {
-        const newHist = h.slice(0, historyIndex + 1);
-        newHist.push(next);
-        return newHist.slice(-50);
-      });
-      setHistoryIndex((i) => Math.min(i + 1, 49));
-      return next;
-    });
+  const setField = useCallback((key: string, value: unknown) => {
+    const next = { ...valuesRef.current, [key]: value };
+    valuesRef.current = next;
+    setValues(next);
+    // History for undo/redo (kept outside the state updater so StrictMode cannot double-record)
+    setHistory((h) => [...h.slice(0, historyIndex + 1), next].slice(-50));
+    setHistoryIndex(Math.min(historyIndex + 1, 49));
     // Clear error on change
     setErrors((prev) => { if (prev[key]) { const n = { ...prev }; delete n[key]; return n; } return prev; });
   }, [historyIndex]);
@@ -122,7 +144,11 @@ export function SmartForm({
     fields.forEach((f) => {
       if (f.visible && !f.visible(values)) return;
       const val = values[f.key];
-      if (f.required && (!val || val === '')) { errs[f.key] = 'هذا الحقل مطلوب'; return; }
+      if (f.required && isEmptyValue(val)) { errs[f.key] = 'هذا الحقل مطلوب'; return; }
+      if (f.type === 'gps' && isGpsValue(val) && val.lat !== '' && val.lng !== '') {
+        const bad = validatePosition([val.lng, val.lat]);
+        if (bad) { errs[f.key] = 'إحداثيات غير صالحة: ' + bad; return; }
+      }
       if (f.validate) { const err = f.validate(val, values); if (err) errs[f.key] = err; }
     });
     setErrors(errs);
@@ -143,9 +169,7 @@ export function SmartForm({
 
   const clearDraft = useCallback(() => {
     if (autoSaveKey) localStorage.removeItem(`draft_${autoSaveKey}`);
-    const defaults: Record<string, any> = {};
-    fields.forEach((f) => { defaults[f.key] = f.defaultValue ?? ''; });
-    setValues({ ...defaults, ...initialValues });
+    setValues({ ...buildDefaults(fields), ...(initialValues as FormValues) });
     setSavedAt(null);
   }, [autoSaveKey, fields, initialValues]);
 
@@ -205,13 +229,14 @@ function FieldRenderer({
   field, value, error, touched, onChange, colSpan = 1,
 }: {
   field: FormField;
-  value: any;
+  value: unknown;
   error?: string;
   touched: boolean;
-  onChange: (v: any) => void;
+  onChange: (v: unknown) => void;
   colSpan?: 1 | 2;
 }) {
   const showError = !!(error && touched);
+  const text = typeof value === 'string' || typeof value === 'number' ? String(value) : '';
 
   return (
     <div className={cn('space-y-1.5', colSpan === 2 && 'sm:col-span-2')}>
@@ -223,7 +248,7 @@ function FieldRenderer({
       {field.type === 'text' && (
         <input
           type="text"
-          value={value ?? ''}
+          value={text}
           onChange={(e) => onChange(e.target.value)}
           placeholder={field.placeholder}
           className={cn('input', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
@@ -233,7 +258,7 @@ function FieldRenderer({
       {field.type === 'number' && (
         <input
           type="number"
-          value={value ?? ''}
+          value={text}
           onChange={(e) => onChange(e.target.value === '' ? '' : Number(e.target.value))}
           placeholder={field.placeholder}
           min={field.min}
@@ -246,7 +271,7 @@ function FieldRenderer({
       {field.type === 'password' && (
         <input
           type="password"
-          value={value ?? ''}
+          value={text}
           onChange={(e) => onChange(e.target.value)}
           placeholder={field.placeholder}
           className={cn('input', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
@@ -255,7 +280,7 @@ function FieldRenderer({
 
       {field.type === 'textarea' && (
         <textarea
-          value={value ?? ''}
+          value={text}
           onChange={(e) => onChange(e.target.value)}
           placeholder={field.placeholder}
           rows={3}
@@ -266,7 +291,7 @@ function FieldRenderer({
       {field.type === 'select' && (
         <div className="relative">
           <select
-            value={value ?? ''}
+            value={text}
             onChange={(e) => onChange(e.target.value)}
             className={cn('input appearance-none pr-8', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
           >
@@ -278,14 +303,14 @@ function FieldRenderer({
       )}
 
       {field.type === 'autocomplete' && (
-        <AutocompleteField field={field} value={value} onChange={onChange} error={showError} />
+        <AutocompleteField field={field} value={text} onChange={onChange} error={showError} />
       )}
 
       {field.type === 'date' && (
         <div className="relative">
           <input
             type="date"
-            value={value ?? ''}
+            value={text}
             onChange={(e) => onChange(e.target.value)}
             className={cn('input', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
           />
@@ -297,7 +322,7 @@ function FieldRenderer({
         <div className="relative">
           <input
             type="time"
-            value={value ?? ''}
+            value={text}
             onChange={(e) => onChange(e.target.value)}
             className={cn('input', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
           />
@@ -321,13 +346,13 @@ function FieldRenderer({
         <div className="flex items-center gap-2">
           <input
             type="color"
-            value={value ?? '#0F4C81'}
+            value={text || '#0F4C81'}
             onChange={(e) => onChange(e.target.value)}
             className="w-10 h-10 rounded-lg border border-ink-200 dark:border-ink-700 cursor-pointer"
           />
           <input
             type="text"
-            value={value ?? ''}
+            value={text}
             onChange={(e) => onChange(e.target.value)}
             className="input flex-1"
           />
@@ -335,11 +360,7 @@ function FieldRenderer({
       )}
 
       {field.type === 'gps' && (
-        <GpsField value={value} onChange={onChange} error={showError} />
-      )}
-
-      {field.type === 'map' && (
-        <MapField value={value} onChange={onChange} error={showError} />
+        <GpsField value={isGpsValue(value) ? value : null} onChange={onChange} error={showError} />
       )}
 
       {(field.type === 'image' || field.type === 'video' || field.type === 'file') && (
@@ -356,7 +377,7 @@ function FieldRenderer({
   );
 }
 
-function AutocompleteField({ field, value, onChange, error }: { field: FormField; value: any; onChange: (v: any) => void; error?: boolean }) {
+function AutocompleteField({ field, value, onChange, error }: { field: FormField; value: string; onChange: (v: unknown) => void; error?: boolean }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const filtered = useMemo(() => {
@@ -369,7 +390,7 @@ function AutocompleteField({ field, value, onChange, error }: { field: FormField
     <div className="relative">
       <input
         type="text"
-        value={value ?? query}
+        value={field.options?.find((o) => o.value === value)?.label ?? value}
         onChange={(e) => { setQuery(e.target.value); setOpen(true); onChange(e.target.value); }}
         onFocus={() => setOpen(true)}
         onBlur={() => setTimeout(() => setOpen(false), 200)}
@@ -386,7 +407,7 @@ function AutocompleteField({ field, value, onChange, error }: { field: FormField
             {filtered.map((o) => (
               <button
                 key={o.value}
-                onMouseDown={(e) => { e.preventDefault(); onChange(o.value); setQuery(o.label); setOpen(false); }}
+                onMouseDown={(e) => { e.preventDefault(); onChange(o.value); setQuery(''); setOpen(false); }}
                 className="w-full text-right px-3 py-1.5 rounded-lg text-xs hover:bg-ink-50 dark:hover:bg-ink-800/60 text-ink-700 dark:text-ink-200 transition"
               >
                 {o.label}
@@ -399,10 +420,11 @@ function AutocompleteField({ field, value, onChange, error }: { field: FormField
   );
 }
 
-function GpsField({ value, onChange, error }: { value: any; onChange: (v: any) => void; error?: boolean }) {
+function GpsField({ value, onChange, error }: { value: GpsValue | null; onChange: (v: unknown) => void; error?: boolean }) {
   const [loading, setLoading] = useState(false);
-  const lat = value?.lat ?? '';
-  const lng = value?.lng ?? '';
+  const lat: number | '' = value?.lat ?? '';
+  const lng: number | '' = value?.lng ?? '';
+  const parse = (raw: string): number | '' => (raw === '' || !Number.isFinite(Number(raw)) ? '' : Number(raw));
 
   const useGps = useCallback(() => {
     if (!navigator.geolocation) return;
@@ -421,7 +443,7 @@ function GpsField({ value, onChange, error }: { value: any; onChange: (v: any) =
           type="number"
           step="0.000001"
           value={lat}
-          onChange={(e) => onChange({ lat: Number(e.target.value), lng })}
+          onChange={(e) => onChange({ lat: parse(e.target.value), lng })}
           placeholder="خط العرض"
           className="input flex-1"
         />
@@ -429,7 +451,7 @@ function GpsField({ value, onChange, error }: { value: any; onChange: (v: any) =
           type="number"
           step="0.000001"
           value={lng}
-          onChange={(e) => onChange({ lat, lng: Number(e.target.value) })}
+          onChange={(e) => onChange({ lat, lng: parse(e.target.value) })}
           placeholder="خط الطول"
           className="input flex-1"
         />
@@ -442,25 +464,13 @@ function GpsField({ value, onChange, error }: { value: any; onChange: (v: any) =
   );
 }
 
-function MapField({ value, onChange, error }: { value: any; onChange: (v: any) => void; error?: boolean }) {
-  return (
-    <div className={cn('rounded-lg border border-ink-200 dark:border-ink-700 p-3', error && 'border-danger-400')}>
-      <div className="flex items-center gap-2 mb-2">
-        <MapPin className="w-4 h-4 text-brand-500" />
-        <span className="text-xs text-ink-600 dark:text-ink-300">تحديد الموقع على الخريطة</span>
-      </div>
-      <div className="h-32 rounded-lg bg-gradient-to-br from-brand-100 to-success-100 dark:from-brand-900/30 dark:to-success-900/30 flex items-center justify-center cursor-pointer hover:ring-2 hover:ring-brand-500/30 transition"
-        onClick={() => onChange(value ?? { lat: 35.4236, lng: 7.1453 })}>
-        <span className="text-xs text-ink-500">انقر لتحديد الموقع</span>
-      </div>
-    </div>
-  );
-}
-
-function FileUploadField({ field, value, onChange, error }: { field: FormField; value: any; onChange: (v: any) => void; error?: boolean }) {
+function FileUploadField({ field, value, onChange, error }: { field: FormField; value: unknown; onChange: (v: unknown) => void; error?: boolean }) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [dragOver, setDragOver] = useState(false);
-  const files: File[] = Array.isArray(value) ? value : value ? [value] : [];
+  const files = useMemo<File[]>(() => {
+    const list = Array.isArray(value) ? value : value ? [value] : [];
+    return list.filter((f): f is File => f instanceof File);
+  }, [value]);
 
   const handleFiles = useCallback((fileList: FileList) => {
     const newFiles = Array.from(fileList);

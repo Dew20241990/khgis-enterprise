@@ -1,9 +1,6 @@
 import { motion } from 'framer-motion';
 import { TrendingUp, Truck, BarChart3, Calendar, MapPin } from 'lucide-react';
-import {
-  AreaChart, Area, BarChart, Bar, LineChart, Line, PieChart, Pie, Cell,
-  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
-} from '@/components/charts/ChartKit';
+import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from '@/components/charts/ChartKit';
 import { PageHeader, StatCard, Card, CardHeader, CardBody, EnterpriseDataTable, type EnterpriseColumn } from '@/components/ui';
 import {
   epwgStats, epwgMonthlyCollection, epwgDailyCollection,

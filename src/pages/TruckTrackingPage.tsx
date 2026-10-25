@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Navigation, Truck, Download, MapPin, Clock, Fuel, Activity, Gauge, Search } from 'lucide-react';
+import { Navigation, Truck, Download, MapPin, Activity, Gauge, Search } from 'lucide-react';
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
 import { PageHeader, Card, CardHeader, CardBody, Badge, StatusBadge, StatCard } from '@/components/ui';
 import { useApp } from '@/store/appStore';
-import { vehicles, drivers, KHENCHELA_CENTER } from '@/data/mockData';
+import { vehicles, KHENCHELA_CENTER } from '@/data/mockData';
 
 const truckIcon = L.divIcon({
   className: 'truck-marker',
@@ -171,7 +171,6 @@ export function TruckTrackingPage() {
 
       {selectedId && (() => {
         const v = vehicles.find((v) => v.id === selectedId)!;
-        const d = drivers.find((d) => d.vehicle === v.plate);
         return (
           <Card>
             <CardHeader title={`تفاصil ${v.plate}`} icon={<Gauge className="w-4 h-4" />} />

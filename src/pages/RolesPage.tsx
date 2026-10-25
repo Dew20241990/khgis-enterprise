@@ -1,5 +1,5 @@
 import { Shield, Download, ShieldCheck, ShieldAlert, Plus } from 'lucide-react';
-import { PageHeader, Card, CardHeader, CardBody, Badge, DataTable, StatCard } from '@/components/ui';
+import { PageHeader, Card, Badge, StatCard } from '@/components/ui';
 import { useApp } from '@/store/appStore';
 
 interface Role { id: string; name: string; description: string; users: number; permissions: number; color: string }

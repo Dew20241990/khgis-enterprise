@@ -1,8 +1,5 @@
 import { motion } from 'framer-motion';
-import {
-  ClipboardCheck, AlertTriangle, Trash2, Truck, Wrench, Users,
-  Gauge, Clock, CheckCircle2, Activity, MapPin, TrendingUp,
-} from 'lucide-react';
+import { ClipboardCheck, AlertTriangle, Trash2, Truck, Wrench, Users, Gauge, CheckCircle2, Activity, MapPin, TrendingUp } from 'lucide-react';
 import { StatCard, Card, CardHeader, CardBody, Badge } from '@/components/ui';
 import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
@@ -18,7 +15,7 @@ import { cn } from '@/lib/cn';
 const fadeUp = { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } };
 
 export function OperationalDashboardPage() {
-  const { t, locale, user } = useApp();
+  const { locale, user } = useApp();
   const label = (ar: string, fr: string, en: string) => (locale === 'ar' ? ar : locale === 'fr' ? fr : en);
 
   const openSpots = blackSpots.filter(s => s.status === 'open').length;

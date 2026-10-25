@@ -1,6 +1,6 @@
 import { Landmark, Users, Building2, MapPin, Phone, Mail, FileText, Download, CheckCircle2 } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
-import { Card, CardHeader, CardBody } from '@/components/ui/Card';
+import { Card, CardBody } from '@/components/ui/Card';
 import { StatCard } from '@/components/ui/StatCard';
 import { useApp } from '@/store/appStore';
 

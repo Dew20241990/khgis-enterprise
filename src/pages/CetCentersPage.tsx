@@ -1,13 +1,14 @@
-import { Building2, Gauge, MapPin, Users, Plus, Download } from 'lucide-react';
+import { Building2, Gauge, MapPin, Plus, Download } from 'lucide-react';
 import { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { Card, CardBody } from '@/components/ui/Card';
 import { StatCard } from '@/components/ui/StatCard';
-import { StatusBadge, Badge } from '@/components/ui/Badge';
+import { StatusBadge } from '@/components/ui/Badge';
 import { Modal } from '@/components/ui/Modal';
-import { SmartForm, type FormField } from '@/components/ui/SmartForm';
-import { toast } from '@/components/ui/Toast';
+import { SmartForm, type FormField, type FormValues } from '@/components/ui/SmartForm';
+import { applyCoords, num, oneOf, str, withCoordsField } from '@/lib/formValues';
+import { toast } from '@/components/ui/toastStore';
 import { cetCenters, KHENCHELA_CENTER, type CetCenter } from '@/data/mockData';
 import { useApp } from '@/store/appStore';
 
@@ -20,8 +21,10 @@ const formFields: FormField[] = [
     { value: 'operational', label: 'تشغيلي' }, { value: 'near-capacity', label: 'قرب الامتلاء' }, { value: 'maintenance', label: 'صيانة' },
   ]},
   { key: 'manager', label: 'المدير', type: 'text' },
-  { key: 'coords', label: 'الإحداثيات', type: 'gps', colSpan: 2 },
+  { key: 'coords', label: 'الإحداثيات', type: 'gps', colSpan: 2, required: true },
 ];
+
+const CET_STATUSES = ['operational', 'near-capacity', 'maintenance'] as const;
 
 export function CetCentersPage() {
   const { t } = useApp();
@@ -32,18 +35,26 @@ export function CetCentersPage() {
   const totalCap = rows.reduce((s, c) => s + c.capacityTpd, 0);
   const totalLoad = rows.reduce((s, c) => s + c.currentLoadTpd, 0);
 
-  const handleSubmit = (values: Record<string, any>) => {
+  const handleSubmit = (submitted: FormValues) => {
+    const values = applyCoords(submitted);
     if (editing) {
-      setRows(rows.map((c) => c.id === editing.id ? { ...c, ...values } : c));
+      setRows(rows.map((c) => c.id === editing.id ? {
+        ...c,
+        name: str(values.name, c.name), city: str(values.city, c.city),
+        capacityTpd: num(values.capacityTpd, c.capacityTpd), currentLoadTpd: num(values.currentLoadTpd, c.currentLoadTpd),
+        status: oneOf(values.status, CET_STATUSES, c.status),
+        manager: str(values.manager, c.manager),
+        lat: num(values.lat, c.lat), lng: num(values.lng, c.lng),
+      } : c));
       toast.success('تم التحديث', 'تم تحديث المركز بنجاح');
     } else {
       const newCenter: CetCenter = {
         id: `CET-${Date.now()}`,
-        name: values.name, city: values.city,
-        capacityTpd: values.capacityTpd ?? 0, currentLoadTpd: values.currentLoadTpd ?? 0,
-        status: values.status ?? 'operational',
-        lat: KHENCHELA_CENTER[0], lng: KHENCHELA_CENTER[1],
-        manager: values.manager ?? '',
+        name: str(values.name), city: str(values.city),
+        capacityTpd: num(values.capacityTpd), currentLoadTpd: num(values.currentLoadTpd),
+        status: oneOf(values.status, CET_STATUSES, 'operational'),
+        lat: num(values.lat, KHENCHELA_CENTER[0]), lng: num(values.lng, KHENCHELA_CENTER[1]),
+        manager: str(values.manager),
       };
       setRows([...rows, newCenter]);
       toast.success('تم الإنشاء', 'تم إنشاء المركز بنجاح');
@@ -142,7 +153,7 @@ export function CetCentersPage() {
       >
         <SmartForm
           fields={formFields}
-          initialValues={editing ?? {}}
+          initialValues={withCoordsField(editing)}
           onSubmit={handleSubmit}
           onCancel={() => { setFormOpen(false); setEditing(null); }}
         />

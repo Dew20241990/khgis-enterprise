@@ -1,11 +1,11 @@
 import { Building2, Star, Users, Truck } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
-import { Badge } from '@/components/ui/Badge';
+import { Badge, type BadgeTone } from '@/components/ui/Badge';
 import { StatCard } from '@/components/ui/StatCard';
 import { contractors, type Contractor } from '@/data/mockData';
 import { useApp } from '@/store/appStore';
 
-const statusLabels: Record<string, { tone: any; label: string }> = {
+const statusLabels: Record<string, { tone: BadgeTone; label: string }> = {
   active: { tone: 'success', label: 'نشط' },
   suspended: { tone: 'danger', label: 'موقوف' },
   expired: { tone: 'neutral', label: 'منتهي' },

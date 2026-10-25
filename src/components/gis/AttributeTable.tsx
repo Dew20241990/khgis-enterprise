@@ -6,6 +6,8 @@ import { useState, useMemo } from 'react';
 import { X, Search, ArrowUpDown, Download } from 'lucide-react';
 import { getLayer } from '@/lib/gisLoader';
 import { cn } from '@/lib/cn';
+import { toCsv } from '@/lib/csv';
+import { downloadFile } from '@/lib/importExport';
 
 interface AttributeTableProps {
   layerId: string;
@@ -19,7 +21,7 @@ export function AttributeTable({ layerId, onClose }: AttributeTableProps) {
   const [selectedRow, setSelectedRow] = useState<number | null>(null);
 
   const layer = getLayer(layerId);
-  const features = layer?.geojson.features ?? [];
+  const features = useMemo(() => layer?.geojson.features ?? [], [layer]);
 
   // Extract all property keys
   const columns = useMemo(() => {
@@ -57,19 +59,8 @@ export function AttributeTable({ layerId, onClose }: AttributeTableProps) {
   };
 
   const exportCSV = () => {
-    const headers = columns.join(',');
-    const rows = filteredFeatures.map((f) => {
-      const props = f.properties || {};
-      return columns.map((c) => `"${String(props[c] ?? '').replace(/"/g, '""')}"`).join(',');
-    });
-    const csv = [headers, ...rows].join('\n');
-    const blob = new Blob([csv], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${layerId}_attributes.csv`;
-    a.click();
-    URL.revokeObjectURL(url);
+    const csv = toCsv(columns, filteredFeatures.map((f) => columns.map((c) => f.properties?.[c])));
+    downloadFile(csv, `${layerId}_attributes.csv`, 'text/csv;charset=utf-8');
   };
 
   if (!layer) return null;

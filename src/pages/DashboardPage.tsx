@@ -1,31 +1,13 @@
-import { useState, useMemo, useEffect, useCallback } from 'react';
-import {
-  MapContainer, TileLayer, CircleMarker, Popup, Polygon, ScaleControl, LayersControl,
-} from 'react-leaflet';
-import { motion, AnimatePresence } from 'framer-motion';
-import {
-  AlertTriangle, Trash2, Truck, ClipboardCheck, Gauge, Clock, TrendingUp, TrendingDown,
-  MapPin, ArrowRight, Camera, Sparkles, FileBarChart, Download, Activity, Building2,
-  Trophy, Flame, CheckCircle2, AlertCircle, Wrench, Shield, Sun, Cloud, CloudRain,
-  Search, Filter, Printer, FileText, FileSpreadsheet, FileType, Brain, Target,
-  Zap, Eye, Navigation, Layers, Users, Map as MapIcon, Award, Factory, Route,
-  Calendar, ChevronRight, BarChart3, PieChart as PieIcon, LineChart as LineIcon,
-  CircleDot, Square, Triangle, Hexagon, Star, Cpu, Gauge as GaugeIcon,
-} from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { StatCard, Card, CardHeader, CardBody, Badge, Modal } from '@/components/ui';
-import {
-  AreaChart, Area, BarChart, Bar, LineChart, Line, PieChart, Pie, Cell,
-  RadialBarChart, RadialBar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
-} from '@/components/charts/ChartKit';
+import { useState, useMemo, useEffect } from 'react';
+import { MapContainer, CircleMarker, Popup, Polygon, ScaleControl } from 'react-leaflet';
+import { motion } from 'framer-motion';
+import { AlertTriangle, Trash2, Truck, ClipboardCheck, Gauge, Clock, MapPin, FileBarChart, Activity, Building2, Trophy, Flame, CheckCircle2, AlertCircle, Wrench, Shield, Sun, Printer, FileText, FileSpreadsheet, FileType, Brain, Target, Zap, Layers, Users, Map as MapIcon, Award, Factory, BarChart3, Star, Cpu } from 'lucide-react';
+import { StatCard, Card, CardHeader, CardBody, Badge } from '@/components/ui';
+import { AreaChart, Area, BarChart, Bar, LineChart, Line, Cell, RadialBarChart, RadialBar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from '@/components/charts/ChartKit';
 import { useApp } from '@/store/appStore';
-import {
-  blackSpots, containers, vehicles, inspections, tasks, municipalities, neighborhoods,
-  cetCenters, contractors, complaints, illegalDumps, commercialViolations, routes, drivers,
-  blackSpotTrend, fillRateByMunicipality, containerTypeDist, responseTimeTrend,
-  performanceIndicators, municipalityRanking, calendarInspections, wasteCollected, alerts,
-  KHENCHELA_CENTER, WILAYA_BOUNDARY, workOrders,
-} from '@/data/mockData';
+import { BasemapTileLayer } from '@/components/gis/BasemapTileLayer';
+import { SIMPLE_LAYER_TO_BASEMAP } from '@/lib/basemaps';
+import { blackSpots, containers, vehicles, inspections, municipalities, neighborhoods, cetCenters, contractors, complaints, illegalDumps, commercialViolations, routes, drivers, blackSpotTrend, KHENCHELA_CENTER, WILAYA_BOUNDARY, workOrders } from '@/data/mockData';
 import { workflowWorkOrders } from '@/data/workflowData';
 import { cn } from '@/lib/cn';
 
@@ -40,13 +22,10 @@ const statusConfig: Record<EnvStatus, { ar: string; fr: string; en: string; colo
   critical: { ar: 'حرج', fr: 'Critique', en: 'Critical', color: '#DC2626', bg: 'bg-danger-500', tone: 'danger' },
 };
 
-const priorityTone: Record<string, 'danger' | 'warning' | 'info' | 'neutral'> = {
-  critical: 'danger', high: 'warning', medium: 'info', low: 'neutral',
-};
 
 // ─── SECTION 1: Executive Header ───────────────────────────────────────────────
 function ExecutiveHeader({ envStatus }: { envStatus: EnvStatus }) {
-  const { t, locale, user } = useApp();
+  const { locale, user } = useApp();
   const [now, setNow] = useState(new Date());
 
   useEffect(() => {
@@ -144,18 +123,15 @@ function ExecutiveHeader({ envStatus }: { envStatus: EnvStatus }) {
 // ─── SECTION 2: Executive KPI Cards ────────────────────────────────────────────
 function ExecutiveKPIs() {
   const { t } = useApp();
-  const openSpots = blackSpots.filter(s => s.status === 'open' || s.status === 'inProgress').length;
   const criticalSpots = blackSpots.filter(s => s.priority === 'critical').length;
   const resolvedSpots = blackSpots.filter(s => s.status === 'resolved' || s.status === 'closed').length;
   const pendingSpots = blackSpots.filter(s => s.status === 'open').length;
   const overflowing = containers.filter(c => c.status === 'full').length;
-  const activeVehicles = vehicles.filter(v => v.status === 'active').length;
   const pendingWO = workOrders.filter(w => w.status === 'open' || w.status === 'assigned').length;
   const completedWO = workOrders.filter(w => w.status === 'completed').length;
   const wfPending = workflowWorkOrders.filter(w => w.status === 'created' || w.status === 'assigned').length;
   const wfCompleted = workflowWorkOrders.filter(w => w.status === 'verified' || w.status === 'closed').length;
   const resolvedComplaints = complaints.filter(c => c.status === 'resolved').length;
-  const avgFill = Math.round(containers.reduce((a, c) => a + c.fillLevel, 0) / containers.length);
 
   const kpis = [
     { label: t('municipalities'), value: municipalities.length, icon: <Building2 className="w-5 h-5" />, tone: 'brand' as const, delta: 0 },
@@ -195,21 +171,13 @@ function ExecutiveKPIs() {
 
 // ─── SECTION 3: Executive GIS Map ──────────────────────────────────────────────
 function ExecutiveMap() {
-  const { t, locale, theme } = useApp();
-  const [selected, setSelected] = useState<{ type: string; title: string; details: string; muni: string } | null>(null);
+  const { locale } = useApp();
   const [baseLayer, setBaseLayer] = useState<'street' | 'satellite' | 'dark' | 'terrain'>('street');
   const [showHeat, setShowHeat] = useState(false);
   const [layers, setLayers] = useState({
     municipalities: true, blackSpots: true, illegalDump: true, containers: false,
     cetCenters: true, contractors: true, workOrders: true, vehicles: false,
   });
-
-  const baseLayerUrl = {
-    street: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    satellite: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-    dark: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-    terrain: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
-  };
 
   const spotColors: Record<string, string> = {
     open: '#EF4444', inProgress: '#F97316', resolved: '#16A34A', closed: '#94A3B8',
@@ -243,7 +211,7 @@ function ExecutiveMap() {
       <CardBody>
         <div className="relative h-[500px] rounded-xl2 overflow-hidden border border-ink-200/60 dark:border-ink-800/60">
           <MapContainer center={KHENCHELA_CENTER} zoom={10} className="w-full h-full" zoomControl>
-            <TileLayer key={baseLayer} url={baseLayerUrl[baseLayer]} attribution="GIS" />
+            <BasemapTileLayer id={SIMPLE_LAYER_TO_BASEMAP[baseLayer]} />
             <ScaleControl position="bottomleft" />
 
             {/* Wilaya boundary */}
@@ -526,10 +494,12 @@ function ExecutiveAnalytics() {
 }
 
 // ─── SECTION 5: Municipality Performance Ranking ─────────────────────────────
+type RankingSort = 'score' | 'fillRate' | 'openSpots' | 'collectionRate';
+
 function MunicipalityRanking() {
   const { t, locale } = useApp();
   const [search, setSearch] = useState('');
-  const [sortBy, setSortBy] = useState<'score' | 'fillRate' | 'openSpots' | 'collectionRate'>('score');
+  const [sortBy, setSortBy] = useState<RankingSort>('score');
 
   const data = useMemo(() => {
     return municipalities
@@ -551,7 +521,7 @@ function MunicipalityRanking() {
       .sort((a, b) => {
         if (sortBy === 'openSpots') return a.openCases - b.openCases;
         if (sortBy === 'fillRate') return b.cleanlinessIndex - a.cleanlinessIndex;
-        return (b as any)[sortBy] - (a as any)[sortBy];
+        return b[sortBy] - a[sortBy];
       });
   }, [search, sortBy]);
 
@@ -571,7 +541,7 @@ function MunicipalityRanking() {
           <div className="flex items-center gap-2">
             <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder={t('search')}
               className="input w-40 text-xs" />
-            <select value={sortBy} onChange={(e) => setSortBy(e.target.value as any)} className="input w-auto text-xs">
+            <select value={sortBy} onChange={(e) => setSortBy(e.target.value as RankingSort)} className="input w-auto text-xs">
               <option value="score">{locale === 'ar' ? 'النتيجة' : 'Score'}</option>
               <option value="fillRate">{locale === 'ar' ? 'النظافة' : 'Cleanliness'}</option>
               <option value="openSpots">{locale === 'ar' ? 'الحالات المفتوحة' : 'Open Cases'}</option>
@@ -645,7 +615,7 @@ function MunicipalityRanking() {
 
 // ─── SECTION 6: CET Performance Ranking ──────────────────────────────────────
 function CetPerformance() {
-  const { t, locale } = useApp();
+  const { locale } = useApp();
 
   const data = cetCenters.map((c) => {
     const loadPct = Math.round((c.currentLoadTpd / c.capacityTpd) * 100);
@@ -713,7 +683,7 @@ function CetPerformance() {
 
 // ─── SECTION 7: Private Contractor Performance ──────────────────────────────
 function ContractorPerformance() {
-  const { t, locale } = useApp();
+  const { locale } = useApp();
 
   const data = contractors.map((c) => {
     const assigned = 30 + Math.round(c.rating * 8);
@@ -790,7 +760,7 @@ function ContractorPerformance() {
 
 // ─── SECTION 8: Operational Monitoring ───────────────────────────────────────
 function OperationalMonitoring() {
-  const { t, locale } = useApp();
+  const { locale } = useApp();
   const activeVehicles = vehicles.filter(v => v.status === 'active').length;
   const availableVehicles = vehicles.filter(v => v.status === 'active' || v.status === 'idle').length;
   const unavailableVehicles = vehicles.filter(v => v.status === 'maintenance' || v.status === 'offline').length;
@@ -842,7 +812,7 @@ function OperationalMonitoring() {
 
 // ─── SECTION 9: Executive Alert Center ────────────────────────────────────────
 function AlertCenter() {
-  const { t, locale } = useApp();
+  const { locale } = useApp();
 
   const execAlerts = [
     { id: 'EA1', priority: 'critical', title: locale === 'ar' ? 'نقاط سوداء حرجة في خنشلة المركز' : 'Critical black spots in Khenchela', location: 'خنشلة - حي النصر', responsible: locale === 'ar' ? 'البلدية' : 'Municipality', elapsed: '12 min', action: locale === 'ar' ? 'تدخل فوري مطلوب' : 'Immediate intervention required' },
@@ -898,7 +868,7 @@ function AlertCenter() {
 
 // ─── SECTION 10: Decision Support Center ─────────────────────────────────────
 function DecisionSupport() {
-  const { t, locale } = useApp();
+  const { locale } = useApp();
 
   const recommendations = [
     { id: 1, priority: 'critical', confidence: 92, impact: locale === 'ar' ? 'عالي جداً' : 'Very High', title: locale === 'ar' ? 'تدخل عاجل مطلوب في بلدية خنشلة المركز' : 'Urgent intervention required in Khenchela', desc: locale === 'ar' ? '5 نقاط سوداء حرجة تحتاج تدخلاً فورياً' : '5 critical black spots need immediate action' },
@@ -954,7 +924,7 @@ function DecisionSupport() {
 
 // ─── SECTION 11: Recent Executive Activities ──────────────────────────────────
 function RecentActivities() {
-  const { t, locale } = useApp();
+  const { locale } = useApp();
 
   const activities = [
     { id: 1, type: 'inspection', title: locale === 'ar' ? 'جولة تفتيش مكتملة' : 'Inspection tour completed', detail: 'INS-7012 — خنشلة', time: 'قبل 15 دقيقة', icon: <ClipboardCheck className="w-4 h-4" />, tone: 'brand' as const },
@@ -993,7 +963,7 @@ function RecentActivities() {
 
 // ─── SECTION 12: Official Reports ────────────────────────────────────────────
 function OfficialReports() {
-  const { t, locale } = useApp();
+  const { locale } = useApp();
 
   const reports = [
     { id: 1, title: locale === 'ar' ? 'التقرير التنفيذي' : 'Executive Report', icon: <FileBarChart className="w-5 h-5" />, tone: 'brand' as const },
@@ -1051,7 +1021,7 @@ function OfficialReports() {
 
 // ─── Performance Indicators Radial ────────────────────────────────────────────
 function PerformanceRadial() {
-  const { t, locale } = useApp();
+  const { locale } = useApp();
   const indicators = [
     { name: locale === 'ar' ? 'مؤشر الأداء البيئي' : 'Environmental Index', value: 78, target: 85, fill: '#0F4C81' },
     { name: locale === 'ar' ? 'كفاءة التفتيش' : 'Inspection Efficiency', value: 94, target: 95, fill: '#16A34A' },
@@ -1100,7 +1070,6 @@ function PerformanceRadial() {
 
 // ─── MAIN PAGE ────────────────────────────────────────────────────────────────
 export function DashboardPage() {
-  const { t, locale } = useApp();
 
   const envStatus: EnvStatus = useMemo(() => {
     const avgPerf = municipalities.reduce((a, m) => a + m.fillRate + m.collectionRate, 0) / (municipalities.length * 2);

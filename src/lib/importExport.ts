@@ -1,157 +1,198 @@
 /**
- * Import/Export utilities — CSV, JSON, GeoJSON, KML support.
- * Import validates data, previews rows, and reports errors.
+ * Import/Export utilities — CSV, JSON, GeoJSON, KML.
+ *
+ * Exports are formula-injection-safe (CSV) and XML-escaped (KML).
+ * Imports validate their input and report per-row problems instead of silently accepting bad data;
+ * GeoJSON/KML geometries are checked for structure and WGS 84 coordinate ranges.
  */
 
 import { kml } from '@tmcw/togeojson';
+import type { Feature, FeatureCollection, Geometry, Position } from 'geojson';
+import { parseCsvRecords, toCsv } from './csv';
+import { isFeatureCollection, validateCrs, validateFeatures } from './geometry';
 
-// --- Export functions ---
+export type Row = Record<string, unknown>;
 
-export function exportToCSV(rows: Record<string, any>[], filename: string, columns?: string[]): void {
-  if (rows.length === 0) return;
-  const cols = columns ?? Object.keys(rows[0]).filter((k) => !k.startsWith('_'));
-  const headers = cols.join(',');
-  const data = rows.map((r) =>
-    cols.map((c) => `"${String(r[c] ?? '').replace(/"/g, '""')}"`).join(',')
-  );
-  const csv = '\uFEFF' + [headers, ...data].join('\n');
-  downloadFile(csv, `${filename}.csv`, 'text/csv;charset=utf-8');
-}
+// --- Download ---
 
-export function exportToJSON(rows: Record<string, any>[], filename: string): void {
-  const json = JSON.stringify(rows, null, 2);
-  downloadFile(json, `${filename}.json`, 'application/json');
-}
-
-export function exportToGeoJSON(features: any[], filename: string): void {
-  const fc = { type: 'FeatureCollection', features };
-  downloadFile(JSON.stringify(fc, null, 2), `${filename}.geojson`, 'application/json');
-}
-
-export function exportToKML(geojson: any, filename: string): void {
-  // Simple KML export from GeoJSON
-  const placemarks = geojson.features?.map((f: any) => {
-    const name = f.properties?.name || f.properties?.code || 'Feature';
-    const desc = f.properties?.description || '';
-    if (f.geometry?.type === 'Point') {
-      const [lng, lat] = f.geometry.coordinates;
-      return `<Placemark><name>${name}</name><description>${desc}</description><Point><coordinates>${lng},${lat},0</coordinates></Point></Placemark>`;
-    } else if (f.geometry?.type === 'LineString') {
-      const coords = f.geometry.coordinates.map((c: number[]) => `${c[0]},${c[1]},0`).join(' ');
-      return `<Placemark><name>${name}</name><LineString><coordinates>${coords}</coordinates></LineString></Placemark>`;
-    } else if (f.geometry?.type === 'Polygon') {
-      const coords = f.geometry.coordinates[0].map((c: number[]) => `${c[0]},${c[1]},0`).join(' ');
-      return `<Placemark><name>${name}</name><Polygon><outerBoundaryIs><LinearRing><coordinates>${coords}</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>`;
-    }
-    return '';
-  }).join('\n') ?? '';
-  const kmlContent = `<?xml version="1.0" encoding="UTF-8"?>\n<kml xmlns="http://www.opengis.net/kml/2.2">\n<Document>\n${placemarks}\n</Document>\n</kml>`;
-  downloadFile(kmlContent, `${filename}.kml`, 'application/vnd.google-earth.kml+xml');
-}
-
-function downloadFile(content: string, filename: string, mimeType: string): void {
+export function downloadFile(content: string, filename: string, mimeType: string): void {
   const blob = new Blob([content], { type: mimeType });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
   a.download = filename;
   a.click();
-  URL.revokeObjectURL(url);
+  // Revoking synchronously can cancel the download in some browsers.
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+// --- Export functions ---
+
+export function exportToCSV(rows: Row[], filename: string, columns?: string[]): void {
+  if (rows.length === 0) return;
+  const cols = columns ?? Object.keys(rows[0]).filter((k) => !k.startsWith('_'));
+  downloadFile(toCsv(cols, rows.map((r) => cols.map((c) => r[c]))), `${filename}.csv`, 'text/csv;charset=utf-8');
+}
+
+export function exportToJSON(rows: Row[], filename: string): void {
+  downloadFile(JSON.stringify(rows, null, 2), `${filename}.json`, 'application/json');
+}
+
+export function exportToGeoJSON(features: Feature[], filename: string): void {
+  const fc: FeatureCollection = { type: 'FeatureCollection', features };
+  downloadFile(JSON.stringify(fc, null, 2), `${filename}.geojson`, 'application/geo+json');
+}
+
+export function escapeXml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function kmlCoords(positions: Position[]): string {
+  return positions.map(([lng, lat, alt]) => `${lng},${lat},${alt ?? 0}`).join(' ');
+}
+
+function kmlPolygon(rings: Position[][]): string {
+  const [outer, ...inner] = rings;
+  const inners = inner.map((r) => `<innerBoundaryIs><LinearRing><coordinates>${kmlCoords(r)}</coordinates></LinearRing></innerBoundaryIs>`).join('');
+  return `<Polygon><outerBoundaryIs><LinearRing><coordinates>${kmlCoords(outer)}</coordinates></LinearRing></outerBoundaryIs>${inners}</Polygon>`;
+}
+
+function geometryToKml(g: Geometry): string {
+  switch (g.type) {
+    case 'Point': return `<Point><coordinates>${kmlCoords([g.coordinates])}</coordinates></Point>`;
+    case 'LineString': return `<LineString><coordinates>${kmlCoords(g.coordinates)}</coordinates></LineString>`;
+    case 'Polygon': return kmlPolygon(g.coordinates);
+    case 'MultiPoint': return `<MultiGeometry>${g.coordinates.map((c) => geometryToKml({ type: 'Point', coordinates: c })).join('')}</MultiGeometry>`;
+    case 'MultiLineString': return `<MultiGeometry>${g.coordinates.map((c) => geometryToKml({ type: 'LineString', coordinates: c })).join('')}</MultiGeometry>`;
+    case 'MultiPolygon': return `<MultiGeometry>${g.coordinates.map(kmlPolygon).join('')}</MultiGeometry>`;
+    case 'GeometryCollection': return `<MultiGeometry>${g.geometries.map(geometryToKml).join('')}</MultiGeometry>`;
+  }
+}
+
+export function exportToKML(geojson: FeatureCollection, filename: string): void {
+  const placemarks = geojson.features
+    .filter((f) => f.geometry)
+    .map((f) => {
+      const props = (f.properties ?? {}) as Row;
+      const name = escapeXml(String(props.name ?? props.code ?? 'Feature'));
+      const desc = props.description ? `<description>${escapeXml(String(props.description))}</description>` : '';
+      return `<Placemark><name>${name}</name>${desc}${geometryToKml(f.geometry)}</Placemark>`;
+    })
+    .join('\n');
+  const content = `<?xml version="1.0" encoding="UTF-8"?>\n<kml xmlns="http://www.opengis.net/kml/2.2">\n<Document>\n${placemarks}\n</Document>\n</kml>`;
+  downloadFile(content, `${filename}.kml`, 'application/vnd.google-earth.kml+xml');
 }
 
 // --- Import functions ---
 
+export interface ImportIssue {
+  row: number;
+  message: string;
+}
+
 export interface ImportResult {
-  rows: Record<string, any>[];
-  errors: { row: number; message: string }[];
+  rows: Row[];
+  errors: ImportIssue[];
   format: string;
   totalRows: number;
   validRows: number;
 }
 
-export function parseCSV(text: string): ImportResult {
-  const errors: { row: number; message: string }[] = [];
-  const lines = text.trim().split('\n');
-  if (lines.length < 2) return { rows: [], errors: [{ row: 0, message: 'CSV must have a header row and at least one data row' }], format: 'csv', totalRows: 0, validRows: 0 };
-  const headers = parseCSVLine(lines[0]);
-  const rows: Record<string, any>[] = [];
-  for (let i = 1; i < lines.length; i++) {
-    try {
-      const values = parseCSVLine(lines[i]);
-      if (values.length !== headers.length) {
-        errors.push({ row: i, message: `Expected ${headers.length} columns, got ${values.length}` });
-        continue;
-      }
-      const row: Record<string, any> = {};
-      headers.forEach((h, j) => { row[h] = values[j]; });
-      rows.push(row);
-    } catch (err) {
-      errors.push({ row: i, message: String(err) });
-    }
-  }
-  return { rows, errors, format: 'csv', totalRows: lines.length - 1, validRows: rows.length };
+function failed(format: string, message: string): ImportResult {
+  return { rows: [], errors: [{ row: 0, message }], format, totalRows: 0, validRows: 0 };
 }
 
-function parseCSVLine(line: string): string[] {
-  const result: string[] = [];
-  let current = '';
-  let inQuotes = false;
-  for (let i = 0; i < line.length; i++) {
-    const char = line[i];
-    if (char === '"') {
-      if (inQuotes && line[i + 1] === '"') { current += '"'; i++; }
-      else inQuotes = !inQuotes;
-    } else if (char === ',' && !inQuotes) {
-      result.push(current.trim());
-      current = '';
-    } else {
-      current += char;
-    }
+function errorText(err: unknown): string {
+  return err instanceof Error ? err.message : String(err);
+}
+
+export function parseCSV(text: string): ImportResult {
+  let records: string[][];
+  try {
+    records = parseCsvRecords(text);
+  } catch (err) {
+    return failed('csv', `Invalid CSV: ${errorText(err)}`);
   }
-  result.push(current.trim());
-  return result;
+  if (records.length < 2) return failed('csv', 'CSV must have a header row and at least one data row');
+
+  const headers = records[0].map((h) => h.trim());
+  const errors: ImportIssue[] = [];
+  const rows: Row[] = [];
+  for (let i = 1; i < records.length; i++) {
+    const values = records[i];
+    if (values.length !== headers.length) {
+      errors.push({ row: i, message: `Expected ${headers.length} columns, got ${values.length}` });
+      continue;
+    }
+    const row: Row = {};
+    headers.forEach((h, j) => { row[h] = values[j].trim(); });
+    rows.push(row);
+  }
+  return { rows, errors, format: 'csv', totalRows: records.length - 1, validRows: rows.length };
 }
 
 export function parseJSON(text: string): ImportResult {
+  let data: unknown;
   try {
-    const data = JSON.parse(text);
-    const rows = Array.isArray(data) ? data : [data];
-    return { rows, errors: [], format: 'json', totalRows: rows.length, validRows: rows.length };
+    data = JSON.parse(text);
   } catch (err) {
-    return { rows: [], errors: [{ row: 0, message: `Invalid JSON: ${err}` }], format: 'json', totalRows: 0, validRows: 0 };
+    return failed('json', `Invalid JSON: ${errorText(err)}`);
   }
+  const items = Array.isArray(data) ? data : [data];
+  const rows: Row[] = [];
+  const errors: ImportIssue[] = [];
+  items.forEach((item, i) => {
+    if (typeof item === 'object' && item !== null && !Array.isArray(item)) rows.push(item as Row);
+    else errors.push({ row: i + 1, message: 'Each JSON item must be an object' });
+  });
+  return { rows, errors, format: 'json', totalRows: items.length, validRows: rows.length };
+}
+
+function featureRows(features: unknown[], format: string): ImportResult {
+  const { features: valid, issues } = validateFeatures(features);
+  const rows: Row[] = valid.map((f) => ({
+    ...(f.properties ?? {}),
+    _geometry: f.geometry,
+    _geometryType: f.geometry?.type,
+  }));
+  return {
+    rows,
+    errors: issues.map((i) => ({ row: i.index + 1, message: i.message })),
+    format,
+    totalRows: features.length,
+    validRows: rows.length,
+  };
 }
 
 export function parseGeoJSON(text: string): ImportResult {
+  let data: unknown;
   try {
-    const data = JSON.parse(text);
-    if (data.type !== 'FeatureCollection') {
-      return { rows: [], errors: [{ row: 0, message: 'Not a valid GeoJSON FeatureCollection' }], format: 'geojson', totalRows: 0, validRows: 0 };
-    }
-    const rows = (data.features || []).map((f: any) => ({
-      ...f.properties,
-      _geometry: f.geometry,
-      _geometryType: f.geometry?.type,
-    }));
-    return { rows, errors: [], format: 'geojson', totalRows: rows.length, validRows: rows.length };
+    data = JSON.parse(text);
   } catch (err) {
-    return { rows: [], errors: [{ row: 0, message: `Invalid GeoJSON: ${err}` }], format: 'geojson', totalRows: 0, validRows: 0 };
+    return failed('geojson', `Invalid GeoJSON: ${errorText(err)}`);
   }
+  const crsIssue = validateCrs(data);
+  if (crsIssue) return failed('geojson', crsIssue);
+  if (typeof data === 'object' && data !== null && (data as { type?: unknown }).type === 'Feature') {
+    return featureRows([data], 'geojson');
+  }
+  if (!isFeatureCollection(data)) return failed('geojson', 'Not a valid GeoJSON FeatureCollection');
+  return featureRows(data.features, 'geojson');
 }
 
 export function parseKML(text: string): ImportResult {
+  const doc = new DOMParser().parseFromString(text, 'text/xml');
+  if (doc.querySelector('parsererror')) return failed('kml', 'Invalid KML: the file is not well-formed XML');
   try {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(text, 'text/xml');
-    const fc = kml(doc) as any;
-    const rows = (fc.features || []).map((f: any) => ({
-      ...f.properties,
-      _geometry: f.geometry,
-      _geometryType: f.geometry?.type,
-    }));
-    return { rows, errors: [], format: 'kml', totalRows: rows.length, validRows: rows.length };
+    const fc = kml(doc);
+    return featureRows(fc.features, 'kml');
   } catch (err) {
-    return { rows: [], errors: [{ row: 0, message: `Invalid KML: ${err}` }], format: 'kml', totalRows: 0, validRows: 0 };
+    return failed('kml', `Invalid KML: ${errorText(err)}`);
   }
 }
 
@@ -161,15 +202,15 @@ export function parseFile(text: string, format: string): ImportResult {
     case 'json': return parseJSON(text);
     case 'geojson': return parseGeoJSON(text);
     case 'kml': return parseKML(text);
-    default: return { rows: [], errors: [{ row: 0, message: `Unsupported format: ${format}` }], format, totalRows: 0, validRows: 0 };
+    default: return failed(format, `Unsupported format: ${format}`);
   }
 }
 
 export function readFile(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
-    reader.onload = () => resolve(reader.result as string);
-    reader.onerror = reject;
+    reader.onload = () => resolve(String(reader.result ?? ''));
+    reader.onerror = () => reject(reader.error ?? new Error('Could not read file'));
     reader.readAsText(file);
   });
 }

@@ -1,9 +1,10 @@
 import { useState, useMemo } from 'react';
 import { Wrench, Flame, ClipboardCheck, Building, Cog, Plus, Download } from 'lucide-react';
 import { PageHeader, StatCard, EnterpriseDataTable, type EnterpriseColumn, type FilterConfig, Modal, SmartForm, type FormField } from '@/components/ui';
-import { epwgWorkOrders, epwgFacilities, type EpwgWorkOrder } from '@/data/epwgData';
+import { epwgWorkOrders, epwgFacilities, WORK_ORDER_PRIORITIES, WORK_ORDER_TYPES, type EpwgWorkOrder } from '@/data/epwgData';
+import { num, oneOf, str, type FormValues } from '@/lib/formValues';
 import { useApp } from '@/store/appStore';
-import { toast } from '@/components/ui/Toast';
+import { toast } from '@/components/ui/toastStore';
 
 const priorityColor: Record<string, string> = {
   critical: '#DC2626', high: '#F97316', medium: '#F59E0B', low: '#16A34A',
@@ -132,19 +133,19 @@ export function EpwgWorkOrdersPage() {
     { key: 'estimatedCost', label: locale === 'ar' ? 'التكلفة التقديرية' : 'Estimated Cost', type: 'number', min: 0 },
   ];
 
-  const handleSubmit = (values: Record<string, any>) => {
+  const handleSubmit = (values: FormValues) => {
     const newWO: EpwgWorkOrder = {
       id: `EWO-${Date.now()}`,
       code: `EWO-${9000 + rows.length + 1}`,
-      facilityId: values.facilityId,
-      title: values.title, titleAr: values.title,
-      type: values.type, typeAr: values.type,
+      facilityId: str(values.facilityId),
+      title: str(values.title), titleAr: str(values.title),
+      type: oneOf(values.type, WORK_ORDER_TYPES, 'maintenance'), typeAr: str(values.type),
       status: 'open',
-      priority: values.priority,
-      assignee: values.assignee ?? '—', assigneeAr: values.assignee ?? '—',
+      priority: oneOf(values.priority, WORK_ORDER_PRIORITIES, 'medium'),
+      assignee: str(values.assignee, '—'), assigneeAr: str(values.assignee, '—'),
       createdAt: new Date().toISOString().slice(0, 10),
       dueDate: new Date(Date.now() + 14 * 86400000).toISOString().slice(0, 10),
-      estimatedCost: values.estimatedCost ?? 0,
+      estimatedCost: num(values.estimatedCost),
       progress: 0,
     };
     setRows([newWO, ...rows]);

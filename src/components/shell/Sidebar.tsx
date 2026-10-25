@@ -1,17 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  LayoutDashboard, Map, Building2, Home, AlertTriangle, Trash2, Store,
-  ClipboardCheck, Sparkles, Wrench, Truck, UserSquare2, Navigation,
-  Factory, Briefcase, MessageSquareWarning, FileBarChart, BarChart3,
-  PieChart, FolderArchive, Users, Shield, KeyRound, ScrollText,
-  Settings, ChevronLeft, ShieldCheck, Crown, Brain, Target, Trophy, Gauge, Activity,
-  Recycle, Leaf, Layers, Boxes,
-} from 'lucide-react';
+import { LayoutDashboard, Map, Building2, Home, AlertTriangle, Trash2, Store, ClipboardCheck, Sparkles, Wrench, Truck, UserSquare2, Navigation, Factory, Briefcase, MessageSquareWarning, FileBarChart, BarChart3, PieChart, FolderArchive, Users, Shield, KeyRound, ScrollText, Settings, ChevronLeft, ShieldCheck, Crown, Brain, Trophy, Gauge, Activity, Recycle, Leaf, Layers } from 'lucide-react';
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';
+import type { Permission } from '@/lib/auth';
 
-interface NavItem { to: string; key: string; icon: React.ReactNode; end?: boolean; perm: string }
+interface NavItem { to: string; key: string; icon: React.ReactNode; end?: boolean; perm: Permission }
 interface NavGroup { labelKey: string; items: NavItem[] }
 
 const groups: NavGroup[] = [
@@ -136,7 +130,7 @@ export function Sidebar() {
       {/* Nav groups */}
       <nav className="flex-1 overflow-y-auto py-3 px-2 space-y-4 scroll-area">
         {groups.map((g) => {
-          const visibleItems = g.items.filter((item) => hasPermission(item.perm as any));
+          const visibleItems = g.items.filter((item) => hasPermission(item.perm));
           if (visibleItems.length === 0) return null;
           return (
           <div key={g.labelKey}>

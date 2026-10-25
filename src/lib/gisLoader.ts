@@ -4,7 +4,7 @@
  */
 
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
-import { kml } from '@tmcw/togeojson';
+import { gpx, kml } from '@tmcw/togeojson';
 import * as wellknown from 'wellknown';
 
 export type LayerFormat = 'kml' | 'kmz' | 'geojson' | 'gpx' | 'wkt';
@@ -86,14 +86,14 @@ function parseGeoJSON(text: string): GeoJSON.FeatureCollection {
 function parseGpx(text: string): GeoJSON.FeatureCollection {
   const parser = new DOMParser();
   const doc = parser.parseFromString(text, 'text/xml');
-  return kml(doc) as GeoJSON.FeatureCollection;
+  return gpx(doc);
 }
 
 function parseWkt(text: string): GeoJSON.FeatureCollection {
   const lines = text.trim().split('\n').filter((l) => l.trim());
   const features: GeoJSON.Feature[] = [];
   for (const line of lines) {
-    const geom = (wellknown as any).parse(line.trim());
+    const geom = wellknown.parse(line.trim());
     if (geom) features.push({ type: 'Feature', geometry: geom, properties: {} });
   }
   return { type: 'FeatureCollection', features };
@@ -232,7 +232,7 @@ export async function loadAllGisLayers(): Promise<Map<string, GisLayer>> {
           await withTimeout(
             sb.from('gis_layers').upsert({
               id: config.id, source_file: config.file, source_format: config.format,
-              geojson: geojson as any, feature_count: geojson.features.length,
+              geojson, feature_count: geojson.features.length,
               loaded_at: new Date().toISOString(), checksum: cs,
             }),
             5000,

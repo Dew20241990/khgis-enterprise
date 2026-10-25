@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { FolderArchive, FileText, FileCheck, FileWarning, BookOpen, Download, Search } from 'lucide-react';
+import { FolderArchive, FileText, FileCheck, FileWarning, BookOpen, Download } from 'lucide-react';
 import { PageHeader, Card, CardHeader, CardBody, Badge, EnterpriseDataTable, type EnterpriseColumn } from '@/components/ui';
 import { epwgDocuments, epwgFacilities, type EpwgDocument } from '@/data/epwgData';
 import { useApp } from '@/store/appStore';
@@ -19,7 +19,6 @@ const typeTone: Record<string, 'brand' | 'success' | 'warning' | 'neutral'> = {
 
 export function EpwgDocumentsPage() {
   const { t, locale } = useApp();
-  const [search, setSearch] = useState('');
   const [typeFilter, setTypeFilter] = useState('all');
 
   const facilityName = (id: string | null) => {
@@ -29,11 +28,9 @@ export function EpwgDocumentsPage() {
   };
 
   const filtered = useMemo(() => epwgDocuments.filter((d) => {
-    const q = search.toLowerCase();
-    const matchSearch = !q || (locale === 'ar' ? d.titleAr : d.title).toLowerCase().includes(q) || d.id.toLowerCase().includes(q);
     const matchType = typeFilter === 'all' || d.type === typeFilter;
-    return matchSearch && matchType;
-  }), [search, typeFilter, locale]);
+    return matchType;
+  }), [typeFilter]);
 
   const columns: EnterpriseColumn<EpwgDocument>[] = [
     { key: 'id', header: locale === 'ar' ? 'المعرّف' : 'ID', sortable: true, searchable: true, pinned: 'left', width: 90,
@@ -58,7 +55,7 @@ export function EpwgDocumentsPage() {
     { key: 'author', header: locale === 'ar' ? 'المؤلف' : 'Author', sortable: true, searchable: true, width: 160,
       render: (d) => <span className="text-xs text-ink-500">{d.author}</span> },
     { key: 'actions', header: '', width: 80, pinned: 'right',
-      render: (d) => (
+      render: () => (
         <button className="p-2 rounded-lg text-ink-400 hover:bg-brand-50 dark:hover:bg-brand-600/10 hover:text-brand-600 transition" title={t('export')}>
           <Download className="w-4 h-4" />
         </button>
@@ -75,7 +72,7 @@ export function EpwgDocumentsPage() {
           { type: 'permit', label: locale === 'ar' ? 'رخص' : 'Permits', icon: <FileCheck className="w-5 h-5" />, tone: 'success' as const },
           { type: 'plan', label: locale === 'ar' ? 'مخططات' : 'Plans', icon: <BookOpen className="w-5 h-5" />, tone: 'warning' as const },
           { type: 'manual', label: locale === 'ar' ? 'أدلة' : 'Manuals', icon: <FileWarning className="w-5 h-5" />, tone: 'neutral' as const },
-        ]).map((cat, i) => {
+        ]).map((cat) => {
           const count = epwgDocuments.filter((d) => d.type === cat.type).length;
           return (
             <button key={cat.type} onClick={() => setTypeFilter(typeFilter === cat.type ? 'all' : cat.type)}

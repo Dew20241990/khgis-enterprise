@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import { MapPin, Layers, Users, Trash2, Building2 } from 'lucide-react';
-import { MapContainer, TileLayer, Polygon, CircleMarker, Popup, Tooltip as LTooltip, ScaleControl } from 'react-leaflet';
-import { PageHeader, Card, CardHeader, CardBody, Badge } from '@/components/ui';
+import { MapContainer, Polygon, CircleMarker, Popup, Tooltip as LTooltip, ScaleControl } from 'react-leaflet';
+import { PageHeader, Card, CardHeader, CardBody } from '@/components/ui';
 import { epwgServiceAreas, epwgFacilities, EPWG_CENTER } from '@/data/epwgData';
 import { useApp } from '@/store/appStore';
+import { BasemapTileLayer } from '@/components/gis/BasemapTileLayer';
 import { facilityTypeColor } from './epwgHelpers';
 
 const fadeUp = { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } };
@@ -26,10 +27,9 @@ export function EpwgServiceAreasPage() {
           <CardBody>
             <div className="h-[500px] rounded-xl2 overflow-hidden border border-ink-200/60 dark:border-ink-800/60">
               <MapContainer center={EPWG_CENTER} zoom={9} className="w-full h-full" zoomControl>
-                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="EPWG GIS" />
+                <BasemapTileLayer id="osm" />
                 <ScaleControl position="bottomleft" />
                 {epwgServiceAreas.map((sa, i) => {
-                  const facility = epwgFacilities.find((f) => f.id === sa.facilityId);
                   const colors = ['#16A34A', '#0F4C81', '#F59E0B', '#14B8A6', '#8B5CF6'];
                   const color = colors[i % colors.length];
                   return (

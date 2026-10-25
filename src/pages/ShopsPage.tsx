@@ -1,11 +1,11 @@
 import { ShoppingBag, CheckCircle, XCircle, Clock } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
-import { Badge } from '@/components/ui/Badge';
+import { Badge, type BadgeTone } from '@/components/ui/Badge';
 import { StatCard } from '@/components/ui/StatCard';
 import { shops, municipalities, type Shop } from '@/data/mockData';
 import { useApp } from '@/store/appStore';
 
-const contractLabels: Record<string, { tone: any; label: string }> = {
+const contractLabels: Record<string, { tone: BadgeTone; label: string }> = {
   active: { tone: 'success', label: 'ساري' },
   expired: { tone: 'danger', label: 'منتهي' },
   pending: { tone: 'warning', label: 'قيد الانتظار' },

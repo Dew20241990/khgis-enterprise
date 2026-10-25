@@ -5,17 +5,9 @@
  */
 
 import { useState, useMemo } from 'react';
-import {
-  Eye, EyeOff, Lock, Unlock, Search, ChevronDown, ChevronRight, Download,
-  Info, ZoomIn, Table2, Filter, Palette, Tag, Layers, Sliders, X, FileDown,
-  Circle, Square as SquareIcon, Triangle, MapPin, AlertTriangle, Truck,
-  Building2, Home, School, HeartPulse, Landmark, ShoppingBag, Trees, Factory,
-  Waypoints, Trash2, Crosshair,
-} from 'lucide-react';
+import { Eye, EyeOff, Lock, Unlock, Search, ChevronDown, ChevronRight, Download, Info, ZoomIn, Table2, Filter, Tag, Sliders, FileDown, Circle, Square as SquareIcon, Triangle, MapPin, AlertTriangle, Truck, Building2, Home, School, HeartPulse, Landmark, ShoppingBag, Trees, Factory, Waypoints, Trash2, Crosshair } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  LAYER_CONFIGS, getLayer, getLayersByGroup, type LayerConfig, type GisLayer,
-} from '@/lib/gisLoader';
+import { getLayer, getLayersByGroup, type LayerConfig } from '@/lib/gisLoader';
 import { cn } from '@/lib/cn';
 import { useApp } from '@/store/appStore';
 

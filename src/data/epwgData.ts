@@ -325,8 +325,10 @@ export const epwgCollectionRoutes: CollectionRoute[] = [
 ];
 
 // Equipment at facilities
-export type EquipmentType = 'compactor' | 'weighbridge' | 'loader' | 'fence' | 'leachate-plant' | 'gas-extraction' | 'monitoring-station';
-export type EquipmentStatus = 'operational' | 'maintenance' | 'broken' | 'planned';
+export const EQUIPMENT_TYPES = ['compactor', 'weighbridge', 'loader', 'fence', 'leachate-plant', 'gas-extraction', 'monitoring-station'] as const;
+export type EquipmentType = (typeof EQUIPMENT_TYPES)[number];
+export const EQUIPMENT_STATUSES = ['operational', 'maintenance', 'broken', 'planned'] as const;
+export type EquipmentStatus = (typeof EQUIPMENT_STATUSES)[number];
 
 export interface EpwgEquipment {
   id: string;
@@ -373,7 +375,8 @@ export const epwgEquipment: EpwgEquipment[] = [
 ];
 
 // Vehicles assigned to EPWG
-export type VehicleType = 'roll-off' | 'tipper' | 'hook-loader' | 'sweeper' | 'wheel-loader' | 'water-tanker';
+export const VEHICLE_TYPES = ['roll-off', 'tipper', 'hook-loader', 'sweeper', 'wheel-loader', 'water-tanker'] as const;
+export type VehicleType = (typeof VEHICLE_TYPES)[number];
 export type VehicleStatus = 'active' | 'maintenance' | 'idle' | 'broken';
 
 export interface EpwgVehicle {
@@ -481,16 +484,21 @@ export const epwgInspections: EnvInspection[] = [
 ];
 
 // Work orders for EPWG
+export const WORK_ORDER_TYPES = ['maintenance', 'repair', 'construction', 'environmental', 'equipment'] as const;
+export type EpwgWorkOrderType = (typeof WORK_ORDER_TYPES)[number];
+export const WORK_ORDER_PRIORITIES = ['critical', 'high', 'medium', 'low'] as const;
+export type EpwgWorkOrderPriority = (typeof WORK_ORDER_PRIORITIES)[number];
+
 export interface EpwgWorkOrder {
   id: string;
   code: string;
   facilityId: string;
   title: string;
   titleAr: string;
-  type: 'maintenance' | 'repair' | 'construction' | 'environmental' | 'equipment';
+  type: EpwgWorkOrderType;
   typeAr: string;
   status: 'open' | 'assigned' | 'inProgress' | 'completed' | 'cancelled';
-  priority: 'critical' | 'high' | 'medium' | 'low';
+  priority: EpwgWorkOrderPriority;
   assignee: string;
   assigneeAr: string;
   createdAt: string;
@@ -531,7 +539,7 @@ export interface SortingRecord {
 
 export const epwgSortingRecords: SortingRecord[] = epwgFacilities
   .filter((f) => f.hasSorting || f.hasRecycling || f.hasComposting)
-  .flatMap((f, fi) =>
+  .flatMap((f) =>
     Array.from({ length: 6 }, (_, mi) => {
       const months = ['فيفري', 'مارس', 'أفريل', 'ماي', 'جوان', 'جويلية'];
       const base = f.dailyWaste * 30;

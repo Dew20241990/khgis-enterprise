@@ -1,7 +1,6 @@
 import { ScrollText, Info, AlertTriangle, AlertCircle } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
 import { Badge, StatCard } from '@/components/ui';
-import { useApp } from '@/store/appStore';
 
 export interface LogEntry {
   id: string;
@@ -13,7 +12,7 @@ export interface LogEntry {
   level: 'info' | 'warning' | 'danger';
 }
 
-export const logs: LogEntry[] = Array.from({ length: 40 }, (_, i) => {
+const logs: LogEntry[] = Array.from({ length: 40 }, (_, i) => {
   const actions = ['تسجيل دخول', 'إضافة نقطة سوداء', 'تعديل حاوية', 'حذف تقرير', 'تصدير بيانات', 'تغيير صلاحية', 'حل نقطة سوداء', 'إضافة مستخدم'];
   const modules = ['لوحة القيادة', 'الخريطة', 'النقاط السوداء', 'الحاويات', 'التقارير', 'المستخدمون', 'الإعدادات'];
   const users = ['س. بن عمر', 'م. خليفي', 'ف. بلقاسم', 'ل. حمداني', 'ك. عثماني'];
@@ -60,7 +59,6 @@ const config: CrudConfig<LogEntry> = {
 };
 
 export function AuditLogsPage() {
-  const { t } = useApp();
   return (
     <CrudManager
       config={{

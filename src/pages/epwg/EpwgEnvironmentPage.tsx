@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
 import { Droplets, Flame, Wind, ShieldCheck, AlertTriangle, ClipboardCheck, Gauge, Leaf } from 'lucide-react';
-import {
-  BarChart, Bar, RadialBarChart, RadialBar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
-} from '@/components/charts/ChartKit';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from '@/components/charts/ChartKit';
 import { PageHeader, StatCard, Card, CardHeader, CardBody, Badge, EnterpriseDataTable, type EnterpriseColumn } from '@/components/ui';
-import { epwgEnvMonitoring, epwgInspections, epwgFacilities, epwgAlerts, type EnvMonitoring } from '@/data/epwgData';
+import { epwgEnvMonitoring, epwgInspections, epwgFacilities, type EnvMonitoring } from '@/data/epwgData';
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';
 

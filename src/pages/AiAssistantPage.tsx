@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   Sparkles, Send, Paperclip, Camera, FileText, TrendingUp, AlertTriangle,
   Trash2, MapPin, Lightbulb, BarChart3, Image as ImageIcon, Bot, User, Download,

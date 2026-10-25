@@ -1,48 +1,25 @@
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import {
-  MapContainer, TileLayer, GeoJSON as LeafletGeoJSON, CircleMarker, Popup,
-  ScaleControl, useMap, useMapEvents, Polygon as LeafletPolygon, Circle as LeafletCircle,
-  Polyline, Marker, Tooltip as LeafletTooltip,
-} from 'react-leaflet';
+import { MapContainer, GeoJSON as LeafletGeoJSON, CircleMarker, Popup, ScaleControl, useMap, useMapEvents, Polygon as LeafletPolygon, Circle as LeafletCircle, Polyline, Marker } from 'react-leaflet';
 import L from 'leaflet';
-import {
-  Layers, Ruler, Search, MapPin, Crosshair, Maximize2, Minimize2,
-  Navigation, Eye, Flame, Satellite, Waypoints, Image as ImageIcon,
-  ChevronLeft, Map as MapIcon, Trash2, AlertTriangle,
-  Compass, PenTool, Circle as CircleIcon, Square, MapPin as PinIcon, Share2, Download,
-  Sun, Moon, ZoomIn, ShieldCheck, Printer, Bookmark, SplitSquareHorizontal,
-  Clock, X, Info, MousePointerClick, Layers2, Filter,
-} from 'lucide-react';
+import { Layers, Ruler, Search, MapPin, Crosshair, Maximize2, Minimize2, Navigation, Eye, Flame, Satellite, Waypoints, Image as ImageIcon, ChevronLeft, Trash2, Compass, PenTool, Circle as CircleIcon, Square, MapPin as PinIcon, Share2, Download, Sun, Moon, ZoomIn, ShieldCheck, Printer, Bookmark, X, Info, MousePointerClick, Layers2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useApp } from '@/store/appStore';
-import {
-  LAYER_CONFIGS, getLayer, getLayersByGroup, getCommuneBoundary,
-  subscribeLayers, type GisLayer, type LayerConfig,
-} from '@/lib/gisLoader';
-import {
-  calcBBox, calcArea, calcLength, formatCoordinates, formatDistance, formatArea,
-} from '@/lib/spatialEngine';
+import { LAYER_CONFIGS, getLayer, getCommuneBoundary, subscribeLayers, type GisLayer, type LayerConfig } from '@/lib/gisLoader';
+import { calcBBox, calcArea, formatCoordinates, isPolygonal } from '@/lib/spatialEngine';
 import { LayerManager, type LayerState } from '@/components/gis/LayerManager';
 import { AttributeTable } from '@/components/gis/AttributeTable';
 import { CoordinateInspector } from '@/components/gis/CoordinateInspector';
 import { MetadataPanel } from '@/components/gis/MetadataPanel';
 import { KHENCHELA_CENTER } from '@/data/mockData';
 import { cn } from '@/lib/cn';
+import { BasemapTileLayer } from '@/components/gis/BasemapTileLayer';
+import type { BasemapId } from '@/lib/basemaps';
 
-type Basemap = 'osm' | 'google_sat' | 'esri_sat' | 'carto_light' | 'carto_dark' | 'terrain';
+type Basemap = BasemapId;
 type DrawTool = 'polygon' | 'circle' | 'rectangle' | 'marker' | 'polyline' | null;
 type MeasureMode = 'distance' | 'area' | null;
 type PanelTab = 'layers' | 'search' | 'bookmarks' | 'analysis';
 type CursorMode = 'pan' | 'draw' | 'measure' | 'identify';
-
-const basemapUrls: Record<Basemap, { url: string; attribution: string; maxZoom: number; subdomains?: string[] }> = {
-  osm: { url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', attribution: 'OSM', maxZoom: 19 },
-  google_sat: { url: 'https://mt{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', attribution: 'Google', maxZoom: 21, subdomains: ['0', '1', '2', '3'] },
-  esri_sat: { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', attribution: 'Esri', maxZoom: 19 },
-  carto_light: { url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', attribution: 'Carto', maxZoom: 20 },
-  carto_dark: { url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', attribution: 'Carto', maxZoom: 20 },
-  terrain: { url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', attribution: 'OpenTopoMap', maxZoom: 17 },
-};
 
 // --- Map helper components ---
 
@@ -208,7 +185,7 @@ function getGeoJSONStyle(config: LayerConfig, opacity: number): L.PathOptions {
 }
 
 function pointToLayer(config: LayerConfig, opacity: number) {
-  return (_geoJSONPoint: any, latlng: L.LatLng) => {
+  return (_geoJSONPoint: GeoJSON.Feature, latlng: L.LatLng) => {
     const color = config.color;
     return L.circleMarker(latlng, {
       radius: 5, fillColor: color, color, weight: 1.5, fillOpacity: 0.7 * opacity, opacity,
@@ -255,7 +232,7 @@ export function GisPage() {
   const [maxBounds, setMaxBounds] = useState<L.LatLngBounds | null>(null);
   const [bookmarks, setBookmarks] = useState<{ name: string; lat: number; lng: number; zoom: number }[]>([]);
   const [drawnFeatures, setDrawnFeatures] = useState<GeoJSON.Feature[]>([]);
-  const [identifyResult, setIdentifyResult] = useState<{ lat: number; lng: number; features: { layer: string; props: Record<string, any> }[] } | null>(null);
+  const [identifyResult, setIdentifyResult] = useState<{ lat: number; lng: number; features: { layer: string; props: Record<string, unknown> }[] } | null>(null);
   const [selectedSearchResult, setSelectedSearchResult] = useState<SearchResult | null>(null);
   const [cursorMode, setCursorMode] = useState<CursorMode>('pan');
 
@@ -292,7 +269,7 @@ export function GisPage() {
     const boundary = getCommuneBoundary();
     if (boundary && mapRef.current) {
       try {
-        const bbox = calcBBox(boundary as any);
+        const bbox = calcBBox(boundary);
         const bounds = L.latLngBounds(bbox[0], bbox[1]);
         mapRef.current.fitBounds(bounds, { padding: [30, 30] });
         setMaxBounds(bounds.pad(0.3));
@@ -317,11 +294,11 @@ export function GisPage() {
         if (name.toLowerCase().includes(q) || cfg.labelAr.includes(q) || cfg.label.toLowerCase().includes(q)) {
           let lat = 0, lng = 0;
           if (f.geometry.type === 'Point') {
-            const c = (f.geometry as any).coordinates;
+            const c = f.geometry.coordinates;
             lat = c[1]; lng = c[0];
           } else {
             try {
-              const bbox = calcBBox(f as any);
+              const bbox = calcBBox(f);
               lat = (bbox[0][0] + bbox[1][0]) / 2;
               lng = (bbox[0][1] + bbox[1][1]) / 2;
             } catch { continue; }
@@ -350,8 +327,7 @@ export function GisPage() {
       const ring = [...pts, pts[0]];
       const feat: GeoJSON.Feature = { type: 'Feature', geometry: { type: 'Polygon', coordinates: [ring] }, properties: {} };
       try {
-        const area = calcArea(feat as any);
-        setMeasureValue(area);
+        if (isPolygonal(feat)) setMeasureValue(calcArea(feat));
       } catch { /* ignore */ }
     } else {
       setMeasureValue(null);
@@ -376,7 +352,7 @@ export function GisPage() {
     const layer = getLayer(id);
     if (!layer || !mapRef.current) return;
     try {
-      const bbox = calcBBox(layer.geojson as any);
+      const bbox = calcBBox(layer.geojson);
       mapRef.current.fitBounds(L.latLngBounds(bbox[0], bbox[1]), { padding: [30, 30] });
     } catch { /* ignore */ }
   }, []);
@@ -425,14 +401,14 @@ export function GisPage() {
   // Map click handler for identify + measure
   const handleMapClick = useCallback((lat: number, lng: number) => {
     if (cursorMode === 'identify') {
-      const results: { layer: string; props: Record<string, any> }[] = [];
+      const results: { layer: string; props: Record<string, unknown> }[] = [];
       for (const cfg of LAYER_CONFIGS) {
         if (!layerStates[cfg.id]?.visible) continue;
         const layer = gisLayers.get(cfg.id);
         if (!layer) continue;
         for (const f of layer.geojson.features) {
           if (f.geometry.type === 'Point') {
-            const c = (f.geometry as any).coordinates;
+            const c = f.geometry.coordinates;
             const dist = Math.sqrt((c[1] - lat) ** 2 + (c[0] - lng) ** 2);
             if (dist < 0.005) {
               results.push({ layer: cfg.labelAr, props: f.properties || {} });
@@ -453,7 +429,6 @@ export function GisPage() {
 
   const basemapButtons: [Basemap, React.ReactNode, string][] = [
     ['osm', <Waypoints className="w-4 h-4" />, t('osm')],
-    ['google_sat', <Satellite className="w-4 h-4" />, t('googleSatellite')],
     ['esri_sat', <Satellite className="w-4 h-4" />, t('esriSatellite')],
     ['carto_light', <Sun className="w-4 h-4" />, t('cartoLight')],
     ['carto_dark', <Moon className="w-4 h-4" />, t('cartoDark')],
@@ -483,7 +458,7 @@ export function GisPage() {
       if (!layer) continue;
       for (const f of layer.geojson.features) {
         if (f.geometry.type === 'Point') {
-          const c = (f.geometry as any).coordinates;
+          const c = f.geometry.coordinates;
           pts.push({ lat: c[1], lng: c[0], intensity: id === 'blackspots' ? 1 : 0.7 });
         }
       }
@@ -502,19 +477,11 @@ export function GisPage() {
             zoom={13}
             className="w-full h-full"
             zoomControl={false}
-            attributionControl={false}
+            attributionControl
             ref={(m) => { if (m) mapRef.current = m; }}
             doubleClickZoom={false}
           >
-            <TileLayer
-              key={basemap}
-              url={basemapUrls[basemap].url}
-              maxZoom={basemapUrls[basemap].maxZoom}
-              subdomains={basemapUrls[basemap].subdomains ?? 'abc'}
-            />
-            {basemap === 'google_sat' && (
-              <TileLayer url="https://mt{s}.google.com/vt/lyrs=h&x={x}&y={y}&z={z}" subdomains={['0', '1', '2', '3']} maxZoom={21} />
-            )}
+            <BasemapTileLayer id={basemap} />
             <ScaleControl position="bottomleft" />
             <MapBoundsController maxBounds={maxBounds} />
             <MouseTracker onMove={(lat, lng) => setMouseCoords({ lat, lng })} />
@@ -534,9 +501,9 @@ export function GisPage() {
               return (
                 <LeafletGeoJSON
                   key={`${cfg.id}-${layer.loadedAt}`}
-                  data={layer.geojson as any}
+                  data={layer.geojson}
                   style={() => getGeoJSONStyle(cfg, opacity)}
-                  pointToLayer={pointToLayer(cfg, opacity) as any}
+                  pointToLayer={pointToLayer(cfg, opacity)}
                   onEachFeature={(feature, lyr) => {
                     const props = feature.properties || {};
                     const name = props.name || props.code || props.uuid || cfg.labelAr;
@@ -565,19 +532,19 @@ export function GisPage() {
             {/* Drawn features */}
             {drawnFeatures.map((f, i) => {
               if (f.geometry.type === 'Point') {
-                const c = (f.geometry as any).coordinates;
+                const c = f.geometry.coordinates;
                 return (
                   <Marker key={`drawn-${i}`} position={[c[1], c[0]]}>
-                    <Popup><div style={{ textAlign: 'right' }}><p style={{ fontWeight: 'bold', fontSize: '14px' }}>{(f.properties as any)?.name || 'معلم مرسوم'}</p></div></Popup>
+                    <Popup><div style={{ textAlign: 'right' }}><p style={{ fontWeight: 'bold', fontSize: '14px' }}>{String(f.properties?.name ?? 'معلم مرسوم')}</p></div></Popup>
                   </Marker>
                 );
               }
               if (f.geometry.type === 'Polygon') {
-                const ring = (f.geometry as any).coordinates[0].map(([lng, lat]: [number, number]) => [lat, lng] as [number, number]);
+                const ring = f.geometry.coordinates[0].map(([lng, lat]) => [lat, lng] as [number, number]);
                 return <LeafletPolygon key={`drawn-${i}`} positions={ring} pathOptions={{ color: '#0F4C81', weight: 2, dashArray: '5 5', fillOpacity: 0.1 }} />;
               }
               if (f.geometry.type === 'LineString') {
-                const pts = (f.geometry as any).coordinates.map(([lng, lat]: [number, number]) => [lat, lng] as [number, number]);
+                const pts = f.geometry.coordinates.map(([lng, lat]) => [lat, lng] as [number, number]);
                 return <Polyline key={`drawn-${i}`} positions={pts} pathOptions={{ color: '#0F4C81', weight: 2, dashArray: '5 5' }} />;
               }
               return null;
@@ -939,7 +906,7 @@ export function GisPage() {
                         {drawnFeatures.map((f, i) => (
                           <div key={i} className="flex items-center gap-2 text-[10px] py-1">
                             <PenTool className="w-3 h-3 text-brand-500" />
-                            <span className="flex-1 text-right text-ink-600 dark:text-ink-300">{(f.properties as any)?.name || `معلم ${i + 1}`}</span>
+                            <span className="flex-1 text-right text-ink-600 dark:text-ink-300">{String(f.properties?.name ?? `معلم ${i + 1}`)}</span>
                             <span className="text-ink-400">{f.geometry.type}</span>
                           </div>
                         ))}

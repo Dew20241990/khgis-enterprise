@@ -6,16 +6,13 @@
  */
 
 import { useState, useCallback, useMemo, type ReactNode } from 'react';
-import {
-  Plus, Edit, Trash2, Copy, Archive, RotateCcw, Eye, MoreVertical,
-  Download, Printer, FileText, History, X, Check, AlertTriangle, Clock,
-} from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Plus, Trash2, Copy, Archive, RotateCcw, Download, History, Clock } from 'lucide-react';
 import { EnterpriseDataTable, type EnterpriseColumn, type BulkAction, type FilterConfig } from './EnterpriseDataTable';
 import { Modal } from './Modal';
-import { SmartForm, type FormField } from './SmartForm';
+import { SmartForm, type FormField, type FormValues } from './SmartForm';
+import { applyCoords, withCoordsField } from '@/lib/formValues';
 import { ConfirmDialog } from './ConfirmDialog';
-import { toast } from './Toast';
+import { toast } from './toastStore';
 import { PageHeader } from './PageHeader';
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';
@@ -47,7 +44,13 @@ interface CrudManagerProps<T> {
   onDataChange?: (data: T[]) => void;
 }
 
-export function CrudManager<T extends Record<string, any>>({
+/** Reads an optional metadata field (e.g. `_createdAt`) from a row. */
+function meta(row: object | null, key: string): string {
+  const v = row ? (row as Record<string, unknown>)[key] : undefined;
+  return typeof v === 'string' ? v : new Date().toISOString();
+}
+
+export function CrudManager<T extends object>({
   config, data, onDataChange,
 }: CrudManagerProps<T>) {
   const { t } = useApp();
@@ -57,9 +60,9 @@ export function CrudManager<T extends Record<string, any>>({
   const [previewRow, setPreviewRow] = useState<T | null>(null);
   const [detailRow, setDetailRow] = useState<T | null>(null);
   const [confirmDelete, setConfirmDelete] = useState<T | null>(null);
-  const [confirmBulkDelete, setConfirmBulkDelete] = useState(false);
+  const [pendingBulkIds, setPendingBulkIds] = useState<string[] | null>(null);
   const [historyRow, setHistoryRow] = useState<T | null>(null);
-  const [contextMenuRow, setContextMenuRow] = useState<T | null>(null);
+  const [showArchived, setShowArchived] = useState(false);
 
   const updateRows = useCallback((newRows: T[]) => {
     setRows(newRows);
@@ -94,8 +97,10 @@ export function CrudManager<T extends Record<string, any>>({
   // Duplicate / Clone
   const handleDuplicate = useCallback((row: T) => {
     const id = config.rowKey(row);
-    const clone = { ...row, id: `${id}_copy_${Date.now()}`, code: `${(row as any).code ?? id}_copy` };
-    updateRows([...rows, clone]);
+    const source = row as Record<string, unknown>;
+    const clone: Record<string, unknown> = { ...source, id: `${id}_copy_${Date.now()}` };
+    if (typeof source.code === 'string') clone.code = `${source.code}_copy`;
+    updateRows([...rows, clone as unknown as T]);
     toast.success('تم النسخ', `تم إنشاء نسخة من ${config.entityName}`);
   }, [config, rows, updateRows]);
 
@@ -114,7 +119,8 @@ export function CrudManager<T extends Record<string, any>>({
   }, [config, rows, updateRows]);
 
   // Form submit
-  const handleFormSubmit = useCallback((values: Record<string, any>) => {
+  const handleFormSubmit = useCallback((submitted: FormValues) => {
+    const values = applyCoords(submitted);
     if (editingRow) {
       const id = config.rowKey(editingRow);
       updateRows(rows.map((r) => config.rowKey(r) === id ? { ...r, ...values, _updatedAt: new Date().toISOString() } : r));
@@ -133,7 +139,7 @@ export function CrudManager<T extends Record<string, any>>({
     ...config.bulkActions ?? [],
     {
       key: 'bulk-delete', label: t('delete'), icon: <Trash2 className="w-3.5 h-3.5" />, tone: 'danger',
-      onClick: (ids) => { setConfirmBulkDelete(true); (window as any).__bulkIds = ids; },
+      onClick: (ids) => { setPendingBulkIds(ids); },
     },
     {
       key: 'bulk-archive', label: t('archive'), icon: <Archive className="w-3.5 h-3.5" />, tone: 'warning',
@@ -145,13 +151,13 @@ export function CrudManager<T extends Record<string, any>>({
   ], [config, rows, updateRows, t]);
 
   const confirmBulkDeleteAction = useCallback(() => {
-    const ids = (window as any).__bulkIds as string[];
+    const ids = pendingBulkIds;
     if (ids) {
       updateRows(rows.filter((r) => !ids.includes(config.rowKey(r))));
       toast.success('تم الحذف', `تم حذف ${ids.length} عنصر`);
     }
-    setConfirmBulkDelete(false);
-  }, [config, rows, updateRows]);
+    setPendingBulkIds(null);
+  }, [config, rows, updateRows, pendingBulkIds]);
 
   // Context menu actions
   const contextMenuItems = useCallback((row: T, close: () => void): ReactNode => (
@@ -159,9 +165,15 @@ export function CrudManager<T extends Record<string, any>>({
       <button onClick={() => { handleDuplicate(row); close(); }} className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-ink-700 dark:text-ink-200 hover:bg-ink-50 dark:hover:bg-ink-800/60 transition">
         <Copy className="w-3.5 h-3.5" /> {t('duplicate')}
       </button>
-      <button onClick={() => { handleArchive(row); close(); }} className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-ink-700 dark:text-ink-200 hover:bg-ink-50 dark:hover:bg-ink-800/60 transition">
-        <Archive className="w-3.5 h-3.5" /> {t('archive')}
-      </button>
+      {(row as Record<string, unknown>)._archived ? (
+        <button onClick={() => { handleRestore(row); close(); }} className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-ink-700 dark:text-ink-200 hover:bg-ink-50 dark:hover:bg-ink-800/60 transition">
+          <RotateCcw className="w-3.5 h-3.5" /> {t('restore')}
+        </button>
+      ) : (
+        <button onClick={() => { handleArchive(row); close(); }} className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-ink-700 dark:text-ink-200 hover:bg-ink-50 dark:hover:bg-ink-800/60 transition">
+          <Archive className="w-3.5 h-3.5" /> {t('archive')}
+        </button>
+      )}
       <button onClick={() => { setHistoryRow(row); close(); }} className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-ink-700 dark:text-ink-200 hover:bg-ink-50 dark:hover:bg-ink-800/60 transition">
         <History className="w-3.5 h-3.5" /> {t('history')}
       </button>
@@ -170,9 +182,13 @@ export function CrudManager<T extends Record<string, any>>({
         <Trash2 className="w-3.5 h-3.5" /> {t('delete')}
       </button>
     </>
-  ), [handleDuplicate, handleArchive, handleDelete, setHistoryRow, t]);
+  ), [handleDuplicate, handleArchive, handleRestore, handleDelete, setHistoryRow, t]);
 
-  const visibleRows = useMemo(() => rows.filter((r) => !(r as any)._archived), [rows]);
+  const archivedCount = useMemo(() => rows.filter((r) => (r as Record<string, unknown>)._archived).length, [rows]);
+  const visibleRows = useMemo(
+    () => rows.filter((r) => Boolean((r as Record<string, unknown>)._archived) === showArchived),
+    [rows, showArchived],
+  );
 
   return (
     <div>
@@ -182,6 +198,11 @@ export function CrudManager<T extends Record<string, any>>({
         icon={config.icon}
         actions={
           <>
+            {archivedCount > 0 || showArchived ? (
+              <button onClick={() => setShowArchived((v) => !v)} className="btn-outline" aria-pressed={showArchived}>
+                <Archive className="w-4 h-4" /> {t('archived')} ({archivedCount})
+              </button>
+            ) : null}
             {config.allowExport !== false && <button className="btn-outline"><Download className="w-4 h-4" /> {t('export')}</button>}
             {config.allowCreate !== false && (
               <button onClick={handleCreate} className="btn-primary"><Plus className="w-4 h-4" /> {t('add')}</button>
@@ -214,7 +235,7 @@ export function CrudManager<T extends Record<string, any>>({
       >
         <SmartForm
           fields={config.formFields}
-          initialValues={editingRow ?? {}}
+          initialValues={withCoordsField(editingRow)}
           onSubmit={handleFormSubmit}
           onCancel={() => { setFormOpen(false); setEditingRow(null); }}
           autoSave
@@ -257,8 +278,8 @@ export function CrudManager<T extends Record<string, any>>({
           </div>
           <div className="space-y-2">
             {[
-              { action: 'تم الإنشاء', user: 'النظام', time: (historyRow as any)?._createdAt ?? new Date().toISOString(), color: 'bg-success-500' },
-              { action: 'تم التحديث', user: 'م. بن عمر', time: (historyRow as any)?._updatedAt ?? new Date().toISOString(), color: 'bg-brand-500' },
+              { action: 'تم الإنشاء', user: 'النظام', time: meta(historyRow, '_createdAt'), color: 'bg-success-500' },
+              { action: 'تم التحديث', user: 'م. بن عمر', time: meta(historyRow, '_updatedAt'), color: 'bg-brand-500' },
             ].map((h, i) => (
               <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-ink-50 dark:bg-ink-800/40">
                 <span className={cn('w-2 h-2 rounded-full mt-1.5 shrink-0', h.color)} />
@@ -284,12 +305,12 @@ export function CrudManager<T extends Record<string, any>>({
 
       {/* Bulk Delete Confirmation */}
       <ConfirmDialog
-        open={confirmBulkDelete}
+        open={pendingBulkIds !== null}
         title="حذف جماعي"
         message={`هل أنت متأكد من حذف جميع العناصر المحددة؟`}
         confirmLabel={t('delete')}
         onConfirm={confirmBulkDeleteAction}
-        onCancel={() => setConfirmBulkDelete(false)}
+        onCancel={() => setPendingBulkIds(null)}
       />
     </div>
   );

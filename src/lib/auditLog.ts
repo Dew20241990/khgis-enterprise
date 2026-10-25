@@ -15,14 +15,30 @@ function getClient(): SupabaseClient | null {
   return client;
 }
 
+export type AuditRecord = Record<string, unknown>;
+export type AuditChanges = Record<string, { from: unknown; to: unknown }>;
+
+/** A row of the `audit_logs` table as returned by Supabase. */
+export interface AuditRow {
+  id: string;
+  entity_type: string;
+  entity_id: string;
+  action: string;
+  performed_by: string;
+  previous_value: AuditRecord | null;
+  new_value: AuditRecord | null;
+  changes: AuditChanges | null;
+  created_at: string;
+}
+
 export interface AuditEntry {
   entity_type: string;
   entity_id: string;
   action: 'create' | 'update' | 'delete' | 'archive' | 'restore' | 'duplicate' | 'bulk_delete' | 'bulk_update' | 'bulk_status_change';
   performed_by?: string;
-  previous_value?: Record<string, any>;
-  new_value?: Record<string, any>;
-  changes?: Record<string, { from: any; to: any }>;
+  previous_value?: AuditRecord;
+  new_value?: AuditRecord;
+  changes?: AuditChanges;
 }
 
 export async function logAudit(entry: AuditEntry): Promise<void> {
@@ -45,7 +61,7 @@ export async function logAudit(entry: AuditEntry): Promise<void> {
   }
 }
 
-export async function getAuditHistory(entityType: string, entityId: string): Promise<any[]> {
+export async function getAuditHistory(entityType: string, entityId: string): Promise<AuditRow[]> {
   const sb = getClient();
   if (!sb) return [];
   const { data, error } = await sb
@@ -55,11 +71,11 @@ export async function getAuditHistory(entityType: string, entityId: string): Pro
     .eq('entity_id', entityId)
     .order('created_at', { ascending: false });
   if (error) return [];
-  return data ?? [];
+  return (data ?? []) as AuditRow[];
 }
 
-export function computeChanges(prev: Record<string, any>, next: Record<string, any>): Record<string, { from: any; to: any }> {
-  const changes: Record<string, { from: any; to: any }> = {};
+export function computeChanges(prev: AuditRecord, next: AuditRecord): AuditChanges {
+  const changes: AuditChanges = {};
   const allKeys = new Set([...Object.keys(prev), ...Object.keys(next)]);
   for (const key of allKeys) {
     if (key.startsWith('_')) continue;

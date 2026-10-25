@@ -2,7 +2,6 @@ import { ListTodo, CheckCircle2, Clock, AlertCircle } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
 import { StatusBadge, PriorityBadge, StatCard } from '@/components/ui';
 import { tasks, municipalities, type Task } from '@/data/mockData';
-import { useApp } from '@/store/appStore';
 
 const statusMap: Record<string, string> = { pending: 'pending', assigned: 'assigned', inProgress: 'inProgress', completed: 'completed' };
 
@@ -55,7 +54,6 @@ const config: CrudConfig<Task> = {
 };
 
 export function TasksPage() {
-  const { t } = useApp();
   return (
     <CrudManager
       config={{

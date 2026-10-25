@@ -1,10 +1,11 @@
 import { useState, useMemo } from 'react';
 import { Wrench, Cog, Gauge, Fence, Droplets, Wind, Radio, Plus, Download } from 'lucide-react';
 import { PageHeader, StatCard, EnterpriseDataTable, type EnterpriseColumn, type FilterConfig, Modal, SmartForm, type FormField } from '@/components/ui';
-import { epwgEquipment, epwgFacilities, type EpwgEquipment, type EquipmentStatus } from '@/data/epwgData';
+import { epwgEquipment, epwgFacilities, EQUIPMENT_STATUSES, EQUIPMENT_TYPES, type EpwgEquipment, type EquipmentStatus } from '@/data/epwgData';
+import { oneOf, str, type FormValues } from '@/lib/formValues';
 import { useApp } from '@/store/appStore';
 import { equipmentStatusColor, equipmentStatusLabel } from './epwgHelpers';
-import { toast } from '@/components/ui/Toast';
+import { toast } from '@/components/ui/toastStore';
 
 const typeIcon: Record<string, React.ReactNode> = {
   compactor: <Cog className="w-3.5 h-3.5" />,
@@ -106,16 +107,16 @@ export function EpwgEquipmentPage() {
     { key: 'notes', label: locale === 'ar' ? 'ملاحظات' : 'Notes', type: 'text' },
   ];
 
-  const handleSubmit = (values: Record<string, any>) => {
+  const handleSubmit = (values: FormValues) => {
     const newEq: EpwgEquipment = {
       id: `EQ-${Date.now().toString().slice(-3)}`,
-      facilityId: values.facilityId,
-      name: values.name, nameAr: values.name,
-      type: values.type, typeAr: values.type,
-      status: values.status,
+      facilityId: str(values.facilityId),
+      name: str(values.name), nameAr: str(values.name),
+      type: oneOf(values.type, EQUIPMENT_TYPES, 'compactor'), typeAr: str(values.type),
+      status: oneOf(values.status, EQUIPMENT_STATUSES, 'operational'),
       lastService: new Date().toISOString().slice(0, 10),
       nextService: new Date(Date.now() + 90 * 86400000).toISOString().slice(0, 10),
-      notes: values.notes ?? '',
+      notes: str(values.notes),
     };
     setRows([newEq, ...rows]);
     toast.success(locale === 'ar' ? 'تمت الإضافة' : 'Added', locale === 'ar' ? 'تمت إضافة المعدّة' : 'Equipment added');

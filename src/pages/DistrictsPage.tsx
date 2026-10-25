@@ -2,7 +2,6 @@ import { MapPin, Users, Trash2, TrendingUp } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
 import { Badge, StatCard } from '@/components/ui';
 import { districts, type Municipality } from '@/data/mockData';
-import { useApp } from '@/store/appStore';
 
 const config: CrudConfig<Municipality> = {
   entityName: 'دائرة',
@@ -49,7 +48,6 @@ const config: CrudConfig<Municipality> = {
 };
 
 export function DistrictsPage() {
-  const { t } = useApp();
   return (
     <CrudManager
       config={{

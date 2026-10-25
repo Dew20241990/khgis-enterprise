@@ -21,7 +21,7 @@ interface DataTableProps<T> {
   emptyText?: string;
 }
 
-export function DataTable<T extends Record<string, any>>({
+export function DataTable<T extends object>({
   columns, rows, rowKey, onRowClick, selectable, selected = [], onToggleSelect, onToggleSelectAll, emptyText = 'لا توجد بيانات',
 }: DataTableProps<T>) {
   const allSelected = rows.length > 0 && rows.every((r) => selected.includes(rowKey(r)));
@@ -68,7 +68,7 @@ export function DataTable<T extends Record<string, any>>({
                   )}
                   {columns.map((c) => (
                     <td key={c.key} className={cn('px-4 py-3 text-ink-700 dark:text-ink-200 whitespace-nowrap', c.className)}>
-                      {c.render ? c.render(row) : (row as any)[c.key]}
+                      {c.render ? c.render(row) : String((row as Record<string, unknown>)[c.key] ?? '')}
                     </td>
                   ))}
                 </tr>

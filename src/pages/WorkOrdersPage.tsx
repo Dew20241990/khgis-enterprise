@@ -1,24 +1,13 @@
 import { useState, useMemo, useCallback } from 'react';
-import {
-  MapContainer, TileLayer, CircleMarker, Popup, ScaleControl,
-} from 'react-leaflet';
+import { MapContainer, CircleMarker, Popup, ScaleControl } from 'react-leaflet';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  Wrench, Play, CheckCircle2, XCircle, Clock, AlertTriangle, MapPin,
-  Eye, Navigation, ChevronLeft, Filter, Map as MapIcon, List, Calendar,
-  User, Building2, Camera, FileText, Activity, ShieldCheck, Archive,
-  AlertCircle, Link2, TrendingUp, Award, Truck, Factory,
-} from 'lucide-react';
+import { Wrench, Play, CheckCircle2, XCircle, Clock, AlertTriangle, MapPin, Eye, Navigation, Map as MapIcon, List, Calendar, User, Building2, Camera, FileText, Activity, ShieldCheck, Archive, AlertCircle, Link2, TrendingUp, Award, Factory } from 'lucide-react';
 import { useApp } from '@/store/appStore';
-import { toast } from '@/components/ui/Toast';
+import { BasemapTileLayer } from '@/components/gis/BasemapTileLayer';
+import { toast } from '@/components/ui/toastStore';
 import { Modal, StatCard, Badge, ConfirmDialog } from '@/components/ui';
 import { municipalities, KHENCHELA_CENTER, contractors, cetCenters } from '@/data/mockData';
-import {
-  workflowWorkOrders, workflowObservations,
-  statusColors, statusLabels, priorityLabels,
-  responsibleEntityLabels,
-  type WorkOrder, type WorkOrderStatus, type VerificationResult, type TimelineEvent,
-} from '@/data/workflowData';
+import { workflowWorkOrders, workflowObservations, statusColors, statusLabels, priorityLabels, type WorkOrder, type VerificationResult, type TimelineEvent } from '@/data/workflowData';
 import { cn } from '@/lib/cn';
 
 const priorityTone: Record<string, 'danger' | 'warning' | 'info' | 'neutral'> = {
@@ -499,7 +488,7 @@ export function WorkOrdersPage() {
       {view === 'map' && (
         <div className="card overflow-hidden relative h-[600px]">
           <MapContainer center={KHENCHELA_CENTER} zoom={11} className="w-full h-full" zoomControl={true}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="OSM" />
+            <BasemapTileLayer id="osm" />
             <ScaleControl position="bottomleft" />
             {filtered.map((wo) => {
               const obs = workflowObservations.find((o) => o.id === wo.observationId);

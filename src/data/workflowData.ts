@@ -189,8 +189,8 @@ function makeTimeline(
     date: createdAt, actor: inspector,
   }];
 
-  const statusOrder: ObservationStatus[] = ['assigned', 'inProgress', 'completed', 'verified', 'closed'];
-  const statusIdx = statusOrder.indexOf(status);
+  const statusOrder = ['assigned', 'inProgress', 'completed', 'verified', 'closed'] as const;
+  const statusIdx = (statusOrder as readonly ObservationStatus[]).indexOf(status);
   if (statusIdx === -1 && status === 'rejected') {
     events.push({
       id: 'ev-2', type: 'rejected',
@@ -223,7 +223,7 @@ function makeTimeline(
     const s = statusOrder[i];
     const l = labels[s];
     events.push({
-      id: `ev-${i + 2}`, type: s as any,
+      id: `ev-${i + 2}`, type: s === 'inProgress' ? 'started' : s,
       label: l.ar, labelFr: l.fr, labelEn: l.en,
       date: new Date(baseDate.getTime() + (i + 1) * 86400000 * 2).toISOString(),
       actor: l.actor,

@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion';
 import { Recycle, Leaf, Trash2, TrendingUp, Percent } from 'lucide-react';
-import {
-  BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, AreaChart, Area,
-  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
-} from '@/components/charts/ChartKit';
-import { PageHeader, StatCard, Card, CardHeader, CardBody, Badge, EnterpriseDataTable, type EnterpriseColumn } from '@/components/ui';
-import { epwgSortingRecords, epwgFacilities, epwgRecyclingRate, epwgStats } from '@/data/epwgData';
+import { PieChart, Pie, Cell, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from '@/components/charts/ChartKit';
+import { PageHeader, StatCard, Card, CardHeader, CardBody, EnterpriseDataTable, type EnterpriseColumn } from '@/components/ui';
+import { epwgSortingRecords, epwgFacilities, epwgRecyclingRate } from '@/data/epwgData';
 import { useApp } from '@/store/appStore';
 
 const fadeUp = { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } };
@@ -32,7 +29,7 @@ export function EpwgSortingPage() {
   ];
 
   // Aggregate by month
-  const monthlyAgg = ['فيفري', 'مارس', 'أفريل', 'ماي', 'جوان', 'جويلية'].map((month, mi) => {
+  const monthlyAgg = ['فيفري', 'مارس', 'أفريل', 'ماي', 'جوان', 'جويلية'].map((month) => {
     const records = epwgSortingRecords.filter((r) => r.date === month);
     return {
       month,

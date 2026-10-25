@@ -2,7 +2,6 @@ import { Trash2, AlertTriangle, MapPin, CheckCircle } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
 import { Badge, StatusBadge, StatCard } from '@/components/ui';
 import { illegalDumps, municipalities, type IllegalDump } from '@/data/mockData';
-import { useApp } from '@/store/appStore';
 
 const typeLabels: Record<string, string> = { construction: 'حطام بناء', household: 'نفايات منزلية', industrial: 'نفايات صناعية', mixed: 'مختلطة' };
 
@@ -65,7 +64,6 @@ const config: CrudConfig<IllegalDump> = {
 };
 
 export function IllegalDumpingPage() {
-  const { t } = useApp();
   return (
     <CrudManager
       config={{

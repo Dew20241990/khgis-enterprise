@@ -1,5 +1,5 @@
-import { KeyRound, Download, Check, X, Plus } from 'lucide-react';
-import { PageHeader, Card, CardHeader, CardBody, Badge, DataTable, StatCard } from '@/components/ui';
+import { KeyRound, Download, Check, X } from 'lucide-react';
+import { PageHeader, Card, CardHeader, StatCard } from '@/components/ui';
 import { useApp } from '@/store/appStore';
 
 interface Permission { id: string; module: string; action: string; roles: Record<string, boolean> }

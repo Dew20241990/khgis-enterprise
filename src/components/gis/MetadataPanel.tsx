@@ -5,7 +5,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, FileText, Database, Calendar, User, Hash, Map as MapIcon, Layers } from 'lucide-react';
 import { getLayer, getLayerConfig } from '@/lib/gisLoader';
-import { calcArea, calcCenter, calcBBox } from '@/lib/spatialEngine';
+import { calcArea, calcCenter, calcBBox, isPolygonal } from '@/lib/spatialEngine';
 import { useApp } from '@/store/appStore';
 
 interface MetadataPanelProps {
@@ -26,18 +26,18 @@ export function MetadataPanel({ layerId, onClose }: MetadataPanelProps) {
   let centerStr = '—';
   let areaStr = '—';
 
-  if (firstFeature?.geometry?.type === 'Polygon') {
+  if (isPolygonal(firstFeature)) {
     try {
-      const bbox = calcBBox(firstFeature as any);
+      const bbox = calcBBox(firstFeature);
       extentStr = `[${bbox[0][0].toFixed(4)}, ${bbox[0][1].toFixed(4)}] → [${bbox[1][0].toFixed(4)}, ${bbox[1][1].toFixed(4)}]`;
-      const center = calcCenter(firstFeature as any);
+      const center = calcCenter(firstFeature);
       centerStr = `${center[0].toFixed(6)}, ${center[1].toFixed(6)}`;
-      const area = calcArea(firstFeature as any);
+      const area = calcArea(firstFeature);
       areaStr = `${(area / 1000000).toFixed(4)} km²`;
     } catch { /* ignore */ }
   } else if (firstFeature?.geometry?.type === 'Point') {
-    const coords = (firstFeature.geometry as any).coordinates;
-    centerStr = `${coords[1].toFixed(6)}, ${coords[0].toFixed(6)}`;
+    const [lng, lat] = firstFeature.geometry.coordinates;
+    centerStr = `${lat.toFixed(6)}, ${lng.toFixed(6)}`;
   }
 
   const metadata = [

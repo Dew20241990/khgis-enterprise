@@ -1,12 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  ShieldCheck, User, Lock, Eye, EyeOff, Loader2, AlertCircle, CheckCircle2,
-  Globe, Sun, Moon, MapPin, Layers, Truck, Activity, TrendingUp, ChevronLeft,
-  Building2, Trash2, AlertTriangle, Navigation, Sparkles, KeyRound, Crown,
-  Fingerprint, Lock as LockIcon,
-} from 'lucide-react';
+import { ShieldCheck, User, Lock, Eye, EyeOff, Loader2, AlertCircle, CheckCircle2, Sun, Moon, MapPin, Layers, Truck, Activity, TrendingUp, ChevronLeft, Building2, Trash2, AlertTriangle, Navigation, Sparkles, KeyRound, Crown, Fingerprint, Lock as LockIcon } from 'lucide-react';
 import { useApp } from '@/store/appStore';
 import { MOCK_USERS, type MockUser } from '@/lib/auth';
 import type { Locale } from '@/i18n/translations';

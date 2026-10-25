@@ -2,78 +2,88 @@
  * Spatial Engine — Turf.js-powered spatial calculations for the GIS platform.
  * Provides area, length, center, bbox, distance, nearest, intersection, buffer,
  * union, difference, containment, point-in-polygon, validation, and more.
+ *
+ * Conventions: public helpers take/return Leaflet-style `[lat, lng]` tuples;
+ * GeoJSON features always use `[lng, lat]` internally.
+ * Turf v7 note: intersect/union/difference take a FeatureCollection of polygons.
  */
 
 import * as turf from '@turf/turf';
-import type { Feature, FeatureCollection, Geometry, Point, Polygon } from 'geojson';
+import type { Feature, FeatureCollection, Geometry, MultiPolygon, Point, Polygon } from 'geojson';
+
+export type PolygonalFeature = Feature<Polygon | MultiPolygon>;
+
+export function isPolygonal(f: Feature | null | undefined): f is PolygonalFeature {
+  const t = f?.geometry?.type;
+  return t === 'Polygon' || t === 'MultiPolygon';
+}
 
 // --- Basic measurements ---
 
-export function calcArea(feature: Feature<Polygon>): number {
+export function calcArea(feature: PolygonalFeature): number {
   return turf.area(feature);
 }
 
 export function calcLength(feature: Feature): number {
-  const length = turf.length(feature, { units: 'kilometers' });
-  return length;
+  return turf.length(feature, { units: 'kilometers' });
 }
 
 export function calcCenter(feature: Feature): [number, number] {
-  const centroid = turf.centroid(feature);
-  const coords = centroid.geometry!.coordinates;
+  const coords = turf.centroid(feature).geometry.coordinates;
   return [coords[1], coords[0]];
 }
 
 export function calcBBox(feature: Feature | FeatureCollection): [[number, number], [number, number]] {
-  const bbox = turf.bbox(feature as any);
+  const bbox = turf.bbox(feature);
   return [[bbox[1], bbox[0]], [bbox[3], bbox[2]]];
 }
 
 export function calcDistance(from: [number, number], to: [number, number], units: 'kilometers' | 'meters' = 'kilometers'): number {
-  const fromPt = turf.point([from[1], from[0]]);
-  const toPt = turf.point([to[1], to[0]]);
-  return turf.distance(fromPt, toPt, { units });
+  return turf.distance(turf.point([from[1], from[0]]), turf.point([to[1], to[0]]), { units });
 }
 
 // --- Spatial queries ---
 
+/** Nearest feature to `target` (by distance to each feature's centroid). */
 export function nearestFeature(target: [number, number], features: Feature[]): Feature | null {
-  if (features.length === 0) return null;
-  const targetPt = turf.point([target[1], target[0]]);
-  const fc = turf.featureCollection(features as any[]);
-  const nearest = turf.nearestPoint(targetPt, fc as any);
-  return (nearest.properties?.featureIndex !== undefined ? features[nearest.properties.featureIndex] : null);
+  let best: Feature | null = null;
+  let bestDist = Infinity;
+  for (const f of features) {
+    if (!f.geometry) continue;
+    const d = calcDistance(target, calcCenter(f));
+    if (d < bestDist) { bestDist = d; best = f; }
+  }
+  return best;
 }
 
-export function intersect(feat1: Feature, feat2: Feature): Feature | null {
+export function intersect(feat1: PolygonalFeature, feat2: PolygonalFeature): Feature<Polygon | MultiPolygon> | null {
   try {
-    const result = turf.intersect(feat1 as any, feat2 as any);
-    return result as Feature || null;
+    return turf.intersect(turf.featureCollection([feat1, feat2]));
   } catch {
     return null;
   }
 }
 
-export function buffer(feature: Feature, radiusKm: number): Feature<Polygon> | null {
+export function buffer(feature: Feature, radiusKm: number): Feature<Polygon | MultiPolygon> | null {
   try {
-    return turf.buffer(feature as any, radiusKm, { units: 'kilometers' }) as Feature<Polygon>;
+    return turf.buffer(feature, radiusKm, { units: 'kilometers' }) ?? null;
   } catch {
     return null;
   }
 }
 
-export function union(features: Feature[]): Feature | null {
+export function union(features: PolygonalFeature[]): Feature<Polygon | MultiPolygon> | null {
   try {
     if (features.length < 2) return features[0] ?? null;
-    return turf.union(turf.featureCollection(features as any[]) as any) as Feature;
+    return turf.union(turf.featureCollection(features));
   } catch {
     return null;
   }
 }
 
-export function difference(feat1: Feature, feat2: Feature): Feature | null {
+export function difference(feat1: PolygonalFeature, feat2: PolygonalFeature): Feature<Polygon | MultiPolygon> | null {
   try {
-    return turf.difference(turf.featureCollection([feat1 as any, feat2 as any]) as any) as Feature;
+    return turf.difference(turf.featureCollection([feat1, feat2]));
   } catch {
     return null;
   }
@@ -81,32 +91,23 @@ export function difference(feat1: Feature, feat2: Feature): Feature | null {
 
 // --- Containment & validation ---
 
-export function isPointInPolygon(point: [number, number], polygon: Feature<Polygon>): boolean {
-  const pt = turf.point([point[1], point[0]]);
+export function isPointInPolygon(point: [number, number], polygon: PolygonalFeature): boolean {
   try {
-    return turf.booleanPointInPolygon(pt, polygon as any);
+    return turf.booleanPointInPolygon(turf.point([point[1], point[0]]), polygon);
   } catch {
     return false;
   }
 }
 
-export function isWithinBoundary(point: [number, number], boundary: Feature<Polygon> | null): boolean {
+export function isWithinBoundary(point: [number, number], boundary: PolygonalFeature | null): boolean {
   if (!boundary) return true;
   return isPointInPolygon(point, boundary);
 }
 
-export function validatePolygon(feature: Feature<Polygon>): { valid: boolean; errors: string[] } {
-  const errors: string[] = [];
-  try {
-    const coords = feature.geometry?.coordinates;
-    if (!coords || coords.length === 0) {
-      errors.push('Polygon has no coordinates');
-      return { valid: false, errors };
-    }
-    const ring = coords[0];
-    if (ring.length < 4) {
-      errors.push('Polygon ring must have at least 4 coordinates (3 vertices + closing)');
-    }
+function validateRings(rings: number[][][], errors: string[]): void {
+  if (rings.length === 0) { errors.push('Polygon has no coordinates'); return; }
+  for (const ring of rings) {
+    if (ring.length < 4) errors.push('Polygon ring must have at least 4 coordinates (3 vertices + closing)');
     if (ring.length > 0) {
       const first = ring[0];
       const last = ring[ring.length - 1];
@@ -114,28 +115,35 @@ export function validatePolygon(feature: Feature<Polygon>): { valid: boolean; er
         errors.push('Polygon ring is not closed (first and last coordinates must match)');
       }
     }
-    try {
-      const area = turf.area(feature as any);
-      if (area <= 0) errors.push('Polygon has zero or negative area');
-      if (area > 1000000) errors.push('Polygon area exceeds 1000 km² — verify coordinates');
-    } catch {
-      errors.push('Failed to calculate polygon area');
-    }
-    try {
-      turf.kinks(feature as any);
-    } catch {
-      // kinks check
-    }
-  } catch (err) {
-    errors.push(`Validation error: ${err}`);
+  }
+}
+
+export function validatePolygon(feature: PolygonalFeature): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  const geom = feature.geometry;
+  if (!geom) return { valid: false, errors: ['Feature has no geometry'] };
+
+  const polygons = geom.type === 'Polygon' ? [geom.coordinates] : geom.coordinates;
+  polygons.forEach((rings) => validateRings(rings, errors));
+
+  try {
+    const area = turf.area(feature);
+    if (area <= 0) errors.push('Polygon has zero or negative area');
+    if (area > 1_000_000_000) errors.push('Polygon area exceeds 1000 km² — verify coordinates');
+  } catch {
+    errors.push('Failed to calculate polygon area');
+  }
+  try {
+    if (turf.kinks(feature).features.length > 0) errors.push('Polygon is self-intersecting');
+  } catch {
+    // kinks only supports simple polygons; ignore for unsupported shapes
   }
   return { valid: errors.length === 0, errors };
 }
 
 export function validateGeometry(geometry: Geometry): { valid: boolean; errors: string[] } {
-  const feature: Feature = { type: 'Feature', geometry, properties: {} };
   if (geometry.type === 'Polygon' || geometry.type === 'MultiPolygon') {
-    return validatePolygon(feature as Feature<Polygon>);
+    return validatePolygon({ type: 'Feature', geometry, properties: {} });
   }
   if (geometry.type === 'Point') {
     const coords = (geometry as Point).coordinates;
@@ -154,36 +162,32 @@ export function calcRouteLength(features: Feature[]): number {
 
 export function calcInspectionCoverage(
   inspectionRoutes: Feature[],
-  boundary: Feature<Polygon> | null
+  boundary: PolygonalFeature | null,
 ): number {
   if (!boundary) return 0;
   const routeBuffers = inspectionRoutes
     .map((r) => buffer(r, 0.05))
-    .filter((b): b is Feature<Polygon> => b !== null);
+    .filter((b): b is Feature<Polygon | MultiPolygon> => b !== null);
   if (routeBuffers.length === 0) return 0;
   const merged = union(routeBuffers);
   if (!merged) return 0;
-  const boundaryArea = turf.area(boundary as any);
+  const boundaryArea = turf.area(boundary);
   if (boundaryArea === 0) return 0;
-  const intersectArea = intersect(merged, boundary);
-  if (!intersectArea) return 0;
-  const coveredArea = turf.area(intersectArea as any);
-  return Math.min(100, (coveredArea / boundaryArea) * 100);
+  const overlap = intersect(merged, boundary);
+  if (!overlap) return 0;
+  return Math.min(100, (turf.area(overlap) / boundaryArea) * 100);
 }
 
 // --- Spatial filtering ---
 
-export function spatialFilter(
-  features: Feature[],
-  filterPolygon: Feature<Polygon>
-): Feature[] {
+export function spatialFilter(features: Feature[], filterPolygon: PolygonalFeature): Feature[] {
   return features.filter((f) => {
     if (f.geometry?.type === 'Point') {
-      const coords = (f.geometry as Point).coordinates;
+      const coords = f.geometry.coordinates;
       return isPointInPolygon([coords[1], coords[0]], filterPolygon);
     }
     try {
-      return turf.booleanIntersects(f as any, filterPolygon as any);
+      return turf.booleanIntersects(f, filterPolygon);
     } catch {
       return false;
     }
@@ -192,17 +196,15 @@ export function spatialFilter(
 
 export function attributeFilter(
   features: Feature[],
-  predicate: (props: Record<string, any>) => boolean
+  predicate: (props: Record<string, unknown>) => boolean,
 ): Feature[] {
-  return features.filter((f) => f.properties ? predicate(f.properties) : false);
+  return features.filter((f) => (f.properties ? predicate(f.properties) : false));
 }
 
 // --- Bounding box helpers ---
 
-export function fitToBoundary(boundary: Feature<Polygon>): { center: [number, number]; bounds: [[number, number], [number, number]] } {
-  const center = calcCenter(boundary);
-  const bounds = calcBBox(boundary);
-  return { center, bounds };
+export function fitToBoundary(boundary: Feature): { center: [number, number]; bounds: [[number, number], [number, number]] } {
+  return { center: calcCenter(boundary), bounds: calcBBox(boundary) };
 }
 
 // --- Coordinate formatting ---

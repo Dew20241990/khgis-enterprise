@@ -5,16 +5,18 @@
  * filters, density selector, fullscreen, refresh, export, print.
  */
 
-import { useState, useMemo, useRef, useCallback, type ReactNode } from 'react';
-import {
-  Search, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight,
-  ArrowUp, ArrowDown, ArrowUpDown, Download, RefreshCw, Maximize2, Minimize2,
-  Columns3, Rows3, Rows4, SlidersHorizontal, Printer, X, CheckSquare,
-  Trash2, Copy, Archive, RotateCcw, MoreHorizontal, Eye, Edit, Pencil,
-} from 'lucide-react';
+import { useState, useMemo, useRef, useCallback, useEffect, type ReactNode } from 'react';
+import { Search, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, ArrowUp, ArrowDown, ArrowUpDown, Download, RefreshCw, Maximize2, Minimize2, Columns3, Rows3, Rows4, SlidersHorizontal, Printer, X, Eye, Edit } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/cn';
 import { useApp } from '@/store/appStore';
+import { toCsv } from '@/lib/csv';
+import { downloadFile } from '@/lib/importExport';
+
+/** Reads a column value from a row without resorting to `any`. */
+function cell(row: object, key: string): unknown {
+  return (row as Record<string, unknown>)[key];
+}
 
 export type Density = 'compact' | 'comfortable' | 'spacious';
 
@@ -61,7 +63,7 @@ interface EnterpriseDataTableProps<T> {
   bulkActions?: BulkAction[];
   filters?: FilterConfig[];
   onRefresh?: () => void;
-  onExport?: (format: 'csv' | 'json' | 'xlsx') => void;
+  onExport?: (format: 'csv' | 'json') => void;
   onPrint?: () => void;
   onQuickView?: (row: T) => void;
   onEdit?: (row: T) => void;
@@ -70,7 +72,7 @@ interface EnterpriseDataTableProps<T> {
   contextMenu?: (row: T, close: () => void) => ReactNode;
 }
 
-export function EnterpriseDataTable<T extends Record<string, any>>({
+export function EnterpriseDataTable<T extends object>({
   columns: defaultColumns,
   rows,
   rowKey,
@@ -104,7 +106,6 @@ export function EnterpriseDataTable<T extends Record<string, any>>({
   const [fullscreen, setFullscreen] = useState(false);
   const [showColumnPanel, setShowColumnPanel] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
-  const [showBulkBar, setShowBulkBar] = useState(false);
   const [contextMenuState, setContextMenuState] = useState<{ x: number; y: number; row: T | null }>({ x: 0, y: 0, row: null });
   const tableRef = useRef<HTMLDivElement>(null);
 
@@ -121,14 +122,14 @@ export function EnterpriseDataTable<T extends Record<string, any>>({
       const q = globalSearch.toLowerCase();
       result = result.filter((r) =>
         visibleColumns.some((c) => {
-          const val = c.exportValue ? c.exportValue(r) : (r as any)[c.key];
+          const val = c.exportValue ? c.exportValue(r) : cell(r, c.key);
           return String(val ?? '').toLowerCase().includes(q);
         })
       );
     }
     for (const [key, query] of Object.entries(columnSearch)) {
       if (query) {
-        result = result.filter((r) => String((r as any)[key] ?? '').toLowerCase().includes(query.toLowerCase()));
+        result = result.filter((r) => String(cell(r, key) ?? '').toLowerCase().includes(query.toLowerCase()));
       }
     }
     return result;
@@ -138,8 +139,9 @@ export function EnterpriseDataTable<T extends Record<string, any>>({
   const sortedRows = useMemo(() => {
     if (!sortKey) return searchedRows;
     return [...searchedRows].sort((a, b) => {
-      const av = (a as any)[sortKey];
-      const bv = (b as any)[sortKey];
+      const av = cell(a, sortKey);
+      const bv = cell(b, sortKey);
+      if (av == null && bv == null) return 0;
       if (av == null) return 1;
       if (bv == null) return -1;
       if (typeof av === 'number' && typeof bv === 'number') return sortDir === 'asc' ? av - bv : bv - av;
@@ -185,33 +187,21 @@ export function EnterpriseDataTable<T extends Record<string, any>>({
     setColumns((prev) => prev.map((c) => c.key === key ? { ...c, visible: c.visible === false ? true : false } : c));
   }, []);
 
-  // Export
-  const handleExport = useCallback((format: 'csv' | 'json' | 'xlsx') => {
+  // Export (CSV cells are formula-injection-safe; see lib/csv.ts)
+  const handleExport = useCallback((format: 'csv' | 'json') => {
     if (onExport) { onExport(format); return; }
-    // Built-in CSV/JSON export
     const exportRows = selectedArray.length > 0
       ? sortedRows.filter((r) => selected.has(rowKey(r)))
       : sortedRows;
+    const base = title ?? 'export';
     if (format === 'json') {
-      const blob = new Blob([JSON.stringify(exportRows, null, 2)], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = `${title ?? 'export'}.json`; a.click();
-      URL.revokeObjectURL(url);
+      downloadFile(JSON.stringify(exportRows, null, 2), `${base}.json`, 'application/json');
     } else {
-      const headers = visibleColumns.map((c) => c.header).join(',');
-      const data = exportRows.map((r) =>
-        visibleColumns.map((c) => {
-          const val = c.exportValue ? c.exportValue(r) : (r as any)[c.key];
-          return `"${String(val ?? '').replace(/"/g, '""')}"`;
-        }).join(',')
+      const csv = toCsv(
+        visibleColumns.map((c) => c.header),
+        exportRows.map((r) => visibleColumns.map((c) => (c.exportValue ? c.exportValue(r) : cell(r, c.key)))),
       );
-      const csv = [headers, ...data].join('\n');
-      const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = `${title ?? 'export'}.csv`; a.click();
-      URL.revokeObjectURL(url);
+      downloadFile(csv, `${base}.csv`, 'text/csv;charset=utf-8');
     }
   }, [onExport, selectedArray, sortedRows, selected, rowKey, visibleColumns, title]);
 
@@ -221,12 +211,17 @@ export function EnterpriseDataTable<T extends Record<string, any>>({
     setContextMenuState({ x: e.clientX, y: e.clientY, row });
   }, []);
 
-  // Close context menu on click
-  useState(() => {
-    if (typeof document !== 'undefined') {
-      document.addEventListener('click', () => setContextMenuState((s) => ({ ...s, row: null })));
-    }
-  });
+  // Close context menu on any click (listener is removed on unmount)
+  useEffect(() => {
+    const close = () => setContextMenuState((s) => (s.row ? { ...s, row: null } : s));
+    document.addEventListener('click', close);
+    return () => document.removeEventListener('click', close);
+  }, []);
+
+  // Keep the current page valid when rows are removed or filtered away
+  useEffect(() => {
+    if (page > 0 && page >= totalPages) setPage(Math.max(totalPages - 1, 0));
+  }, [page, totalPages]);
 
   const densityClasses: Record<Density, string> = {
     compact: 'py-1.5 text-xs',
@@ -290,7 +285,7 @@ export function EnterpriseDataTable<T extends Record<string, any>>({
         )}
         style={{ width: col.width, minWidth: col.width ?? 80 }}
       >
-        {col.render ? col.render(row) : String((row as any)[col.key] ?? '—')}
+        {col.render ? col.render(row) : String(cell(row, col.key) ?? '—')}
       </td>
     );
   };
@@ -374,9 +369,8 @@ export function EnterpriseDataTable<T extends Record<string, any>>({
           <div className="relative group">
             <button className="btn-outline"><Download className="w-4 h-4" /> <span className="hidden sm:inline">{t('export')}</span></button>
             <div className="absolute top-full mt-1 left-0 z-50 hidden group-hover:block glass-strong rounded-xl shadow-lifted p-1.5 w-32">
-              <button onClick={() => handleExport('csv')} className="w-full text-right px-3 py-1.5 rounded-lg text-xs hover:bg-ink-50 dark:hover:bg-ink-800/60 text-ink-700 dark:text-ink-200">CSV</button>
+              <button onClick={() => handleExport('csv')} className="w-full text-right px-3 py-1.5 rounded-lg text-xs hover:bg-ink-50 dark:hover:bg-ink-800/60 text-ink-700 dark:text-ink-200">CSV (Excel)</button>
               <button onClick={() => handleExport('json')} className="w-full text-right px-3 py-1.5 rounded-lg text-xs hover:bg-ink-50 dark:hover:bg-ink-800/60 text-ink-700 dark:text-ink-200">JSON</button>
-              <button onClick={() => handleExport('xlsx')} className="w-full text-right px-3 py-1.5 rounded-lg text-xs hover:bg-ink-50 dark:hover:bg-ink-800/60 text-ink-700 dark:text-ink-200">Excel</button>
             </div>
           </div>
           {/* Print */}

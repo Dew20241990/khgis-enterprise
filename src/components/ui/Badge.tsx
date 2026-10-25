@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/cn';
 
-type Tone = 'brand' | 'success' | 'warning' | 'danger' | 'neutral' | 'info';
+export type BadgeTone = 'brand' | 'success' | 'warning' | 'danger' | 'neutral' | 'info';
 
-const tones: Record<Tone, string> = {
+const tones: Record<BadgeTone, string> = {
   brand: 'bg-brand-50 text-brand-700 dark:bg-brand-600/15 dark:text-brand-300 ring-1 ring-brand-200/60 dark:ring-brand-600/20',
   success: 'bg-success-50 text-success-700 dark:bg-success-600/15 dark:text-success-300 ring-1 ring-success-200/60 dark:ring-success-600/20',
   warning: 'bg-warning-50 text-warning-700 dark:bg-warning-600/15 dark:text-warning-300 ring-1 ring-warning-200/60 dark:ring-warning-600/20',
@@ -12,7 +12,7 @@ const tones: Record<Tone, string> = {
   info: 'bg-sky-50 text-sky-700 dark:bg-sky-600/15 dark:text-sky-300 ring-1 ring-sky-200/60 dark:ring-sky-600/20',
 };
 
-export function Badge({ children, tone = 'neutral', className, dot }: { children: ReactNode; tone?: Tone; className?: string; dot?: boolean }) {
+export function Badge({ children, tone = 'neutral', className, dot }: { children: ReactNode; tone?: BadgeTone; className?: string; dot?: boolean }) {
   return (
     <span className={cn('chip', tones[tone], className)}>
       {dot && <span className="w-1.5 h-1.5 rounded-full bg-current opacity-70" />}
@@ -22,7 +22,7 @@ export function Badge({ children, tone = 'neutral', className, dot }: { children
 }
 
 export function StatusBadge({ status }: { status: string }) {
-  const map: Record<string, { tone: Tone; label: string }> = {
+  const map: Record<string, { tone: BadgeTone; label: string }> = {
     open: { tone: 'danger', label: 'مفتوح' },
     inProgress: { tone: 'warning', label: 'قيد التنفيذ' },
     resolved: { tone: 'success', label: 'تم الحل' },
@@ -49,17 +49,17 @@ export function StatusBadge({ status }: { status: string }) {
     full: { tone: 'danger', label: 'ممتلئ' },
     damaged: { tone: 'danger', label: 'تالف' },
   };
-  const cfg = map[status] ?? { tone: 'neutral' as Tone, label: status };
+  const cfg = map[status] ?? { tone: 'neutral' as BadgeTone, label: status };
   return <Badge tone={cfg.tone} dot>{cfg.label}</Badge>;
 }
 
 export function PriorityBadge({ priority }: { priority: string }) {
-  const map: Record<string, { tone: Tone; label: string }> = {
+  const map: Record<string, { tone: BadgeTone; label: string }> = {
     critical: { tone: 'danger', label: 'حرج' },
     high: { tone: 'warning', label: 'عالي' },
     medium: { tone: 'info', label: 'متوسط' },
     low: { tone: 'neutral', label: 'منخفض' },
   };
-  const cfg = map[priority] ?? { tone: 'neutral' as Tone, label: priority };
+  const cfg = map[priority] ?? { tone: 'neutral' as BadgeTone, label: priority };
   return <Badge tone={cfg.tone}>{cfg.label}</Badge>;
 }

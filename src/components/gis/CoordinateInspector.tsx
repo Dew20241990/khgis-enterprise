@@ -5,7 +5,6 @@
 import { MapPin, Crosshair, Ruler, Square, Copy, Check } from 'lucide-react';
 import { useState } from 'react';
 import { formatCoordinates, formatDistance, formatArea } from '@/lib/spatialEngine';
-import { cn } from '@/lib/cn';
 
 interface CoordinateInspectorProps {
   lat: number | null;

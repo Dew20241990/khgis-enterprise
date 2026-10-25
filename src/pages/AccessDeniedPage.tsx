@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useApp } from '@/store/appStore';
 
 export function AccessDeniedPage() {
-  const { t, locale, user } = useApp();
+  const { locale, user } = useApp();
   const navigate = useNavigate();
 
   const label = (ar: string, fr: string, en: string) => (locale === 'ar' ? ar : locale === 'fr' ? fr : en);

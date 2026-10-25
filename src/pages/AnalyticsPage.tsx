@@ -1,6 +1,4 @@
-import {
-  BarChart3, TrendingUp, TrendingDown, Users, Trash2, Truck, Clock, Target, Award, Download,
-} from 'lucide-react';
+import { BarChart3, TrendingUp, Trash2, Clock, Target, Award, Download } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { Card, CardHeader, CardBody } from '@/components/ui/Card';
 import { StatCard } from '@/components/ui/StatCard';

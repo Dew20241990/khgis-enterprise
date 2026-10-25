@@ -9,4 +9,5 @@ export { Skeleton, SkeletonRows, EmptyState } from './Feedback';
 export { SmartForm, type FormField, type FieldType } from './SmartForm';
 export { CrudManager, type CrudConfig } from './CrudManager';
 export { ConfirmDialog } from './ConfirmDialog';
-export { ToastContainer, toast } from './Toast';
+export { ToastContainer } from './Toast';
+export { toast } from './toastStore';

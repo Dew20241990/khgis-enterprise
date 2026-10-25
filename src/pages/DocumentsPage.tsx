@@ -1,7 +1,6 @@
-import { FolderArchive, FileText, File, FileCheck, Image, Download, Upload } from 'lucide-react';
+import { FolderArchive, FileText, File, FileCheck, Image } from 'lucide-react';
 import { CrudManager, type CrudConfig } from '@/components/ui/CrudManager';
-import { Badge, StatCard } from '@/components/ui';
-import { useApp } from '@/store/appStore';
+import { Badge } from '@/components/ui';
 
 export interface Doc {
   id: string;
@@ -13,7 +12,7 @@ export interface Doc {
   category: string;
 }
 
-export const docs: Doc[] = Array.from({ length: 24 }, (_, i) => ({
+const docs: Doc[] = Array.from({ length: 24 }, (_, i) => ({
   id: `D-${i + 1}`,
   name: ['تقرير شهري جويلية 2026', 'محضر اجتماع المديرية', 'خطة التنظيف الفصلية', 'عقد مقاولة نظافة', 'تقرير تفتيش بلدي', 'دفتر شروط CET', 'محضر معاينة نقطة سوداء', 'تقرير أداء مقاول'][i % 8],
   type: ['pdf', 'doc', 'pdf', 'doc', 'pdf', 'xlsx', 'pdf', 'doc'][i % 8],
@@ -71,7 +70,6 @@ const config: CrudConfig<Doc> = {
 };
 
 export function DocumentsPage() {
-  const { t } = useApp();
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 lg:grid-cols-6 gap-4">

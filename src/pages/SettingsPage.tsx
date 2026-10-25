@@ -4,7 +4,7 @@ import {
   MapPin, Save, Check,
 } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
-import { Card, CardHeader, CardBody } from '@/components/ui/Card';
+import { Card, CardBody } from '@/components/ui/Card';
 import { useApp } from '@/store/appStore';
 import type { Locale } from '@/i18n/translations';
 import { cn } from '@/lib/cn';

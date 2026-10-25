@@ -35,7 +35,6 @@ export function UserMenu() {
 
   const displayName = user ? (locale === 'ar' ? user.nameAr : locale === 'fr' ? user.nameFr : user.name) : '';
   const displayRole = user ? (locale === 'ar' ? user.roleLabelAr : locale === 'fr' ? user.roleLabelFr : user.roleLabel) : '';
-  const displayDept = user ? (locale === 'ar' ? user.departmentAr : user.department) : '';
 
   return (
     <div className="relative" ref={ref}>
