@@ -163,7 +163,8 @@ function App({ gisReadyPromise }: { gisReadyPromise: Promise<unknown> }) {
 
   // The root dashboard renders the Executive Dashboard for the Wali,
   // and the Operational Dashboard for all other roles.
-  const RootDashboard = hasPermission('exec-dashboard') ? <DashboardPage /> : <OperationalDashboardPage />;
+  // Executive-only accounts (no operational 'dashboard' permission) land on the executive view; everyone else gets the main dashboard.
+  const RootDashboard = hasPermission('dashboard') ? <OperationalDashboardPage /> : <DashboardPage />;
 
   return (
     <QueryClientProvider client={queryClient}>

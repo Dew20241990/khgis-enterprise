@@ -11,3 +11,5 @@
 | QR, maintenance/fuel, procurement, HR, accounting | Not implemented |
 | Auth / persistence / RLS | Client-side demo only; Supabase RLS open to anon (must fix before production) |
 | Duplicate pages | Removed: DistrictsPage, TasksPage, MunicipalityPage (unrouted); /exec/gis, analytics, reports, statistics, rankings, decisions, alerts (same pages under a second URL / placeholders) |
+| Main dashboard (`/`) | Redesigned; every figure derived from data via `lib/dashboardStats.ts` (tested); labelled demo data; AR/FR/EN. Executive dashboard remains at `/exec` |
+| Login page | Redesigned, RTL-correct, no fabricated metrics |
