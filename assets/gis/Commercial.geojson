@@ -6,8 +6,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.151103556637311,
-          35.42169567961675
+          7.1397487538462645,
+          35.41400276662715
         ]
       },
       "properties": {
@@ -21,10 +21,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 0,
-        "lastInspection": "2026-07-01T00:00:00.000Z",
+        "lastInspection": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -35,14 +35,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.216330955884438,
-          35.38505087477563
+          7.229707287454465,
+          35.38383286130477
         ]
       },
       "properties": {
         "uuid": "S-3002",
-        "name": "محل 2 - بوحمامة",
-        "municipality": "بوحمامة",
+        "name": "محل 2 - المحمل",
+        "municipality": "المحمل",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -50,10 +50,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 1,
-        "lastInspection": "2026-07-02T00:00:00.000Z",
+        "lastInspection": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -64,14 +64,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.086368642565305,
-          35.39601539698724
+          7.079534329509338,
+          35.38293172933896
         ]
       },
       "properties": {
         "uuid": "S-3003",
-        "name": "محل 3 - الحمامة",
-        "municipality": "الحمامة",
+        "name": "محل 3 - بابار",
+        "municipality": "بابار",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -79,10 +79,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 2,
-        "lastInspection": "2026-07-03T00:00:00.000Z",
+        "lastInspection": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -93,14 +93,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.184811101460574,
-          35.35701791588856
+          7.187625203959871,
+          35.365254823237755
         ]
       },
       "properties": {
         "uuid": "S-3004",
-        "name": "محل 4 - بقاية",
-        "municipality": "بقاية",
+        "name": "محل 4 - قايس",
+        "municipality": "قايس",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -108,10 +108,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 3,
-        "lastInspection": "2026-07-04T00:00:00.000Z",
+        "lastInspection": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -122,14 +122,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.215307974190227,
-          35.43519666350233
+          7.21546916642109,
+          35.43119283241794
         ]
       },
       "properties": {
         "uuid": "S-3005",
-        "name": "محل 5 - قايس",
-        "municipality": "قايس",
+        "name": "محل 5 - ششار",
+        "municipality": "ششار",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -137,10 +137,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 4,
-        "lastInspection": "2026-07-05T00:00:00.000Z",
+        "lastInspection": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -151,14 +151,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0628098724127995,
-          35.400702948659095
+          7.050220575496658,
+          35.406665013097594
         ]
       },
       "properties": {
         "uuid": "S-3006",
-        "name": "محل 6 - رميلة",
-        "municipality": "رميلة",
+        "name": "محل 6 - أولاد رشاش",
+        "municipality": "أولاد رشاش",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -166,10 +166,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 5,
-        "lastInspection": "2026-07-06T00:00:00.000Z",
+        "lastInspection": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -180,14 +180,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.096674428664489,
-          35.35486801882536
+          7.105360691307728,
+          35.34250341049942
         ]
       },
       "properties": {
         "uuid": "S-3007",
-        "name": "محل 7 - عين التوية",
-        "municipality": "عين التوية",
+        "name": "محل 7 - عين الطويلة",
+        "municipality": "عين الطويلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -195,10 +195,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 0,
-        "lastInspection": "2026-07-07T00:00:00.000Z",
+        "lastInspection": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -209,14 +209,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.191151502916164,
-          35.29124643777342
+          7.1927610722861655,
+          35.29504299793488
         ]
       },
       "properties": {
         "uuid": "S-3008",
-        "name": "محل 8 - بابار",
-        "municipality": "بابار",
+        "name": "محل 8 - الحامة",
+        "municipality": "الحامة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -224,10 +224,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 1,
-        "lastInspection": "2026-07-08T00:00:00.000Z",
+        "lastInspection": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -238,14 +238,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.258706765343716,
-          35.33905711638418
+          7.242850946702114,
+          35.33375926930246
         ]
       },
       "properties": {
         "uuid": "S-3009",
-        "name": "محل 9 - تامزة",
-        "municipality": "تامزة",
+        "name": "محل 9 - تاوزيانات",
+        "municipality": "تاوزيانات",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -253,10 +253,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 2,
-        "lastInspection": "2026-07-09T00:00:00.000Z",
+        "lastInspection": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -267,14 +267,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.276835675923262,
-          35.38885868055718
+          7.270236242952154,
+          35.37739686439563
         ]
       },
       "properties": {
         "uuid": "S-3010",
-        "name": "محل 10 - الولجة",
-        "municipality": "الولجة",
+        "name": "محل 10 - بوحمامة",
+        "municipality": "بوحمامة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -282,10 +282,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 3,
-        "lastInspection": "2026-07-10T00:00:00.000Z",
+        "lastInspection": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -296,14 +296,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.14033706820582,
-          35.28907612638751
+          7.1460843454467,
+          35.274931758367764
         ]
       },
       "properties": {
         "uuid": "S-3011",
-        "name": "محل 11 - بوزينة",
-        "municipality": "بوزينة",
+        "name": "محل 11 - يابوس",
+        "municipality": "يابوس",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -311,10 +311,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 4,
-        "lastInspection": "2026-07-11T00:00:00.000Z",
+        "lastInspection": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -325,14 +325,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.073068202843491,
-          35.453189972272696
+          7.07828147982449,
+          35.44522172972647
         ]
       },
       "properties": {
         "uuid": "S-3012",
-        "name": "محل 12 - شرشار",
-        "municipality": "شرشار",
+        "name": "محل 12 - انسيغة",
+        "municipality": "انسيغة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -340,10 +340,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 5,
-        "lastInspection": "2026-07-12T00:00:00.000Z",
+        "lastInspection": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -354,14 +354,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.21340856678733,
-          35.260866255802384
+          7.217073293910885,
+          35.25609602785499
         ]
       },
       "properties": {
         "uuid": "S-3013",
-        "name": "محل 13 - جلال",
-        "municipality": "جلال",
+        "name": "محل 13 - تامزة",
+        "municipality": "تامزة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -369,10 +369,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 0,
-        "lastInspection": "2026-07-13T00:00:00.000Z",
+        "lastInspection": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -383,14 +383,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.12151528693344,
-          35.48744639515788
+          7.120271911364462,
+          35.474805539036616
         ]
       },
       "properties": {
         "uuid": "S-3014",
-        "name": "محل 14 - المحمل",
-        "municipality": "المحمل",
+        "name": "محل 14 - بغاى",
+        "municipality": "بغاى",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -398,10 +398,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 1,
-        "lastInspection": "2026-07-14T00:00:00.000Z",
+        "lastInspection": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -412,14 +412,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.20503493558736,
-          35.497438490567845
+          7.201193612818196,
+          35.500959916586915
         ]
       },
       "properties": {
         "uuid": "S-3015",
-        "name": "محل 15 - المسارة",
-        "municipality": "المسارة",
+        "name": "محل 15 - متوسة",
+        "municipality": "متوسة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -427,10 +427,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 2,
-        "lastInspection": "2026-07-15T00:00:00.000Z",
+        "lastInspection": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -441,14 +441,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.051895900484385,
-          35.51159004340989
+          7.057810426455432,
+          35.51300008808645
         ]
       },
       "properties": {
         "uuid": "S-3016",
-        "name": "محل 16 - يابوس",
-        "municipality": "يابوس",
+        "name": "محل 16 - خيران",
+        "municipality": "خيران",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -456,10 +456,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 3,
-        "lastInspection": "2026-07-16T00:00:00.000Z",
+        "lastInspection": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -470,14 +470,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.073924969098958,
-          35.248870609976194
+          7.088369287207483,
+          35.23905933311597
         ]
       },
       "properties": {
         "uuid": "S-3017",
-        "name": "محل 17 - خيران",
-        "municipality": "خيران",
+        "name": "محل 17 - الرميلة",
+        "municipality": "الرميلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -485,10 +485,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 4,
-        "lastInspection": "2026-07-17T00:00:00.000Z",
+        "lastInspection": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -499,14 +499,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.181603078864857,
-          35.222877856263665
+          7.185208898799889,
+          35.2231529097311
         ]
       },
       "properties": {
         "uuid": "S-3018",
-        "name": "محل 18 - تازغروت",
-        "municipality": "تازغروت",
+        "name": "محل 18 - شلية",
+        "municipality": "شلية",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -514,10 +514,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 5,
-        "lastInspection": "2026-07-18T00:00:00.000Z",
+        "lastInspection": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -528,14 +528,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.244161220824385,
-          35.54265930431286
+          7.241743416951685,
+          35.55540791675271
         ]
       },
       "properties": {
         "uuid": "S-3019",
-        "name": "محل 19 - تليسنة",
-        "municipality": "تليسنة",
+        "name": "محل 19 - أمصارة",
+        "municipality": "أمصارة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -543,10 +543,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 0,
-        "lastInspection": "2026-07-19T00:00:00.000Z",
+        "lastInspection": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -557,14 +557,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.270206610344103,
-          35.462431696731706
+          7.278808692334323,
+          35.45499806862855
         ]
       },
       "properties": {
         "uuid": "S-3020",
-        "name": "محل 20 - سيدي عقبة",
-        "municipality": "سيدي عقبة",
+        "name": "محل 20 - الولجة",
+        "municipality": "الولجة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -572,10 +572,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 1,
-        "lastInspection": "2026-07-20T00:00:00.000Z",
+        "lastInspection": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -586,14 +586,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.148637257909762,
-          35.58894806345077
+          7.156022948053226,
+          35.587854146422735
         ]
       },
       "properties": {
         "uuid": "S-3021",
-        "name": "محل 21 - المسارة الشرقية",
-        "municipality": "المسارة الشرقية",
+        "name": "محل 21 - جلال",
+        "municipality": "جلال",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -601,10 +601,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 2,
-        "lastInspection": "2026-07-21T00:00:00.000Z",
+        "lastInspection": "2026-07-20T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -615,14 +615,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.062619289485053,
-          35.30858562217918
+          7.151855780031066,
+          35.42220662050275
         ]
       },
       "properties": {
         "uuid": "S-3022",
-        "name": "محل 22 - أولاد رشاش",
-        "municipality": "أولاد رشاش",
+        "name": "محل 22 - خنشلة",
+        "municipality": "خنشلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -630,10 +630,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 3,
-        "lastInspection": "2026-07-22T00:00:00.000Z",
+        "lastInspection": "2026-07-21T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -644,14 +644,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.252910857181687,
-          35.20946869422976
+          7.218956393250239,
+          35.37462480670719
         ]
       },
       "properties": {
         "uuid": "S-3023",
-        "name": "محل 23 - لمسين",
-        "municipality": "لمسين",
+        "name": "محل 23 - المحمل",
+        "municipality": "المحمل",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -659,10 +659,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 4,
-        "lastInspection": "2026-07-23T00:00:00.000Z",
+        "lastInspection": "2026-07-22T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -673,14 +673,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.051591876054901,
-          35.59037195765136
+          7.08305392570695,
+          35.39143303122143
         ]
       },
       "properties": {
         "uuid": "S-3024",
-        "name": "محل 24 - البلالة",
-        "municipality": "البلالة",
+        "name": "محل 24 - بابار",
+        "municipality": "بابار",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -688,10 +688,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 5,
-        "lastInspection": "2026-07-24T00:00:00.000Z",
+        "lastInspection": "2026-07-23T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -702,14 +702,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.097836875054808,
-          35.17654152575042
+          7.175826053780637,
+          35.36975267598017
         ]
       },
       "properties": {
         "uuid": "S-3025",
-        "name": "محل 25 - عنسيغة",
-        "municipality": "عنسيغة",
+        "name": "محل 25 - قايس",
+        "municipality": "قايس",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -717,10 +717,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 0,
-        "lastInspection": "2026-07-25T00:00:00.000Z",
+        "lastInspection": "2026-07-24T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -731,14 +731,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.299015658359201,
-          35.4229847933515
+          7.218742627243569,
+          35.44009613804039
         ]
       },
       "properties": {
         "uuid": "S-3026",
-        "name": "محل 26 - قايس أولاد يحيى",
-        "municipality": "قايس أولاد يحيى",
+        "name": "محل 26 - ششار",
+        "municipality": "ششار",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -746,10 +746,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 1,
-        "lastInspection": "2026-07-01T00:00:00.000Z",
+        "lastInspection": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -760,14 +760,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.143720293403151,
-          35.41602993662397
+          7.059308070816937,
+          35.415425930430025
         ]
       },
       "properties": {
         "uuid": "S-3027",
-        "name": "محل 27 - خنشلة",
-        "municipality": "خنشلة",
+        "name": "محل 27 - أولاد رشاش",
+        "municipality": "أولاد رشاش",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -775,10 +775,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 2,
-        "lastInspection": "2026-07-02T00:00:00.000Z",
+        "lastInspection": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -789,14 +789,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.229145798267505,
-          35.37605746084202
+          7.101284621698406,
+          35.35030118749992
         ]
       },
       "properties": {
         "uuid": "S-3028",
-        "name": "محل 28 - بوحمامة",
-        "municipality": "بوحمامة",
+        "name": "محل 28 - عين الطويلة",
+        "municipality": "عين الطويلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -804,10 +804,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 3,
-        "lastInspection": "2026-07-03T00:00:00.000Z",
+        "lastInspection": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -818,14 +818,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.073494162570231,
-          35.396918943823195
+          7.193072606664507,
+          35.29151040554974
         ]
       },
       "properties": {
         "uuid": "S-3029",
-        "name": "محل 29 - الحمامة",
-        "municipality": "الحمامة",
+        "name": "محل 29 - الحامة",
+        "municipality": "الحامة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -833,10 +833,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 4,
-        "lastInspection": "2026-07-04T00:00:00.000Z",
+        "lastInspection": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -847,14 +847,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.179440842254701,
-          35.35829417375951
+          7.249290755969625,
+          35.32372144009581
         ]
       },
       "properties": {
         "uuid": "S-3030",
-        "name": "محل 30 - بقاية",
-        "municipality": "بقاية",
+        "name": "محل 30 - تاوزيانات",
+        "municipality": "تاوزيانات",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -862,10 +862,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 5,
-        "lastInspection": "2026-07-05T00:00:00.000Z",
+        "lastInspection": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -876,14 +876,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2233225730163815,
-          35.44900689096846
+          7.274311614184265,
+          35.37609610340842
         ]
       },
       "properties": {
         "uuid": "S-3031",
-        "name": "محل 31 - قايس",
-        "municipality": "قايس",
+        "name": "محل 31 - بوحمامة",
+        "municipality": "بوحمامة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -891,10 +891,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 0,
-        "lastInspection": "2026-07-06T00:00:00.000Z",
+        "lastInspection": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -905,14 +905,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.053727175288951,
-          35.40206115785682
+          7.148344781825943,
+          35.27876882561521
         ]
       },
       "properties": {
         "uuid": "S-3032",
-        "name": "محل 32 - رميلة",
-        "municipality": "رميلة",
+        "name": "محل 32 - يابوس",
+        "municipality": "يابوس",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -920,10 +920,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 1,
-        "lastInspection": "2026-07-07T00:00:00.000Z",
+        "lastInspection": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -934,14 +934,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.090989112812423,
-          35.356920578305235
+          7.077529581502652,
+          35.448367186653925
         ]
       },
       "properties": {
         "uuid": "S-3033",
-        "name": "محل 33 - عين التوية",
-        "municipality": "عين التوية",
+        "name": "محل 33 - انسيغة",
+        "municipality": "انسيغة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -949,10 +949,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 2,
-        "lastInspection": "2026-07-08T00:00:00.000Z",
+        "lastInspection": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -963,14 +963,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.206603283634726,
-          35.294786298065425
+          7.21613046684891,
+          35.250603442310826
         ]
       },
       "properties": {
         "uuid": "S-3034",
-        "name": "محل 34 - بابار",
-        "municipality": "بابار",
+        "name": "محل 34 - تامزة",
+        "municipality": "تامزة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -978,10 +978,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 3,
-        "lastInspection": "2026-07-09T00:00:00.000Z",
+        "lastInspection": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -992,14 +992,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.256610007430173,
-          35.321203429462656
+          7.1106709720507135,
+          35.476695921686044
         ]
       },
       "properties": {
         "uuid": "S-3035",
-        "name": "محل 35 - تامزة",
-        "municipality": "تامزة",
+        "name": "محل 35 - بغاى",
+        "municipality": "بغاى",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -1007,10 +1007,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 4,
-        "lastInspection": "2026-07-10T00:00:00.000Z",
+        "lastInspection": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1021,14 +1021,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.28182273441383,
-          35.37958179385726
+          7.195135210114978,
+          35.49895564838787
         ]
       },
       "properties": {
         "uuid": "S-3036",
-        "name": "محل 36 - الولجة",
-        "municipality": "الولجة",
+        "name": "محل 36 - متوسة",
+        "municipality": "متوسة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -1036,10 +1036,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 5,
-        "lastInspection": "2026-07-11T00:00:00.000Z",
+        "lastInspection": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1050,14 +1050,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.147434368259992,
-          35.28546382226161
+          7.0534187523630845,
+          35.515129979724996
         ]
       },
       "properties": {
         "uuid": "S-3037",
-        "name": "محل 37 - بوزينة",
-        "municipality": "بوزينة",
+        "name": "محل 37 - خيران",
+        "municipality": "خيران",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -1065,10 +1065,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 0,
-        "lastInspection": "2026-07-12T00:00:00.000Z",
+        "lastInspection": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1079,14 +1079,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.080561233205967,
-          35.45223870044926
+          7.071827232587127,
+          35.23700969863518
         ]
       },
       "properties": {
         "uuid": "S-3038",
-        "name": "محل 38 - شرشار",
-        "municipality": "شرشار",
+        "name": "محل 38 - الرميلة",
+        "municipality": "الرميلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -1094,10 +1094,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 1,
-        "lastInspection": "2026-07-13T00:00:00.000Z",
+        "lastInspection": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1108,14 +1108,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.220282586256847,
-          35.25507683362299
+          7.17876015767539,
+          35.211822889685244
         ]
       },
       "properties": {
         "uuid": "S-3039",
-        "name": "محل 39 - جلال",
-        "municipality": "جلال",
+        "name": "محل 39 - شلية",
+        "municipality": "شلية",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -1123,10 +1123,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 2,
-        "lastInspection": "2026-07-14T00:00:00.000Z",
+        "lastInspection": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1137,14 +1137,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.113734891220647,
-          35.475583678522334
+          7.251442160998864,
+          35.5556594459621
         ]
       },
       "properties": {
         "uuid": "S-3040",
-        "name": "محل 40 - المحمل",
-        "municipality": "المحمل",
+        "name": "محل 40 - أمصارة",
+        "municipality": "أمصارة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -1152,10 +1152,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 3,
-        "lastInspection": "2026-07-15T00:00:00.000Z",
+        "lastInspection": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1166,14 +1166,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.20160348623893,
-          35.497865302675486
+          7.271095955881487,
+          35.46334293112913
         ]
       },
       "properties": {
         "uuid": "S-3041",
-        "name": "محل 41 - المسارة",
-        "municipality": "المسارة",
+        "name": "محل 41 - الولجة",
+        "municipality": "الولجة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -1181,10 +1181,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 4,
-        "lastInspection": "2026-07-16T00:00:00.000Z",
+        "lastInspection": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1195,14 +1195,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.040157449783242,
-          35.52368991225086
+          7.158644705087237,
+          35.58972335421218
         ]
       },
       "properties": {
         "uuid": "S-3042",
-        "name": "محل 42 - يابوس",
-        "municipality": "يابوس",
+        "name": "محل 42 - جلال",
+        "municipality": "جلال",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -1210,10 +1210,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 5,
-        "lastInspection": "2026-07-17T00:00:00.000Z",
+        "lastInspection": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1224,14 +1224,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.086406470128552,
-          35.24032120504548
+          7.13624357153378,
+          35.422920348255545
         ]
       },
       "properties": {
         "uuid": "S-3043",
-        "name": "محل 43 - خيران",
-        "municipality": "خيران",
+        "name": "محل 43 - خنشلة",
+        "municipality": "خنشلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -1239,10 +1239,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 0,
-        "lastInspection": "2026-07-18T00:00:00.000Z",
+        "lastInspection": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1253,14 +1253,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.174980647831515,
-          35.228865667948526
+          7.215626515912431,
+          35.38170311196314
         ]
       },
       "properties": {
         "uuid": "S-3044",
-        "name": "محل 44 - تازغروت",
-        "municipality": "تازغروت",
+        "name": "محل 44 - المحمل",
+        "municipality": "المحمل",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -1268,10 +1268,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 1,
-        "lastInspection": "2026-07-19T00:00:00.000Z",
+        "lastInspection": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1282,14 +1282,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2434530221143225,
-          35.54762932463651
+          7.083350975677043,
+          35.399018640953294
         ]
       },
       "properties": {
         "uuid": "S-3045",
-        "name": "محل 45 - تليسنة",
-        "municipality": "تليسنة",
+        "name": "محل 45 - بابار",
+        "municipality": "بابار",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -1297,10 +1297,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 2,
-        "lastInspection": "2026-07-20T00:00:00.000Z",
+        "lastInspection": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1311,14 +1311,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.283657429715561,
-          35.46433804983345
+          7.178932537956166,
+          35.35371063104754
         ]
       },
       "properties": {
         "uuid": "S-3046",
-        "name": "محل 46 - سيدي عقبة",
-        "municipality": "سيدي عقبة",
+        "name": "محل 46 - قايس",
+        "municipality": "قايس",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -1326,10 +1326,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 3,
-        "lastInspection": "2026-07-21T00:00:00.000Z",
+        "lastInspection": "2026-07-20T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1340,14 +1340,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.153596918572038,
-          35.58984805560992
+          7.2208094185678915,
+          35.43445070361547
         ]
       },
       "properties": {
         "uuid": "S-3047",
-        "name": "محل 47 - المسارة الشرقية",
-        "municipality": "المسارة الشرقية",
+        "name": "محل 47 - ششار",
+        "municipality": "ششار",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -1355,10 +1355,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 4,
-        "lastInspection": "2026-07-22T00:00:00.000Z",
+        "lastInspection": "2026-07-21T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1369,8 +1369,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.058429838995056,
-          35.30939192570932
+          7.063726712081341,
+          35.408997110738916
         ]
       },
       "properties": {
@@ -1384,10 +1384,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 5,
-        "lastInspection": "2026-07-23T00:00:00.000Z",
+        "lastInspection": "2026-07-22T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1398,14 +1398,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.253187999958564,
-          35.2070416421625
+          7.102587074467278,
+          35.352740942235684
         ]
       },
       "properties": {
         "uuid": "S-3049",
-        "name": "محل 49 - لمسين",
-        "municipality": "لمسين",
+        "name": "محل 49 - عين الطويلة",
+        "municipality": "عين الطويلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -1413,10 +1413,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 0,
-        "lastInspection": "2026-07-24T00:00:00.000Z",
+        "lastInspection": "2026-07-23T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1427,14 +1427,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.054453184612248,
-          35.59133755061727
+          7.193958562707948,
+          35.29199489380699
         ]
       },
       "properties": {
         "uuid": "S-3050",
-        "name": "محل 50 - البلالة",
-        "municipality": "البلالة",
+        "name": "محل 50 - الحامة",
+        "municipality": "الحامة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -1442,10 +1442,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 1,
-        "lastInspection": "2026-07-25T00:00:00.000Z",
+        "lastInspection": "2026-07-24T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1456,14 +1456,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.107523201359764,
-          35.17017742315642
+          7.249589333612697,
+          35.3250370989307
         ]
       },
       "properties": {
         "uuid": "S-3051",
-        "name": "محل 51 - عنسيغة",
-        "municipality": "عنسيغة",
+        "name": "محل 51 - تاوزيانات",
+        "municipality": "تاوزيانات",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -1471,10 +1471,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 2,
-        "lastInspection": "2026-07-01T00:00:00.000Z",
+        "lastInspection": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1485,14 +1485,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.3046697604956,
-          35.436929259847126
+          7.2739986036334905,
+          35.38269153021932
         ]
       },
       "properties": {
         "uuid": "S-3052",
-        "name": "محل 52 - قايس أولاد يحيى",
-        "municipality": "قايس أولاد يحيى",
+        "name": "محل 52 - بوحمامة",
+        "municipality": "بوحمامة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -1500,10 +1500,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 3,
-        "lastInspection": "2026-07-02T00:00:00.000Z",
+        "lastInspection": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1514,14 +1514,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.145690352646245,
-          35.4296216241892
+          7.140867494209232,
+          35.27322784588709
         ]
       },
       "properties": {
         "uuid": "S-3053",
-        "name": "محل 53 - خنشلة",
-        "municipality": "خنشلة",
+        "name": "محل 53 - يابوس",
+        "municipality": "يابوس",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -1529,10 +1529,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 4,
-        "lastInspection": "2026-07-03T00:00:00.000Z",
+        "lastInspection": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1543,14 +1543,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.218496481636162,
-          35.376937124888904
+          7.081244904548587,
+          35.44663328996556
         ]
       },
       "properties": {
         "uuid": "S-3054",
-        "name": "محل 54 - بوحمامة",
-        "municipality": "بوحمامة",
+        "name": "محل 54 - انسيغة",
+        "municipality": "انسيغة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -1558,10 +1558,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 5,
-        "lastInspection": "2026-07-04T00:00:00.000Z",
+        "lastInspection": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1572,14 +1572,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.081010669337827,
-          35.39140551244809
+          7.2293445142248745,
+          35.253642949961716
         ]
       },
       "properties": {
         "uuid": "S-3055",
-        "name": "محل 55 - الحمامة",
-        "municipality": "الحمامة",
+        "name": "محل 55 - تامزة",
+        "municipality": "تامزة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -1587,10 +1587,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 0,
-        "lastInspection": "2026-07-05T00:00:00.000Z",
+        "lastInspection": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1601,14 +1601,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.181941835573942,
-          35.36587389668674
+          7.125101732351326,
+          35.48147382091615
         ]
       },
       "properties": {
         "uuid": "S-3056",
-        "name": "محل 56 - بقاية",
-        "municipality": "بقاية",
+        "name": "محل 56 - بغاى",
+        "municipality": "بغاى",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -1616,10 +1616,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 1,
-        "lastInspection": "2026-07-06T00:00:00.000Z",
+        "lastInspection": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1630,14 +1630,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.213313110168234,
-          35.44353045462413
+          7.202923596222903,
+          35.49548676510964
         ]
       },
       "properties": {
         "uuid": "S-3057",
-        "name": "محل 57 - قايس",
-        "municipality": "قايس",
+        "name": "محل 57 - متوسة",
+        "municipality": "متوسة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -1645,10 +1645,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 2,
-        "lastInspection": "2026-07-07T00:00:00.000Z",
+        "lastInspection": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1659,14 +1659,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.068318116290186,
-          35.4018618477932
+          7.048084949285775,
+          35.51510696800462
         ]
       },
       "properties": {
         "uuid": "S-3058",
-        "name": "محل 58 - رميلة",
-        "municipality": "رميلة",
+        "name": "محل 58 - خيران",
+        "municipality": "خيران",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -1674,10 +1674,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 3,
-        "lastInspection": "2026-07-08T00:00:00.000Z",
+        "lastInspection": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1688,14 +1688,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.107195203184172,
-          35.355428412489985
+          7.084117237297803,
+          35.243698369352664
         ]
       },
       "properties": {
         "uuid": "S-3059",
-        "name": "محل 59 - عين التوية",
-        "municipality": "عين التوية",
+        "name": "محل 59 - الرميلة",
+        "municipality": "الرميلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -1703,10 +1703,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 4,
-        "lastInspection": "2026-07-09T00:00:00.000Z",
+        "lastInspection": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1717,14 +1717,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.193039816070346,
-          35.30498136913986
+          7.187383318908419,
+          35.211016252254176
         ]
       },
       "properties": {
         "uuid": "S-3060",
-        "name": "محل 60 - بابار",
-        "municipality": "بابار",
+        "name": "محل 60 - شلية",
+        "municipality": "شلية",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -1732,10 +1732,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 5,
-        "lastInspection": "2026-07-10T00:00:00.000Z",
+        "lastInspection": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1746,14 +1746,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.255041972552313,
-          35.329227788292044
+          7.259010210420382,
+          35.540387754062735
         ]
       },
       "properties": {
         "uuid": "S-3061",
-        "name": "محل 61 - تامزة",
-        "municipality": "تامزة",
+        "name": "محل 61 - أمصارة",
+        "municipality": "أمصارة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -1761,10 +1761,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 0,
-        "lastInspection": "2026-07-11T00:00:00.000Z",
+        "lastInspection": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1775,8 +1775,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.277189971535725,
-          35.37497108587257
+          7.279835649789151,
+          35.450686712259504
         ]
       },
       "properties": {
@@ -1790,10 +1790,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 1,
-        "lastInspection": "2026-07-12T00:00:00.000Z",
+        "lastInspection": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1804,14 +1804,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.150455012718626,
-          35.28902295962759
+          7.147654054402862,
+          35.57043485269647
         ]
       },
       "properties": {
         "uuid": "S-3063",
-        "name": "محل 63 - بوزينة",
-        "municipality": "بوزينة",
+        "name": "محل 63 - جلال",
+        "municipality": "جلال",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -1819,10 +1819,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 2,
-        "lastInspection": "2026-07-13T00:00:00.000Z",
+        "lastInspection": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1833,14 +1833,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0811578422816535,
-          35.44588613091019
+          7.15466751622143,
+          35.42402809696005
         ]
       },
       "properties": {
         "uuid": "S-3064",
-        "name": "محل 64 - شرشار",
-        "municipality": "شرشار",
+        "name": "محل 64 - خنشلة",
+        "municipality": "خنشلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -1848,10 +1848,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 3,
-        "lastInspection": "2026-07-14T00:00:00.000Z",
+        "lastInspection": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1862,14 +1862,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.219464547536038,
-          35.25019561237674
+          7.213480184075919,
+          35.372865017263166
         ]
       },
       "properties": {
         "uuid": "S-3065",
-        "name": "محل 65 - جلال",
-        "municipality": "جلال",
+        "name": "محل 65 - المحمل",
+        "municipality": "المحمل",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -1877,10 +1877,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 4,
-        "lastInspection": "2026-07-15T00:00:00.000Z",
+        "lastInspection": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1891,14 +1891,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.110930854380496,
-          35.486466380743096
+          7.089637824748393,
+          35.388100551213434
         ]
       },
       "properties": {
         "uuid": "S-3066",
-        "name": "محل 66 - المحمل",
-        "municipality": "المحمل",
+        "name": "محل 66 - بابار",
+        "municipality": "بابار",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -1906,10 +1906,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 5,
-        "lastInspection": "2026-07-16T00:00:00.000Z",
+        "lastInspection": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1920,14 +1920,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.19118173980163,
-          35.50232675616539
+          7.1859106538268644,
+          35.36679161379217
         ]
       },
       "properties": {
         "uuid": "S-3067",
-        "name": "محل 67 - المسارة",
-        "municipality": "المسارة",
+        "name": "محل 67 - قايس",
+        "municipality": "قايس",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -1935,10 +1935,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 0,
-        "lastInspection": "2026-07-17T00:00:00.000Z",
+        "lastInspection": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1949,14 +1949,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.04740490901501,
-          35.522720888110186
+          7.222556333562726,
+          35.438217016350656
         ]
       },
       "properties": {
         "uuid": "S-3068",
-        "name": "محل 68 - يابوس",
-        "municipality": "يابوس",
+        "name": "محل 68 - ششار",
+        "municipality": "ششار",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -1964,10 +1964,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 1,
-        "lastInspection": "2026-07-18T00:00:00.000Z",
+        "lastInspection": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1978,14 +1978,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.078184386695814,
-          35.242803369462266
+          7.069355336304002,
+          35.4029490445197
         ]
       },
       "properties": {
         "uuid": "S-3069",
-        "name": "محل 69 - خيران",
-        "municipality": "خيران",
+        "name": "محل 69 - أولاد رشاش",
+        "municipality": "أولاد رشاش",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -1993,10 +1993,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 2,
-        "lastInspection": "2026-07-19T00:00:00.000Z",
+        "lastInspection": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2007,14 +2007,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.177971859897015,
-          35.218471349843824
+          7.095539110449537,
+          35.359914269865534
         ]
       },
       "properties": {
         "uuid": "S-3070",
-        "name": "محل 70 - تازغروت",
-        "municipality": "تازغروت",
+        "name": "محل 70 - عين الطويلة",
+        "municipality": "عين الطويلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -2022,10 +2022,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 3,
-        "lastInspection": "2026-07-20T00:00:00.000Z",
+        "lastInspection": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2036,14 +2036,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.249846862772593,
-          35.55120420818265
+          7.207338319202342,
+          35.30402417670483
         ]
       },
       "properties": {
         "uuid": "S-3071",
-        "name": "محل 71 - تليسنة",
-        "municipality": "تليسنة",
+        "name": "محل 71 - الحامة",
+        "municipality": "الحامة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -2051,10 +2051,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 4,
-        "lastInspection": "2026-07-21T00:00:00.000Z",
+        "lastInspection": "2026-07-20T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2065,14 +2065,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.288616766116132,
-          35.454445712058956
+          7.252266190950174,
+          35.32253921343872
         ]
       },
       "properties": {
         "uuid": "S-3072",
-        "name": "محل 72 - سيدي عقبة",
-        "municipality": "سيدي عقبة",
+        "name": "محل 72 - تاوزيانات",
+        "municipality": "تاوزيانات",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -2080,10 +2080,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 5,
-        "lastInspection": "2026-07-22T00:00:00.000Z",
+        "lastInspection": "2026-07-21T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2094,14 +2094,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.141374169559105,
-          35.580253582797674
+          7.286671445138989,
+          35.38370012300895
         ]
       },
       "properties": {
         "uuid": "S-3073",
-        "name": "محل 73 - المسارة الشرقية",
-        "municipality": "المسارة الشرقية",
+        "name": "محل 73 - بوحمامة",
+        "municipality": "بوحمامة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -2109,10 +2109,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 0,
-        "lastInspection": "2026-07-23T00:00:00.000Z",
+        "lastInspection": "2026-07-22T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2123,14 +2123,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.067845880858977,
-          35.300589386421606
+          7.158745944376424,
+          35.28563895629799
         ]
       },
       "properties": {
         "uuid": "S-3074",
-        "name": "محل 74 - أولاد رشاش",
-        "municipality": "أولاد رشاش",
+        "name": "محل 74 - يابوس",
+        "municipality": "يابوس",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملحمة",
@@ -2138,10 +2138,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 1,
-        "lastInspection": "2026-07-24T00:00:00.000Z",
+        "lastInspection": "2026-07-23T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2152,14 +2152,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.256307507316867,
-          35.19796390896745
+          7.078695117923681,
+          35.44572861774405
         ]
       },
       "properties": {
         "uuid": "S-3075",
-        "name": "محل 75 - لمسين",
-        "municipality": "لمسين",
+        "name": "محل 75 - انسيغة",
+        "municipality": "انسيغة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "خباز",
@@ -2167,10 +2167,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 2,
-        "lastInspection": "2026-07-25T00:00:00.000Z",
+        "lastInspection": "2026-07-24T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2181,14 +2181,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.059284166744535,
-          35.60774399360946
+          7.229451938685617,
+          35.269670090357295
         ]
       },
       "properties": {
         "uuid": "S-3076",
-        "name": "محل 76 - البلالة",
-        "municipality": "البلالة",
+        "name": "محل 76 - تامزة",
+        "municipality": "تامزة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "صيدلية",
@@ -2196,10 +2196,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 3,
-        "lastInspection": "2026-07-01T00:00:00.000Z",
+        "lastInspection": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2210,14 +2210,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.102987606809777,
-          35.17612414683835
+          7.118810717029011,
+          35.47198350930912
         ]
       },
       "properties": {
         "uuid": "S-3077",
-        "name": "محل 77 - عنسيغة",
-        "municipality": "عنسيغة",
+        "name": "محل 77 - بغاى",
+        "municipality": "بغاى",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "ملابس",
@@ -2225,10 +2225,10 @@
         "feePaid": false,
         "containers": 1,
         "inspections": 4,
-        "lastInspection": "2026-07-02T00:00:00.000Z",
+        "lastInspection": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2239,14 +2239,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.292536029967874,
-          35.43172741769123
+          7.208839907021103,
+          35.4947663291232
         ]
       },
       "properties": {
         "uuid": "S-3078",
-        "name": "محل 78 - قايس أولاد يحيى",
-        "municipality": "قايس أولاد يحيى",
+        "name": "محل 78 - متوسة",
+        "municipality": "متوسة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مطعم",
@@ -2254,10 +2254,10 @@
         "feePaid": true,
         "containers": 2,
         "inspections": 5,
-        "lastInspection": "2026-07-03T00:00:00.000Z",
+        "lastInspection": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2268,14 +2268,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.141316930039338,
-          35.417582678694316
+          7.054319788577477,
+          35.52756111902116
         ]
       },
       "properties": {
         "uuid": "S-3079",
-        "name": "محل 79 - خنشلة",
-        "municipality": "خنشلة",
+        "name": "محل 79 - خيران",
+        "municipality": "خيران",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "مقهى",
@@ -2283,10 +2283,10 @@
         "feePaid": true,
         "containers": 3,
         "inspections": 0,
-        "lastInspection": "2026-07-04T00:00:00.000Z",
+        "lastInspection": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2297,14 +2297,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.215025802560439,
-          35.37855602758451
+          7.084478304200345,
+          35.24766275575
         ]
       },
       "properties": {
         "uuid": "S-3080",
-        "name": "محل 80 - بوحمامة",
-        "municipality": "بوحمامة",
+        "name": "محل 80 - الرميلة",
+        "municipality": "الرميلة",
         "zone": "Zone A",
         "neighborhood": "",
         "category": "سوبر ماركت",
@@ -2312,10 +2312,10 @@
         "feePaid": true,
         "containers": 4,
         "inspections": 1,
-        "lastInspection": "2026-07-05T00:00:00.000Z",
+        "lastInspection": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.245Z",
-        "updatedAt": "2026-07-23T16:09:57.245Z",
+        "createdAt": "2026-10-26T08:13:32.808Z",
+        "updatedAt": "2026-10-26T08:13:32.808Z",
         "status": "active",
         "attachments": [],
         "history": []

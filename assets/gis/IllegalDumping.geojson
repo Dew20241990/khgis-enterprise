@@ -6,8 +6,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.146264197949526,
-          35.419845971527955
+          7.1435865536327325,
+          35.431531416636474
         ]
       },
       "properties": {
@@ -20,10 +20,10 @@
         "volume": 2,
         "type": "construction",
         "status": "reported",
-        "reportedAt": "2026-07-01T00:00:00.000Z",
+        "reportedAt": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -33,24 +33,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2126677791258835,
-          35.37031426615665
+          7.224648248007441,
+          35.37656559671853
         ]
       },
       "properties": {
         "uuid": "ID-5002",
         "code": "ID-5002",
-        "municipality": "بوحمامة",
+        "municipality": "المحمل",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 2، بوحمامة",
+        "location": "منطقة 2، المحمل",
         "volume": 3,
         "type": "household",
         "status": "scheduled",
-        "reportedAt": "2026-07-02T00:00:00.000Z",
+        "reportedAt": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -60,24 +60,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.084231022180792,
-          35.39558028669378
+          7.072094922932352,
+          35.39973709840181
         ]
       },
       "properties": {
         "uuid": "ID-5003",
         "code": "ID-5003",
-        "municipality": "الحمامة",
+        "municipality": "بابار",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 3، الحمامة",
+        "location": "منطقة 3، بابار",
         "volume": 4,
         "type": "industrial",
         "status": "cleared",
-        "reportedAt": "2026-07-03T00:00:00.000Z",
+        "reportedAt": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -87,24 +87,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1776865149098095,
-          35.36638461024487
+          7.184309680911307,
+          35.362321997841754
         ]
       },
       "properties": {
         "uuid": "ID-5004",
         "code": "ID-5004",
-        "municipality": "بقاية",
+        "municipality": "قايس",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 4، بقاية",
+        "location": "منطقة 4، قايس",
         "volume": 5,
         "type": "mixed",
         "status": "reported",
-        "reportedAt": "2026-07-04T00:00:00.000Z",
+        "reportedAt": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -114,24 +114,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2105817434412405,
-          35.44057119895318
+          7.2228854504017805,
+          35.44113093529742
         ]
       },
       "properties": {
         "uuid": "ID-5005",
         "code": "ID-5005",
-        "municipality": "قايس",
+        "municipality": "ششار",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 5، قايس",
+        "location": "منطقة 5، ششار",
         "volume": 6,
         "type": "construction",
         "status": "scheduled",
-        "reportedAt": "2026-07-05T00:00:00.000Z",
+        "reportedAt": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -141,24 +141,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0601106177511035,
-          35.419105583324
+          7.052391707047751,
+          35.40240008402784
         ]
       },
       "properties": {
         "uuid": "ID-5006",
         "code": "ID-5006",
-        "municipality": "رميلة",
+        "municipality": "أولاد رشاش",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 6، رميلة",
+        "location": "منطقة 6، أولاد رشاش",
         "volume": 7,
         "type": "household",
         "status": "cleared",
-        "reportedAt": "2026-07-06T00:00:00.000Z",
+        "reportedAt": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -168,24 +168,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.09419830676772,
-          35.35565998492376
+          7.107940794274921,
+          35.34998813748348
         ]
       },
       "properties": {
         "uuid": "ID-5007",
         "code": "ID-5007",
-        "municipality": "عين التوية",
+        "municipality": "عين الطويلة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 7، عين التوية",
+        "location": "منطقة 7، عين الطويلة",
         "volume": 8,
         "type": "industrial",
         "status": "reported",
-        "reportedAt": "2026-07-07T00:00:00.000Z",
+        "reportedAt": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -195,24 +195,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.198967177901106,
-          35.29538439446261
+          7.205022247526665,
+          35.298442599684265
         ]
       },
       "properties": {
         "uuid": "ID-5008",
         "code": "ID-5008",
-        "municipality": "بابار",
+        "municipality": "الحامة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 8، بابار",
+        "location": "منطقة 8، الحامة",
         "volume": 9,
         "type": "mixed",
         "status": "scheduled",
-        "reportedAt": "2026-07-08T00:00:00.000Z",
+        "reportedAt": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -222,24 +222,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.247114572971735,
-          35.3204789738362
+          7.245180223638159,
+          35.3356096063143
         ]
       },
       "properties": {
         "uuid": "ID-5009",
         "code": "ID-5009",
-        "municipality": "تامزة",
+        "municipality": "تاوزيانات",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 9، تامزة",
+        "location": "منطقة 9، تاوزيانات",
         "volume": 10,
         "type": "construction",
         "status": "cleared",
-        "reportedAt": "2026-07-09T00:00:00.000Z",
+        "reportedAt": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -249,24 +249,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.283203860417801,
-          35.380542478223845
+          7.271876221937041,
+          35.38736064757876
         ]
       },
       "properties": {
         "uuid": "ID-5010",
         "code": "ID-5010",
-        "municipality": "الولجة",
+        "municipality": "بوحمامة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 10، الولجة",
+        "location": "منطقة 10، بوحمامة",
         "volume": 11,
         "type": "household",
         "status": "reported",
-        "reportedAt": "2026-07-10T00:00:00.000Z",
+        "reportedAt": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -276,24 +276,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.150399306106828,
-          35.27395543841015
+          7.156783744797018,
+          35.27045908871876
         ]
       },
       "properties": {
         "uuid": "ID-5011",
         "code": "ID-5011",
-        "municipality": "بوزينة",
+        "municipality": "يابوس",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 11، بوزينة",
+        "location": "منطقة 11، يابوس",
         "volume": 12,
         "type": "industrial",
         "status": "scheduled",
-        "reportedAt": "2026-07-11T00:00:00.000Z",
+        "reportedAt": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -303,24 +303,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.071017768697327,
-          35.45325318364518
+          7.089043173980967,
+          35.44387389870948
         ]
       },
       "properties": {
         "uuid": "ID-5012",
         "code": "ID-5012",
-        "municipality": "شرشار",
+        "municipality": "انسيغة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 12، شرشار",
+        "location": "منطقة 12، انسيغة",
         "volume": 13,
         "type": "mixed",
         "status": "cleared",
-        "reportedAt": "2026-07-12T00:00:00.000Z",
+        "reportedAt": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -330,24 +330,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.215145349119479,
-          35.262033331977634
+          7.215499070543665,
+          35.26861022275293
         ]
       },
       "properties": {
         "uuid": "ID-5013",
         "code": "ID-5013",
-        "municipality": "جلال",
+        "municipality": "تامزة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 13، جلال",
+        "location": "منطقة 13، تامزة",
         "volume": 14,
         "type": "construction",
         "status": "reported",
-        "reportedAt": "2026-07-13T00:00:00.000Z",
+        "reportedAt": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -357,24 +357,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.120408639898326,
-          35.4745403835343
+          7.1109756822958134,
+          35.482096446030894
         ]
       },
       "properties": {
         "uuid": "ID-5014",
         "code": "ID-5014",
-        "municipality": "المحمل",
+        "municipality": "بغاى",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 14، المحمل",
+        "location": "منطقة 14، بغاى",
         "volume": 15,
         "type": "household",
         "status": "scheduled",
-        "reportedAt": "2026-07-14T00:00:00.000Z",
+        "reportedAt": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -384,24 +384,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.197202261945642,
-          35.49522070405967
+          7.204254169752284,
+          35.502888315192564
         ]
       },
       "properties": {
         "uuid": "ID-5015",
         "code": "ID-5015",
-        "municipality": "المسارة",
+        "municipality": "متوسة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 15، المسارة",
+        "location": "منطقة 15، متوسة",
         "volume": 16,
         "type": "industrial",
         "status": "cleared",
-        "reportedAt": "2026-07-15T00:00:00.000Z",
+        "reportedAt": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -411,24 +411,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.055418693237074,
-          35.51417306463733
+          7.055655248394221,
+          35.51801218617715
         ]
       },
       "properties": {
         "uuid": "ID-5016",
         "code": "ID-5016",
-        "municipality": "يابوس",
+        "municipality": "خيران",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 16، يابوس",
+        "location": "منطقة 16، خيران",
         "volume": 2,
         "type": "mixed",
         "status": "reported",
-        "reportedAt": "2026-07-16T00:00:00.000Z",
+        "reportedAt": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -438,24 +438,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.071383007212673,
-          35.24127892822431
+          7.080061015661906,
+          35.24206399012846
         ]
       },
       "properties": {
         "uuid": "ID-5017",
         "code": "ID-5017",
-        "municipality": "خيران",
+        "municipality": "الرميلة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 17، خيران",
+        "location": "منطقة 17، الرميلة",
         "volume": 3,
         "type": "construction",
         "status": "scheduled",
-        "reportedAt": "2026-07-17T00:00:00.000Z",
+        "reportedAt": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -465,24 +465,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.17557566557675,
-          35.22893013108184
+          7.185570857983202,
+          35.21927718740029
         ]
       },
       "properties": {
         "uuid": "ID-5018",
         "code": "ID-5018",
-        "municipality": "تازغروت",
+        "municipality": "شلية",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 18، تازغروت",
+        "location": "منطقة 18، شلية",
         "volume": 4,
         "type": "household",
         "status": "cleared",
-        "reportedAt": "2026-07-18T00:00:00.000Z",
+        "reportedAt": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -492,24 +492,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.253285479747899,
-          35.55944676233439
+          7.2499058295939305,
+          35.55313524747093
         ]
       },
       "properties": {
         "uuid": "ID-5019",
         "code": "ID-5019",
-        "municipality": "تليسنة",
+        "municipality": "أمصارة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 19، تليسنة",
+        "location": "منطقة 19، أمصارة",
         "volume": 5,
         "type": "industrial",
         "status": "reported",
-        "reportedAt": "2026-07-19T00:00:00.000Z",
+        "reportedAt": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -519,24 +519,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.273864419559237,
-          35.46139787140311
+          7.272646332711869,
+          35.45471660594186
         ]
       },
       "properties": {
         "uuid": "ID-5020",
         "code": "ID-5020",
-        "municipality": "سيدي عقبة",
+        "municipality": "الولجة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 20، سيدي عقبة",
+        "location": "منطقة 20، الولجة",
         "volume": 6,
         "type": "mixed",
         "status": "scheduled",
-        "reportedAt": "2026-07-20T00:00:00.000Z",
+        "reportedAt": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -546,24 +546,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.145166144573724,
-          35.57801426118265
+          7.156943922231193,
+          35.588517773007325
         ]
       },
       "properties": {
         "uuid": "ID-5021",
         "code": "ID-5021",
-        "municipality": "المسارة الشرقية",
+        "municipality": "جلال",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 21، المسارة الشرقية",
+        "location": "منطقة 21، جلال",
         "volume": 7,
         "type": "construction",
         "status": "cleared",
-        "reportedAt": "2026-07-01T00:00:00.000Z",
+        "reportedAt": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -573,24 +573,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.050061955225034,
-          35.312912966031455
+          7.147030578641115,
+          35.41394556911831
         ]
       },
       "properties": {
         "uuid": "ID-5022",
         "code": "ID-5022",
-        "municipality": "أولاد رشاش",
+        "municipality": "خنشلة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 22، أولاد رشاش",
+        "location": "منطقة 22، خنشلة",
         "volume": 8,
         "type": "household",
         "status": "reported",
-        "reportedAt": "2026-07-02T00:00:00.000Z",
+        "reportedAt": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -600,24 +600,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.252503545905553,
-          35.207692037298955
+          7.224721043755702,
+          35.37868058917427
         ]
       },
       "properties": {
         "uuid": "ID-5023",
         "code": "ID-5023",
-        "municipality": "لمسين",
+        "municipality": "المحمل",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 23، لمسين",
+        "location": "منطقة 23، المحمل",
         "volume": 9,
         "type": "industrial",
         "status": "scheduled",
-        "reportedAt": "2026-07-03T00:00:00.000Z",
+        "reportedAt": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -627,24 +627,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.040527418082181,
-          35.60090355822752
+          7.083727177082844,
+          35.38595414310023
         ]
       },
       "properties": {
         "uuid": "ID-5024",
         "code": "ID-5024",
-        "municipality": "البلالة",
+        "municipality": "بابار",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 24، البلالة",
+        "location": "منطقة 24، بابار",
         "volume": 10,
         "type": "mixed",
         "status": "cleared",
-        "reportedAt": "2026-07-04T00:00:00.000Z",
+        "reportedAt": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -654,24 +654,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.096966205847179,
-          35.18739744026212
+          7.186668724661303,
+          35.362559004456365
         ]
       },
       "properties": {
         "uuid": "ID-5025",
         "code": "ID-5025",
-        "municipality": "عنسيغة",
+        "municipality": "قايس",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 25، عنسيغة",
+        "location": "منطقة 25، قايس",
         "volume": 11,
         "type": "construction",
         "status": "reported",
-        "reportedAt": "2026-07-05T00:00:00.000Z",
+        "reportedAt": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -681,24 +681,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.294156752077799,
-          35.42529938642228
+          7.223223515827712,
+          35.449095131177145
         ]
       },
       "properties": {
         "uuid": "ID-5026",
         "code": "ID-5026",
-        "municipality": "قايس أولاد يحيى",
+        "municipality": "ششار",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 26، قايس أولاد يحيى",
+        "location": "منطقة 26، ششار",
         "volume": 12,
         "type": "household",
         "status": "scheduled",
-        "reportedAt": "2026-07-06T00:00:00.000Z",
+        "reportedAt": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -708,24 +708,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.149374695927527,
-          35.430371370473345
+          7.060938609707366,
+          35.406614608853225
         ]
       },
       "properties": {
         "uuid": "ID-5027",
         "code": "ID-5027",
-        "municipality": "خنشلة",
+        "municipality": "أولاد رشاش",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 27، خنشلة",
+        "location": "منطقة 27، أولاد رشاش",
         "volume": 13,
         "type": "industrial",
         "status": "cleared",
-        "reportedAt": "2026-07-07T00:00:00.000Z",
+        "reportedAt": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -735,24 +735,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.212258517348779,
-          35.3797698381499
+          7.103611294348115,
+          35.35001526438264
         ]
       },
       "properties": {
         "uuid": "ID-5028",
         "code": "ID-5028",
-        "municipality": "بوحمامة",
+        "municipality": "عين الطويلة",
         "zone": "Zone A",
         "neighborhood": "",
-        "location": "منطقة 28، بوحمامة",
+        "location": "منطقة 28، عين الطويلة",
         "volume": 14,
         "type": "mixed",
         "status": "reported",
-        "reportedAt": "2026-07-08T00:00:00.000Z",
+        "reportedAt": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }

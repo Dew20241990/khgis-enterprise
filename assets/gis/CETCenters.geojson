@@ -22,8 +22,8 @@
         "zone": "Zone A",
         "neighborhood": "",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.247Z",
-        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -49,8 +49,8 @@
         "zone": "Zone A",
         "neighborhood": "",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.247Z",
-        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -66,18 +66,18 @@
       },
       "properties": {
         "uuid": "CET-3",
-        "name": "مركز الطرح بقاية",
-        "city": "بقاية",
+        "name": "مركز الطرح بغاى",
+        "city": "بغاى",
         "capacityTpd": 350,
         "currentLoadTpd": 180,
         "status": "operational",
         "manager": "م. قاووس",
-        "municipality": "بقاية",
+        "municipality": "بغاى",
         "zone": "Zone A",
         "neighborhood": "",
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.247Z",
-        "updatedAt": "2026-07-23T16:09:57.247Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }

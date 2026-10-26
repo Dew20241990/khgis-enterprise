@@ -143,4 +143,4 @@ Full detail lives in `docs/IMPLEMENTATION_STATUS.md`.
 
 ## 6. Post-Phase-A status
 
-Lint 314→0 errors; typecheck, 85 tests and build pass. Fixed: D1 (tracking honesty), D6, D7, D9, S2, S3, G2, G4, I3. Removed duplicate/placeholder pages (Q4, D5). Still open: S1/S4/S5, D2, D3, D4, I2, G1, G3, Q2, Q3.
+Lint 314→0 errors; typecheck, 85 tests and build pass. Fixed: D1 (tracking honesty), D6, D7, D9, S2, S3, G2, G4, I3. Removed duplicate/placeholder pages (Q4, D5). D2 resolved: municipalities are now the 21 communes of Khenchela (names/populations from citypopulation.de, 2008 census; other figures remain demo values), GIS assets regenerated. Still open: S1/S4/S5, D3, D4, I2, G1, G3, Q2, Q3.

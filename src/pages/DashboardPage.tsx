@@ -817,9 +817,9 @@ function AlertCenter() {
   const execAlerts = [
     { id: 'EA1', priority: 'critical', title: locale === 'ar' ? 'نقاط سوداء حرجة في خنشلة المركز' : 'Critical black spots in Khenchela', location: 'خنشلة - حي النصر', responsible: locale === 'ar' ? 'البلدية' : 'Municipality', elapsed: '12 min', action: locale === 'ar' ? 'تدخل فوري مطلوب' : 'Immediate intervention required' },
     { id: 'EA2', priority: 'critical', title: locale === 'ar' ? 'تفريغ عشوائي متكرر في قايس' : 'Repeated illegal dumping in Kais', location: 'قايس - المنطقة الشرقية', responsible: locale === 'ar' ? 'مركز الطرح' : 'CET', elapsed: '35 min', action: locale === 'ar' ? 'نشر فرق التنظيف' : 'Deploy cleaning teams' },
-    { id: 'EA3', priority: 'warning', title: locale === 'ar' ? 'حاويات ممتلئة تجاوزت 95%' : 'Containers overflowing 95%', location: 'بقاية - الوسط', responsible: locale === 'ar' ? 'المقاول' : 'Contractor', elapsed: '1h', action: locale === 'ar' ? 'تفريغ عاجل' : 'Urgent collection' },
-    { id: 'EA4', priority: 'warning', title: locale === 'ar' ? 'أوامر شغل متأخرة' : 'Delayed work orders', location: 'الحمامة', responsible: locale === 'ar' ? 'البلدية' : 'Municipality', elapsed: '2h', action: locale === 'ar' ? 'متابعة الإكمال' : 'Follow up completion' },
-    { id: 'EA5', priority: 'warning', title: locale === 'ar' ? 'بلدية بأداء ضعيف' : 'Poor performing municipality', location: 'عنسيغة', responsible: locale === 'ar' ? 'مديرية البيئة' : 'Env. Directorate', elapsed: '3h', action: locale === 'ar' ? 'مراجعة الخطة' : 'Review plan' },
+    { id: 'EA3', priority: 'warning', title: locale === 'ar' ? 'حاويات ممتلئة تجاوزت 95%' : 'Containers overflowing 95%', location: 'بغاى - الوسط', responsible: locale === 'ar' ? 'المقاول' : 'Contractor', elapsed: '1h', action: locale === 'ar' ? 'تفريغ عاجل' : 'Urgent collection' },
+    { id: 'EA4', priority: 'warning', title: locale === 'ar' ? 'أوامر شغل متأخرة' : 'Delayed work orders', location: 'الحامة', responsible: locale === 'ar' ? 'البلدية' : 'Municipality', elapsed: '2h', action: locale === 'ar' ? 'متابعة الإكمال' : 'Follow up completion' },
+    { id: 'EA5', priority: 'warning', title: locale === 'ar' ? 'بلدية بأداء ضعيف' : 'Poor performing municipality', location: 'انسيغة', responsible: locale === 'ar' ? 'مديرية البيئة' : 'Env. Directorate', elapsed: '3h', action: locale === 'ar' ? 'مراجعة الخطة' : 'Review plan' },
     { id: 'EA6', priority: 'info', title: locale === 'ar' ? 'مقاول غير نشط' : 'Inactive contractor', location: 'شرق خنشلة', responsible: locale === 'ar' ? 'مقاولة الأمل' : 'Al Amal', elapsed: '5h', action: locale === 'ar' ? 'تقييم الوضع' : 'Assess situation' },
   ];
 
@@ -929,8 +929,8 @@ function RecentActivities() {
   const activities = [
     { id: 1, type: 'inspection', title: locale === 'ar' ? 'جولة تفتيش مكتملة' : 'Inspection tour completed', detail: 'INS-7012 — خنشلة', time: 'قبل 15 دقيقة', icon: <ClipboardCheck className="w-4 h-4" />, tone: 'brand' as const },
     { id: 2, type: 'workOrder', title: locale === 'ar' ? 'أمر شغل جديد' : 'New work order', detail: 'WO-20015 — قايس', time: 'قبل 32 دقيقة', icon: <Wrench className="w-4 h-4" />, tone: 'warning' as const },
-    { id: 3, type: 'cleaning', title: locale === 'ar' ? 'عملية تنظيف مكتملة' : 'Cleaning operation completed', detail: 'RT-6005 — بقاية', time: 'قبل ساعة', icon: <Truck className="w-4 h-4" />, tone: 'success' as const },
-    { id: 4, type: 'complaint', title: locale === 'ar' ? 'شكوى مواطن' : 'Citizen complaint', detail: 'CM-8008 — الحمامة', time: 'قبل ساعتين', icon: <Users className="w-4 h-4" />, tone: 'warning' as const },
+    { id: 3, type: 'cleaning', title: locale === 'ar' ? 'عملية تنظيف مكتملة' : 'Cleaning operation completed', detail: 'RT-6005 — بغاى', time: 'قبل ساعة', icon: <Truck className="w-4 h-4" />, tone: 'success' as const },
+    { id: 4, type: 'complaint', title: locale === 'ar' ? 'شكوى مواطن' : 'Citizen complaint', detail: 'CM-8008 — الحامة', time: 'قبل ساعتين', icon: <Users className="w-4 h-4" />, tone: 'warning' as const },
     { id: 5, type: 'blackSpot', title: locale === 'ar' ? 'نقطة سوداء جديدة' : 'New black spot', detail: 'BS-1042 — بوحمامة', time: 'قبل 3 ساعات', icon: <AlertTriangle className="w-4 h-4" />, tone: 'danger' as const },
     { id: 6, type: 'resolved', title: locale === 'ar' ? 'تم حل حالة' : 'Case resolved', detail: 'BS-1024 — قايس', time: 'قبل 4 ساعات', icon: <CheckCircle2 className="w-4 h-4" />, tone: 'success' as const },
   ];

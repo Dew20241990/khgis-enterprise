@@ -6,8 +6,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.148654056187681,
-          35.433322928501234
+          7.147938308084676,
+          35.41947597255672
         ]
       },
       "properties": {
@@ -23,8 +23,8 @@
         "fuel": 46,
         "mileage": 45000,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -34,8 +34,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.212241547680359,
-          35.37002354274631
+          7.224488800828611,
+          35.38503459124231
         ]
       },
       "properties": {
@@ -45,14 +45,14 @@
         "capacity": 12,
         "status": "idle",
         "driver": "السائق 2",
-        "municipality": "بوحمامة",
+        "municipality": "المحمل",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 13,
+        "fuel": 99,
         "mileage": 46234,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -62,8 +62,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.082041974530648,
-          35.38173673923299
+          7.0769074988680485,
+          35.393380700605185
         ]
       },
       "properties": {
@@ -73,14 +73,14 @@
         "capacity": 8,
         "status": "maintenance",
         "driver": "السائق 3",
-        "municipality": "الحمامة",
+        "municipality": "بابار",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 19,
+        "fuel": 53,
         "mileage": 47468,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -90,8 +90,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1818094144911395,
-          35.363981648651595
+          7.177903285137034,
+          35.36995346120208
         ]
       },
       "properties": {
@@ -101,14 +101,14 @@
         "capacity": 3,
         "status": "offline",
         "driver": "السائق 4",
-        "municipality": "بقاية",
+        "municipality": "قايس",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 32,
+        "fuel": 56,
         "mileage": 48702,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -118,8 +118,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.223502994296816,
-          35.44380839459063
+          7.227315750155378,
+          35.439045714690536
         ]
       },
       "properties": {
@@ -129,14 +129,14 @@
         "capacity": 6,
         "status": "active",
         "driver": "السائق 5",
-        "municipality": "قايس",
+        "municipality": "ششار",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 31,
+        "fuel": 67,
         "mileage": 49936,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -146,8 +146,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.059081267763079,
-          35.41136861113703
+          7.052502065066721,
+          35.40466835464799
         ]
       },
       "properties": {
@@ -157,14 +157,14 @@
         "capacity": 12,
         "status": "idle",
         "driver": "السائق 6",
-        "municipality": "رميلة",
+        "municipality": "أولاد رشاش",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 12,
+        "fuel": 23,
         "mileage": 51170,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -174,8 +174,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.102135060473496,
-          35.35379546087113
+          7.105503838831566,
+          35.34869632174195
         ]
       },
       "properties": {
@@ -185,14 +185,14 @@
         "capacity": 8,
         "status": "maintenance",
         "driver": "السائق 7",
-        "municipality": "عين التوية",
+        "municipality": "عين الطويلة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 43,
+        "fuel": 98,
         "mileage": 52404,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -202,8 +202,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.203314102060171,
-          35.30488228341704
+          7.203688586379728,
+          35.298615780286205
         ]
       },
       "properties": {
@@ -213,14 +213,14 @@
         "capacity": 3,
         "status": "offline",
         "driver": "السائق 8",
-        "municipality": "بابار",
+        "municipality": "الحامة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 19,
+        "fuel": 51,
         "mileage": 53638,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -230,8 +230,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.246418599991235,
-          35.33119181169626
+          7.2406493039984445,
+          35.33665433990358
         ]
       },
       "properties": {
@@ -241,14 +241,14 @@
         "capacity": 6,
         "status": "active",
         "driver": "السائق 9",
-        "municipality": "تامزة",
+        "municipality": "تاوزيانات",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 16,
+        "fuel": 3,
         "mileage": 54872,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -258,8 +258,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2751745344802305,
-          35.385209372053446
+          7.281452752730354,
+          35.38053456115017
         ]
       },
       "properties": {
@@ -269,14 +269,14 @@
         "capacity": 12,
         "status": "idle",
         "driver": "السائق 10",
-        "municipality": "الولجة",
+        "municipality": "بوحمامة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 56,
+        "fuel": 73,
         "mileage": 56106,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -286,8 +286,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.151619347156506,
-          35.27794332201076
+          7.158621508571725,
+          35.28472202708199
         ]
       },
       "properties": {
@@ -297,14 +297,14 @@
         "capacity": 8,
         "status": "maintenance",
         "driver": "السائق 11",
-        "municipality": "بوزينة",
+        "municipality": "يابوس",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 61,
+        "fuel": 60,
         "mileage": 57340,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -314,8 +314,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.084981232545167,
-          35.441457029437636
+          7.075653886421244,
+          35.447274535762595
         ]
       },
       "properties": {
@@ -325,14 +325,14 @@
         "capacity": 3,
         "status": "offline",
         "driver": "السائق 12",
-        "municipality": "شرشار",
+        "municipality": "انسيغة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 96,
+        "fuel": 76,
         "mileage": 58574,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -342,8 +342,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.226648579343607,
-          35.26204024584952
+          7.210564428581517,
+          35.25376345111121
         ]
       },
       "properties": {
@@ -353,14 +353,14 @@
         "capacity": 6,
         "status": "active",
         "driver": "السائق 13",
-        "municipality": "جلال",
+        "municipality": "تامزة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 1,
+        "fuel": 71,
         "mileage": 59808,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -370,8 +370,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.119674259924651,
-          35.47308529879384
+          7.129740575455607,
+          35.4805303014647
         ]
       },
       "properties": {
@@ -381,14 +381,14 @@
         "capacity": 12,
         "status": "idle",
         "driver": "السائق 14",
-        "municipality": "المحمل",
+        "municipality": "بغاى",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 91,
+        "fuel": 6,
         "mileage": 61042,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -398,8 +398,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.190568674854063,
-          35.49040258639559
+          7.194378411163435,
+          35.50881046647454
         ]
       },
       "properties": {
@@ -409,14 +409,14 @@
         "capacity": 8,
         "status": "maintenance",
         "driver": "السائق 15",
-        "municipality": "المسارة",
+        "municipality": "متوسة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 53,
+        "fuel": 46,
         "mileage": 62276,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -426,8 +426,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0504729926335745,
-          35.51830433841813
+          7.0431501457150745,
+          35.52696140751949
         ]
       },
       "properties": {
@@ -437,14 +437,14 @@
         "capacity": 3,
         "status": "offline",
         "driver": "السائق 16",
-        "municipality": "يابوس",
+        "municipality": "خيران",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 56,
+        "fuel": 6,
         "mileage": 63510,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -454,8 +454,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.079084114341921,
-          35.23787483040251
+          7.080761820567942,
+          35.23150930185847
         ]
       },
       "properties": {
@@ -465,14 +465,14 @@
         "capacity": 6,
         "status": "active",
         "driver": "السائق 17",
-        "municipality": "خيران",
+        "municipality": "الرميلة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 65,
+        "fuel": 17,
         "mileage": 64744,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -482,8 +482,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.187943698945892,
-          35.21402652802321
+          7.173200223131157,
+          35.220992668857896
         ]
       },
       "properties": {
@@ -493,14 +493,14 @@
         "capacity": 12,
         "status": "idle",
         "driver": "السائق 18",
-        "municipality": "تازغروت",
+        "municipality": "شلية",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 2,
+        "fuel": 47,
         "mileage": 65978,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -510,8 +510,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.257414131697964,
-          35.54148423673634
+          7.241322082992923,
+          35.54206469048238
         ]
       },
       "properties": {
@@ -521,14 +521,14 @@
         "capacity": 8,
         "status": "maintenance",
         "driver": "السائق 19",
-        "municipality": "تليسنة",
+        "municipality": "أمصارة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 95,
+        "fuel": 77,
         "mileage": 67212,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -538,8 +538,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.283814160939462,
-          35.46520773263991
+          7.288898410280771,
+          35.462859516530465
         ]
       },
       "properties": {
@@ -549,14 +549,14 @@
         "capacity": 3,
         "status": "offline",
         "driver": "السائق 20",
-        "municipality": "سيدي عقبة",
+        "municipality": "الولجة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 49,
+        "fuel": 61,
         "mileage": 68446,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -566,8 +566,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1440583780416125,
-          35.58931806954755
+          7.146780186556564,
+          35.57142229790947
         ]
       },
       "properties": {
@@ -577,14 +577,14 @@
         "capacity": 6,
         "status": "active",
         "driver": "السائق 21",
-        "municipality": "المسارة الشرقية",
+        "municipality": "جلال",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 89,
+        "fuel": 9,
         "mileage": 69680,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -594,8 +594,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.053403271828235,
-          35.31773939060482
+          7.142103456311053,
+          35.417240931613925
         ]
       },
       "properties": {
@@ -605,14 +605,14 @@
         "capacity": 12,
         "status": "idle",
         "driver": "السائق 22",
-        "municipality": "أولاد رشاش",
+        "municipality": "خنشلة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 38,
+        "fuel": 12,
         "mileage": 70914,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -622,8 +622,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.243792003342703,
-          35.20634881587302
+          7.218012514674419,
+          35.376548907884604
         ]
       },
       "properties": {
@@ -633,14 +633,14 @@
         "capacity": 8,
         "status": "maintenance",
         "driver": "السائق 23",
-        "municipality": "لمسين",
+        "municipality": "المحمل",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 60,
+        "fuel": 3,
         "mileage": 72148,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -650,8 +650,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.051079234750514,
-          35.5999056014575
+          7.076501564257048,
+          35.39588964111974
         ]
       },
       "properties": {
@@ -661,14 +661,14 @@
         "capacity": 3,
         "status": "offline",
         "driver": "السائق 24",
-        "municipality": "البلالة",
+        "municipality": "بابار",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 18,
+        "fuel": 16,
         "mileage": 73382,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -678,8 +678,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.104481090799729,
-          35.172240926256016
+          7.188145694004321,
+          35.35466955254832
         ]
       },
       "properties": {
@@ -689,14 +689,14 @@
         "capacity": 6,
         "status": "active",
         "driver": "السائق 25",
-        "municipality": "عنسيغة",
+        "municipality": "قايس",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 6,
+        "fuel": 38,
         "mileage": 74616,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -706,8 +706,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.296210757922993,
-          35.43401242576729
+          7.2187132022797265,
+          35.43303519112159
         ]
       },
       "properties": {
@@ -717,14 +717,14 @@
         "capacity": 12,
         "status": "idle",
         "driver": "السائق 26",
-        "municipality": "قايس أولاد يحيى",
+        "municipality": "ششار",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 32,
+        "fuel": 63,
         "mileage": 75850,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -734,8 +734,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.145375094025767,
-          35.42513437964704
+          7.063390598040522,
+          35.41821881086172
         ]
       },
       "properties": {
@@ -745,14 +745,14 @@
         "capacity": 8,
         "status": "maintenance",
         "driver": "السائق 27",
-        "municipality": "خنشلة",
+        "municipality": "أولاد رشاش",
         "zone": "Zone A",
         "neighborhood": "",
         "fuel": 64,
         "mileage": 77084,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -762,8 +762,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.220859103832907,
-          35.376843825072825
+          7.098780752082432,
+          35.345662461525926
         ]
       },
       "properties": {
@@ -773,14 +773,14 @@
         "capacity": 3,
         "status": "offline",
         "driver": "السائق 28",
-        "municipality": "بوحمامة",
+        "municipality": "عين الطويلة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 62,
+        "fuel": 38,
         "mileage": 78318,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -790,8 +790,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.073903442121304,
-          35.392947130066894
+          7.191047224079707,
+          35.30862260550588
         ]
       },
       "properties": {
@@ -801,14 +801,14 @@
         "capacity": 6,
         "status": "active",
         "driver": "السائق 29",
-        "municipality": "الحمامة",
+        "municipality": "الحامة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 86,
+        "fuel": 49,
         "mileage": 79552,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -818,8 +818,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.189901272889576,
-          35.36410225889144
+          7.257724563010147,
+          35.32841894002766
         ]
       },
       "properties": {
@@ -829,14 +829,14 @@
         "capacity": 12,
         "status": "idle",
         "driver": "السائق 30",
-        "municipality": "بقاية",
+        "municipality": "تاوزيانات",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 57,
+        "fuel": 1,
         "mileage": 80786,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -846,8 +846,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.228763853509087,
-          35.44311530258183
+          7.276821121820391,
+          35.38300443514321
         ]
       },
       "properties": {
@@ -857,14 +857,14 @@
         "capacity": 8,
         "status": "maintenance",
         "driver": "السائق 31",
-        "municipality": "قايس",
+        "municipality": "بوحمامة",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 76,
+        "fuel": 17,
         "mileage": 82020,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
@@ -874,8 +874,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.052799466442612,
-          35.40913602001582
+          7.155406536996913,
+          35.270865226796154
         ]
       },
       "properties": {
@@ -885,14 +885,14 @@
         "capacity": 3,
         "status": "offline",
         "driver": "السائق 32",
-        "municipality": "رميلة",
+        "municipality": "يابوس",
         "zone": "Zone A",
         "neighborhood": "",
-        "fuel": 1,
+        "fuel": 21,
         "mileage": 83254,
         "createdBy": "system",
-        "createdAt": "2026-07-23T16:09:57.246Z",
-        "updatedAt": "2026-07-23T16:09:57.246Z",
+        "createdAt": "2026-10-26T08:13:32.810Z",
+        "updatedAt": "2026-10-26T08:13:32.810Z",
         "attachments": [],
         "history": []
       }
