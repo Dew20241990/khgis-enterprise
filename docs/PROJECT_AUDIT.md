@@ -94,8 +94,8 @@ this audit: no browser is available in this environment.
 
 | # | Finding | Evidence |
 |---|---|---|
-| I1 | **117 Arabic keys have no French or English translation.** `ar` has 458 keys; `fr` and `en` each have 341. `translate()` falls back to `en`, then to the **raw key**, so French/English users see literal text such as `edit`, `delete`, `kpiOpenSpots`, `liveGps`. | `translations.ts`; verified by script |
-| I2 | Many pages hard-code Arabic strings instead of using `t()` (e.g. `TruckTrackingPage`, `App.tsx` loading screen). | grep |
+| I1 | **Dictionaries are complete.** `ar`, `fr`, `en` have identical key sets and no Arabic leaks into fr/en (verified by `src/i18n/translations.test.ts`). *Correction:* an earlier draft of this audit claimed 117 keys were missing from fr/en; that was a counting error caused by several entries sharing one source line. | `translations.ts` |
+| I2 | **Most UI text bypasses the dictionaries.** 1,238 source lines in 61 files outside `i18n/` and `data/` contain hard-coded Arabic (worst: `DashboardPage` 178, `MunicipalitiesPage` 44, `EpwgWorkOrdersPage` 40, `IllegalDumpingPage` 36, `GisPage` 36). French/English users see Arabic labels, toasts, form labels, column headers and dialogs on these screens. Some pages switch on `locale === 'ar' ? … : …` inline instead of using `t()`. | measured by script |
 | I3 | `dir`/`lang` are set as a **side effect during render** in `AppLayout` (and again in `LoginPage`); this should be an effect. Charts/maps are not direction-aware. | `AppLayout.tsx:13-18` |
 | I4 | Default locale is `ar`; locale and theme **are** persisted. | `appStore.ts` |
 
@@ -136,7 +136,11 @@ Full detail lives in `docs/IMPLEMENTATION_STATUS.md`.
 1. **Stabilise (Phase A):** zero lint errors; remove dead code/dependencies; keep typecheck+build green; add verification script.
 2. **Security quick wins:** stop persisting credentials; stop pre-filling passwords; label the login as a demo gate; document RLS risk.
 3. **Honesty fixes:** label simulated tracking as simulated; fix tile attribution; mark demo data.
-4. **i18n:** add the 117 missing `fr`/`en` keys; move direction handling into an effect.
+4. **i18n:** move the 1,238 hard-coded Arabic lines onto `t()`; make direction handling an effect; make tables/charts/maps direction-aware.
 5. **Persistence layer:** introduce a repository boundary so CRUD changes persist (localStorage adapter now, backend later).
-6. **Tests:** introduce Vitest for pure logic (spatial engine, import/export, i18n parity, auth).
+6. **Tests:** ✅ Vitest introduced in Phase A (spatial engine, import/export, CSV, geometry, form values, i18n parity, auth session).
 7. **GIS decision:** keep Leaflet or migrate to MapLibre — requires owner decision.
+
+## 6. Post-Phase-A status
+
+Lint 314→0 errors; typecheck, 85 tests and build pass. Fixed: D1 (tracking honesty), D6, D7, D9, S2, S3, G2, G4, I3. Removed duplicate/placeholder pages (Q4, D5). Still open: S1/S4/S5, D2, D3, D4, I2, G1, G3, Q2, Q3.

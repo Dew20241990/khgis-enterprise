@@ -1,5 +1,13 @@
 export type Role = 'admin' | 'environment' | 'municipality' | 'cet' | 'contractor' | 'wali';
 
+/**
+ * DEMO AUTHENTICATION ONLY.
+ * Accounts and passwords below ship inside the client bundle, so this is a UI gate, not security.
+ * Replace with server-side authentication before any real deployment. Set VITE_DEMO_MODE=false to
+ * disable demo sign-in entirely.
+ */
+export const DEMO_MODE: boolean = import.meta.env.VITE_DEMO_MODE !== 'false';
+
 export interface MockUser {
   username: string;
   password: string;
@@ -49,13 +57,6 @@ export type Permission =
   | 'settings'
   // Executive permissions (Wali-exclusive)
   | 'exec-dashboard'
-  | 'exec-gis'
-  | 'exec-analytics'
-  | 'exec-reports'
-  | 'exec-statistics'
-  | 'exec-rankings'
-  | 'exec-decisions'
-  | 'exec-alerts'
   // EPWG — Public Wilaya Establishment for Technical Landfill Centers
   | 'epwg'
   | 'epwg-facilities'
@@ -83,15 +84,13 @@ const ALL_PERMISSIONS: Permission[] = [
   'contractors', 'complaints', 'reports', 'analytics', 'statistics',
   'documents', 'users', 'roles', 'permissions', 'audit-logs',
   'ai-assistant', 'settings',
-  'exec-dashboard', 'exec-gis', 'exec-analytics', 'exec-reports',
-  'exec-statistics', 'exec-rankings', 'exec-decisions', 'exec-alerts',
+  'exec-dashboard',
   ...EPWG_PERMISSIONS,
 ];
 
 const EXEC_PERMISSIONS: Permission[] = [
-  'exec-dashboard', 'exec-gis', 'exec-analytics', 'exec-reports',
-  'exec-statistics', 'exec-rankings', 'exec-decisions', 'exec-alerts',
-  'reports', 'documents',
+  'exec-dashboard',
+  'gis', 'analytics', 'statistics', 'reports', 'documents',
   ...EPWG_PERMISSIONS,
 ];
 
@@ -174,16 +173,33 @@ export const MOCK_USERS: MockUser[] = [
   },
 ];
 
-export function authenticate(username: string, password: string): MockUser | null {
-  const user = MOCK_USERS.find((u) => u.username === username && u.password === password);
-  return user ?? null;
+/** A signed-in user as held in app state: never includes the password. */
+export type SessionUser = Omit<MockUser, 'password'>;
+
+function toSession(user: MockUser): SessionUser {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { password, ...session } = user;
+  return session;
 }
 
-export function hasPermission(user: MockUser | null, perm: Permission): boolean {
+export function authenticate(username: string, password: string): SessionUser | null {
+  if (!DEMO_MODE) return null;
+  const user = MOCK_USERS.find((u) => u.username === username && u.password === password);
+  return user ? toSession(user) : null;
+}
+
+/** Rebuilds a session user from its username (permissions always come from source, never from storage). */
+export function findSessionUser(username: string | null | undefined): SessionUser | null {
+  if (!DEMO_MODE || !username) return null;
+  const user = MOCK_USERS.find((u) => u.username === username);
+  return user ? toSession(user) : null;
+}
+
+export function hasPermission(user: SessionUser | null, perm: Permission): boolean {
   if (!user) return false;
   return user.permissions.includes(perm);
 }
 
-export function canEdit(user: MockUser | null): boolean {
+export function canEdit(user: SessionUser | null): boolean {
   return user !== null && !user.readonly;
 }

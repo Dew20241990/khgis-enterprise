@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { Locale } from '@/i18n/translations';
 import { translate } from '@/i18n/translations';
-import { authenticate, type MockUser, type Permission } from '@/lib/auth';
+import { authenticate, findSessionUser, type SessionUser, type Permission } from '@/lib/auth';
 
 type ThemeMode = 'light' | 'dark';
 
@@ -22,7 +22,7 @@ interface AppState {
   notifOpen: boolean;
   setNotifOpen: (v: boolean) => void;
   // Auth
-  user: MockUser | null;
+  user: SessionUser | null;
   isAuthenticated: boolean;
   login: (username: string, password: string) => boolean;
   logout: () => void;
@@ -80,14 +80,34 @@ export const useApp = create<AppState>()(
     }),
     {
       name: 'sanitation-app',
+      version: 2,
+      // Persist only the username: permissions/roles are rebuilt from source on load, so editing
+      // localStorage cannot grant roles, and no password is ever stored.
       partialize: (s) => ({
         locale: s.locale,
         theme: s.theme,
         sidebarCollapsed: s.sidebarCollapsed,
-        user: s.user,
-        isAuthenticated: s.isAuthenticated,
+        username: s.user?.username ?? null,
         lastActivity: s.lastActivity,
       }),
+      migrate: (persisted) => {
+        // v1 stored the whole user object (including its password). Keep only safe fields.
+        const old = (persisted ?? {}) as { locale?: Locale; theme?: ThemeMode; sidebarCollapsed?: boolean; lastActivity?: number; user?: { username?: string } | null };
+        return { locale: old.locale, theme: old.theme, sidebarCollapsed: old.sidebarCollapsed, lastActivity: old.lastActivity, username: old.user?.username ?? null };
+      },
+      merge: (persisted, current) => {
+        const p = (persisted ?? {}) as { locale?: Locale; theme?: ThemeMode; sidebarCollapsed?: boolean; lastActivity?: number; username?: string | null };
+        const user = findSessionUser(p.username);
+        return {
+          ...current,
+          locale: p.locale ?? current.locale,
+          theme: p.theme ?? current.theme,
+          sidebarCollapsed: p.sidebarCollapsed ?? current.sidebarCollapsed,
+          lastActivity: p.lastActivity ?? current.lastActivity,
+          user,
+          isAuthenticated: user !== null,
+        };
+      },
     },
   ),
 );

@@ -7,15 +7,8 @@ import { ToastContainer } from '@/components/ui/Toast';
 import { useApp } from '@/store/appStore';
 
 export function AppLayout({ children }: { children: ReactNode }) {
-  const { theme, locale, t } = useApp();
+  const { t } = useApp();
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  if (typeof document !== 'undefined') {
-    const html = document.documentElement;
-    html.classList.toggle('dark', theme === 'dark');
-    html.setAttribute('dir', locale === 'ar' ? 'rtl' : 'ltr');
-    html.setAttribute('lang', locale);
-  }
 
   return (
     <div className="min-h-screen bg-ink-50 dark:bg-ink-950 text-ink-900 dark:text-ink-100">

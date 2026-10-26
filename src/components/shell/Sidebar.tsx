@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LayoutDashboard, Map, Building2, Home, AlertTriangle, Trash2, Store, ClipboardCheck, Sparkles, Wrench, Truck, UserSquare2, Navigation, Factory, Briefcase, MessageSquareWarning, FileBarChart, BarChart3, PieChart, FolderArchive, Users, Shield, KeyRound, ScrollText, Settings, ChevronLeft, ShieldCheck, Crown, Brain, Trophy, Gauge, Activity, Recycle, Leaf, Layers } from 'lucide-react';
+import { LayoutDashboard, Map, Building2, Home, AlertTriangle, Trash2, Store, ClipboardCheck, Sparkles, Wrench, Truck, UserSquare2, Navigation, Factory, Briefcase, MessageSquareWarning, FileBarChart, BarChart3, PieChart, FolderArchive, Users, Shield, KeyRound, ScrollText, Settings, ChevronLeft, ShieldCheck, Crown, Recycle, Leaf, Layers } from 'lucide-react';
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';
 import type { Permission } from '@/lib/auth';
@@ -13,13 +13,6 @@ const groups: NavGroup[] = [
     labelKey: 'execCenter',
     items: [
       { to: '/exec', key: 'execDashboard', icon: <Crown className="w-[18px] h-[18px]" />, end: true, perm: 'exec-dashboard' },
-      { to: '/exec/gis', key: 'execGis', icon: <Map className="w-[18px] h-[18px]" />, perm: 'exec-gis' },
-      { to: '/exec/analytics', key: 'execAnalytics', icon: <BarChart3 className="w-[18px] h-[18px]" />, perm: 'exec-analytics' },
-      { to: '/exec/rankings', key: 'execRankings', icon: <Trophy className="w-[18px] h-[18px]" />, perm: 'exec-rankings' },
-      { to: '/exec/decisions', key: 'execDecisions', icon: <Brain className="w-[18px] h-[18px]" />, perm: 'exec-decisions' },
-      { to: '/exec/alerts', key: 'execAlerts', icon: <Activity className="w-[18px] h-[18px]" />, perm: 'exec-alerts' },
-      { to: '/exec/reports', key: 'execReports', icon: <FileBarChart className="w-[18px] h-[18px]" />, perm: 'exec-reports' },
-      { to: '/exec/statistics', key: 'execStatistics', icon: <Gauge className="w-[18px] h-[18px]" />, perm: 'exec-statistics' },
     ],
   },
   {

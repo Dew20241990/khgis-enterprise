@@ -47,6 +47,7 @@ import { AuditLogsPage } from '@/pages/AuditLogsPage';
 import { AiAssistantPage } from '@/pages/AiAssistantPage';
 import { SettingsPage } from '@/pages/SettingsPage';
 import { useApp } from '@/store/appStore';
+import { useDocumentSettings } from '@/lib/useDocumentSettings';
 import type { Permission } from '@/lib/auth';
 
 const queryClient = new QueryClient({
@@ -102,13 +103,6 @@ const ROUTE_PERMISSIONS: Record<string, Permission> = {
   '/settings': 'settings',
   // Executive routes (Wali-exclusive)
   '/exec': 'exec-dashboard',
-  '/exec/gis': 'exec-gis',
-  '/exec/analytics': 'exec-analytics',
-  '/exec/reports': 'exec-reports',
-  '/exec/statistics': 'exec-statistics',
-  '/exec/rankings': 'exec-rankings',
-  '/exec/decisions': 'exec-decisions',
-  '/exec/alerts': 'exec-alerts',
   // EPWG routes
   '/epwg': 'epwg',
   '/epwg/facilities': 'epwg-facilities',
@@ -146,6 +140,7 @@ function ProtectedRoute({ path, children }: { path: string; children: React.Reac
 function App({ gisReadyPromise }: { gisReadyPromise: Promise<unknown> }) {
   const [gisReady, setGisReady] = useState(false);
   const { isAuthenticated, checkInactivity, touchActivity, hasPermission } = useApp();
+  useDocumentSettings();
 
   useEffect(() => {
     gisReadyPromise.then(() => setGisReady(true)).catch(() => setGisReady(true));
@@ -225,13 +220,6 @@ function App({ gisReadyPromise }: { gisReadyPromise: Promise<unknown> }) {
                     <Route path="/settings" element={<ProtectedRoute path="/settings"><SettingsPage /></ProtectedRoute>} />
                     {/* Executive routes (Wali-exclusive) */}
                     <Route path="/exec" element={<ProtectedRoute path="/exec"><DashboardPage /></ProtectedRoute>} />
-                    <Route path="/exec/gis" element={<ProtectedRoute path="/exec/gis"><GisPage /></ProtectedRoute>} />
-                    <Route path="/exec/analytics" element={<ProtectedRoute path="/exec/analytics"><AnalyticsPage /></ProtectedRoute>} />
-                    <Route path="/exec/reports" element={<ProtectedRoute path="/exec/reports"><ReportsPage /></ProtectedRoute>} />
-                    <Route path="/exec/statistics" element={<ProtectedRoute path="/exec/statistics"><StatisticsPage /></ProtectedRoute>} />
-                    <Route path="/exec/rankings" element={<ProtectedRoute path="/exec/rankings"><StatisticsPage /></ProtectedRoute>} />
-                    <Route path="/exec/decisions" element={<ProtectedRoute path="/exec/decisions"><DashboardPage /></ProtectedRoute>} />
-                    <Route path="/exec/alerts" element={<ProtectedRoute path="/exec/alerts"><DashboardPage /></ProtectedRoute>} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                   </Routes>
                 </AppLayout>

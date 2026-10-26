@@ -1,83 +1,79 @@
-import { useState, useEffect } from 'react';
-import { Navigation, Truck, Download, MapPin, Activity, Gauge, Search } from 'lucide-react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Navigation, Truck, Download, MapPin, Activity, Gauge, Search, AlertTriangle, FlaskConical } from 'lucide-react';
 import L from 'leaflet';
-import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
+import { MapContainer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
 import { PageHeader, Card, CardHeader, CardBody, Badge, StatusBadge, StatCard } from '@/components/ui';
+import { BasemapTileLayer } from '@/components/gis/BasemapTileLayer';
 import { useApp } from '@/store/appStore';
 import { vehicles, KHENCHELA_CENTER } from '@/data/mockData';
+import { freshness, type TelemetrySource, type VehiclePosition } from '@/lib/telemetry';
+import { useTelemetry } from '@/lib/useTelemetry';
+import { toCsv } from '@/lib/csv';
+import { downloadFile } from '@/lib/importExport';
 
-const truckIcon = L.divIcon({
-  className: 'truck-marker',
-  html: `<div style="background:#0F4C81;color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);font-size:14px;">🚛</div>`,
-  iconSize: [32, 32],
-  iconAnchor: [16, 16],
-});
+const markerHtml = (bg: string, size: number, glyph: string, extra = '') =>
+  `<div style="background:${bg};color:#fff;border-radius:50%;width:${size}px;height:${size}px;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);font-size:${size / 2.3}px;${extra}">${glyph}</div>`;
 
-const idleIcon = L.divIcon({
-  className: 'truck-marker-idle',
-  html: `<div style="background:#94a3b8;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);font-size:12px;">🚛</div>`,
-  iconSize: [28, 28],
-  iconAnchor: [14, 14],
-});
+const truckIcon = L.divIcon({ className: 'truck-marker', html: markerHtml('#0F4C81', 32, '🚛'), iconSize: [32, 32], iconAnchor: [16, 16] });
+const idleIcon = L.divIcon({ className: 'truck-marker-idle', html: markerHtml('#94a3b8', 28, '🚛'), iconSize: [28, 28], iconAnchor: [14, 14] });
+const maintenanceIcon = L.divIcon({ className: 'truck-marker-maint', html: markerHtml('#F59E0B', 28, '🔧'), iconSize: [28, 28], iconAnchor: [14, 14] });
+const staleIcon = L.divIcon({ className: 'truck-marker-stale', html: markerHtml('#94a3b8', 28, '🚛', 'opacity:0.55;border-style:dashed;'), iconSize: [28, 28], iconAnchor: [14, 14] });
 
-const maintenanceIcon = L.divIcon({
-  className: 'truck-marker-maint',
-  html: `<div style="background:#F59E0B;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);font-size:12px;">🔧</div>`,
-  iconSize: [28, 28],
-  iconAnchor: [14, 14],
-});
-
-function getIcon(status: string) {
+function getIcon(status: string, stale: boolean) {
+  if (stale) return staleIcon;
   if (status === 'active') return truckIcon;
   if (status === 'maintenance') return maintenanceIcon;
   return idleIcon;
 }
 
-const routePaths: Record<string, [number, number][]> = {};
-vehicles.forEach((v, i) => {
-  const base = v;
-  const pts: [number, number][] = [];
-  for (let j = 0; j < 8; j++) {
-    pts.push([
-      base.lat + Math.sin(j * 0.5 + i) * 0.008,
-      base.lng + Math.cos(j * 0.5 + i) * 0.008,
-    ]);
-  }
-  routePaths[v.id] = pts;
-});
+const TRAIL_LENGTH = 30;
+const demoVehicles = vehicles.map((v) => ({ id: v.id, lat: v.lat, lng: v.lng, active: v.status === 'active' }));
 
-function LiveMap({ selectedId }: { selectedId: string | null }) {
+function FlyTo({ target }: { target: [number, number] | null }) {
   const map = useMap();
   useEffect(() => {
-    if (selectedId) {
-      const v = vehicles.find((v) => v.id === selectedId);
-      if (v) map.flyTo([v.lat, v.lng], 13, { duration: 1.5 });
-    }
-  }, [selectedId, map]);
+    if (target) map.flyTo(target, 13, { duration: 1.5 });
+  }, [target, map]);
   return null;
 }
 
+function sourceBadgeTone(source: TelemetrySource): 'success' | 'warning' | 'danger' {
+  return source === 'live' ? 'success' : source === 'demo' ? 'warning' : 'danger';
+}
+
 export function TruckTrackingPage() {
-  const { t } = useApp();
+  const { t, locale } = useApp();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [search, setSearch] = useState('');
-  const [positions, setPositions] = useState(() =>
-    vehicles.map((v) => ({ id: v.id, lat: v.lat, lng: v.lng, heading: 0 }))
-  );
+  const { snapshot, loading, isConfigured } = useTelemetry(demoVehicles);
 
+  // Observed trail per vehicle (real history of received fixes, not a drawn route).
+  const trails = useRef<Map<string, [number, number][]>>(new Map());
+  const [, forceTrailRender] = useState(0);
   useEffect(() => {
-    const interval = setInterval(() => {
-      setPositions((prev) =>
-        prev.map((p) => {
-          const path = routePaths[p.id];
-          if (!path) return p;
-          const nextIdx = Math.floor(Math.random() * path.length);
-          return { ...p, lat: path[nextIdx][0], lng: path[nextIdx][1], heading: Math.random() * 360 };
-        })
-      );
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+    if (snapshot.source === 'none') return;
+    for (const p of snapshot.positions) {
+      const trail = trails.current.get(p.vehicleId) ?? [];
+      const last = trail[trail.length - 1];
+      if (!last || last[0] !== p.lat || last[1] !== p.lng) {
+        trail.push([p.lat, p.lng]);
+        if (trail.length > TRAIL_LENGTH) trail.shift();
+        trails.current.set(p.vehicleId, trail);
+      }
+    }
+    forceTrailRender((n) => n + 1);
+  }, [snapshot]);
+
+  const positionById = useMemo(() => {
+    const m = new Map<string, VehiclePosition>();
+    snapshot.positions.forEach((p) => m.set(p.vehicleId, p));
+    return m;
+  }, [snapshot]);
+
+  const now = Date.parse(snapshot.fetchedAt);
+  const isStale = (p: VehiclePosition | undefined) =>
+    snapshot.source === 'live' && p !== undefined && freshness(p.timestamp, now) === 'stale';
+  const staleCount = snapshot.positions.filter((p) => isStale(p)).length;
 
   const active = vehicles.filter((v) => v.status === 'active');
   const filtered = vehicles.filter((v) =>
@@ -86,10 +82,42 @@ export function TruckTrackingPage() {
     v.municipality.toLowerCase().includes(search.toLowerCase())
   );
 
+  const selectedPos = selectedId ? positionById.get(selectedId) : undefined;
+  const flyTarget: [number, number] | null = selectedPos ? [selectedPos.lat, selectedPos.lng] : null;
+  const selectedTrail = selectedId ? trails.current.get(selectedId) : undefined;
+
+  const sourceLabel = snapshot.source === 'live' ? t('telemetryLive') : snapshot.source === 'demo' ? t('telemetryDemo') : t('telemetryNone');
+  const timeFmt = (iso: string) => new Date(iso).toLocaleTimeString(locale === 'ar' ? 'ar-DZ' : locale === 'fr' ? 'fr-DZ' : 'en-GB');
+
+  const exportPositions = () => {
+    const rows = vehicles.map((v) => {
+      const p = positionById.get(v.id);
+      return [v.plate, v.driver, v.municipality, v.status, p?.lat ?? '', p?.lng ?? '', p?.speedKmh ?? '', p?.timestamp ?? '', snapshot.source];
+    });
+    downloadFile(
+      toCsv(['plate', 'driver', 'municipality', 'status', 'lat', 'lng', 'speed_kmh', 'fix_time', 'source'], rows),
+      `vehicle-positions-${snapshot.source}.csv`,
+      'text/csv;charset=utf-8',
+    );
+  };
+
   return (
     <div className="space-y-6">
-      <PageHeader title={t('truckTracking')} subtitle="تتبع مباشر لمركبات الجمع — ولاية خنشلة" icon={<Navigation className="w-5 h-5" />}
-        actions={<button className="btn-outline"><Download className="w-4 h-4" /> {t('export')}</button>} />
+      <PageHeader title={t('truckTracking')} subtitle="تتبع مركبات الجمع — ولاية خنشلة" icon={<Navigation className="w-5 h-5" />}
+        actions={<button onClick={exportPositions} className="btn-outline"><Download className="w-4 h-4" /> {t('export')}</button>} />
+
+      {snapshot.source === 'demo' && (
+        <div role="status" className="flex items-start gap-2 p-3 rounded-xl bg-warning-50 text-warning-800 dark:bg-warning-600/15 dark:text-warning-200 text-sm">
+          <FlaskConical className="w-4 h-4 mt-0.5 shrink-0" /> <span>{t('telemetryDemoNotice')}</span>
+        </div>
+      )}
+      {snapshot.source === 'none' && !loading && (
+        <div role="alert" className="flex items-start gap-2 p-3 rounded-xl bg-danger-50 text-danger-700 dark:bg-danger-600/15 dark:text-danger-200 text-sm">
+          <AlertTriangle className="w-4 h-4 mt-0.5 shrink-0" />
+          <span>{t('telemetryNoneNotice')}{snapshot.error ? ` (${snapshot.error})` : ''}</span>
+        </div>
+      )}
+      {loading && isConfigured && <p className="text-sm text-ink-500">{t('telemetryLoading')}</p>}
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard label={t('active')} value={active.length} icon={<Truck className="w-5 h-5" />} tone="success" />
@@ -101,28 +129,41 @@ export function TruckTrackingPage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2">
           <Card>
-            <CardHeader title="خريطة التتبع المباشر" icon={<Activity className="w-4 h-4" />} action={<Badge tone="success" dot>مباشر</Badge>} />
+            <CardHeader
+              title="خريطة التتبع"
+              icon={<Activity className="w-4 h-4" />}
+              action={
+                <div className="flex items-center gap-2">
+                  {staleCount > 0 && <Badge tone="warning">{staleCount} {t('telemetryStale')}</Badge>}
+                  <Badge tone={sourceBadgeTone(snapshot.source)} dot>{sourceLabel}</Badge>
+                  {snapshot.source !== 'none' && <span className="text-[10px] text-ink-400">{t('telemetryLastUpdate')}: {timeFmt(snapshot.fetchedAt)}</span>}
+                </div>
+              }
+            />
             <div className="h-[500px] rounded-xl overflow-hidden border border-ink-200 dark:border-ink-800">
-              <MapContainer center={KHENCHELA_CENTER} zoom={10} className="w-full h-full" zoomControl={false} attributionControl={false}>
-                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <LiveMap selectedId={selectedId} />
-                {positions.map((p) => {
-                  const v = vehicles.find((v) => v.id === p.id)!;
+              <MapContainer center={KHENCHELA_CENTER} zoom={10} className="w-full h-full" zoomControl={false}>
+                <BasemapTileLayer id="osm" />
+                <FlyTo target={flyTarget} />
+                {vehicles.map((v) => {
+                  const p = positionById.get(v.id);
+                  if (!p) return null;
+                  const stale = isStale(p);
                   return (
-                    <Marker key={p.id} position={[p.lat, p.lng]} icon={getIcon(v.status)}>
+                    <Marker key={v.id} position={[p.lat, p.lng]} icon={getIcon(v.status, stale)}>
                       <Popup>
                         <div className="text-right min-w-[180px]">
                           <p className="font-bold text-sm">{v.plate}</p>
                           <p className="text-xs text-ink-500">{v.driver}</p>
                           <p className="text-xs">{v.municipality}</p>
-                          <p className="text-xs mt-1">الوقود: {v.fuel}% | السرعة: {Math.floor(20 + Math.random() * 40)} كم/س</p>
+                          <p className="text-xs mt-1">الوقود: {v.fuel}% | السرعة: {p.speedKmh !== undefined ? `${Math.round(p.speedKmh)} كم/س` : t('telemetryNotReported')}</p>
+                          <p className="text-[10px] text-ink-400 mt-1">{t('telemetryLastUpdate')}: {timeFmt(p.timestamp)}{stale ? ` — ${t('telemetryStale')}` : ''}</p>
                         </div>
                       </Popup>
                     </Marker>
                   );
                 })}
-                {selectedId && routePaths[selectedId] && (
-                  <Polyline positions={routePaths[selectedId]} pathOptions={{ color: '#0F4C81', weight: 3, opacity: 0.6, dashArray: '8 6' }} />
+                {selectedTrail && selectedTrail.length > 1 && (
+                  <Polyline positions={selectedTrail} pathOptions={{ color: '#0F4C81', weight: 3, opacity: 0.6, dashArray: '8 6' }} />
                 )}
               </MapContainer>
             </div>
@@ -139,7 +180,7 @@ export function TruckTrackingPage() {
           <CardBody>
             <div className="space-y-2 max-h-[440px] overflow-y-auto">
               {filtered.map((v) => {
-                const pos = positions.find((p) => p.id === v.id);
+                const pos = positionById.get(v.id);
                 return (
                   <button
                     key={v.id}
@@ -157,9 +198,11 @@ export function TruckTrackingPage() {
                     </div>
                     <div className="text-left shrink-0">
                       <StatusBadge status={v.status} />
-                      {v.status === 'active' && pos && (
-                        <p className="text-[10px] text-ink-400 mt-1">{Math.floor(20 + Math.random() * 40)} كم/س</p>
-                      )}
+                      {!pos && snapshot.source !== 'demo' ? (
+                        <p className="text-[10px] text-ink-400 mt-1">{t('telemetryNoSignal')}</p>
+                      ) : pos?.speedKmh !== undefined ? (
+                        <p className="text-[10px] text-ink-400 mt-1">{Math.round(pos.speedKmh)} كم/س</p>
+                      ) : null}
                     </div>
                   </button>
                 );
@@ -170,10 +213,11 @@ export function TruckTrackingPage() {
       </div>
 
       {selectedId && (() => {
-        const v = vehicles.find((v) => v.id === selectedId)!;
+        const v = vehicles.find((x) => x.id === selectedId);
+        if (!v) return null;
         return (
           <Card>
-            <CardHeader title={`تفاصil ${v.plate}`} icon={<Gauge className="w-4 h-4" />} />
+            <CardHeader title={`تفاصيل ${v.plate}`} icon={<Gauge className="w-4 h-4" />} />
             <CardBody>
               <div className="grid grid-cols-2 lg:grid-cols-6 gap-4">
                 <div className="p-3 rounded-xl bg-ink-50 dark:bg-ink-800/40">

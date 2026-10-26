@@ -476,6 +476,17 @@ const ar: Dict = {
   epwgCapacityReport: 'تقرير الطاقة',
   epwgEnvReport: 'تقرير بيئي',
   epwgOpenedYear: 'سنة التشغيل',
+  // Vehicle telemetry
+  telemetryLive: 'بيانات حية',
+  telemetryDemo: 'وضع تجريبي',
+  telemetryNone: 'لا توجد بيانات تتبع',
+  telemetryDemoNotice: 'وضع تجريبي: المواقع المعروضة محاكاة وليست بيانات GPS حقيقية. اضبط VITE_TELEMETRY_URL لعرض مواقع فعلية.',
+  telemetryNoneNotice: 'تعذّر الحصول على بيانات التتبع من المصدر المضبوط.',
+  telemetryStale: 'قديم',
+  telemetryLastUpdate: 'آخر تحديث',
+  telemetryNoSignal: 'لا توجد إشارة',
+  telemetryNotReported: 'غير مُبلَّغ',
+  telemetryLoading: 'جارٍ الاتصال بمصدر التتبع...',
 };
 
 const fr: Dict = {
@@ -825,6 +836,17 @@ const fr: Dict = {
   epwgCapacityReport: 'Rapport de capacité',
   epwgEnvReport: 'Rapport environnemental',
   epwgOpenedYear: 'Année d\'ouverture',
+  // Vehicle telemetry
+  telemetryLive: 'Données en direct',
+  telemetryDemo: 'Mode démo',
+  telemetryNone: 'Aucune donnée de suivi',
+  telemetryDemoNotice: 'Mode démo : les positions affichées sont simulées, ce ne sont pas des données GPS réelles. Définissez VITE_TELEMETRY_URL pour afficher les positions réelles.',
+  telemetryNoneNotice: 'Impossible d\'obtenir les données de suivi depuis la source configurée.',
+  telemetryStale: 'Obsolète',
+  telemetryLastUpdate: 'Dernière mise à jour',
+  telemetryNoSignal: 'Aucun signal',
+  telemetryNotReported: 'Non communiqué',
+  telemetryLoading: 'Connexion à la source de suivi...',
 };
 
 const en: Dict = {
@@ -1174,9 +1196,23 @@ const en: Dict = {
   epwgCapacityReport: 'Capacity Report',
   epwgEnvReport: 'Environmental Report',
   epwgOpenedYear: 'Opened Year',
+  // Vehicle telemetry
+  telemetryLive: 'Live data',
+  telemetryDemo: 'Demo mode',
+  telemetryNone: 'No tracking data',
+  telemetryDemoNotice: 'Demo mode: the positions shown are simulated, not real GPS data. Set VITE_TELEMETRY_URL to show real positions.',
+  telemetryNoneNotice: 'Could not get tracking data from the configured source.',
+  telemetryStale: 'Stale',
+  telemetryLastUpdate: 'Last update',
+  telemetryNoSignal: 'No signal',
+  telemetryNotReported: 'Not reported',
+  telemetryLoading: 'Connecting to the tracking source...',
 };
 
 const dicts: Record<Locale, Dict> = { ar, fr, en };
+
+/** Exposed so tests can verify key parity across languages. */
+export const dictionaries: Readonly<Record<Locale, Readonly<Dict>>> = dicts;
 
 export function translate(locale: Locale, key: string): string {
   return dicts[locale]?.[key] ?? dicts.en[key] ?? key;

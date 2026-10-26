@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, User, Lock, Eye, EyeOff, Loader2, AlertCircle, CheckCircle2, Sun, Moon, MapPin, Layers, Truck, Activity, TrendingUp, ChevronLeft, Building2, Trash2, AlertTriangle, Navigation, Sparkles, KeyRound, Crown, Fingerprint, Lock as LockIcon } from 'lucide-react';
 import { useApp } from '@/store/appStore';
-import { MOCK_USERS, type MockUser } from '@/lib/auth';
+import { DEMO_MODE, MOCK_USERS, type MockUser } from '@/lib/auth';
 import type { Locale } from '@/i18n/translations';
 import { cn } from '@/lib/cn';
 
@@ -47,13 +47,6 @@ export function LoginPage() {
   const usernameRef = useRef<HTMLInputElement>(null);
 
   // Apply theme + dir on this standalone page
-  useEffect(() => {
-    const html = document.documentElement;
-    html.classList.toggle('dark', theme === 'dark');
-    html.setAttribute('dir', locale === 'ar' ? 'rtl' : 'ltr');
-    html.setAttribute('lang', locale);
-  }, [theme, locale]);
-
   // Redirect if already authenticated
   useEffect(() => {
     if (isAuthenticated) {
@@ -483,6 +476,7 @@ export function LoginPage() {
             </div>
 
             {/* Demo accounts */}
+            {DEMO_MODE && (
             <div className="mt-6">
               <p className="text-center text-xs text-ink-400 dark:text-ink-500 mb-3 flex items-center justify-center gap-1.5">
                 <KeyRound className="w-3.5 h-3.5" />
@@ -517,6 +511,7 @@ export function LoginPage() {
                 ))}
               </div>
             </div>
+            )}
           </motion.div>
         </div>
 
