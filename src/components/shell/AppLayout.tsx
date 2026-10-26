@@ -5,10 +5,12 @@ import { MobileNav } from './MobileNav';
 import { CommandPalette } from './CommandPalette';
 import { ToastContainer } from '@/components/ui/Toast';
 import { useApp } from '@/store/appStore';
+import { useAutoSidebar } from '@/lib/useAutoSidebar';
 
 export function AppLayout({ children }: { children: ReactNode }) {
   const { t } = useApp();
   const [mobileOpen, setMobileOpen] = useState(false);
+  useAutoSidebar();
 
   return (
     <div className="min-h-screen bg-ink-50 dark:bg-ink-950 text-ink-900 dark:text-ink-100">

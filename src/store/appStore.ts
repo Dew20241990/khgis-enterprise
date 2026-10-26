@@ -17,6 +17,7 @@ interface AppState {
   setTheme: (m: ThemeMode) => void;
   sidebarCollapsed: boolean;
   toggleSidebar: () => void;
+  setSidebarCollapsed: (v: boolean) => void;
   commandOpen: boolean;
   setCommandOpen: (v: boolean) => void;
   notifOpen: boolean;
@@ -44,6 +45,7 @@ export const useApp = create<AppState>()(
       setTheme: (theme) => set({ theme }),
       sidebarCollapsed: false,
       toggleSidebar: () => set((s) => ({ sidebarCollapsed: !s.sidebarCollapsed })),
+      setSidebarCollapsed: (sidebarCollapsed) => set({ sidebarCollapsed }),
       commandOpen: false,
       setCommandOpen: (commandOpen) => set({ commandOpen }),
       notifOpen: false,

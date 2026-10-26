@@ -4,6 +4,7 @@ import { LayoutDashboard, Map, Building2, Home, AlertTriangle, Trash2, Store, Cl
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';
 import type { Permission } from '@/lib/auth';
+import { directionFor } from '@/lib/documentSettings';
 
 interface NavItem { to: string; key: string; icon: React.ReactNode; end?: boolean; perm: Permission }
 interface NavGroup { labelKey: string; items: NavItem[] }
@@ -97,13 +98,15 @@ const groups: NavGroup[] = [
 ];
 
 export function Sidebar() {
-  const { sidebarCollapsed, toggleSidebar, t, hasPermission } = useApp();
+  const { sidebarCollapsed, toggleSidebar, t, hasPermission, locale } = useApp();
+  // Slide-in offset follows the text direction so labels enter from the sidebar's own side in AR, FR and EN.
+  const slide = directionFor(locale) === 'rtl' ? 8 : -8;
   return (
     <motion.aside
       initial={false}
       animate={{ width: sidebarCollapsed ? 76 : 280 }}
       transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-      className="hidden lg:flex flex-col shrink-0 border-l border-ink-200 dark:border-ink-800 bg-white/80 dark:bg-ink-900/80 backdrop-blur-xl h-screen sticky top-0 z-30"
+      className="hidden lg:flex flex-col shrink-0 border-e border-ink-200 dark:border-ink-800 bg-white/80 dark:bg-ink-900/80 backdrop-blur-xl h-screen sticky top-0 z-30"
     >
       {/* Brand header */}
       <div className="flex items-center gap-3 h-16 px-4 border-b border-ink-200 dark:border-ink-800 shrink-0">
@@ -112,7 +115,7 @@ export function Sidebar() {
         </div>
         <AnimatePresence>
           {!sidebarCollapsed && (
-            <motion.div initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -8 }} className="min-w-0">
+            <motion.div initial={{ opacity: 0, x: slide }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: slide }} className="min-w-0">
               <p className="text-sm font-bold text-ink-900 dark:text-white truncate leading-tight">{t('appShort')}</p>
               <p className="text-[11px] text-brand-600 dark:text-brand-400 truncate font-medium">{t('appSubtitle')}</p>
             </motion.div>
@@ -149,7 +152,7 @@ export function Sidebar() {
                   <span className="shrink-0">{item.icon}</span>
                   <AnimatePresence>
                     {!sidebarCollapsed && (
-                      <motion.span initial={{ opacity: 0, x: -6 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -6 }} className="truncate">
+                      <motion.span initial={{ opacity: 0, x: slide }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: slide }} className="truncate">
                         {t(item.key)}
                       </motion.span>
                     )}
@@ -165,10 +168,13 @@ export function Sidebar() {
       {/* Collapse toggle */}
       <button
         onClick={toggleSidebar}
+        aria-label={sidebarCollapsed ? t('openSidebar') : t('closeSidebar')}
+        aria-expanded={!sidebarCollapsed}
+        title={sidebarCollapsed ? t('openSidebar') : t('closeSidebar')}
         className="flex items-center justify-center gap-2 h-12 border-t border-ink-200 dark:border-ink-800 text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition shrink-0"
       >
-        <ChevronLeft className={cn('w-4 h-4 transition-transform', sidebarCollapsed && 'rotate-180')} />
-        {!sidebarCollapsed && <span className="text-xs font-medium">{t('settings')}</span>}
+        <ChevronLeft className={cn('w-4 h-4 transition-transform', (directionFor(locale) === 'rtl') !== sidebarCollapsed && 'rotate-180')} aria-hidden="true" />
+        {!sidebarCollapsed && <span className="text-xs font-medium">{t('closeSidebar')}</span>}
       </button>
     </motion.aside>
   );
