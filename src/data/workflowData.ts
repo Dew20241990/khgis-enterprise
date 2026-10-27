@@ -2,6 +2,7 @@
 // Frontend-only, structured for future Laravel + PostgreSQL/PostGIS integration.
 
 import { municipalities, neighborhoods, KHENCHELA_CENTER, contractors, cetCenters } from './mockData';
+import { seededUnit } from '../lib/seededRandom';
 
 export type ResponsibleEntity = 'municipality' | 'cet' | 'contractor' | 'environment';
 export type ObservationType =
@@ -248,8 +249,8 @@ export const workflowInspections: WorkflowInspection[] = Array.from({ length: in
     const priority = pick(priorities, oIdx);
     const risk = pick(riskLevels, oIdx);
     const respEntity = pick(responsibleEntities, oIdx);
-    const lat = m.center[0] + (Math.random() - 0.5) * 0.02;
-    const lng = m.center[1] + (Math.random() - 0.5) * 0.02;
+    const lat = m.center[0] + (seededUnit('obs-lat', oIdx) - 0.5) * 0.02;
+    const lng = m.center[1] + (seededUnit('obs-lng', oIdx) - 0.5) * 0.02;
     const obsNumber = `OBS-${10001 + oIdx}`;
     const requiresIntervention = priority === 'critical' || priority === 'high' || (oIdx % 3 !== 2);
 

@@ -32,7 +32,7 @@ const numberLocale = (l: string) => (l === 'ar' ? 'ar-DZ-u-nu-latn' : l);
 
 function Panel({ title, action, children, className }: { title: string; action?: React.ReactNode; children: React.ReactNode; className?: string }) {
   return (
-    <section className={cn('rounded-2xl border border-ink-200/70 dark:border-ink-800 bg-white dark:bg-ink-900 shadow-card', className)}>
+    <section className={cn('min-w-0 rounded-2xl border border-ink-200/70 dark:border-ink-800 bg-white dark:bg-ink-900 shadow-card', className)}>
       <header className="flex items-center justify-between gap-3 px-5 pt-4">
         <h2 className="text-base font-semibold text-ink-900 dark:text-white">{title}</h2>
         {action}

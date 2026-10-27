@@ -6,8 +6,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.149650348481333,
-          35.41693129370293
+          7.150942615456599,
+          35.424092879613305
         ]
       },
       "properties": {
@@ -18,12 +18,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 46,
+        "fillLevel": 13,
         "status": "damaged",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -33,8 +33,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2207840322925305,
-          35.36519596736257
+          7.232229633256793,
+          35.38390703703044
         ]
       },
       "properties": {
@@ -45,12 +45,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 83,
+        "fillLevel": 20,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -60,8 +60,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.070088441075452,
-          35.39660305961374
+          7.076301211947575,
+          35.37519539573463
         ]
       },
       "properties": {
@@ -72,12 +72,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 45,
+        "fillLevel": 47,
         "status": "ok",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -87,8 +87,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.172421263877086,
-          35.355863425241886
+          7.191930114720017,
+          35.37359657184454
         ]
       },
       "properties": {
@@ -99,12 +99,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 66,
+        "fillLevel": 84,
         "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -114,8 +114,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.211368147411222,
-          35.448069672958944
+          7.231560723276343,
+          35.45056552289752
         ]
       },
       "properties": {
@@ -126,12 +126,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 87,
+        "fillLevel": 16,
         "status": "ok",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -141,8 +141,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.060681674800952,
-          35.40531165830974
+          7.0664177779480815,
+          35.424337015766646
         ]
       },
       "properties": {
@@ -153,12 +153,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 76,
+        "fillLevel": 48,
         "status": "ok",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -168,8 +168,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.113718652388646,
-          35.34114266742932
+          7.088237975127995,
+          35.345013993158936
         ]
       },
       "properties": {
@@ -180,12 +180,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 98,
-        "status": "full",
+        "fillLevel": 53,
+        "status": "ok",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -195,8 +195,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.201316321322964,
-          35.30389350310874
+          7.196921850261279,
+          35.31219963221112
         ]
       },
       "properties": {
@@ -207,12 +207,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 20,
+        "fillLevel": 35,
         "status": "ok",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -222,8 +222,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.237369105703547,
-          35.31920402435087
+          7.261780402145814,
+          35.31637318914756
         ]
       },
       "properties": {
@@ -234,12 +234,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 75,
+        "fillLevel": 18,
         "status": "ok",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -249,8 +249,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.273534618124925,
-          35.37063473260229
+          7.2683427733927966,
+          35.38150617191801
         ]
       },
       "properties": {
@@ -261,12 +261,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 29,
+        "fillLevel": 50,
         "status": "ok",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -276,8 +276,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.146714475160581,
-          35.29439758479868
+          7.14282799572451,
+          35.286655368951614
         ]
       },
       "properties": {
@@ -288,12 +288,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 19,
+        "fillLevel": 32,
         "status": "ok",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -303,8 +303,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.085222442347426,
-          35.436702149394065
+          7.070768444049172,
+          35.45944722574903
         ]
       },
       "properties": {
@@ -315,12 +315,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 10,
+        "fillLevel": 45,
         "status": "ok",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -330,8 +330,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.223214605716712,
-          35.26045299246381
+          7.212576245695818,
+          35.24965636428911
         ]
       },
       "properties": {
@@ -342,12 +342,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 94,
-        "status": "full",
+        "fillLevel": 27,
+        "status": "ok",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -357,8 +357,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.116630879187294,
-          35.493424843951416
+          7.118949514613487,
+          35.49026231528958
         ]
       },
       "properties": {
@@ -369,12 +369,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 10,
+        "fillLevel": 77,
         "status": "ok",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -384,8 +384,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.197725655354269,
-          35.48658666313252
+          7.20524224838242,
+          35.49311317819636
         ]
       },
       "properties": {
@@ -396,12 +396,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 27,
-        "status": "ok",
+        "fillLevel": 92,
+        "status": "full",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -411,8 +411,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0644354131821645,
-          35.5183591586756
+          7.047403512226883,
+          35.526693750810814
         ]
       },
       "properties": {
@@ -423,12 +423,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 62,
+        "fillLevel": 47,
         "status": "ok",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -438,8 +438,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0666368534173785,
-          35.24909617394098
+          7.086794335974846,
+          35.236915723970164
         ]
       },
       "properties": {
@@ -450,12 +450,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 64,
+        "fillLevel": 6,
         "status": "ok",
         "lastEmptied": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -465,8 +465,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.181143510810527,
-          35.23105560522607
+          7.1706360468245105,
+          35.22247371332254
         ]
       },
       "properties": {
@@ -477,12 +477,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 60,
-        "status": "damaged",
+        "fillLevel": 98,
+        "status": "full",
         "lastEmptied": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -492,8 +492,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.250056906108806,
-          35.54963149331936
+          7.263043111362495,
+          35.55622571794549
         ]
       },
       "properties": {
@@ -504,12 +504,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 89,
+        "fillLevel": 47,
         "status": "ok",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -519,8 +519,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.287419832474896,
-          35.45910571829649
+          7.292185537782498,
+          35.46423443544656
         ]
       },
       "properties": {
@@ -531,12 +531,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 30,
+        "fillLevel": 49,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -546,8 +546,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.156809728957747,
-          35.568651860646405
+          7.150718637730461,
+          35.58773447165033
         ]
       },
       "properties": {
@@ -558,12 +558,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 62,
+        "fillLevel": 61,
         "status": "ok",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -573,8 +573,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.147137243538883,
-          35.43374557253409
+          7.1367145252457815,
+          35.4347449082219
         ]
       },
       "properties": {
@@ -585,12 +585,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 86,
+        "fillLevel": 26,
         "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -600,8 +600,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.230810786860315,
-          35.388149388859546
+          7.228388028205372,
+          35.377790254594295
         ]
       },
       "properties": {
@@ -612,12 +612,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 1,
+        "fillLevel": 35,
         "status": "ok",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -627,8 +627,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.066720623919225,
-          35.39512253110335
+          7.07782229233766,
+          35.37956407645485
         ]
       },
       "properties": {
@@ -639,12 +639,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 95,
-        "status": "full",
+        "fillLevel": 36,
+        "status": "maintenance",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -654,8 +654,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1831775239361635,
-          35.35884104813359
+          7.192984455621335,
+          35.3501958792191
         ]
       },
       "properties": {
@@ -666,12 +666,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 97,
+        "fillLevel": 94,
         "status": "full",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -681,8 +681,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.213930546193348,
-          35.42915149945422
+          7.213017209428362,
+          35.437332807101775
         ]
       },
       "properties": {
@@ -693,12 +693,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 85,
+        "fillLevel": 15,
         "status": "ok",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -708,8 +708,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.071883987501958,
-          35.424634065892334
+          7.046514236831571,
+          35.40848331796471
         ]
       },
       "properties": {
@@ -720,12 +720,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 84,
+        "fillLevel": 83,
         "status": "ok",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -735,8 +735,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.095507073955189,
-          35.35026375567991
+          7.107753221220337,
+          35.34811488757609
         ]
       },
       "properties": {
@@ -747,12 +747,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 3,
+        "fillLevel": 38,
         "status": "ok",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -762,8 +762,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.197352542555798,
-          35.30685924550385
+          7.194220315881539,
+          35.28832090507727
         ]
       },
       "properties": {
@@ -774,12 +774,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 92,
-        "status": "full",
+        "fillLevel": 47,
+        "status": "ok",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -789,8 +789,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.244414482600033,
-          35.333387308507056
+          7.258837522438261,
+          35.32985106461681
         ]
       },
       "properties": {
@@ -801,12 +801,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 93,
-        "status": "full",
+        "fillLevel": 30,
+        "status": "ok",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -816,8 +816,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.287458797243444,
-          35.36721421428367
+          7.2714309797459284,
+          35.380954288323416
         ]
       },
       "properties": {
@@ -828,12 +828,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 44,
+        "fillLevel": 73,
         "status": "ok",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -843,8 +843,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.140902286202918,
-          35.27787273414142
+          7.162092580178287,
+          35.286423041587696
         ]
       },
       "properties": {
@@ -855,12 +855,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 53,
+        "fillLevel": 59,
         "status": "ok",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -870,8 +870,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.093387099451483,
-          35.449634134423725
+          7.0671256418293344,
+          35.457039761228955
         ]
       },
       "properties": {
@@ -882,12 +882,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 87,
+        "fillLevel": 82,
         "status": "ok",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -897,8 +897,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2316226779206385,
-          35.25152005445781
+          7.224662968160119,
+          35.253050756815355
         ]
       },
       "properties": {
@@ -909,12 +909,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 59,
+        "fillLevel": 43,
         "status": "ok",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -924,8 +924,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.111420805747308,
-          35.474089951808615
+          7.132954665666912,
+          35.48221845241496
         ]
       },
       "properties": {
@@ -936,12 +936,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 6,
+        "fillLevel": 23,
         "status": "damaged",
         "lastEmptied": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -951,8 +951,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.190824184008298,
-          35.492193215719176
+          7.186550074461848,
+          35.508989274099
         ]
       },
       "properties": {
@@ -963,12 +963,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 93,
-        "status": "full",
+        "fillLevel": 2,
+        "status": "ok",
         "lastEmptied": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -978,8 +978,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.041909496335855,
-          35.52908294049748
+          7.059705051546916,
+          35.530257497588174
         ]
       },
       "properties": {
@@ -990,12 +990,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 75,
+        "fillLevel": 81,
         "status": "ok",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1005,8 +1005,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.089727170752528,
-          35.229146559205155
+          7.069373369361274,
+          35.24183960724622
         ]
       },
       "properties": {
@@ -1017,12 +1017,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 89,
+        "fillLevel": 46,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1032,8 +1032,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.193318678736206,
-          35.21542686711974
+          7.1877323315828106,
+          35.22834895298118
         ]
       },
       "properties": {
@@ -1044,12 +1044,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 83,
+        "fillLevel": 10,
         "status": "ok",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1059,8 +1059,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.247118787989301,
-          35.56044439020165
+          7.261429372776766,
+          35.55020439305808
         ]
       },
       "properties": {
@@ -1071,12 +1071,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 1,
+        "fillLevel": 75,
         "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1086,8 +1086,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2752808606017165,
-          35.463849841814394
+          7.2666110280598515,
+          35.45642637052573
         ]
       },
       "properties": {
@@ -1098,12 +1098,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 4,
+        "fillLevel": 1,
         "status": "ok",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1113,8 +1113,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.135271748875378,
-          35.574263256209
+          7.154293138950598,
+          35.58497213557362
         ]
       },
       "properties": {
@@ -1125,12 +1125,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 20,
+        "fillLevel": 76,
         "status": "ok",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1140,8 +1140,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.147382233714979,
-          35.416937979941046
+          7.133185999958962,
+          35.43056935388493
         ]
       },
       "properties": {
@@ -1152,12 +1152,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 41,
+        "fillLevel": 33,
         "status": "ok",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1167,8 +1167,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.226146838079428,
-          35.37565768472433
+          7.2064178089168855,
+          35.388496841304004
         ]
       },
       "properties": {
@@ -1179,12 +1179,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 43,
+        "fillLevel": 17,
         "status": "ok",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1194,8 +1194,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.092175837550236,
-          35.400360335001395
+          7.078114275396802,
+          35.40029729371192
         ]
       },
       "properties": {
@@ -1206,12 +1206,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 80,
+        "fillLevel": 56,
         "status": "ok",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1221,8 +1221,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.172787739518121,
-          35.37039825171233
+          7.193083293717354,
+          35.37097492147237
         ]
       },
       "properties": {
@@ -1233,12 +1233,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 54,
+        "fillLevel": 7,
         "status": "ok",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1248,8 +1248,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.227458974976848,
-          35.44393013871719
+          7.232249242789112,
+          35.426815109185405
         ]
       },
       "properties": {
@@ -1260,12 +1260,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 54,
+        "fillLevel": 22,
         "status": "maintenance",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.806Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1275,8 +1275,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.046948248167243,
-          35.395438644928674
+          7.048760405902285,
+          35.41817261971999
         ]
       },
       "properties": {
@@ -1287,12 +1287,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 74,
+        "fillLevel": 69,
         "status": "ok",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.806Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1302,8 +1302,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1104570336492285,
-          35.35242390245242
+          7.098666593180969,
+          35.361429020471405
         ]
       },
       "properties": {
@@ -1314,12 +1314,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 76,
+        "fillLevel": 52,
         "status": "ok",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1329,8 +1329,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.198781468125342,
-          35.29615554118209
+          7.213637732975185,
+          35.30424877569545
         ]
       },
       "properties": {
@@ -1341,12 +1341,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 87,
+        "fillLevel": 9,
         "status": "ok",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1356,8 +1356,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.261671025846675,
-          35.323912271699164
+          7.25938485365361,
+          35.332134760404
         ]
       },
       "properties": {
@@ -1368,12 +1368,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 95,
-        "status": "full",
+        "fillLevel": 3,
+        "status": "ok",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1383,8 +1383,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.271679818356685,
-          35.374505345712045
+          7.2890866526681934,
+          35.384544798259164
         ]
       },
       "properties": {
@@ -1395,12 +1395,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 99,
-        "status": "full",
+        "fillLevel": 76,
+        "status": "damaged",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1410,8 +1410,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.161519896387395,
-          35.27626417151758
+          7.16017409434775,
+          35.27645830663154
         ]
       },
       "properties": {
@@ -1422,12 +1422,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 99,
-        "status": "full",
+        "fillLevel": 12,
+        "status": "ok",
         "lastEmptied": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1437,8 +1437,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.077018654137116,
-          35.44081270012914
+          7.081174874373246,
+          35.45684627227951
         ]
       },
       "properties": {
@@ -1449,12 +1449,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 6,
+        "fillLevel": 80,
         "status": "ok",
         "lastEmptied": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1464,8 +1464,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.214017722860152,
-          35.26569110472244
+          7.23174846280599,
+          35.26325301068369
         ]
       },
       "properties": {
@@ -1476,12 +1476,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 93,
-        "status": "full",
+        "fillLevel": 58,
+        "status": "ok",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1491,8 +1491,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.122058547775874,
-          35.48384023108902
+          7.126069499149453,
+          35.494104612476654
         ]
       },
       "properties": {
@@ -1503,12 +1503,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 61,
+        "fillLevel": 4,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1518,8 +1518,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.197896924022134,
-          35.51074379800886
+          7.2053698431048545,
+          35.49347216268303
         ]
       },
       "properties": {
@@ -1530,12 +1530,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 87,
+        "fillLevel": 80,
         "status": "ok",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1545,8 +1545,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.037434132217928,
-          35.51986528797854
+          7.063657888693269,
+          35.50641521953745
         ]
       },
       "properties": {
@@ -1557,12 +1557,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 84,
+        "fillLevel": 17,
         "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1572,8 +1572,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.093043090607459,
-          35.226106856503954
+          7.0936905759712685,
+          35.2354534063302
         ]
       },
       "properties": {
@@ -1584,12 +1584,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 62,
-        "status": "ok",
+        "fillLevel": 92,
+        "status": "full",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1599,8 +1599,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.171024565785106,
-          35.2321270159193
+          7.191606449380051,
+          35.23035873802146
         ]
       },
       "properties": {
@@ -1611,12 +1611,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 39,
+        "fillLevel": 90,
         "status": "ok",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1626,8 +1626,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.247156552737804,
-          35.54429731898677
+          7.245989794251509,
+          35.543525761601046
         ]
       },
       "properties": {
@@ -1638,12 +1638,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 67,
+        "fillLevel": 38,
         "status": "ok",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1653,8 +1653,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.28518881694293,
-          35.45561625362519
+          7.288411903260276,
+          35.452277656139344
         ]
       },
       "properties": {
@@ -1665,12 +1665,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 58,
+        "fillLevel": 4,
         "status": "ok",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1680,8 +1680,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.143473855312294,
-          35.56698258981003
+          7.160581539554988,
+          35.581312333575916
         ]
       },
       "properties": {
@@ -1692,12 +1692,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 96,
-        "status": "full",
+        "fillLevel": 23,
+        "status": "ok",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1707,8 +1707,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.15013221379808,
-          35.42597012517198
+          7.141014153863955,
+          35.41203945506262
         ]
       },
       "properties": {
@@ -1719,12 +1719,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 82,
+        "fillLevel": 6,
         "status": "ok",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1734,8 +1734,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.218908597208461,
-          35.3752630524516
+          7.2171025247545915,
+          35.37758937494364
         ]
       },
       "properties": {
@@ -1746,12 +1746,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 53,
+        "fillLevel": 27,
         "status": "ok",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1761,8 +1761,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.086684949894829,
-          35.39469370740359
+          7.090604025966022,
+          35.384970297096295
         ]
       },
       "properties": {
@@ -1773,12 +1773,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 41,
+        "fillLevel": 90,
         "status": "ok",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1788,8 +1788,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.18308779048253,
-          35.348493813001795
+          7.168736431305296,
+          35.361811557472684
         ]
       },
       "properties": {
@@ -1800,12 +1800,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 28,
+        "fillLevel": 1,
         "status": "ok",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1815,8 +1815,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.207453745775585,
-          35.44243003312927
+          7.223604589842726,
+          35.441527590425686
         ]
       },
       "properties": {
@@ -1827,12 +1827,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 54,
+        "fillLevel": 89,
         "status": "ok",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1842,8 +1842,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.06188165683999,
-          35.42466402616113
+          7.049786791522055,
+          35.418923751651306
         ]
       },
       "properties": {
@@ -1854,12 +1854,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 5,
+        "fillLevel": 23,
         "status": "damaged",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1869,8 +1869,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.111220875401368,
-          35.353522589408705
+          7.092434434790629,
+          35.36394318987383
         ]
       },
       "properties": {
@@ -1881,12 +1881,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 42,
+        "fillLevel": 21,
         "status": "maintenance",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1896,8 +1896,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.20686917435432,
-          35.30556801993416
+          7.185416572764516,
+          35.29464206665754
         ]
       },
       "properties": {
@@ -1908,12 +1908,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 28,
+        "fillLevel": 41,
         "status": "ok",
         "lastEmptied": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1923,8 +1923,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2525415079042865,
-          35.33676139184899
+          7.256890783384442,
+          35.344799508627034
         ]
       },
       "properties": {
@@ -1935,12 +1935,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 19,
+        "fillLevel": 46,
         "status": "ok",
         "lastEmptied": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1950,8 +1950,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.279805360744911,
-          35.379823592908906
+          7.272616449899506,
+          35.38041558087105
         ]
       },
       "properties": {
@@ -1962,12 +1962,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 91,
-        "status": "full",
+        "fillLevel": 30,
+        "status": "ok",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -1977,8 +1977,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.148965179656996,
-          35.283696392630446
+          7.151837135311217,
+          35.28516150891781
         ]
       },
       "properties": {
@@ -1989,12 +1989,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 66,
+        "fillLevel": 3,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2004,8 +2004,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.069600391286634,
-          35.436259808358784
+          7.070375842528883,
+          35.45709415024612
         ]
       },
       "properties": {
@@ -2016,12 +2016,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 55,
+        "fillLevel": 28,
         "status": "ok",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2031,8 +2031,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.230677146625723,
-          35.26569769292743
+          7.206093095189426,
+          35.25708233683603
         ]
       },
       "properties": {
@@ -2043,12 +2043,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 99,
-        "status": "full",
+        "fillLevel": 42,
+        "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2058,8 +2058,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.114355864697241,
-          35.47095694646331
+          7.121063699561637,
+          35.490849723296705
         ]
       },
       "properties": {
@@ -2070,12 +2070,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 11,
+        "fillLevel": 66,
         "status": "ok",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2085,8 +2085,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.194257172176167,
-          35.509298206386006
+          7.197650433657691,
+          35.49548042988638
         ]
       },
       "properties": {
@@ -2097,12 +2097,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 44,
+        "fillLevel": 89,
         "status": "ok",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2112,8 +2112,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.041908916279947,
-          35.525926685806304
+          7.06471916710725,
+          35.52070542291971
         ]
       },
       "properties": {
@@ -2124,12 +2124,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 54,
+        "fillLevel": 2,
         "status": "ok",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2139,8 +2139,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.085663831919339,
-          35.22530833148889
+          7.073007754278369,
+          35.231684927328025
         ]
       },
       "properties": {
@@ -2151,12 +2151,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 51,
+        "fillLevel": 43,
         "status": "ok",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2166,8 +2166,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.184033730931878,
-          35.22956811537542
+          7.192967916519846,
+          35.21451393982395
         ]
       },
       "properties": {
@@ -2178,12 +2178,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 59,
+        "fillLevel": 86,
         "status": "ok",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2193,8 +2193,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.241290524829355,
-          35.54303807858197
+          7.244404939732049,
+          35.54231132514774
         ]
       },
       "properties": {
@@ -2205,12 +2205,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 29,
+        "fillLevel": 70,
         "status": "ok",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2220,8 +2220,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.284929634743862,
-          35.46201034906768
+          7.283814131841064,
+          35.46062018970028
         ]
       },
       "properties": {
@@ -2232,12 +2232,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 94,
-        "status": "full",
+        "fillLevel": 25,
+        "status": "ok",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2247,8 +2247,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.156597201621029,
-          35.58519095538977
+          7.155237148413435,
+          35.59256652602926
         ]
       },
       "properties": {
@@ -2259,12 +2259,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 32,
+        "fillLevel": 9,
         "status": "ok",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2274,8 +2274,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.136030551047227,
-          35.42889649643598
+          7.145780848117731,
+          35.42922853596872
         ]
       },
       "properties": {
@@ -2286,12 +2286,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 67,
+        "fillLevel": 77,
         "status": "ok",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2301,8 +2301,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2111538371512545,
-          35.37388805592963
+          7.223018703290727,
+          35.391941698545125
         ]
       },
       "properties": {
@@ -2313,12 +2313,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 91,
-        "status": "full",
+        "fillLevel": 44,
+        "status": "damaged",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2328,8 +2328,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0786667766362115,
-          35.378956068672125
+          7.082923109696712,
+          35.37746423104312
         ]
       },
       "properties": {
@@ -2340,12 +2340,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 93,
-        "status": "full",
+        "fillLevel": 34,
+        "status": "ok",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2355,8 +2355,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.175290491860951,
-          35.356937758503776
+          7.1948836746276355,
+          35.34792839500354
         ]
       },
       "properties": {
@@ -2367,12 +2367,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 14,
-        "status": "ok",
+        "fillLevel": 97,
+        "status": "full",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2382,8 +2382,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2223124831627254,
-          35.4406367871725
+          7.209617487317883,
+          35.43419522229349
         ]
       },
       "properties": {
@@ -2394,12 +2394,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 24,
+        "fillLevel": 33,
         "status": "ok",
         "lastEmptied": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2409,8 +2409,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.051736060313021,
-          35.42098984832721
+          7.04567684353562,
+          35.42494716482004
         ]
       },
       "properties": {
@@ -2421,12 +2421,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 12,
+        "fillLevel": 41,
         "status": "ok",
         "lastEmptied": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2436,8 +2436,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.096600700282054,
-          35.34467078578957
+          7.088433667169883,
+          35.33949877428357
         ]
       },
       "properties": {
@@ -2448,12 +2448,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 84,
-        "status": "ok",
+        "fillLevel": 93,
+        "status": "full",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2463,8 +2463,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.186918495218793,
-          35.287855534586015
+          7.211890936440323,
+          35.28905571527779
         ]
       },
       "properties": {
@@ -2475,12 +2475,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 17,
+        "fillLevel": 79,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2490,8 +2490,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.263052410552664,
-          35.31674458199826
+          7.2623493553255685,
+          35.322796726378144
         ]
       },
       "properties": {
@@ -2502,12 +2502,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 39,
+        "fillLevel": 71,
         "status": "maintenance",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2517,8 +2517,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.288123564923446,
-          35.38031854017386
+          7.286911989543587,
+          35.38264522953192
         ]
       },
       "properties": {
@@ -2529,12 +2529,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 14,
+        "fillLevel": 63,
         "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2544,8 +2544,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1550157038457955,
-          35.265488752545366
+          7.139634065639694,
+          35.28673745234264
         ]
       },
       "properties": {
@@ -2556,12 +2556,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 86,
+        "fillLevel": 23,
         "status": "ok",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2571,8 +2571,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.073848881168409,
-          35.457473669234176
+          7.089810373429209,
+          35.45059593504993
         ]
       },
       "properties": {
@@ -2583,12 +2583,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 46,
+        "fillLevel": 34,
         "status": "ok",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2598,8 +2598,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.223284662396262,
-          35.26029032581475
+          7.229995977913495,
+          35.25682450363412
         ]
       },
       "properties": {
@@ -2610,12 +2610,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 19,
+        "fillLevel": 15,
         "status": "ok",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2625,8 +2625,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.106894825652736,
-          35.48439712823845
+          7.122500106301159,
+          35.466280920731364
         ]
       },
       "properties": {
@@ -2637,12 +2637,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 7,
+        "fillLevel": 32,
         "status": "ok",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2652,8 +2652,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.185214744022676,
-          35.514792128215824
+          7.2081929013272745,
+          35.496075867414476
         ]
       },
       "properties": {
@@ -2664,12 +2664,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 21,
+        "fillLevel": 1,
         "status": "ok",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2679,8 +2679,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.052145919407473,
-          35.522392591644
+          7.057162540673744,
+          35.51881969196024
         ]
       },
       "properties": {
@@ -2691,12 +2691,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 53,
+        "fillLevel": 43,
         "status": "ok",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2706,8 +2706,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0702447705283245,
-          35.23507835607088
+          7.089359882120043,
+          35.23330727002118
         ]
       },
       "properties": {
@@ -2718,12 +2718,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 34,
+        "fillLevel": 66,
         "status": "ok",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2733,8 +2733,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1824832512141334,
-          35.23075763544321
+          7.167507336530834,
+          35.22915613722755
         ]
       },
       "properties": {
@@ -2745,12 +2745,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 7,
+        "fillLevel": 26,
         "status": "ok",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2760,8 +2760,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.264362076416217,
-          35.54528594898874
+          7.2506692380690945,
+          35.54119582256069
         ]
       },
       "properties": {
@@ -2772,12 +2772,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 5,
+        "fillLevel": 72,
         "status": "damaged",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2787,8 +2787,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.274152761284451,
-          35.45895149311284
+          7.28054048945196,
+          35.44554413057864
         ]
       },
       "properties": {
@@ -2799,12 +2799,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 70,
+        "fillLevel": 64,
         "status": "ok",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2814,8 +2814,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1405089882310495,
-          35.578070717943085
+          7.148351028957404,
+          35.57550892588449
         ]
       },
       "properties": {
@@ -2826,12 +2826,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 51,
+        "fillLevel": 21,
         "status": "ok",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2841,8 +2841,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.130509724236702,
-          35.425388500706845
+          7.155171086739004,
+          35.41203725029379
         ]
       },
       "properties": {
@@ -2853,12 +2853,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 66,
+        "fillLevel": 51,
         "status": "ok",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2868,8 +2868,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.213903240883134,
-          35.37671395372424
+          7.212873205258511,
+          35.39363402213902
         ]
       },
       "properties": {
@@ -2880,12 +2880,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 74,
+        "fillLevel": 51,
         "status": "ok",
         "lastEmptied": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2895,8 +2895,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.090476858347502,
-          35.39623468217899
+          7.06701844512485,
+          35.37844047990395
         ]
       },
       "properties": {
@@ -2907,12 +2907,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 50,
+        "fillLevel": 6,
         "status": "ok",
         "lastEmptied": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2922,8 +2922,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.179809040538112,
-          35.345364374441345
+          7.178370987749658,
+          35.37000536371023
         ]
       },
       "properties": {
@@ -2934,12 +2934,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 62,
+        "fillLevel": 68,
         "status": "ok",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2949,8 +2949,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.230871091286208,
-          35.44326362084362
+          7.2180139974365005,
+          35.42835742370924
         ]
       },
       "properties": {
@@ -2961,12 +2961,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 15,
+        "fillLevel": 40,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -2976,8 +2976,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.073299750884567,
-          35.40052371193874
+          7.066126143394503,
+          35.39914333135355
         ]
       },
       "properties": {
@@ -2988,12 +2988,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 24,
+        "fillLevel": 17,
         "status": "ok",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3003,8 +3003,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0984468028077075,
-          35.337864188263
+          7.101383042633533,
+          35.34441889208742
         ]
       },
       "properties": {
@@ -3015,12 +3015,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 98,
-        "status": "full",
+        "fillLevel": 61,
+        "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3030,8 +3030,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.191653072460524,
-          35.31394203550026
+          7.203295030924492,
+          35.29605356395244
         ]
       },
       "properties": {
@@ -3042,12 +3042,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 16,
-        "status": "ok",
+        "fillLevel": 92,
+        "status": "full",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3057,8 +3057,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.250296950545708,
-          35.33389252138712
+          7.248944324972108,
+          35.32290272761369
         ]
       },
       "properties": {
@@ -3069,12 +3069,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 28,
+        "fillLevel": 60,
         "status": "ok",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3084,8 +3084,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.279062490816065,
-          35.38877225616783
+          7.282148418254219,
+          35.388667244319805
         ]
       },
       "properties": {
@@ -3096,12 +3096,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 82,
+        "fillLevel": 4,
         "status": "ok",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3111,8 +3111,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.15427225957291,
-          35.29264536939424
+          7.137280398996081,
+          35.28360041513806
         ]
       },
       "properties": {
@@ -3123,12 +3123,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 7,
+        "fillLevel": 14,
         "status": "maintenance",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3138,8 +3138,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.090900951412286,
-          35.44052010251661
+          7.086257213267963,
+          35.46320872064214
         ]
       },
       "properties": {
@@ -3150,12 +3150,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 1,
-        "status": "ok",
+        "fillLevel": 93,
+        "status": "full",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3165,8 +3165,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.225553481538591,
-          35.26378575406227
+          7.22768154811114,
+          35.26295895380899
         ]
       },
       "properties": {
@@ -3177,12 +3177,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 94,
-        "status": "full",
+        "fillLevel": 62,
+        "status": "ok",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3192,8 +3192,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.119618199228988,
-          35.47424522075637
+          7.131341503679287,
+          35.49495507809799
         ]
       },
       "properties": {
@@ -3204,12 +3204,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 96,
-        "status": "full",
+        "fillLevel": 26,
+        "status": "ok",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3219,8 +3219,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.207393375079036,
-          35.50303706260551
+          7.202917326693424,
+          35.50259348055581
         ]
       },
       "properties": {
@@ -3231,12 +3231,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 64,
+        "fillLevel": 80,
         "status": "damaged",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3246,8 +3246,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.043457848231457,
-          35.51027835555549
+          7.059072251971811,
+          35.52337821009569
         ]
       },
       "properties": {
@@ -3258,12 +3258,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 63,
+        "fillLevel": 15,
         "status": "ok",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3273,8 +3273,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0902532670568394,
-          35.233760058371246
+          7.086718664781656,
+          35.23648295659339
         ]
       },
       "properties": {
@@ -3285,12 +3285,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 84,
+        "fillLevel": 42,
         "status": "ok",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3300,8 +3300,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1689021670454265,
-          35.223955028215464
+          7.179333548920694,
+          35.22987248017453
         ]
       },
       "properties": {
@@ -3312,12 +3312,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 49,
+        "fillLevel": 6,
         "status": "ok",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3327,8 +3327,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.239019073267106,
-          35.536547589307155
+          7.242802794540767,
+          35.55179624820593
         ]
       },
       "properties": {
@@ -3339,12 +3339,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 47,
+        "fillLevel": 15,
         "status": "ok",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3354,8 +3354,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.294693386251296,
-          35.46913768278238
+          7.280697630920914,
+          35.44896615215577
         ]
       },
       "properties": {
@@ -3366,12 +3366,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 64,
+        "fillLevel": 73,
         "status": "ok",
         "lastEmptied": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3381,8 +3381,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1390949380835105,
-          35.593405063558
+          7.162799992500805,
+          35.56830143838655
         ]
       },
       "properties": {
@@ -3393,12 +3393,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 48,
+        "fillLevel": 47,
         "status": "ok",
         "lastEmptied": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3408,8 +3408,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.155547782148329,
-          35.41322830328694
+          7.141551625209115,
+          35.42726604861804
         ]
       },
       "properties": {
@@ -3420,12 +3420,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 38,
+        "fillLevel": 37,
         "status": "ok",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3435,8 +3435,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.208727499484404,
-          35.39095519906242
+          7.2312839833577165,
+          35.37944001025288
         ]
       },
       "properties": {
@@ -3447,12 +3447,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 64,
+        "fillLevel": 2,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3462,8 +3462,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.090414022840356,
-          35.40064021968657
+          7.075147000621073,
+          35.39535693391226
         ]
       },
       "properties": {
@@ -3474,12 +3474,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 83,
+        "fillLevel": 17,
         "status": "ok",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3489,8 +3489,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.183236417501204,
-          35.36839459069035
+          7.180272889572661,
+          35.368446945992766
         ]
       },
       "properties": {
@@ -3501,12 +3501,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 68,
+        "fillLevel": 49,
         "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3516,8 +3516,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2115052383122675,
-          35.42903905058754
+          7.220367272275034,
+          35.43921079232357
         ]
       },
       "properties": {
@@ -3528,12 +3528,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 87,
-        "status": "ok",
+        "fillLevel": 95,
+        "status": "full",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3543,8 +3543,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0585734110310305,
-          35.41449431137705
+          7.0709150323201895,
+          35.40413465474499
         ]
       },
       "properties": {
@@ -3555,12 +3555,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 10,
+        "fillLevel": 40,
         "status": "ok",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3570,8 +3570,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.08902283800854,
-          35.34098685627178
+          7.092885561441071,
+          35.34126644446049
         ]
       },
       "properties": {
@@ -3582,12 +3582,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 9,
+        "fillLevel": 57,
         "status": "ok",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3597,8 +3597,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.193562821609091,
-          35.31276001256109
+          7.20571748633869,
+          35.30014161742991
         ]
       },
       "properties": {
@@ -3609,12 +3609,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 82,
+        "fillLevel": 7,
         "status": "ok",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3624,8 +3624,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.242458607929861,
-          35.32312212774304
+          7.25637322853785,
+          35.333603084369095
         ]
       },
       "properties": {
@@ -3636,12 +3636,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 54,
+        "fillLevel": 26,
         "status": "ok",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3651,8 +3651,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.274053289531108,
-          35.381374393536014
+          7.269311343089212,
+          35.383947818754244
         ]
       },
       "properties": {
@@ -3663,12 +3663,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 98,
-        "status": "full",
+        "fillLevel": 75,
+        "status": "ok",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3678,8 +3678,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.142598698825995,
-          35.286504912032925
+          7.161530059529468,
+          35.270204537690155
         ]
       },
       "properties": {
@@ -3690,12 +3690,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 77,
+        "fillLevel": 46,
         "status": "damaged",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3705,8 +3705,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.071253892983271,
-          35.4471379553078
+          7.09189279004233,
+          35.460295911305586
         ]
       },
       "properties": {
@@ -3717,12 +3717,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 42,
+        "fillLevel": 71,
         "status": "ok",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3732,8 +3732,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2060060567136075,
-          35.2701155289285
+          7.211122784353792,
+          35.26295599351637
         ]
       },
       "properties": {
@@ -3744,12 +3744,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 2,
+        "fillLevel": 81,
         "status": "maintenance",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3759,8 +3759,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.128299433596362,
-          35.47119066753805
+          7.122582843368873,
+          35.490481219608334
         ]
       },
       "properties": {
@@ -3771,12 +3771,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 15,
+        "fillLevel": 9,
         "status": "ok",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3786,8 +3786,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.192639955783943,
-          35.485647263510984
+          7.2112928516208195,
+          35.496851561318614
         ]
       },
       "properties": {
@@ -3798,12 +3798,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 24,
+        "fillLevel": 25,
         "status": "ok",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3813,8 +3813,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.050127470006543,
-          35.51482121567738
+          7.041157867584843,
+          35.53013232705184
         ]
       },
       "properties": {
@@ -3825,12 +3825,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 87,
+        "fillLevel": 37,
         "status": "ok",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3840,8 +3840,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.089614977414332,
-          35.25157452180164
+          7.077651959548239,
+          35.235416004273574
         ]
       },
       "properties": {
@@ -3852,12 +3852,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 73,
+        "fillLevel": 89,
         "status": "ok",
         "lastEmptied": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3867,8 +3867,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.192825969080487,
-          35.20608643002566
+          7.1746180164907125,
+          35.20979857354425
         ]
       },
       "properties": {
@@ -3879,12 +3879,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 0,
-        "status": "ok",
+        "fillLevel": 95,
+        "status": "full",
         "lastEmptied": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3894,8 +3894,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.240116159140347,
-          35.54298603793556
+          7.264334475959186,
+          35.5629355832166
         ]
       },
       "properties": {
@@ -3906,12 +3906,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 65,
+        "fillLevel": 71,
         "status": "ok",
         "lastEmptied": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3921,8 +3921,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.27914840437694,
-          35.45279983087097
+          7.270541113354266,
+          35.469441035629714
         ]
       },
       "properties": {
@@ -3933,12 +3933,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 62,
+        "fillLevel": 41,
         "status": "ok",
         "lastEmptied": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3948,8 +3948,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.151658204302238,
-          35.5691677288231
+          7.1596405876358045,
+          35.568439189838244
         ]
       },
       "properties": {
@@ -3960,12 +3960,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 16,
+        "fillLevel": 25,
         "status": "ok",
         "lastEmptied": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -3975,8 +3975,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.132862002997747,
-          35.43484059234543
+          7.153126470581348,
+          35.43041165663991
         ]
       },
       "properties": {
@@ -3987,12 +3987,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 23,
+        "fillLevel": 20,
         "status": "ok",
         "lastEmptied": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4002,8 +4002,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.230790733704337,
-          35.38310722867332
+          7.211136731610168,
+          35.372105238931255
         ]
       },
       "properties": {
@@ -4014,12 +4014,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 57,
+        "fillLevel": 85,
         "status": "ok",
         "lastEmptied": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4029,8 +4029,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0946489576320575,
-          35.40000604981905
+          7.093776833501179,
+          35.402330335495066
         ]
       },
       "properties": {
@@ -4041,12 +4041,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 34,
-        "status": "ok",
+        "fillLevel": 95,
+        "status": "full",
         "lastEmptied": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4056,8 +4056,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.180262910604786,
-          35.37496719609615
+          7.184172626656945,
+          35.34895254319301
         ]
       },
       "properties": {
@@ -4068,12 +4068,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 37,
+        "fillLevel": 20,
         "status": "ok",
         "lastEmptied": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4083,8 +4083,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.211427807929834,
-          35.43001906723122
+          7.219003400821238,
+          35.448532276728656
         ]
       },
       "properties": {
@@ -4095,12 +4095,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 25,
+        "fillLevel": 72,
         "status": "ok",
         "lastEmptied": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4110,8 +4110,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.047920905134595,
-          35.41213442121686
+          7.065674892377573,
+          35.41219897155184
         ]
       },
       "properties": {
@@ -4122,12 +4122,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 80,
+        "fillLevel": 44,
         "status": "ok",
         "lastEmptied": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4137,8 +4137,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.106710232182025,
-          35.341881061608724
+          7.087029982144013,
+          35.33557715435513
         ]
       },
       "properties": {
@@ -4153,8 +4153,8 @@
         "status": "damaged",
         "lastEmptied": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4164,8 +4164,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2106016942907125,
-          35.310636671650315
+          7.193451017313637,
+          35.28564676323905
         ]
       },
       "properties": {
@@ -4176,12 +4176,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 58,
+        "fillLevel": 89,
         "status": "ok",
         "lastEmptied": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4191,8 +4191,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.249178500892112,
-          35.336700056443554
+          7.245004089144058,
+          35.32283535450464
         ]
       },
       "properties": {
@@ -4203,12 +4203,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 94,
+        "fillLevel": 99,
         "status": "full",
         "lastEmptied": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4218,8 +4218,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.28285856844068,
-          35.38448004471089
+          7.2818346621748065,
+          35.389587783755275
         ]
       },
       "properties": {
@@ -4230,12 +4230,12 @@
         "neighborhood": "",
         "type": "standard",
         "capacity": 240,
-        "fillLevel": 58,
+        "fillLevel": 46,
         "status": "ok",
         "lastEmptied": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4245,8 +4245,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.159329682581406,
-          35.29050605897547
+          7.1521561673725955,
+          35.29183323762612
         ]
       },
       "properties": {
@@ -4257,12 +4257,12 @@
         "neighborhood": "",
         "type": "underground",
         "capacity": 660,
-        "fillLevel": 26,
+        "fillLevel": 31,
         "status": "ok",
         "lastEmptied": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4272,8 +4272,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.068222616275374,
-          35.45640900263177
+          7.089247297856491,
+          35.440192972123626
         ]
       },
       "properties": {
@@ -4284,12 +4284,12 @@
         "neighborhood": "",
         "type": "recycling",
         "capacity": 1100,
-        "fillLevel": 49,
+        "fillLevel": 81,
         "status": "ok",
         "lastEmptied": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }
@@ -4299,8 +4299,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.224588278856976,
-          35.25100998100419
+          7.234436330464669,
+          35.25347785494523
         ]
       },
       "properties": {
@@ -4311,12 +4311,12 @@
         "neighborhood": "",
         "type": "organic",
         "capacity": 3300,
-        "fillLevel": 33,
+        "fillLevel": 78,
         "status": "ok",
         "lastEmptied": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.807Z",
-        "updatedAt": "2026-10-26T08:13:32.807Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "attachments": [],
         "history": []
       }

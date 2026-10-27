@@ -18,6 +18,10 @@ npm run verify               # typecheck + lint + tests + build
 ## Configuration
 See `.env.example`: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, `VITE_DEMO_MODE`, `VITE_TELEMETRY_URL`.
 
+## Deployment notes
+- The app is served under `/khgis-enterprise/` (Vite `base`); the router uses the same base. `npm run build` also writes `dist/404.html` so deep links work on static hosts such as GitHub Pages.
+- Demo data is deterministic (seeded); regenerate map layers with `npx tsx scripts/gen-geojson.ts`.
+
 ## Honest limitations
 - Login is a demo gate; demo passwords are in the bundle. Do not use for real access control.
 - CRUD edits are lost on reload (no persistence layer yet).

@@ -59,3 +59,16 @@ export const SIMPLE_LAYER_TO_BASEMAP: Record<SimpleLayer, BasemapId> = {
   dark: 'carto_dark',
   terrain: 'terrain',
 };
+
+export const DEFAULT_BASEMAP: BasemapId = 'osm';
+
+export function isBasemapId(value: unknown): value is BasemapId {
+  return typeof value === 'string' && Object.prototype.hasOwnProperty.call(BASEMAPS, value);
+}
+
+/** Resolves a (possibly stale or invalid) id to a usable base map, falling back to OpenStreetMap. */
+export function resolveBasemap(id: unknown): { id: BasemapId; source: BasemapSource; fellBack: boolean } {
+  const ok = isBasemapId(id);
+  const resolved = ok ? id : DEFAULT_BASEMAP;
+  return { id: resolved, source: BASEMAPS[resolved], fellBack: !ok };
+}

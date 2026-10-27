@@ -2,7 +2,11 @@
 // Run: npx tsx scripts/gen-geojson.ts
 import { writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import { seededUnit } from '../src/lib/seededRandom';
 import { municipalities, neighborhoods, blackSpots, containers, shops, vehicles, cetCenters, illegalDumps, routes, KHENCHELA_CENTER } from '../src/data/mockData';
+
+// Fixed timestamp so regenerated files are byte-stable (demo fixtures).
+const FIXTURE_TIME = '2026-07-01T00:00:00.000Z';
 
 const OUT = join(process.cwd(), 'assets', 'gis');
 mkdirSync(OUT, { recursive: true });
@@ -10,17 +14,17 @@ mkdirSync(OUT, { recursive: true });
 type Props = Record<string, unknown>;
 
 function point(lat: number, lng: number, props: Props): GeoJSON.Feature {
-  return { type: 'Feature', geometry: { type: 'Point', coordinates: [lng, lat] }, properties: { ...props, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: props.status || 'active', attachments: [], history: [] } };
+  return { type: 'Feature', geometry: { type: 'Point', coordinates: [lng, lat] }, properties: { ...props, createdAt: FIXTURE_TIME, updatedAt: FIXTURE_TIME, status: props.status || 'active', attachments: [], history: [] } };
 }
 
 function polygon(coords: [number, number][], props: Props): GeoJSON.Feature {
   const ring = coords.map(([lat, lng]) => [lng, lat]);
   ring.push(ring[0]);
-  return { type: 'Feature', geometry: { type: 'Polygon', coordinates: [ring] }, properties: { ...props, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: props.status || 'active', attachments: [], history: [] } };
+  return { type: 'Feature', geometry: { type: 'Polygon', coordinates: [ring] }, properties: { ...props, createdAt: FIXTURE_TIME, updatedAt: FIXTURE_TIME, status: props.status || 'active', attachments: [], history: [] } };
 }
 
 function lineString(coords: [number, number][], props: Props): GeoJSON.Feature {
-  return { type: 'Feature', geometry: { type: 'LineString', coordinates: coords.map(([lat, lng]) => [lng, lat]) }, properties: { ...props, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: props.status || 'active', attachments: [], history: [] } };
+  return { type: 'Feature', geometry: { type: 'LineString', coordinates: coords.map(([lat, lng]) => [lng, lat]) }, properties: { ...props, createdAt: FIXTURE_TIME, updatedAt: FIXTURE_TIME, status: props.status || 'active', attachments: [], history: [] } };
 }
 
 function fc(features: GeoJSON.Feature[]): GeoJSON.FeatureCollection {
@@ -60,7 +64,7 @@ write('Zones.geojson', fc(zones.map(z =>
       [z.center[0] + 0.012, z.center[1] + 0.012],
       [z.center[0] + 0.012, z.center[1] - 0.012],
     ],
-    { uuid: z.id, name: z.name, nameFr: z.nameFr, municipality: 'خنشلا', zone: z.name, neighborhood: '', createdBy: 'system' }
+    { uuid: z.id, name: z.name, nameFr: z.nameFr, municipality: 'خنشلة', zone: z.name, neighborhood: '', createdBy: 'system' }
   )
 )));
 
@@ -97,9 +101,9 @@ write('Commercial.geojson', fc(shops.map(s =>
 // 6. Inspection Routes (as LineStrings)
 write('Inspection.geojson', fc(routes.slice(0, 12).map((r, i) => {
   const m = municipalities[i % municipalities.length];
-  const pts: [number, number][] = Array.from({ length: 5 }, () => [
-    m.center[0] + (Math.random() - 0.5) * 0.02,
-    m.center[1] + (Math.random() - 0.5) * 0.02,
+  const pts: [number, number][] = Array.from({ length: 5 }, (_, k) => [
+    m.center[0] + (seededUnit('route-lat', i * 5 + k) - 0.5) * 0.02,
+    m.center[1] + (seededUnit('route-lng', i * 5 + k) - 0.5) * 0.02,
   ] as [number, number]);
   return lineString(pts, {
     uuid: r.id, code: r.code, name: r.name, municipality: r.municipality,
@@ -138,12 +142,12 @@ write('CETCenters.geojson', fc(cetCenters.map(c =>
 
 // 10. Buildings (footprints around Khenchela center)
 const buildings = Array.from({ length: 40 }, (_, i) => {
-  const lat = KHENCHELA_CENTER[0] + (Math.random() - 0.5) * 0.03;
-  const lng = KHENCHELA_CENTER[1] + (Math.random() - 0.5) * 0.03;
+  const lat = KHENCHELA_CENTER[0] + (seededUnit('bld-lat', i) - 0.5) * 0.03;
+  const lng = KHENCHELA_CENTER[1] + (seededUnit('bld-lng', i) - 0.5) * 0.03;
   const s = 0.0008;
   return polygon(
     [[lat - s, lng - s], [lat - s, lng + s], [lat + s, lng + s], [lat + s, lng - s]],
-    { uuid: `BLD-${i + 1}`, type: i % 3 === 0 ? 'residential' : i % 3 === 1 ? 'commercial' : 'public', municipality: 'خنشلا', zone: 'Zone A', neighborhood: '', createdBy: 'system' }
+    { uuid: `BLD-${i + 1}`, type: i % 3 === 0 ? 'residential' : i % 3 === 1 ? 'commercial' : 'public', municipality: 'خنشلة', zone: 'Zone A', neighborhood: '', createdBy: 'system' }
   );
 });
 write('Buildings.geojson', fc(buildings));
@@ -162,7 +166,7 @@ write('Parks.geojson', fc(parks.map((p, i) =>
       [p.lat + 0.003, p.lng + 0.003],
       [p.lat + 0.003, p.lng - 0.003],
     ],
-    { uuid: `PRK-${i + 1}`, name: p.name, municipality: 'خنشلا', zone: 'Zone A', neighborhood: '', type: 'park', createdBy: 'system' }
+    { uuid: `PRK-${i + 1}`, name: p.name, municipality: 'خنشلة', zone: 'Zone A', neighborhood: '', type: 'park', createdBy: 'system' }
   )
 )));
 
@@ -179,7 +183,7 @@ write('IndustrialZones.geojson', fc(industrial.map((z, i) =>
       [z.lat + 0.005, z.lng + 0.005],
       [z.lat + 0.005, z.lng - 0.005],
     ],
-    { uuid: `IND-${i + 1}`, name: z.name, municipality: 'خنشلا', zone: 'Zone A', neighborhood: '', type: 'industrial', createdBy: 'system' }
+    { uuid: `IND-${i + 1}`, name: z.name, municipality: 'خنشلة', zone: 'Zone A', neighborhood: '', type: 'industrial', createdBy: 'system' }
   )
 )));
 

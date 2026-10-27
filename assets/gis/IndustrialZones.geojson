@@ -33,13 +33,13 @@
       "properties": {
         "uuid": "IND-1",
         "name": "المنطقة الصناعية خنشلة",
-        "municipality": "خنشلا",
+        "municipality": "خنشلة",
         "zone": "Zone A",
         "neighborhood": "",
         "type": "industrial",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.812Z",
-        "updatedAt": "2026-10-26T08:13:32.812Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -77,13 +77,13 @@
       "properties": {
         "uuid": "IND-2",
         "name": "المنطقة الصناعية قايس",
-        "municipality": "خنشلا",
+        "municipality": "خنشلة",
         "zone": "Zone A",
         "neighborhood": "",
         "type": "industrial",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.812Z",
-        "updatedAt": "2026-10-26T08:13:32.812Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []

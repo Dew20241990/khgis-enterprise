@@ -1,3 +1,5 @@
+import { seededUnit } from '../lib/seededRandom';
+
 // Official Smart GIS Platform — Wilaya of Khenchela
 // All data is realistic but fictional for demonstration purposes.
 
@@ -189,8 +191,8 @@ export const blackSpots: BlackSpot[] = Array.from({ length: 64 }, (_, i) => {
   const n = neighborhoods[i % neighborhoods.length];
   const status = statuses[i % statuses.length];
   const priority = priorities[i % priorities.length];
-  const lat = m.center[0] + (Math.random() - 0.5) * 0.025;
-  const lng = m.center[1] + (Math.random() - 0.5) * 0.025;
+  const lat = m.center[0] + (seededUnit('spot-lat', i) - 0.5) * 0.025;
+  const lng = m.center[1] + (seededUnit('spot-lng', i) - 0.5) * 0.025;
   const reported = new Date(2026, 6, 1 + (i % 20));
   const resolved = status === 'resolved' || status === 'closed'
     ? new Date(2026, 6, 5 + (i % 15)).toISOString()
@@ -255,8 +257,8 @@ export const illegalDumps: IllegalDump[] = Array.from({ length: 28 }, (_, i) => 
     type: types[i % 4],
     status: st[i % 3],
     reportedAt: new Date(2026, 6, 1 + (i % 20)).toISOString(),
-    lat: m.center[0] + (Math.random() - 0.5) * 0.02,
-    lng: m.center[1] + (Math.random() - 0.5) * 0.02,
+    lat: m.center[0] + (seededUnit('dump-lat', i) - 0.5) * 0.02,
+    lng: m.center[1] + (seededUnit('dump-lng', i) - 0.5) * 0.02,
     photo: `https://images.pexels.com/photos/${2770 + (i % 5)}/pexels-photo-${2770 + (i % 5)}.jpeg?auto=compress&cs=tinysrgb&w=400`,
   };
 });
@@ -307,7 +309,7 @@ export interface Container {
 export const containers: Container[] = Array.from({ length: 160 }, (_, i) => {
   const m = municipalities[i % municipalities.length];
   const types: Container['type'][] = ['standard', 'underground', 'recycling', 'organic'];
-  const fill = Math.floor(Math.random() * 100);
+  const fill = Math.floor(seededUnit('ctn-fill', i) * 100);
   let status: Container['status'] = 'ok';
   if (fill > 90) status = 'full';
   else if (i % 17 === 0) status = 'damaged';
@@ -321,8 +323,8 @@ export const containers: Container[] = Array.from({ length: 160 }, (_, i) => {
     capacity: [240, 660, 1100, 3300][i % 4],
     fillLevel: fill,
     status,
-    lat: m.center[0] + (Math.random() - 0.5) * 0.03,
-    lng: m.center[1] + (Math.random() - 0.5) * 0.03,
+    lat: m.center[0] + (seededUnit('ctn-lat', i) - 0.5) * 0.03,
+    lng: m.center[1] + (seededUnit('ctn-lng', i) - 0.5) * 0.03,
     lastEmptied: new Date(2026, 6, 20 - (i % 18)).toISOString(),
   };
 });
@@ -356,8 +358,8 @@ export const shops: Shop[] = Array.from({ length: 80 }, (_, i) => {
     containers: 1 + (i % 4),
     inspections: i % 6,
     lastInspection: new Date(2026, 6, 1 + (i % 25)).toISOString(),
-    lat: m.center[0] + (Math.random() - 0.5) * 0.02,
-    lng: m.center[1] + (Math.random() - 0.5) * 0.02,
+    lat: m.center[0] + (seededUnit('shop-lat', i) - 0.5) * 0.02,
+    lng: m.center[1] + (seededUnit('shop-lng', i) - 0.5) * 0.02,
   };
 });
 
@@ -389,11 +391,11 @@ export const vehicles: Vehicle[] = Array.from({ length: 32 }, (_, i) => {
     status: st[i % 4],
     driver: `السائق ${i + 1}`,
     municipality: m.nameAr,
-    fuel: Math.floor(Math.random() * 100),
+    fuel: Math.floor(seededUnit('veh-fuel', i) * 100),
     mileage: 45000 + i * 1234,
     lastService: new Date(2026, 5, 1 + (i % 28)).toISOString(),
-    lat: m.center[0] + (Math.random() - 0.5) * 0.02,
-    lng: m.center[1] + (Math.random() - 0.5) * 0.02,
+    lat: m.center[0] + (seededUnit('veh-lat', i) - 0.5) * 0.02,
+    lng: m.center[1] + (seededUnit('veh-lng', i) - 0.5) * 0.02,
   };
 });
 
@@ -556,8 +558,8 @@ export const complaints: Complaint[] = Array.from({ length: 36 }, (_, i) => {
     status: st[i % 4],
     priority: pr[i % 4],
     date: new Date(2026, 6, 1 + (i % 22)).toISOString(),
-    lat: m.center[0] + (Math.random() - 0.5) * 0.02,
-    lng: m.center[1] + (Math.random() - 0.5) * 0.02,
+    lat: m.center[0] + (seededUnit('cmp-lat', i) - 0.5) * 0.02,
+    lng: m.center[1] + (seededUnit('cmp-lng', i) - 0.5) * 0.02,
   };
 });
 
@@ -700,5 +702,5 @@ export const municipalityRanking = municipalities
 
 export const calendarInspections: Record<string, number> = {};
 for (let day = 1; day <= 31; day++) {
-  calendarInspections[`2026-07-${String(day).padStart(2, '0')}`] = Math.floor(Math.random() * 6) + 1;
+  calendarInspections[`2026-07-${String(day).padStart(2, '0')}`] = Math.floor(seededUnit('cal-inspections', day) * 6) + 1;
 }

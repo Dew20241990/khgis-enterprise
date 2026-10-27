@@ -523,7 +523,7 @@ export function EnterpriseDataTable<T extends object>({
             {[10, 25, 50, 100].map((s) => <option key={s} value={s}>{s} / صفحة</option>)}
           </select>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-center gap-1">
           <button disabled={page === 0} onClick={() => setPage(0)} className="p-1.5 rounded-lg text-ink-500 dark:text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 disabled:opacity-30 transition">
             <ChevronsRight className="w-4 h-4" />
           </button>

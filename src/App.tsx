@@ -168,7 +168,7 @@ function App({ gisReadyPromise }: { gisReadyPromise: Promise<unknown> }) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/login" element={isAuthenticated ? <Navigate to="/" replace /> : <LoginPage />} />
           <Route path="/403" element={isAuthenticated ? <AccessDeniedPage /> : <Navigate to="/login" replace />} />

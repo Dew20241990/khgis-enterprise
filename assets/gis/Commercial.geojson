@@ -6,8 +6,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1397487538462645,
-          35.41400276662715
+          7.1503992120150475,
+          35.42111967528369
         ]
       },
       "properties": {
@@ -23,8 +23,8 @@
         "inspections": 0,
         "lastInspection": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -35,8 +35,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.229707287454465,
-          35.38383286130477
+          7.219943922450765,
+          35.37160952826031
         ]
       },
       "properties": {
@@ -52,8 +52,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -64,8 +64,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.079534329509338,
-          35.38293172933896
+          7.086643374897539,
+          35.38038431637921
         ]
       },
       "properties": {
@@ -81,8 +81,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -93,8 +93,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.187625203959871,
-          35.365254823237755
+          7.173613385884091,
+          35.36049870443065
         ]
       },
       "properties": {
@@ -110,8 +110,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -122,8 +122,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.21546916642109,
-          35.43119283241794
+          7.22158961283043,
+          35.44037709834985
         ]
       },
       "properties": {
@@ -139,8 +139,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -151,8 +151,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.050220575496658,
-          35.406665013097594
+          7.069924469636753,
+          35.40483979967888
         ]
       },
       "properties": {
@@ -168,8 +168,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -180,8 +180,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.105360691307728,
-          35.34250341049942
+          7.103962521175854,
+          35.34979647098109
         ]
       },
       "properties": {
@@ -197,8 +197,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -209,8 +209,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1927610722861655,
-          35.29504299793488
+          7.200708429468796,
+          35.301016886983994
         ]
       },
       "properties": {
@@ -226,8 +226,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -238,8 +238,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.242850946702114,
-          35.33375926930246
+          7.257496220697649,
+          35.33164857137017
         ]
       },
       "properties": {
@@ -255,8 +255,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -267,8 +267,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.270236242952154,
-          35.37739686439563
+          7.274347118306905,
+          35.3842401650874
         ]
       },
       "properties": {
@@ -284,8 +284,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -296,8 +296,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1460843454467,
-          35.274931758367764
+          7.158036824846641,
+          35.289319140375596
         ]
       },
       "properties": {
@@ -313,8 +313,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -325,8 +325,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.07828147982449,
-          35.44522172972647
+          7.085202816105448,
+          35.4481879056152
         ]
       },
       "properties": {
@@ -342,8 +342,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -354,8 +354,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.217073293910885,
-          35.25609602785499
+          7.227579969330691,
+          35.2574683791073
         ]
       },
       "properties": {
@@ -371,8 +371,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -383,8 +383,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.120271911364462,
-          35.474805539036616
+          7.110643548113294,
+          35.48017622875515
         ]
       },
       "properties": {
@@ -400,8 +400,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -412,8 +412,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.201193612818196,
-          35.500959916586915
+          7.192319890633225,
+          35.496377940163946
         ]
       },
       "properties": {
@@ -429,8 +429,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -441,8 +441,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.057810426455432,
-          35.51300008808645
+          7.056968265520409,
+          35.51448757180013
         ]
       },
       "properties": {
@@ -458,8 +458,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -470,8 +470,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.088369287207483,
-          35.23905933311597
+          7.089606419051997,
+          35.231596328886226
         ]
       },
       "properties": {
@@ -487,8 +487,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -499,8 +499,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.185208898799889,
-          35.2231529097311
+          7.171033222307451,
+          35.21881751864217
         ]
       },
       "properties": {
@@ -516,8 +516,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -528,8 +528,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.241743416951685,
-          35.55540791675271
+          7.257538229054771,
+          35.55631823054049
         ]
       },
       "properties": {
@@ -545,8 +545,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -557,8 +557,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.278808692334323,
-          35.45499806862855
+          7.284950045868754,
+          35.45602498114109
         ]
       },
       "properties": {
@@ -574,8 +574,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -586,8 +586,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.156022948053226,
-          35.587854146422735
+          7.152690552212298,
+          35.589441049825396
         ]
       },
       "properties": {
@@ -603,8 +603,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-20T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -615,8 +615,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.151855780031066,
-          35.42220662050275
+          7.147926790017821,
+          35.42606620065067
         ]
       },
       "properties": {
@@ -632,8 +632,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-21T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -644,8 +644,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.218956393250239,
-          35.37462480670719
+          7.220099868304096,
+          35.388044968945906
         ]
       },
       "properties": {
@@ -661,8 +661,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-22T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -673,8 +673,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.08305392570695,
-          35.39143303122143
+          7.0761844299314545,
+          35.38266931876075
         ]
       },
       "properties": {
@@ -690,8 +690,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-23T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -702,8 +702,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.175826053780637,
-          35.36975267598017
+          7.173264888487756,
+          35.35655128353275
         ]
       },
       "properties": {
@@ -719,8 +719,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-24T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -731,8 +731,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.218742627243569,
-          35.44009613804039
+          7.223884837417863,
+          35.44727652239613
         ]
       },
       "properties": {
@@ -748,8 +748,8 @@
         "inspections": 1,
         "lastInspection": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -760,8 +760,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.059308070816937,
-          35.415425930430025
+          7.050796206388622,
+          35.40319676211569
         ]
       },
       "properties": {
@@ -777,8 +777,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -789,8 +789,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.101284621698406,
-          35.35030118749992
+          7.095200071418658,
+          35.3411790395109
         ]
       },
       "properties": {
@@ -806,8 +806,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -818,8 +818,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.193072606664507,
-          35.29151040554974
+          7.194393113316037,
+          35.30807729385793
         ]
       },
       "properties": {
@@ -835,8 +835,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -847,8 +847,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.249290755969625,
-          35.32372144009581
+          7.254181065740995,
+          35.32625954401213
         ]
       },
       "properties": {
@@ -864,8 +864,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -876,8 +876,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.274311614184265,
-          35.37609610340842
+          7.281487981807441,
+          35.388875345475974
         ]
       },
       "properties": {
@@ -893,8 +893,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -905,8 +905,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.148344781825943,
-          35.27876882561521
+          7.145674155540765,
+          35.28016790329479
         ]
       },
       "properties": {
@@ -922,8 +922,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -934,8 +934,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.077529581502652,
-          35.448367186653925
+          7.077541914265603,
+          35.45934077097103
         ]
       },
       "properties": {
@@ -951,8 +951,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -963,8 +963,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.21613046684891,
-          35.250603442310826
+          7.226115955156274,
+          35.25000790856778
         ]
       },
       "properties": {
@@ -980,8 +980,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -992,8 +992,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1106709720507135,
-          35.476695921686044
+          7.128199998736382,
+          35.485057636369014
         ]
       },
       "properties": {
@@ -1009,8 +1009,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1021,8 +1021,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.195135210114978,
-          35.49895564838787
+          7.202195232179947,
+          35.49691872486844
         ]
       },
       "properties": {
@@ -1038,8 +1038,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1050,8 +1050,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.0534187523630845,
-          35.515129979724996
+          7.056621507997624,
+          35.518977112732834
         ]
       },
       "properties": {
@@ -1067,8 +1067,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1079,8 +1079,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.071827232587127,
-          35.23700969863518
+          7.083991881445981,
+          35.232980420305395
         ]
       },
       "properties": {
@@ -1096,8 +1096,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1108,8 +1108,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.17876015767539,
-          35.211822889685244
+          7.17388385085389,
+          35.2152386384923
         ]
       },
       "properties": {
@@ -1125,8 +1125,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1137,8 +1137,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.251442160998864,
-          35.5556594459621
+          7.247323860977776,
+          35.541136423544955
         ]
       },
       "properties": {
@@ -1154,8 +1154,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1166,8 +1166,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.271095955881487,
-          35.46334293112913
+          7.277125205746852,
+          35.45424487204757
         ]
       },
       "properties": {
@@ -1183,8 +1183,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1195,8 +1195,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.158644705087237,
-          35.58972335421218
+          7.148332059183159,
+          35.5812416849006
         ]
       },
       "properties": {
@@ -1212,8 +1212,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1224,8 +1224,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.13624357153378,
-          35.422920348255545
+          7.14853881497141,
+          35.426565715723115
         ]
       },
       "properties": {
@@ -1241,8 +1241,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1253,8 +1253,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.215626515912431,
-          35.38170311196314
+          7.2109823697526005,
+          35.383449610169045
         ]
       },
       "properties": {
@@ -1270,8 +1270,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1282,8 +1282,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.083350975677043,
-          35.399018640953294
+          7.0807575492654,
+          35.38134031436406
         ]
       },
       "properties": {
@@ -1299,8 +1299,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1311,8 +1311,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.178932537956166,
-          35.35371063104754
+          7.170082807964645,
+          35.35318238815292
         ]
       },
       "properties": {
@@ -1328,8 +1328,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-20T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1340,8 +1340,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2208094185678915,
-          35.43445070361547
+          7.217233930337242,
+          35.43147728234529
         ]
       },
       "properties": {
@@ -1357,8 +1357,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-21T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1369,8 +1369,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.063726712081341,
-          35.408997110738916
+          7.0537250696728,
+          35.412592971520496
         ]
       },
       "properties": {
@@ -1386,8 +1386,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-22T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1398,8 +1398,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.102587074467278,
-          35.352740942235684
+          7.108356713852845,
+          35.35687061673496
         ]
       },
       "properties": {
@@ -1415,8 +1415,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-23T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1427,8 +1427,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.193958562707948,
-          35.29199489380699
+          7.198213275969029,
+          35.30587393022142
         ]
       },
       "properties": {
@@ -1444,8 +1444,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-24T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1456,8 +1456,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.249589333612697,
-          35.3250370989307
+          7.245470850691199,
+          35.332082595536484
         ]
       },
       "properties": {
@@ -1473,8 +1473,8 @@
         "inspections": 2,
         "lastInspection": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1485,8 +1485,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2739986036334905,
-          35.38269153021932
+          7.27037151331082,
+          35.38672121554613
         ]
       },
       "properties": {
@@ -1502,8 +1502,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1514,8 +1514,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.140867494209232,
-          35.27322784588709
+          7.145057508032769,
+          35.27283907226287
         ]
       },
       "properties": {
@@ -1531,8 +1531,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1543,8 +1543,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.081244904548587,
-          35.44663328996556
+          7.070753072001971,
+          35.45218600705266
         ]
       },
       "properties": {
@@ -1560,8 +1560,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1572,8 +1572,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.2293445142248745,
-          35.253642949961716
+          7.226730036893859,
+          35.25297879192512
         ]
       },
       "properties": {
@@ -1589,8 +1589,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1601,8 +1601,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.125101732351326,
-          35.48147382091615
+          7.110903544388711,
+          35.47955957477446
         ]
       },
       "properties": {
@@ -1618,8 +1618,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-05T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1630,8 +1630,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.202923596222903,
-          35.49548676510964
+          7.1913361449958755,
+          35.49302714115474
         ]
       },
       "properties": {
@@ -1647,8 +1647,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-06T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1659,8 +1659,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.048084949285775,
-          35.51510696800462
+          7.057572256750427,
+          35.51039039552678
         ]
       },
       "properties": {
@@ -1676,8 +1676,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-07T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1688,8 +1688,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.084117237297803,
-          35.243698369352664
+          7.075140694682487,
+          35.23806313871406
         ]
       },
       "properties": {
@@ -1705,8 +1705,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-08T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1717,8 +1717,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.187383318908419,
-          35.211016252254176
+          7.1865935451723635,
+          35.21956913745496
         ]
       },
       "properties": {
@@ -1734,8 +1734,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-09T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1746,8 +1746,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.259010210420382,
-          35.540387754062735
+          7.252153092483058,
+          35.54319487995934
         ]
       },
       "properties": {
@@ -1763,8 +1763,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-10T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1775,8 +1775,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.279835649789151,
-          35.450686712259504
+          7.283714419668541,
+          35.455016289292836
         ]
       },
       "properties": {
@@ -1792,8 +1792,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-11T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1804,8 +1804,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.147654054402862,
-          35.57043485269647
+          7.144631895422936,
+          35.57271478408948
         ]
       },
       "properties": {
@@ -1821,8 +1821,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-12T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1833,8 +1833,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.15466751622143,
-          35.42402809696005
+          7.138033450667001,
+          35.42063276120592
         ]
       },
       "properties": {
@@ -1850,8 +1850,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-13T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1862,8 +1862,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.213480184075919,
-          35.372865017263166
+          7.2208955366816365,
+          35.3881475528609
         ]
       },
       "properties": {
@@ -1879,8 +1879,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-14T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1891,8 +1891,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.089637824748393,
-          35.388100551213434
+          7.082198599544354,
+          35.388737160223535
         ]
       },
       "properties": {
@@ -1908,8 +1908,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-15T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1920,8 +1920,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1859106538268644,
-          35.36679161379217
+          7.176184215638786,
+          35.36299667972606
         ]
       },
       "properties": {
@@ -1937,8 +1937,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-16T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1949,8 +1949,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.222556333562726,
-          35.438217016350656
+          7.2225119610363615,
+          35.44044235116336
         ]
       },
       "properties": {
@@ -1966,8 +1966,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-17T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -1978,8 +1978,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.069355336304002,
-          35.4029490445197
+          7.055380413453094,
+          35.40699384204112
         ]
       },
       "properties": {
@@ -1995,8 +1995,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-18T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2007,8 +2007,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.095539110449537,
-          35.359914269865534
+          7.102478427933528,
+          35.359002553322355
         ]
       },
       "properties": {
@@ -2024,8 +2024,8 @@
         "inspections": 3,
         "lastInspection": "2026-07-19T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2036,8 +2036,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.207338319202342,
-          35.30402417670483
+          7.20116418028716,
+          35.3053719029203
         ]
       },
       "properties": {
@@ -2053,8 +2053,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-20T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2065,8 +2065,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.252266190950174,
-          35.32253921343872
+          7.241344332890585,
+          35.33533018627669
         ]
       },
       "properties": {
@@ -2082,8 +2082,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-21T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2094,8 +2094,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.286671445138989,
-          35.38370012300895
+          7.271617530477234,
+          35.38199920637533
         ]
       },
       "properties": {
@@ -2111,8 +2111,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-22T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2123,8 +2123,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.158745944376424,
-          35.28563895629799
+          7.141286129360088,
+          35.28522238821257
         ]
       },
       "properties": {
@@ -2140,8 +2140,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-23T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2152,8 +2152,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.078695117923681,
-          35.44572861774405
+          7.070563513929955,
+          35.45105114668142
         ]
       },
       "properties": {
@@ -2169,8 +2169,8 @@
         "inspections": 2,
         "lastInspection": "2026-07-24T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2181,8 +2181,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.229451938685617,
-          35.269670090357295
+          7.21201814382337,
+          35.264339611735195
         ]
       },
       "properties": {
@@ -2198,8 +2198,8 @@
         "inspections": 3,
         "lastInspection": "2026-06-30T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2210,8 +2210,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.118810717029011,
-          35.47198350930912
+          7.123339791502803,
+          35.48924562010914
         ]
       },
       "properties": {
@@ -2227,8 +2227,8 @@
         "inspections": 4,
         "lastInspection": "2026-07-01T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2239,8 +2239,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.208839907021103,
-          35.4947663291232
+          7.201307341689244,
+          35.50184919684194
         ]
       },
       "properties": {
@@ -2256,8 +2256,8 @@
         "inspections": 5,
         "lastInspection": "2026-07-02T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2268,8 +2268,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.054319788577477,
-          35.52756111902116
+          7.059320619390346,
+          35.52738030457869
         ]
       },
       "properties": {
@@ -2285,8 +2285,8 @@
         "inspections": 0,
         "lastInspection": "2026-07-03T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []
@@ -2297,8 +2297,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.084478304200345,
-          35.24766275575
+          7.086373887942172,
+          35.23134436719585
         ]
       },
       "properties": {
@@ -2314,8 +2314,8 @@
         "inspections": 1,
         "lastInspection": "2026-07-04T23:00:00.000Z",
         "createdBy": "system",
-        "createdAt": "2026-10-26T08:13:32.808Z",
-        "updatedAt": "2026-10-26T08:13:32.808Z",
+        "createdAt": "2026-07-01T00:00:00.000Z",
+        "updatedAt": "2026-07-01T00:00:00.000Z",
         "status": "active",
         "attachments": [],
         "history": []

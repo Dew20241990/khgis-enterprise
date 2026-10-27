@@ -1,12 +1,12 @@
 import { TileLayer } from 'react-leaflet';
-import { BASEMAPS, type BasemapId } from '@/lib/basemaps';
+import { resolveBasemap } from '@/lib/basemaps';
 
-/** Leaflet tile layer for a known base map, always carrying its required attribution. */
-export function BasemapTileLayer({ id }: { id: BasemapId }) {
-  const src = BASEMAPS[id];
+/** Leaflet tile layer for a known base map, always carrying its required attribution. Unknown ids fall back to OSM. */
+export function BasemapTileLayer({ id }: { id: string }) {
+  const { id: resolved, source: src } = resolveBasemap(id);
   return (
     <TileLayer
-      key={id}
+      key={resolved}
       url={src.url}
       attribution={src.attribution}
       maxZoom={src.maxZoom}

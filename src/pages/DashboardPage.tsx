@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import { MapContainer, CircleMarker, Popup, Polygon, ScaleControl } from 'react-leaflet';
 import { motion } from 'framer-motion';
-import { AlertTriangle, Trash2, Truck, ClipboardCheck, Gauge, Clock, MapPin, FileBarChart, Activity, Building2, Trophy, Flame, CheckCircle2, AlertCircle, Wrench, Shield, Sun, Printer, FileText, FileSpreadsheet, FileType, Brain, Target, Zap, Layers, Users, Map as MapIcon, Award, Factory, BarChart3, Star, Cpu } from 'lucide-react';
+import { AlertTriangle, Trash2, Truck, ClipboardCheck, Gauge, Clock, MapPin, FileBarChart, Activity, Building2, Trophy, Flame, CheckCircle2, AlertCircle, Wrench, Shield, Sun, FileText, Brain, Target, Zap, Layers, Users, Map as MapIcon, Award, Factory, BarChart3, Star, Cpu } from 'lucide-react';
 import { StatCard, Card, CardHeader, CardBody, Badge } from '@/components/ui';
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, Cell, RadialBarChart, RadialBar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from '@/components/charts/ChartKit';
 import { useApp } from '@/store/appStore';
@@ -10,6 +10,8 @@ import { SIMPLE_LAYER_TO_BASEMAP } from '@/lib/basemaps';
 import { blackSpots, containers, vehicles, inspections, municipalities, neighborhoods, cetCenters, contractors, complaints, illegalDumps, commercialViolations, routes, drivers, blackSpotTrend, KHENCHELA_CENTER, WILAYA_BOUNDARY, workOrders } from '@/data/mockData';
 import { workflowWorkOrders } from '@/data/workflowData';
 import { cn } from '@/lib/cn';
+import { toCsv } from '@/lib/csv';
+import { downloadFile } from '@/lib/importExport';
 
 const fadeUp = { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } };
 
@@ -976,20 +978,25 @@ function OfficialReports() {
     { id: 8, title: locale === 'ar' ? 'تقرير المؤشرات البيئية' : 'Environmental Indicators Report', icon: <Gauge className="w-5 h-5" />, tone: 'success' as const },
   ];
 
-  const exportFormats = [
-    { label: 'PDF', icon: <FileType className="w-4 h-4" />, color: 'text-danger-600 dark:text-danger-400' },
-    { label: 'Excel', icon: <FileSpreadsheet className="w-4 h-4" />, color: 'text-success-600 dark:text-success-400' },
-    { label: 'CSV', icon: <FileText className="w-4 h-4" />, color: 'text-brand-600 dark:text-brand-400' },
-  ];
+  // Real CSV exports built from the current dataset behind each report (demo data in this build).
+  const datasets: Record<number, { file: string; headers: string[]; rows: unknown[][] }> = {
+    1: { file: 'executive-municipalities', headers: ['code', 'name', 'population', 'containers', 'open_spots', 'collection_rate', 'fill_rate'], rows: municipalities.map((m) => [m.code, m.name, m.population, m.containers, m.openSpots, m.collectionRate, m.fillRate]) },
+    2: { file: 'municipality-performance', headers: ['code', 'name', 'collection_rate', 'fill_rate', 'open_spots', 'resolved_spots'], rows: municipalities.map((m) => [m.code, m.name, m.collectionRate, m.fillRate, m.openSpots, m.resolvedSpots]) },
+    3: { file: 'cet-centers', headers: ['id', 'name', 'capacity_tpd', 'current_load_tpd', 'status'], rows: cetCenters.map((c) => [c.id, c.name, c.capacityTpd, c.currentLoadTpd, c.status]) },
+    4: { file: 'contractors', headers: ['id', 'name', 'zone', 'status', 'rating', 'vehicles', 'employees'], rows: contractors.map((c) => [c.id, c.name, c.zone, c.status, c.rating, c.vehicles, c.employees]) },
+    5: { file: 'inspections', headers: ['code', 'municipality', 'date', 'status', 'score'], rows: inspections.map((i) => [i.code, i.municipality, i.date, i.status, i.score]) },
+    6: { file: 'black-spots', headers: ['code', 'municipality', 'status', 'priority', 'lat', 'lng'], rows: blackSpots.map((b) => [b.code, b.municipality, b.status, b.priority, b.lat, b.lng]) },
+    7: { file: 'complaints', headers: ['code', 'municipality', 'status', 'priority', 'date'], rows: complaints.map((c) => [c.code, c.municipality, c.status, c.priority, c.date]) },
+    8: { file: 'environmental-indicators', headers: ['code', 'name', 'fill_rate', 'collection_rate'], rows: municipalities.map((m) => [m.code, m.name, m.fillRate, m.collectionRate]) },
+  };
+  const exportCsv = (id: number) => {
+    const d = datasets[id];
+    if (d) downloadFile(toCsv(d.headers, d.rows), `${d.file}.csv`, 'text/csv;charset=utf-8');
+  };
 
   return (
     <Card>
-      <CardHeader title={locale === 'ar' ? 'التقارير الرسمية' : locale === 'fr' ? 'Rapports Officiels' : 'Official Reports'} icon={<FileBarChart className="w-4 h-4" />}
-        action={
-          <button className="btn-ghost text-xs">
-            <Printer className="w-3.5 h-3.5" /> {locale === 'ar' ? 'معاينة الطباعة' : 'Print Preview'}
-          </button>
-        } />
+      <CardHeader title={locale === 'ar' ? 'التقارير الرسمية' : locale === 'fr' ? 'Rapports Officiels' : 'Official Reports'} icon={<FileBarChart className="w-4 h-4" />}/>
       <CardBody>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {reports.map((r, i) => (
@@ -1005,11 +1012,9 @@ function OfficialReports() {
               </div>
               <p className="text-sm font-semibold text-ink-800 dark:text-ink-100 mb-2">{r.title}</p>
               <div className="flex items-center gap-2">
-                {exportFormats.map((f) => (
-                  <button key={f.label} className={cn('flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-medium hover:bg-ink-100 dark:hover:bg-ink-800 transition', f.color)}>
-                    {f.icon} {f.label}
-                  </button>
-                ))}
+                <button type="button" onClick={() => exportCsv(r.id)} className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium text-brand-600 dark:text-brand-400 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
+                  <FileText className="w-4 h-4" /> CSV
+                </button>
               </div>
             </motion.div>
           ))}

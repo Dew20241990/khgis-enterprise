@@ -658,8 +658,13 @@ export function GisPage() {
           </div>
         </div>
 
+        {/* Honesty notice: the bundled boundaries/coordinates are demo values, not official survey data */}
+        <div role="note" className="pointer-events-none absolute bottom-3 left-1/2 z-[500] -translate-x-1/2 rounded-full bg-warning-50/95 px-3 py-1 text-[11px] font-medium text-warning-800 shadow-soft dark:bg-warning-600/20 dark:text-warning-200">
+          {t('gisUnverifiedNotice')}
+        </div>
+
         {/* Zoom controls */}
-        <div className="absolute right-3 top-20 z-[500] flex flex-col gap-1">
+        <div className="absolute right-3 top-[7.5rem] z-[500] flex flex-col gap-1">
           <button onClick={zoomIn} className="glass-strong w-10 h-10 rounded-xl shadow-lifted flex items-center justify-center text-ink-700 dark:text-ink-200 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
             <ZoomIn className="w-4 h-4" />
           </button>
@@ -761,7 +766,7 @@ export function GisPage() {
         <AnimatePresence>
           {identifyResult && (
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }}
-              className="absolute top-20 right-3 z-[550] w-72 glass-strong rounded-xl2 shadow-lifted overflow-hidden">
+              className="absolute top-[7.5rem] right-16 z-[550] w-72 glass-strong rounded-xl2 shadow-lifted overflow-hidden">
               <div className="flex items-center justify-between px-4 py-3 border-b border-ink-200/70 dark:border-ink-800/70">
                 <div className="flex items-center gap-2">
                   <MousePointerClick className="w-4 h-4 text-brand-600 dark:text-brand-400" />
@@ -797,8 +802,8 @@ export function GisPage() {
         <AnimatePresence>
           {panelOpen && (
             <motion.div initial={{ x: -20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -20, opacity: 0 }}
-              className="absolute top-20 left-3 z-[500] w-72 glass-strong rounded-xl2 shadow-lifted overflow-hidden flex flex-col"
-              style={{ maxHeight: 'calc(100% - 6rem)' }}>
+              className="absolute top-[7.5rem] left-3 z-[500] w-72 glass-strong rounded-xl2 shadow-lifted overflow-hidden flex flex-col"
+              style={{ maxHeight: 'calc(100% - 17rem)' }}>
               <div className="flex items-center border-b border-ink-200/70 dark:border-ink-800/70">
                 {([
                   ['layers', <Layers className="w-3.5 h-3.5" />, t('layers')],
@@ -925,7 +930,7 @@ export function GisPage() {
           )}
         </AnimatePresence>
         {!panelOpen && (
-          <button onClick={() => setPanelOpen(true)} className="absolute top-20 left-3 z-[500] glass-strong rounded-xl shadow-lifted p-2.5 text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
+          <button onClick={() => setPanelOpen(true)} className="absolute top-[7.5rem] left-3 z-[500] glass-strong rounded-xl shadow-lifted p-2.5 text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
             <Layers className="w-4 h-4" />
           </button>
         )}
@@ -934,7 +939,7 @@ export function GisPage() {
         <AnimatePresence>
           {legendOpen && !identifyResult && (
             <motion.div initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: 20, opacity: 0 }}
-              className="absolute top-20 right-3 z-[500] w-56 glass-strong rounded-xl2 shadow-lifted overflow-hidden">
+              className="absolute top-[7.5rem] right-16 z-[500] w-56 glass-strong rounded-xl2 shadow-lifted overflow-hidden">
               <div className="flex items-center justify-between px-4 py-3 border-b border-ink-200/70 dark:border-ink-800/70">
                 <span className="text-sm font-semibold text-ink-900 dark:text-white">{t('legend')}</span>
                 <button onClick={() => setLegendOpen(false)} className="p-1 rounded-lg text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800"><ChevronLeft className="w-4 h-4" /></button>
@@ -963,7 +968,7 @@ export function GisPage() {
           )}
         </AnimatePresence>
         {!legendOpen && !identifyResult && (
-          <button onClick={() => setLegendOpen(true)} className="absolute top-20 right-3 z-[500] glass-strong rounded-xl shadow-lifted p-2.5 text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
+          <button onClick={() => setLegendOpen(true)} className="absolute top-[7.5rem] right-16 z-[500] glass-strong rounded-xl shadow-lifted p-2.5 text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
             <Eye className="w-4 h-4" />
           </button>
         )}
