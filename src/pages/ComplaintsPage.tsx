@@ -10,7 +10,7 @@ export function ComplaintsPage() {
 
   const config: CrudConfig<Complaint> = {
     entityName: 'شكوى',
-    entityNamePlural: t('complaints'),
+    entityNamePlural: t('shared.complaints'),
     icon: <MessageSquare className="w-5 h-5" />,
     rowKey: (r) => r.id,
     columns: [

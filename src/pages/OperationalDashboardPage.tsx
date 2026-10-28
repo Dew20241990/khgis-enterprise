@@ -1,3 +1,4 @@
+import type { TranslationKey } from '@/i18n/translations';
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
@@ -13,12 +14,12 @@ import { conicGradient, distribution, topWithOthers, weightedCollectionRate } fr
 import { cn } from '@/lib/cn';
 
 const TYPE_ORDER = ['standard', 'underground', 'recycling', 'organic'] as const;
-const TYPE_KEY: Record<(typeof TYPE_ORDER)[number], string> = {
+const TYPE_KEY: Record<(typeof TYPE_ORDER)[number], TranslationKey> = {
   standard: 'dshTypeStandard', underground: 'dshTypeUnderground', recycling: 'dshTypeRecycling', organic: 'dshTypeOrganic',
 };
 const TYPE_COLORS = ['#1F6FEB', '#16A34A', '#E39B0B', '#7B5CE0'];
 const VEHICLE_ORDER: Vehicle['status'][] = ['active', 'maintenance', 'idle', 'offline'];
-const VEHICLE_STATUS_KEY: Record<Vehicle['status'], string> = {
+const VEHICLE_STATUS_KEY: Record<Vehicle['status'], TranslationKey> = {
   active: 'dshStActive', idle: 'dshStIdle', maintenance: 'dshStMaintenance', offline: 'dshStOffline',
 };
 const VEHICLE_STATUS_CLASS: Record<Vehicle['status'], string> = {
@@ -71,8 +72,8 @@ export function OperationalDashboardPage() {
 
   const activity = useMemo(() => {
     const items = [
-      ...complaints.map((c) => ({ id: c.id, kind: 'dshActComplaint', place: munName.fromAr(c.municipality), date: c.date })),
-      ...inspections.map((i) => ({ id: i.id, kind: 'dshActInspection', place: munName.fromAr(i.municipality), date: i.date })),
+      ...complaints.map((c) => ({ id: c.id, kind: 'dshActComplaint' as TranslationKey, place: munName.fromAr(c.municipality), date: c.date })),
+      ...inspections.map((i) => ({ id: i.id, kind: 'dshActInspection' as TranslationKey, place: munName.fromAr(i.municipality), date: i.date })),
     ];
     return items.sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id)).slice(0, 5);
   }, [munName]);

@@ -419,10 +419,10 @@ export function WorkOrdersPage() {
       <div className="flex items-center gap-3 flex-wrap">
         <div className="flex items-center gap-2 glass-strong rounded-xl p-1">
           <button onClick={() => setView('list')} className={cn('flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition', view === 'list' ? 'bg-brand-500 text-white' : 'text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800')}>
-            <List className="w-3.5 h-3.5" /> {t('list') || 'قائمة'}
+            <List className="w-3.5 h-3.5" /> {t('shared.viewList') || 'قائمة'}
           </button>
           <button onClick={() => setView('map')} className={cn('flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition', view === 'map' ? 'bg-brand-500 text-white' : 'text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800')}>
-            <MapIcon className="w-3.5 h-3.5" /> {t('map') || 'خريطة'}
+            <MapIcon className="w-3.5 h-3.5" /> {t('shared.viewMap') || 'خريطة'}
           </button>
         </div>
 

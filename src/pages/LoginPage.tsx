@@ -9,7 +9,7 @@ import type { Locale } from '@/i18n/translations';
 import { cn } from '@/lib/cn';
 
 const LANGS: { code: Locale; label: string; short: string }[] = [
-  { code: 'ar', label: 'العربية', short: 'ع' },
+  { code: 'ar', label: 'العربية', short: 'ع' }, // i18n-ignore: language endonym
   { code: 'fr', label: 'Français', short: 'FR' },
   { code: 'en', label: 'English', short: 'EN' },
 ];

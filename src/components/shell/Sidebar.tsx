@@ -4,10 +4,11 @@ import { LayoutDashboard, Map, Building2, Home, AlertTriangle, Trash2, Store, Cl
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';
 import type { Permission } from '@/lib/auth';
+import type { TranslationKey } from '@/i18n/translations';
 import { directionFor } from '@/lib/documentSettings';
 
-interface NavItem { to: string; key: string; icon: React.ReactNode; end?: boolean; perm: Permission }
-interface NavGroup { labelKey: string; items: NavItem[] }
+interface NavItem { to: string; key: TranslationKey; icon: React.ReactNode; end?: boolean; perm: Permission }
+interface NavGroup { labelKey: TranslationKey; items: NavItem[] }
 
 const groups: NavGroup[] = [
   {

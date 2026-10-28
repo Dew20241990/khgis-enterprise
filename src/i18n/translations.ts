@@ -1,8 +1,10 @@
+import { mergeModules, type ModuleKey } from './modules';
+
 export type Locale = 'ar' | 'fr' | 'en';
 
 type Dict = Record<string, string>;
 
-const ar: Dict = {
+const ar = {
   appName: 'المنصة الذكية الجغرافية لتسيير النظافة الحضرية',
   appShort: 'SIG النظافة',
   appSubtitle: 'ولاية خنشلة',
@@ -537,9 +539,9 @@ const ar: Dict = {
   telemetryNoSignal: 'لا توجد إشارة',
   telemetryNotReported: 'غير مُبلَّغ',
   telemetryLoading: 'جارٍ الاتصال بمصدر التتبع...',
-};
+} satisfies Dict;
 
-const fr: Dict = {
+const fr = {
   appName: 'Plateforme SIG Intelligente de Gestion de la Propreté Urbaine',
   appShort: 'SIG Propreté',
   appSubtitle: 'Wilaya de Khenchela',
@@ -947,9 +949,9 @@ const fr: Dict = {
   telemetryNoSignal: 'Aucun signal',
   telemetryNotReported: 'Non communiqué',
   telemetryLoading: 'Connexion à la source de suivi...',
-};
+} satisfies Record<keyof typeof ar, string>;
 
-const en: Dict = {
+const en = {
   appName: 'Smart GIS Platform for Urban Sanitation Management',
   appShort: 'Sanitation GIS',
   appSubtitle: 'Khenchela Province',
@@ -1357,13 +1359,29 @@ const en: Dict = {
   telemetryNoSignal: 'No signal',
   telemetryNotReported: 'Not reported',
   telemetryLoading: 'Connecting to the tracking source...',
-};
+} satisfies Record<keyof typeof ar, string>;
 
-const dicts: Record<Locale, Dict> = { ar, fr, en };
+/** Keys of the core dictionary (feature modules add their own, see `modules/`). */
+export type CoreKey = keyof typeof ar;
+/** Every valid translation key. Using anything else with `t()` is a compile error. */
+export type TranslationKey = CoreKey | ModuleKey;
+
+const dicts: Record<Locale, Dict> = {
+  ar: { ...ar, ...mergeModules('ar') },
+  fr: { ...fr, ...mergeModules('fr') },
+  en: { ...en, ...mergeModules('en') },
+};
 
 /** Exposed so tests can verify key parity across languages. */
 export const dictionaries: Readonly<Record<Locale, Readonly<Dict>>> = dicts;
+/** Core-only dictionaries, so tests can detect keys defined both in the core and in a module. */
+export const coreDictionaries: Readonly<Record<Locale, Readonly<Dict>>> = { ar, fr, en };
 
-export function translate(locale: Locale, key: string): string {
-  return dicts[locale]?.[key] ?? dicts.en[key] ?? key;
+export type TranslateParams = Record<string, string | number>;
+
+/** Looks up `key` for `locale` (falls back to English, then to the key) and fills `{name}` placeholders. */
+export function translate(locale: Locale, key: string, params?: TranslateParams): string {
+  const text = dicts[locale]?.[key] ?? dicts.en[key] ?? key;
+  if (!params) return text;
+  return text.replace(/\{(\w+)\}/g, (m, name: string) => (name in params ? String(params[name]) : m));
 }

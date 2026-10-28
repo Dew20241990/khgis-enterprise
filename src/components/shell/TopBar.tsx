@@ -1,3 +1,4 @@
+import type { TranslationKey } from '@/i18n/translations';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, Search, Sparkles, ChevronLeft } from 'lucide-react';
 import { useApp } from '@/store/appStore';
@@ -5,7 +6,7 @@ import { NotificationCenter } from './NotificationCenter';
 import { UserMenu } from './UserMenu';
 import { cn } from '@/lib/cn';
 
-const routeLabels: Record<string, string> = {
+const routeLabels: Record<string, TranslationKey> = {
   '/': 'dashboard', '/gis': 'gisMap', '/municipalities': 'municipalities',
   '/neighborhoods': 'neighborhoods', '/black-spots': 'blackSpots',
   '/illegal-dumping': 'illegalDumping', '/containers': 'wasteContainers',

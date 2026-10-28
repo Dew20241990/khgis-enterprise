@@ -98,7 +98,7 @@ function ObservationDetail({ observation, onClose }: { observation: Observation;
             { icon: <Building2 className="w-4 h-4" />, label: t('municipality'), value: observation.municipality },
             { icon: <MapPin className="w-4 h-4" />, label: t('wfOperationalZone'), value: observation.operationalZone },
             { icon: <Layers className="w-4 h-4" />, label: t('wfSector'), value: observation.sector },
-            { icon: <MapPin className="w-4 h-4" />, label: t('wfNeighborhood') || 'الحي', value: observation.neighborhood },
+            { icon: <MapPin className="w-4 h-4" />, label: t('shared.neighborhood') || 'الحي', value: observation.neighborhood },
             { icon: <MapPin className="w-4 h-4" />, label: t('wfSector') || 'الشارع', value: observation.street },
             { icon: <AlertCircle className="w-4 h-4" />, label: t('wfObservationType'), value: observation.typeLabel },
             { icon: <User className="w-4 h-4" />, label: t('wfResponsibleEntity'), value: observation.responsibleEntityLabel },
@@ -251,7 +251,7 @@ function NewObservationModal({ open, onClose, onAdd }: {
           </select>
         </div>
         <div>
-          <label className={labelClass}>{t('wfNeighborhood') || 'الحي'}</label>
+          <label className={labelClass}>{t('shared.neighborhood') || 'الحي'}</label>
           <select className={fieldClass} value={form.neighborhood}
             onChange={(e) => setForm({ ...form, neighborhood: e.target.value })}>
             <option value="">—</option>
@@ -434,10 +434,10 @@ export function InspectionsPage() {
       <div className="flex items-center gap-3 flex-wrap">
         <div className="flex items-center gap-2 glass-strong rounded-xl p-1">
           <button onClick={() => setView('list')} className={cn('flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition', view === 'list' ? 'bg-brand-500 text-white' : 'text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800')}>
-            <List className="w-3.5 h-3.5" /> {t('list') || 'قائمة'}
+            <List className="w-3.5 h-3.5" /> {t('shared.viewList') || 'قائمة'}
           </button>
           <button onClick={() => setView('map')} className={cn('flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition', view === 'map' ? 'bg-brand-500 text-white' : 'text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800')}>
-            <MapIcon className="w-3.5 h-3.5" /> {t('map') || 'خريطة'}
+            <MapIcon className="w-3.5 h-3.5" /> {t('shared.viewMap') || 'خريطة'}
           </button>
         </div>
 

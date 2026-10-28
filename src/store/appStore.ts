@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { Locale } from '@/i18n/translations';
+import type { Locale, TranslationKey, TranslateParams } from '@/i18n/translations';
 import { translate } from '@/i18n/translations';
 import { authenticate, findSessionUser, type SessionUser, type Permission } from '@/lib/auth';
 
@@ -11,7 +11,7 @@ const INACTIVITY_LIMIT_MS = 30 * 60 * 1000;
 interface AppState {
   locale: Locale;
   setLocale: (l: Locale) => void;
-  t: (key: string) => string;
+  t: (key: TranslationKey, params?: TranslateParams) => string;
   theme: ThemeMode;
   toggleTheme: () => void;
   setTheme: (m: ThemeMode) => void;
@@ -39,7 +39,7 @@ export const useApp = create<AppState>()(
     (set, get) => ({
       locale: 'ar',
       setLocale: (locale) => set({ locale }),
-      t: (key) => translate(get().locale, key),
+      t: (key, params) => translate(get().locale, key, params),
       theme: 'light',
       toggleTheme: () => set((s) => ({ theme: s.theme === 'light' ? 'dark' : 'light' })),
       setTheme: (theme) => set({ theme }),

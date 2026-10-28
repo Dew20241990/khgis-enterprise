@@ -138,7 +138,7 @@ function ExecutiveKPIs() {
   const kpis = [
     { label: t('municipalities'), value: municipalities.length, icon: <Building2 className="w-5 h-5" />, tone: 'brand' as const, delta: 0 },
     { label: t('wfOperationalZone') || 'المناطق التشغيلية', value: 5, icon: <MapPin className="w-5 h-5" />, tone: 'neutral' as const },
-    { label: t('wfNeighborhood') || 'الأحياء', value: neighborhoods.length, icon: <Layers className="w-5 h-5" />, tone: 'brand' as const },
+    { label: t('shared.neighborhood') || 'الأحياء', value: neighborhoods.length, icon: <Layers className="w-5 h-5" />, tone: 'brand' as const },
     { label: t('kpiInspections'), value: inspections.length, icon: <ClipboardCheck className="w-5 h-5" />, tone: 'warning' as const, delta: 15 },
     { label: t('kpiTotalSpots'), value: blackSpots.length, icon: <AlertTriangle className="w-5 h-5" />, tone: 'danger' as const, delta: -8 },
     { label: t('criticalSpots') || 'النقاط الحرجة', value: criticalSpots, icon: <Flame className="w-5 h-5" />, tone: 'danger' as const },

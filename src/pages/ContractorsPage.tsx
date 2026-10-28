@@ -21,7 +21,7 @@ export function ContractorsPage() {
     rowKey: (r) => r.id,
     columns: [
       { key: 'name', header: t('name'), sortable: true, searchable: true, render: (r) => <span className="font-medium text-ink-800 dark:text-ink-100">{r.name}</span> },
-      { key: 'zone', header: t('zone'), sortable: true, searchable: true, render: (r) => <span className="text-ink-600 dark:text-ink-300">{r.zone}</span> },
+      { key: 'zone', header: t('shared.zone'), sortable: true, searchable: true, render: (r) => <span className="text-ink-600 dark:text-ink-300">{r.zone}</span> },
       { key: 'contractValue', header: 'قيمة العقد', sortable: true, render: (r) => <span className="text-xs font-mono text-ink-600 dark:text-ink-300">{(r.contractValue / 1000000).toFixed(1)} م دج</span> },
       { key: 'rating', header: t('rating'), sortable: true, render: (r) => (
         <span className="flex items-center gap-1 text-xs">
@@ -37,7 +37,7 @@ export function ContractorsPage() {
     ],
     formFields: [
       { key: 'name', label: t('name'), type: 'text', required: true },
-      { key: 'zone', label: t('zone'), type: 'text', required: true },
+      { key: 'zone', label: t('shared.zone'), type: 'text', required: true },
       { key: 'contractValue', label: 'قيمة العقد (دج)', type: 'number', required: true, min: 0, step: 100000 },
       { key: 'status', label: t('status'), type: 'select', required: true, options: [
         { value: 'active', label: 'نشط' }, { value: 'suspended', label: 'موقوف' }, { value: 'expired', label: 'منتهي' },

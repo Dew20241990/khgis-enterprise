@@ -1,3 +1,4 @@
+import type { TranslationKey } from '@/i18n/translations';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -7,7 +8,7 @@ import { useApp } from '@/store/appStore';
 
 interface CmdItem { id: string; label: string; path: string; group: string }
 
-const navPaths: [string, string][] = [
+const navPaths: [string, TranslationKey][] = [
   ['/', 'dashboard'], ['/gis', 'gisMap'], ['/municipalities', 'municipalities'],
   ['/neighborhoods', 'neighborhoods'], ['/black-spots', 'blackSpots'],
   ['/illegal-dumping', 'illegalDumping'], ['/containers', 'wasteContainers'],
