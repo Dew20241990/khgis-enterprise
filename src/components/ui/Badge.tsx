@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/cn';
+import { useApp } from '@/store/appStore';
+import { domainLabel, PRIORITY_KEYS, STATUS_KEYS } from '@/i18n/domain';
 
 export type BadgeTone = 'brand' | 'success' | 'warning' | 'danger' | 'neutral' | 'info';
 
@@ -21,45 +23,29 @@ export function Badge({ children, tone = 'neutral', className, dot }: { children
   );
 }
 
+const STATUS_TONE: Record<string, BadgeTone> = {
+  open: 'danger', inProgress: 'warning', resolved: 'success', closed: 'neutral',
+  active: 'success', idle: 'neutral', maintenance: 'warning', offline: 'danger',
+  pending: 'warning', scheduled: 'info', completed: 'success', flagged: 'danger',
+  assigned: 'info', planned: 'info', delayed: 'danger', operational: 'success',
+  'near-capacity': 'warning', suspended: 'danger', expired: 'neutral',
+  'on-duty': 'success', 'off-duty': 'neutral', leave: 'info', ok: 'success',
+  full: 'danger', damaged: 'danger', created: 'danger', verified: 'success',
+  rejected: 'danger', rework: 'warning',
+};
+
+/** Shows an operational status. `status` is the stored code; the label is translated at display time. */
 export function StatusBadge({ status }: { status: string }) {
-  const map: Record<string, { tone: BadgeTone; label: string }> = {
-    open: { tone: 'danger', label: 'مفتوح' },
-    inProgress: { tone: 'warning', label: 'قيد التنفيذ' },
-    resolved: { tone: 'success', label: 'تم الحل' },
-    closed: { tone: 'neutral', label: 'مغلق' },
-    active: { tone: 'success', label: 'نشط' },
-    idle: { tone: 'neutral', label: 'خامل' },
-    maintenance: { tone: 'warning', label: 'صيانة' },
-    offline: { tone: 'danger', label: 'غير متصل' },
-    pending: { tone: 'warning', label: 'قيد الانتظار' },
-    scheduled: { tone: 'info', label: 'مجدول' },
-    completed: { tone: 'success', label: 'مكتمل' },
-    flagged: { tone: 'danger', label: 'مُعلّم' },
-    assigned: { tone: 'info', label: 'مُسند' },
-    planned: { tone: 'info', label: 'مخطط' },
-    delayed: { tone: 'danger', label: 'متأخر' },
-    operational: { tone: 'success', label: 'تشغيلي' },
-    'near-capacity': { tone: 'warning', label: 'قرب الامتلاء' },
-    suspended: { tone: 'danger', label: 'موقوف' },
-    expired: { tone: 'neutral', label: 'منتهي' },
-    'on-duty': { tone: 'success', label: 'في الخدمة' },
-    'off-duty': { tone: 'neutral', label: 'خارج الخدمة' },
-    leave: { tone: 'info', label: 'إجازة' },
-    ok: { tone: 'success', label: 'سليم' },
-    full: { tone: 'danger', label: 'ممتلئ' },
-    damaged: { tone: 'danger', label: 'تالف' },
-  };
-  const cfg = map[status] ?? { tone: 'neutral' as BadgeTone, label: status };
-  return <Badge tone={cfg.tone} dot>{cfg.label}</Badge>;
+  const { t } = useApp();
+  return <Badge tone={STATUS_TONE[status] ?? 'neutral'} dot>{domainLabel(t, STATUS_KEYS, status)}</Badge>;
 }
 
+const PRIORITY_TONE: Record<string, BadgeTone> = {
+  critical: 'danger', high: 'warning', medium: 'info', low: 'neutral',
+};
+
+/** Shows a priority or risk level. `priority` is the stored code; the label is translated at display time. */
 export function PriorityBadge({ priority }: { priority: string }) {
-  const map: Record<string, { tone: BadgeTone; label: string }> = {
-    critical: { tone: 'danger', label: 'حرج' },
-    high: { tone: 'warning', label: 'عالي' },
-    medium: { tone: 'info', label: 'متوسط' },
-    low: { tone: 'neutral', label: 'منخفض' },
-  };
-  const cfg = map[priority] ?? { tone: 'neutral' as BadgeTone, label: priority };
-  return <Badge tone={cfg.tone}>{cfg.label}</Badge>;
+  const { t } = useApp();
+  return <Badge tone={PRIORITY_TONE[priority] ?? 'neutral'}>{domainLabel(t, PRIORITY_KEYS, priority)}</Badge>;
 }
