@@ -4,12 +4,14 @@
  * image/video/file upload, autocomplete dropdown search.
  */
 
-import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
+import { useState, useRef, useCallback, useEffect, useMemo, useId } from 'react';
 import { MapPin, X, FileText, Image as ImageIcon, Video, File, Calendar, Clock, Search, Check, AlertCircle, Loader2, Save, RotateCcw, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/cn';
 import { validatePosition } from '@/lib/geometry';
 import { isEmptyValue, isGpsValue, type FormValues, type GpsValue } from '@/lib/formValues';
+import { useApp } from '@/store/appStore';
+import type { TranslationKey } from '@/i18n/translations';
 
 export type { FormValues } from '@/lib/formValues';
 
@@ -64,17 +66,36 @@ function draftValues(fields: FormField[], values: FormValues): FormValues {
   return out;
 }
 
+/**
+ * Validation is derived from the current values and language on every render (never stored), so a message
+ * shown before the user switches language is re-rendered in the new language and disappears as soon as the value
+ * becomes valid.
+ */
+function collectErrors(fields: FormField[], values: FormValues, t: (key: TranslationKey) => string): Record<string, string> {
+  const errs: Record<string, string> = {};
+  for (const f of fields) {
+    if (f.visible && !f.visible(values)) continue;
+    const val = values[f.key];
+    if (f.required && isEmptyValue(val)) { errs[f.key] = t('ui.form.required'); continue; }
+    if (f.type === 'gps' && isGpsValue(val) && val.lat !== '' && val.lng !== '') {
+      if (validatePosition([val.lng, val.lat])) { errs[f.key] = t('ui.form.invalidCoords'); continue; }
+    }
+    if (f.validate) { const err = f.validate(val, values); if (err) errs[f.key] = err; }
+  }
+  return errs;
+}
+
 export function SmartForm({
   fields, initialValues = {}, onSubmit, onCancel,
   autoSave = false, autoSaveKey,
-  submitLabel = 'حفظ', cancelLabel = 'إلغاء',
+  submitLabel, cancelLabel,
   title, layout = 'grid',
 }: SmartFormProps) {
+  const { t } = useApp();
   const [values, setValues] = useState<FormValues>(() => ({ ...buildDefaults(fields), ...(initialValues as FormValues) }));
   const valuesRef = useRef<FormValues>(values);
   valuesRef.current = values;
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [touched, setTouched] = useState<Set<string>>(new Set());
+  const [submitAttempted, setSubmitAttempted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [savedAt, setSavedAt] = useState<Date | null>(null);
   const [history, setHistory] = useState<FormValues[]>([]);
@@ -121,8 +142,6 @@ export function SmartForm({
     // History for undo/redo (kept outside the state updater so StrictMode cannot double-record)
     setHistory((h) => [...h.slice(0, historyIndex + 1), next].slice(-50));
     setHistoryIndex(Math.min(historyIndex + 1, 49));
-    // Clear error on change
-    setErrors((prev) => { if (prev[key]) { const n = { ...prev }; delete n[key]; return n; } return prev; });
   }, [historyIndex]);
 
   const undo = useCallback(() => {
@@ -139,25 +158,11 @@ export function SmartForm({
     }
   }, [historyIndex, history]);
 
-  const validate = useCallback((): boolean => {
-    const errs: Record<string, string> = {};
-    fields.forEach((f) => {
-      if (f.visible && !f.visible(values)) return;
-      const val = values[f.key];
-      if (f.required && isEmptyValue(val)) { errs[f.key] = 'هذا الحقل مطلوب'; return; }
-      if (f.type === 'gps' && isGpsValue(val) && val.lat !== '' && val.lng !== '') {
-        const bad = validatePosition([val.lng, val.lat]);
-        if (bad) { errs[f.key] = 'إحداثيات غير صالحة: ' + bad; return; }
-      }
-      if (f.validate) { const err = f.validate(val, values); if (err) errs[f.key] = err; }
-    });
-    setErrors(errs);
-    return Object.keys(errs).length === 0;
-  }, [fields, values]);
+  const errors = useMemo(() => collectErrors(fields, values, t), [fields, values, t]);
 
   const handleSubmit = useCallback(async () => {
-    setTouched(new Set(fields.map((f) => f.key)));
-    if (!validate()) return;
+    setSubmitAttempted(true);
+    if (Object.keys(errors).length > 0) return;
     setSubmitting(true);
     try {
       await onSubmit(values);
@@ -165,7 +170,7 @@ export function SmartForm({
     } finally {
       setSubmitting(false);
     }
-  }, [validate, values, onSubmit, fields, autoSaveKey]);
+  }, [errors, values, onSubmit, autoSaveKey]);
 
   const clearDraft = useCallback(() => {
     if (autoSaveKey) localStorage.removeItem(`draft_${autoSaveKey}`);
@@ -183,18 +188,18 @@ export function SmartForm({
       <div className="flex items-center gap-2 text-xs">
         {savedAt && (
           <span className="flex items-center gap-1 text-success-600 dark:text-success-400">
-            <Check className="w-3 h-3" /> تم الحفظ التلقائي
+            <Check className="w-3 h-3" /> {t('ui.form.autosaved')}
           </span>
         )}
-        <div className="flex items-center gap-1 mr-auto">
-          <button onClick={undo} disabled={historyIndex <= 0} className="p-1 rounded text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 disabled:opacity-30 transition" title="تراجع">
+        <div className="flex items-center gap-1 ms-auto">
+          <button onClick={undo} disabled={historyIndex <= 0} className="p-1 rounded text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 disabled:opacity-30 transition" title={t('ui.form.undo')} aria-label={t('ui.form.undo')}>
             <RotateCcw className="w-3.5 h-3.5" />
           </button>
-          <button onClick={redo} disabled={historyIndex >= history.length - 1} className="p-1 rounded text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 disabled:opacity-30 transition" title="إعادة">
+          <button onClick={redo} disabled={historyIndex >= history.length - 1} className="p-1 rounded text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 disabled:opacity-30 transition" title={t('ui.form.redo')} aria-label={t('ui.form.redo')}>
             <RotateCcw className="w-3.5 h-3.5 scale-x-[-1]" />
           </button>
           {autoSave && (
-            <button onClick={clearDraft} className="text-[10px] text-ink-400 hover:text-danger-500 transition">مسح المسودة</button>
+            <button onClick={clearDraft} className="text-[10px] text-ink-400 hover:text-danger-500 transition">{t('ui.form.clearDraft')}</button>
           )}
         </div>
       </div>
@@ -206,7 +211,7 @@ export function SmartForm({
             field={field}
             value={values[field.key]}
             error={errors[field.key]}
-            touched={touched.has(field.key)}
+            touched={submitAttempted}
             onChange={(v) => setField(field.key, v)}
             colSpan={field.colSpan}
           />
@@ -215,10 +220,10 @@ export function SmartForm({
 
       {/* Actions */}
       <div className="flex items-center justify-end gap-2 pt-3 border-t border-ink-200/70 dark:border-ink-800/70">
-        {onCancel && <button onClick={onCancel} className="btn-ghost text-sm">{cancelLabel}</button>}
+        {onCancel && <button onClick={onCancel} className="btn-ghost text-sm">{cancelLabel ?? t('cancel')}</button>}
         <button onClick={handleSubmit} disabled={submitting} className="btn-primary text-sm disabled:opacity-50">
           {submitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
-          {submitLabel}
+          {submitLabel ?? t('save')}
         </button>
       </div>
     </div>
@@ -235,18 +240,23 @@ function FieldRenderer({
   onChange: (v: unknown) => void;
   colSpan?: 1 | 2;
 }) {
+  const { t } = useApp();
+  const id = useId();
   const showError = !!(error && touched);
+  const labelled = field.type !== 'gps' && field.type !== 'image' && field.type !== 'video' && field.type !== 'file';
   const text = typeof value === 'string' || typeof value === 'number' ? String(value) : '';
 
   return (
     <div className={cn('space-y-1.5', colSpan === 2 && 'sm:col-span-2')}>
-      <label className="text-xs font-medium text-ink-600 dark:text-ink-300 flex items-center gap-1">
+      <label htmlFor={labelled ? id : undefined} className="text-xs font-medium text-ink-600 dark:text-ink-300 flex items-center gap-1">
         {field.label}
         {field.required && <span className="text-danger-500">*</span>}
       </label>
 
       {field.type === 'text' && (
         <input
+          id={id}
+          aria-invalid={showError || undefined}
           type="text"
           value={text}
           onChange={(e) => onChange(e.target.value)}
@@ -257,6 +267,8 @@ function FieldRenderer({
 
       {field.type === 'number' && (
         <input
+          id={id}
+          aria-invalid={showError || undefined}
           type="number"
           value={text}
           onChange={(e) => onChange(e.target.value === '' ? '' : Number(e.target.value))}
@@ -270,6 +282,8 @@ function FieldRenderer({
 
       {field.type === 'password' && (
         <input
+          id={id}
+          aria-invalid={showError || undefined}
           type="password"
           value={text}
           onChange={(e) => onChange(e.target.value)}
@@ -280,6 +294,8 @@ function FieldRenderer({
 
       {field.type === 'textarea' && (
         <textarea
+          id={id}
+          aria-invalid={showError || undefined}
           value={text}
           onChange={(e) => onChange(e.target.value)}
           placeholder={field.placeholder}
@@ -291,48 +307,53 @@ function FieldRenderer({
       {field.type === 'select' && (
         <div className="relative">
           <select
+            id={id}
+            aria-invalid={showError || undefined}
             value={text}
             onChange={(e) => onChange(e.target.value)}
-            className={cn('input appearance-none pr-8', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
+            className={cn('input appearance-none pe-8', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
           >
-            <option value="">— اختر —</option>
+            <option value="">{t('ui.form.choose')}</option>
             {field.options?.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
-          <ChevronDown className="w-4 h-4 text-ink-400 absolute top-1/2 -translate-y-1/2 left-2.5 pointer-events-none" />
+          <ChevronDown className="w-4 h-4 text-ink-400 absolute top-1/2 -translate-y-1/2 end-2.5 pointer-events-none" />
         </div>
       )}
 
       {field.type === 'autocomplete' && (
-        <AutocompleteField field={field} value={text} onChange={onChange} error={showError} />
+        <AutocompleteField id={id} field={field} value={text} onChange={onChange} error={showError} />
       )}
 
       {field.type === 'date' && (
         <div className="relative">
           <input
+            id={id}
             type="date"
             value={text}
             onChange={(e) => onChange(e.target.value)}
-            className={cn('input', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
+            className={cn('input ps-9', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
           />
-          <Calendar className="w-4 h-4 text-ink-400 absolute top-1/2 -translate-y-1/2 left-2.5 pointer-events-none" />
+          <Calendar className="w-4 h-4 text-ink-400 absolute top-1/2 -translate-y-1/2 start-2.5 pointer-events-none" />
         </div>
       )}
 
       {field.type === 'time' && (
         <div className="relative">
           <input
+            id={id}
             type="time"
             value={text}
             onChange={(e) => onChange(e.target.value)}
-            className={cn('input', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
+            className={cn('input ps-9', showError && 'border-danger-400 ring-1 ring-danger-400/30')}
           />
-          <Clock className="w-4 h-4 text-ink-400 absolute top-1/2 -translate-y-1/2 left-2.5 pointer-events-none" />
+          <Clock className="w-4 h-4 text-ink-400 absolute top-1/2 -translate-y-1/2 start-2.5 pointer-events-none" />
         </div>
       )}
 
       {field.type === 'checkbox' && (
         <label className="flex items-center gap-2 cursor-pointer py-2">
           <input
+            id={id}
             type="checkbox"
             checked={!!value}
             onChange={(e) => onChange(e.target.checked)}
@@ -345,6 +366,7 @@ function FieldRenderer({
       {field.type === 'color' && (
         <div className="flex items-center gap-2">
           <input
+            id={id}
             type="color"
             value={text || '#0F4C81'}
             onChange={(e) => onChange(e.target.value)}
@@ -377,7 +399,8 @@ function FieldRenderer({
   );
 }
 
-function AutocompleteField({ field, value, onChange, error }: { field: FormField; value: string; onChange: (v: unknown) => void; error?: boolean }) {
+function AutocompleteField({ id, field, value, onChange, error }: { id: string; field: FormField; value: string; onChange: (v: unknown) => void; error?: boolean }) {
+  const { t } = useApp();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const filtered = useMemo(() => {
@@ -389,15 +412,16 @@ function AutocompleteField({ field, value, onChange, error }: { field: FormField
   return (
     <div className="relative">
       <input
+        id={id}
         type="text"
         value={field.options?.find((o) => o.value === value)?.label ?? value}
         onChange={(e) => { setQuery(e.target.value); setOpen(true); onChange(e.target.value); }}
         onFocus={() => setOpen(true)}
         onBlur={() => setTimeout(() => setOpen(false), 200)}
-        placeholder={field.placeholder ?? 'بحث...'}
-        className={cn('input pr-8', error && 'border-danger-400 ring-1 ring-danger-400/30')}
+        placeholder={field.placeholder ?? t('ui.form.searchPlaceholder')}
+        className={cn('input pe-8', error && 'border-danger-400 ring-1 ring-danger-400/30')}
       />
-      <Search className="w-4 h-4 text-ink-400 absolute top-1/2 -translate-y-1/2 left-2.5" />
+      <Search className="w-4 h-4 text-ink-400 absolute top-1/2 -translate-y-1/2 end-2.5" />
       <AnimatePresence>
         {open && filtered.length > 0 && (
           <motion.div
@@ -408,7 +432,7 @@ function AutocompleteField({ field, value, onChange, error }: { field: FormField
               <button
                 key={o.value}
                 onMouseDown={(e) => { e.preventDefault(); onChange(o.value); setQuery(''); setOpen(false); }}
-                className="w-full text-right px-3 py-1.5 rounded-lg text-xs hover:bg-ink-50 dark:hover:bg-ink-800/60 text-ink-700 dark:text-ink-200 transition"
+                className="w-full text-start px-3 py-1.5 rounded-lg text-xs hover:bg-ink-50 dark:hover:bg-ink-800/60 text-ink-700 dark:text-ink-200 transition"
               >
                 {o.label}
               </button>
@@ -421,6 +445,7 @@ function AutocompleteField({ field, value, onChange, error }: { field: FormField
 }
 
 function GpsField({ value, onChange, error }: { value: GpsValue | null; onChange: (v: unknown) => void; error?: boolean }) {
+  const { t } = useApp();
   const [loading, setLoading] = useState(false);
   const lat: number | '' = value?.lat ?? '';
   const lng: number | '' = value?.lng ?? '';
@@ -444,7 +469,8 @@ function GpsField({ value, onChange, error }: { value: GpsValue | null; onChange
           step="0.000001"
           value={lat}
           onChange={(e) => onChange({ lat: parse(e.target.value), lng })}
-          placeholder="خط العرض"
+          placeholder={t('ui.form.latitude')}
+          aria-label={t('ui.form.latitude')}
           className="input flex-1"
         />
         <input
@@ -452,19 +478,21 @@ function GpsField({ value, onChange, error }: { value: GpsValue | null; onChange
           step="0.000001"
           value={lng}
           onChange={(e) => onChange({ lat, lng: parse(e.target.value) })}
-          placeholder="خط الطول"
+          placeholder={t('ui.form.longitude')}
+          aria-label={t('ui.form.longitude')}
           className="input flex-1"
         />
-        <button onClick={useGps} disabled={loading} className="btn-outline px-3" title="استخدام GPS">
+        <button onClick={useGps} disabled={loading} className="btn-outline px-3" title={t('ui.form.useGps')} aria-label={t('ui.form.useGps')}>
           {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <MapPin className="w-4 h-4" />}
         </button>
       </div>
-      <p className="text-[10px] text-ink-400">أدخل الإحداثيات أو استخدم GPS للتحديد التلقائي</p>
+      <p className="text-[10px] text-ink-400">{t('ui.form.gpsHint')}</p>
     </div>
   );
 }
 
 function FileUploadField({ field, value, onChange, error }: { field: FormField; value: unknown; onChange: (v: unknown) => void; error?: boolean }) {
+  const { t } = useApp();
   const inputRef = useRef<HTMLInputElement>(null);
   const [dragOver, setDragOver] = useState(false);
   const files = useMemo<File[]>(() => {
@@ -498,7 +526,7 @@ function FileUploadField({ field, value, onChange, error }: { field: FormField; 
       >
         <input ref={inputRef} type="file" accept={accept} multiple className="hidden" onChange={(e) => e.target.files && handleFiles(e.target.files)} />
         <Icon className="w-6 h-6 text-ink-400 mx-auto mb-1" />
-        <p className="text-xs text-ink-500">{field.placeholder ?? 'اسحب الملفات هنا أو انقر للرفع'}</p>
+        <p className="text-xs text-ink-500">{field.placeholder ?? t('ui.form.dropFiles')}</p>
       </div>
       {files.length > 0 && (
         <div className="space-y-1">
@@ -507,7 +535,7 @@ function FileUploadField({ field, value, onChange, error }: { field: FormField; 
               <File className="w-3.5 h-3.5 text-ink-400 shrink-0" />
               <span className="flex-1 truncate text-ink-700 dark:text-ink-200">{f.name}</span>
               <span className="text-[10px] text-ink-400">{(f.size / 1024).toFixed(0)} KB</span>
-              <button onClick={(e) => { e.stopPropagation(); removeFile(i); }} className="p-0.5 rounded text-ink-400 hover:text-danger-500 transition">
+              <button onClick={(e) => { e.stopPropagation(); removeFile(i); }} className="p-0.5 rounded text-ink-400 hover:text-danger-500 transition" aria-label={t('ui.form.removeFile')} title={t('ui.form.removeFile')}>
                 <X className="w-3 h-3" />
               </button>
             </div>
