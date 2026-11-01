@@ -5,6 +5,7 @@ import { territoryModule } from './territory';
 import { operationsModule } from './operations';
 import { epwgModule } from './epwg';
 import { gisModule } from './gis';
+import { reportsModule } from './reports';
 import type { Locale } from '../translations';
 
 /** Every feature module. Add new modules here; keys must be unique across all modules and the core dictionary. */
@@ -16,6 +17,7 @@ export const MODULES = {
   operations: operationsModule,
   epwg: epwgModule,
   gis: gisModule,
+  reports: reportsModule,
 } as const;
 
 export type ModuleKey = {
