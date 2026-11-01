@@ -1,7 +1,7 @@
 // @vitest-environment node
 import { readFileSync } from 'fs';
 import { describe, expect, it } from 'vitest';
-import { scanHardcodedArabic } from '../../scripts/i18nScan';
+import { BASELINE_PATH, scanHardcodedText, type ScanCategory, type ScanResult } from '../../scripts/i18nScan';
 import { MODULES } from './modules';
 import { coreDictionaries, dictionaries, translate, type Locale } from './translations';
 
@@ -66,16 +66,18 @@ describe('merged dictionaries', () => {
   });
 });
 
-describe('hard-coded Arabic in application source (ratchet)', () => {
-  const baseline = JSON.parse(readFileSync('src/i18n/hardcoded-arabic.baseline.json', 'utf8')) as Record<string, number>;
-  const now = scanHardcodedArabic();
+describe('hard-coded user-visible text in application source (ratchet)', () => {
+  const baseline = JSON.parse(readFileSync(BASELINE_PATH, 'utf8')) as ScanResult;
+  const now = scanHardcodedText();
+  const categories: ScanCategory[] = ['arabic', 'ternary', 'latin'];
 
-  it('never grows: no file may have more hard-coded Arabic lines than the baseline, new files must have none', () => {
-    const regressions = Object.entries(now).filter(([f, n]) => n > (baseline[f] ?? 0)).map(([f, n]) => `${f}: ${n} > ${baseline[f] ?? 0}`);
+  it.each(categories)('%s: never grows (no file may have more offending lines than its baseline entry; new files must have none)', (cat) => {
+    const regressions = Object.entries(now[cat]).filter(([f, n]) => n > (baseline[cat][f] ?? 0)).map(([f, n]) => `${f}: ${n} > ${baseline[cat][f] ?? 0}`);
     expect(regressions).toEqual([]);
   });
-  it('baseline only lists files that still contain hard-coded Arabic (shrink it as pages are converted)', () => {
-    const stale = Object.keys(baseline).filter((f) => !(f in now) || now[f] < baseline[f]);
-    expect(stale, 'run `npm run i18n:audit -- --write-baseline` to lock in progress').toEqual([]);
+
+  it.each(categories)('%s: baseline only lists files that still offend (run `npm run i18n:audit -- --write-baseline` to lock in progress)', (cat) => {
+    const stale = Object.keys(baseline[cat]).filter((f) => !(f in now[cat]) || now[cat][f] < baseline[cat][f]);
+    expect(stale).toEqual([]);
   });
 });
