@@ -38,7 +38,7 @@ const config: CrudConfig<LogEntry> = {
   allowDuplicate: false,
   allowArchive: false,
   columns: [
-    { key: 'timestamp', header: 'الوقت', sortable: true, width: 180, pinned: 'left', exportValue: (l) => l.timestamp, render: (l) => <span className="text-xs text-ink-500 font-mono">{new Date(l.timestamp).toLocaleString('ar-DZ')}</span> },
+    { key: 'timestamp', header: 'الوقت', sortable: true, width: 180, pinned: 'start', exportValue: (l) => l.timestamp, render: (l) => <span className="text-xs text-ink-500 font-mono">{new Date(l.timestamp).toLocaleString('ar-DZ')}</span> },
     { key: 'user', header: 'المستخدم', sortable: true, searchable: true, width: 140, render: (l) => <span className="font-medium text-ink-800 dark:text-ink-100">{l.user}</span> },
     { key: 'action', header: 'الإجراء', searchable: true, width: 160 },
     { key: 'module', header: 'الوحدة', sortable: true, searchable: true, width: 140, render: (l) => <Badge tone="neutral">{l.module}</Badge> },

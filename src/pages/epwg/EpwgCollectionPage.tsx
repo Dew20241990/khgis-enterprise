@@ -21,10 +21,10 @@ export function EpwgCollectionPage() {
   ];
 
   const muniColumns: EnterpriseColumn<typeof epwgWasteByMunicipality[number]>[] = [
-    { key: 'name', header: locale === 'ar' ? 'البلدية' : 'Municipality', sortable: true, searchable: true, pinned: 'left',
+    { key: 'name', header: locale === 'ar' ? 'البلدية' : 'Municipality', sortable: true, searchable: true, pinned: 'start',
       render: (r) => <span className="text-sm font-medium">{locale === 'ar' ? r.name : r.nameFr}</span>,
       exportValue: (r) => locale === 'ar' ? r.name : r.nameFr },
-    { key: 'tons', header: locale === 'ar' ? 'النفايات (ط/ي)' : 'Waste (t/d)', sortable: true, width: 140, align: 'left',
+    { key: 'tons', header: locale === 'ar' ? 'النفايات (ط/ي)' : 'Waste (t/d)', sortable: true, width: 140, align: 'end',
       render: (r) => <span className="text-sm font-semibold text-brand-600 dark:text-brand-400">{r.tons}</span> },
     { key: 'bar', header: locale === 'ar' ? 'النسبة' : 'Share', width: 200,
       render: (r) => {

@@ -43,14 +43,14 @@ export function EpwgVehiclesPage() {
   ];
 
   const columns: EnterpriseColumn<EpwgVehicle>[] = [
-    { key: 'plate', header: locale === 'ar' ? 'اللوحة' : 'Plate', sortable: true, searchable: true, pinned: 'left', width: 120,
+    { key: 'plate', header: locale === 'ar' ? 'اللوحة' : 'Plate', sortable: true, searchable: true, pinned: 'start', width: 120,
       render: (v) => <span className="font-mono text-xs font-semibold text-brand-600 dark:text-brand-400">{v.plate}</span> },
     { key: 'typeAr', header: locale === 'ar' ? 'النوع' : 'Type', sortable: true, width: 140,
       render: (v) => <span className="text-xs text-ink-500">{v.typeAr}</span> },
     { key: 'facilityId', header: t('epwgFacilities'), sortable: true, searchable: true, width: 160,
       render: (v) => <span className="text-xs">{facilityName(v.facilityId)}</span>,
       exportValue: (v) => facilityName(v.facilityId) },
-    { key: 'capacityTons', header: locale === 'ar' ? 'الطاقة (طن)' : 'Capacity (t)', sortable: true, width: 120, align: 'left',
+    { key: 'capacityTons', header: locale === 'ar' ? 'الطاقة (طن)' : 'Capacity (t)', sortable: true, width: 120, align: 'end',
       render: (v) => <span className="text-sm font-semibold">{v.capacityTons || '—'}</span> },
     { key: 'status', header: t('epwgVehicleStatus'), sortable: true, width: 130,
       render: (v) => (
@@ -62,7 +62,7 @@ export function EpwgVehiclesPage() {
       ) },
     { key: 'driverAr', header: locale === 'ar' ? 'السائق' : 'Driver', sortable: true, searchable: true, width: 130,
       render: (v) => <span className="text-xs">{locale === 'ar' ? v.driverAr : v.driver}</span> },
-    { key: 'odometer', header: locale === 'ar' ? 'العدّاد' : 'Odometer', sortable: true, width: 120, align: 'left',
+    { key: 'odometer', header: locale === 'ar' ? 'العدّاد' : 'Odometer', sortable: true, width: 120, align: 'end',
       render: (v) => <span className="text-xs text-ink-500">{v.odometer.toLocaleString()} km</span> },
     { key: 'lastMaintenance', header: locale === 'ar' ? 'آخر صيانة' : 'Last Maint.', sortable: true, width: 120,
       render: (v) => <span className="text-xs text-ink-500">{v.lastMaintenance}</span> },

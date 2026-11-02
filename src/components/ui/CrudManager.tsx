@@ -6,7 +6,7 @@
  */
 
 import { useState, useCallback, useMemo, type ReactNode } from 'react';
-import { Plus, Trash2, Copy, Archive, RotateCcw, Download, History, Clock } from 'lucide-react';
+import { Plus, Trash2, Copy, Archive, RotateCcw, History, Clock } from 'lucide-react';
 import { EnterpriseDataTable, type EnterpriseColumn, type BulkAction, type FilterConfig } from './EnterpriseDataTable';
 import { Modal } from './Modal';
 import { SmartForm, type FormField, type FormValues } from './SmartForm';
@@ -16,14 +16,18 @@ import { toast } from './toastStore';
 import { PageHeader } from './PageHeader';
 import { useApp } from '@/store/appStore';
 import { cn } from '@/lib/cn';
+import { formatDate } from '@/lib/format';
 
 export interface CrudConfig<T> {
+  /** Stable id of the resource (e.g. `vehicles`): used for export file names, draft keys and generated record ids. */
+  resource?: string;
+  /** Singular, translated name of one record (used in messages such as "{entity} deleted"). */
   entityName: string;
   entityNamePlural: string;
   icon: ReactNode;
   columns: EnterpriseColumn<T>[];
   formFields: FormField[];
-  filters?: FilterConfig[];
+  filters?: FilterConfig<T>[];
   bulkActions?: BulkAction[];
   rowKey: (row: T) => string;
   onRowClick?: (row: T) => void;
@@ -44,16 +48,18 @@ interface CrudManagerProps<T> {
   onDataChange?: (data: T[]) => void;
 }
 
-/** Reads an optional metadata field (e.g. `_createdAt`) from a row. */
-function meta(row: object | null, key: string): string {
+/** Reads an optional string metadata field (e.g. `_createdAt`) from a row. */
+function meta(row: object | null, key: string): string | undefined {
   const v = row ? (row as Record<string, unknown>)[key] : undefined;
-  return typeof v === 'string' ? v : new Date().toISOString();
+  return typeof v === 'string' && v ? v : undefined;
 }
 
 export function CrudManager<T extends object>({
   config, data, onDataChange,
 }: CrudManagerProps<T>) {
-  const { t } = useApp();
+  const { t, locale, user } = useApp();
+  const resourceId = config.resource ?? 'record';
+  const actor = user?.username;
   const [rows, setRows] = useState<T[]>(data);
   const [formOpen, setFormOpen] = useState(false);
   const [editingRow, setEditingRow] = useState<T | null>(null);
@@ -91,8 +97,8 @@ export function CrudManager<T extends object>({
     const id = config.rowKey(confirmDelete);
     updateRows(rows.filter((r) => config.rowKey(r) !== id));
     setConfirmDelete(null);
-    toast.success('تم الحذف', `تم حذف ${config.entityName} بنجاح`);
-  }, [confirmDelete, config, rows, updateRows]);
+    toast.success(t('ui.crud.deletedTitle'), t('ui.crud.deletedMsg', { entity: config.entityName }));
+  }, [confirmDelete, config, rows, updateRows, t]);
 
   // Duplicate / Clone
   const handleDuplicate = useCallback((row: T) => {
@@ -101,38 +107,38 @@ export function CrudManager<T extends object>({
     const clone: Record<string, unknown> = { ...source, id: `${id}_copy_${Date.now()}` };
     if (typeof source.code === 'string') clone.code = `${source.code}_copy`;
     updateRows([...rows, clone as unknown as T]);
-    toast.success('تم النسخ', `تم إنشاء نسخة من ${config.entityName}`);
-  }, [config, rows, updateRows]);
+    toast.success(t('ui.crud.duplicatedTitle'), t('ui.crud.duplicatedMsg', { entity: config.entityName }));
+  }, [config, rows, updateRows, t]);
 
   // Archive
   const handleArchive = useCallback((row: T) => {
     const id = config.rowKey(row);
     updateRows(rows.map((r) => config.rowKey(r) === id ? { ...r, _archived: true } : r));
-    toast.success('تم الأرشفة', `تمت أرشفة ${config.entityName}`);
-  }, [config, rows, updateRows]);
+    toast.success(t('ui.crud.archivedTitle'), t('ui.crud.archivedMsg', { entity: config.entityName }));
+  }, [config, rows, updateRows, t]);
 
   // Restore
   const handleRestore = useCallback((row: T) => {
     const id = config.rowKey(row);
     updateRows(rows.map((r) => config.rowKey(r) === id ? { ...r, _archived: false } : r));
-    toast.success('تمت الاستعادة', `تمت استعادة ${config.entityName}`);
-  }, [config, rows, updateRows]);
+    toast.success(t('ui.crud.restoredTitle'), t('ui.crud.restoredMsg', { entity: config.entityName }));
+  }, [config, rows, updateRows, t]);
 
   // Form submit
   const handleFormSubmit = useCallback((submitted: FormValues) => {
     const values = applyCoords(submitted);
     if (editingRow) {
       const id = config.rowKey(editingRow);
-      updateRows(rows.map((r) => config.rowKey(r) === id ? { ...r, ...values, _updatedAt: new Date().toISOString() } : r));
-      toast.success('تم التحديث', `تم تحديث ${config.entityName} بنجاح`);
+      updateRows(rows.map((r) => config.rowKey(r) === id ? { ...r, ...values, _updatedAt: new Date().toISOString(), _updatedBy: actor } : r));
+      toast.success(t('ui.crud.updatedTitle'), t('ui.crud.updatedMsg', { entity: config.entityName }));
     } else {
-      const newRow = { ...values, id: `${config.entityName}_${Date.now()}`, _createdAt: new Date().toISOString() } as unknown as T;
+      const newRow = { ...values, id: `${resourceId}-${Date.now()}`, _createdAt: new Date().toISOString(), _createdBy: actor } as unknown as T;
       updateRows([...rows, newRow]);
-      toast.success('تم الإنشاء', `تم إنشاء ${config.entityName} بنجاح`);
+      toast.success(t('ui.crud.createdTitle'), t('ui.crud.createdMsg', { entity: config.entityName }));
     }
     setFormOpen(false);
     setEditingRow(null);
-  }, [editingRow, config, rows, updateRows]);
+  }, [editingRow, config, rows, updateRows, t, resourceId, actor]);
 
   // Bulk actions
   const defaultBulkActions: BulkAction[] = useMemo(() => [
@@ -145,7 +151,7 @@ export function CrudManager<T extends object>({
       key: 'bulk-archive', label: t('archive'), icon: <Archive className="w-3.5 h-3.5" />, tone: 'warning',
       onClick: (ids) => {
         updateRows(rows.map((r) => ids.includes(config.rowKey(r)) ? { ...r, _archived: true } : r));
-        toast.success('تم الأرشفة', `تمت أرشفة ${ids.length} عنصر`);
+        toast.success(t('ui.crud.archivedTitle'), t('ui.crud.bulkArchivedMsg', { n: ids.length }));
       },
     },
   ], [config, rows, updateRows, t]);
@@ -154,10 +160,10 @@ export function CrudManager<T extends object>({
     const ids = pendingBulkIds;
     if (ids) {
       updateRows(rows.filter((r) => !ids.includes(config.rowKey(r))));
-      toast.success('تم الحذف', `تم حذف ${ids.length} عنصر`);
+      toast.success(t('ui.crud.deletedTitle'), t('ui.crud.bulkDeletedMsg', { n: ids.length }));
     }
     setPendingBulkIds(null);
-  }, [config, rows, updateRows, pendingBulkIds]);
+  }, [config, rows, updateRows, pendingBulkIds, t]);
 
   // Context menu actions
   const contextMenuItems = useCallback((row: T, close: () => void): ReactNode => (
@@ -184,6 +190,15 @@ export function CrudManager<T extends object>({
     </>
   ), [handleDuplicate, handleArchive, handleRestore, handleDelete, setHistoryRow, t]);
 
+  const historyEntries = useMemo(() => {
+    const entries: { key: string; action: string; user?: string; time: string; color: string }[] = [];
+    const created = meta(historyRow, '_createdAt');
+    const updated = meta(historyRow, '_updatedAt');
+    if (created) entries.push({ key: 'created', action: t('ui.crud.historyCreated'), user: meta(historyRow, '_createdBy'), time: created, color: 'bg-success-500' });
+    if (updated) entries.push({ key: 'updated', action: t('ui.crud.historyUpdated'), user: meta(historyRow, '_updatedBy'), time: updated, color: 'bg-brand-500' });
+    return entries;
+  }, [historyRow, t]);
+
   const archivedCount = useMemo(() => rows.filter((r) => (r as Record<string, unknown>)._archived).length, [rows]);
   const visibleRows = useMemo(
     () => rows.filter((r) => Boolean((r as Record<string, unknown>)._archived) === showArchived),
@@ -194,7 +209,7 @@ export function CrudManager<T extends object>({
     <div>
       <PageHeader
         title={config.entityNamePlural}
-        subtitle={`${visibleRows.length} ${config.entityName}`}
+        subtitle={visibleRows.length === 1 ? t('ui.crud.recordOne') : t('ui.crud.recordCount', { n: visibleRows.length })}
         icon={config.icon}
         actions={
           <>
@@ -203,7 +218,6 @@ export function CrudManager<T extends object>({
                 <Archive className="w-4 h-4" /> {t('archived')} ({archivedCount})
               </button>
             ) : null}
-            {config.allowExport !== false && <button className="btn-outline"><Download className="w-4 h-4" /> {t('export')}</button>}
             {config.allowCreate !== false && (
               <button onClick={handleCreate} className="btn-primary"><Plus className="w-4 h-4" /> {t('add')}</button>
             )}
@@ -224,13 +238,15 @@ export function CrudManager<T extends object>({
         onQuickView={config.quickView ? (r) => setPreviewRow(r) : undefined}
         onEdit={config.allowEdit !== false ? handleEdit : undefined}
         contextMenu={contextMenuItems}
+        exportName={config.resource}
+        allowExport={config.allowExport !== false}
       />
 
       {/* Create/Edit Modal */}
       <Modal
         open={formOpen}
         onClose={() => { setFormOpen(false); setEditingRow(null); }}
-        title={editingRow ? `${t('edit')} ${config.entityName}` : `${t('add')} ${config.entityName}`}
+        title={editingRow ? t('ui.crud.editTitle', { entity: config.entityName }) : t('ui.crud.addTitle', { entity: config.entityName })}
         size="lg"
       >
         <SmartForm
@@ -239,7 +255,7 @@ export function CrudManager<T extends object>({
           onSubmit={handleFormSubmit}
           onCancel={() => { setFormOpen(false); setEditingRow(null); }}
           autoSave
-          autoSaveKey={`${config.entityName}_${editingRow ? config.rowKey(editingRow) : 'new'}`}
+          autoSaveKey={`${resourceId}:${editingRow ? config.rowKey(editingRow) : 'new'}`}
         />
       </Modal>
 
@@ -274,18 +290,18 @@ export function CrudManager<T extends object>({
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-sm text-ink-600 dark:text-ink-300">
             <Clock className="w-4 h-4 text-brand-500" />
-            <span>سجل التغييرات</span>
+            <span>{t('ui.crud.changeLog')}</span>
           </div>
           <div className="space-y-2">
-            {[
-              { action: 'تم الإنشاء', user: 'النظام', time: meta(historyRow, '_createdAt'), color: 'bg-success-500' },
-              { action: 'تم التحديث', user: 'م. بن عمر', time: meta(historyRow, '_updatedAt'), color: 'bg-brand-500' },
-            ].map((h, i) => (
-              <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-ink-50 dark:bg-ink-800/40">
+            {historyEntries.length === 0 && <p className="text-sm text-ink-500 dark:text-ink-400">{t('ui.crud.noHistory')}</p>}
+            {historyEntries.map((h) => (
+              <div key={h.key} className="flex items-start gap-3 p-3 rounded-lg bg-ink-50 dark:bg-ink-800/40">
                 <span className={cn('w-2 h-2 rounded-full mt-1.5 shrink-0', h.color)} />
                 <div className="flex-1">
                   <p className="text-sm font-medium text-ink-800 dark:text-ink-100">{h.action}</p>
-                  <p className="text-xs text-ink-400">{h.user} · {new Date(h.time).toLocaleString('ar-DZ')}</p>
+                  <p className="text-xs text-ink-400">
+                    {h.user ? `${t('ui.crud.historyBy', { user: h.user })} · ` : ''}{formatDate(locale, h.time, { dateStyle: 'medium', timeStyle: 'short' })}
+                  </p>
                 </div>
               </div>
             ))}
@@ -296,8 +312,8 @@ export function CrudManager<T extends object>({
       {/* Delete Confirmation */}
       <ConfirmDialog
         open={!!confirmDelete}
-        title={`حذف ${config.entityName}`}
-        message={`هل أنت متأكد من حذف هذا العنصر؟ لا يمكن التراجع عن هذا الإجراء.`}
+        title={t('ui.crud.deleteTitle', { entity: config.entityName })}
+        message={t('ui.crud.deleteMessage')}
         confirmLabel={t('delete')}
         onConfirm={confirmDeleteAction}
         onCancel={() => setConfirmDelete(null)}
@@ -306,8 +322,8 @@ export function CrudManager<T extends object>({
       {/* Bulk Delete Confirmation */}
       <ConfirmDialog
         open={pendingBulkIds !== null}
-        title="حذف جماعي"
-        message={`هل أنت متأكد من حذف جميع العناصر المحددة؟`}
+        title={t('ui.crud.bulkDeleteTitle')}
+        message={t('ui.crud.bulkDeleteMessage')}
         confirmLabel={t('delete')}
         onConfirm={confirmBulkDeleteAction}
         onCancel={() => setPendingBulkIds(null)}

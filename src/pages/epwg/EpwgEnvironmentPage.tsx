@@ -50,7 +50,7 @@ export function EpwgEnvironmentPage() {
   });
 
   const monitoringColumns: EnterpriseColumn<EnvMonitoring>[] = [
-    { key: 'id', header: locale === 'ar' ? 'المعرّف' : 'ID', sortable: true, searchable: true, pinned: 'left', width: 90,
+    { key: 'id', header: locale === 'ar' ? 'المعرّف' : 'ID', sortable: true, searchable: true, pinned: 'start', width: 90,
       render: (e) => <span className="font-mono text-xs font-semibold text-brand-600 dark:text-brand-400">{e.id}</span> },
     { key: 'facilityId', header: t('epwgFacilities'), sortable: true, searchable: true, width: 160,
       render: (e) => <span className="text-xs">{facilityName(e.facilityId)}</span>,
@@ -62,7 +62,7 @@ export function EpwgEnvironmentPage() {
           <span className="text-xs">{e.typeAr}</span>
         </div>
       ) },
-    { key: 'value', header: locale === 'ar' ? 'القيمة' : 'Value', sortable: true, width: 120, align: 'left',
+    { key: 'value', header: locale === 'ar' ? 'القيمة' : 'Value', sortable: true, width: 120, align: 'end',
       render: (e) => <span className="text-sm font-semibold">{e.value} {e.unit}</span>,
       exportValue: (e) => e.value + ' ' + e.unit },
     { key: 'status', header: t('epwgOperationalStatus'), sortable: true, width: 120,

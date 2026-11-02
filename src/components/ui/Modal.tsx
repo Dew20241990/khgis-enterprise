@@ -1,7 +1,8 @@
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { cn } from '@/lib/cn';
+import { useApp } from '@/store/appStore';
 
 interface ModalProps {
   open: boolean;
@@ -16,6 +17,13 @@ interface ModalProps {
 const sizes = { sm: 'max-w-md', md: 'max-w-lg', lg: 'max-w-2xl', xl: 'max-w-4xl' };
 
 export function Modal({ open, onClose, title, subtitle, children, footer, size = 'md' }: ModalProps) {
+  const { t } = useApp();
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open, onClose]);
   return (
     <AnimatePresence>
       {open && (
@@ -30,6 +38,7 @@ export function Modal({ open, onClose, title, subtitle, children, footer, size =
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 12 }}
             transition={{ duration: 0.2 }}
+            role="dialog" aria-modal="true" aria-label={title}
             className={cn('relative w-full glass-strong rounded-xl3 shadow-lifted max-h-[90vh] flex flex-col', sizes[size])}
           >
             {(title || subtitle) && (
@@ -38,7 +47,7 @@ export function Modal({ open, onClose, title, subtitle, children, footer, size =
                   {title && <h2 className="text-base font-semibold text-ink-900 dark:text-white">{title}</h2>}
                   {subtitle && <p className="text-sm text-ink-500 dark:text-ink-400 mt-0.5">{subtitle}</p>}
                 </div>
-                <button onClick={onClose} className="p-1.5 rounded-lg text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
+                <button onClick={onClose} aria-label={t('ui.dialog.close')} className="p-1.5 rounded-lg text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
                   <X className="w-5 h-5" />
                 </button>
               </div>

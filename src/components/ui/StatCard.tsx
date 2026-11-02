@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/cn';
 import { TrendingUp, TrendingDown } from 'lucide-react';
+import { useApp } from '@/store/appStore';
 
 interface StatCardProps {
   label: string;
@@ -20,9 +21,10 @@ const toneMap = {
 };
 
 export function StatCard({ label, value, icon, tone = 'brand', delta, hint }: StatCardProps) {
+  const { t } = useApp();
   return (
     <div className="card card-hover p-5 relative overflow-hidden">
-      <div className={cn('absolute -top-8 -left-8 w-28 h-28 rounded-full bg-gradient-to-br blur-2xl opacity-60', toneMap[tone])} />
+      <div className={cn('absolute -top-8 -start-8 w-28 h-28 rounded-full bg-gradient-to-br blur-2xl opacity-60', toneMap[tone])} />
       <div className="relative flex items-start justify-between">
         <div>
           <p className="text-xs font-medium text-ink-500 dark:text-ink-400">{label}</p>
@@ -39,7 +41,7 @@ export function StatCard({ label, value, icon, tone = 'brand', delta, hint }: St
             {delta >= 0 ? <TrendingUp className="w-3.5 h-3.5" /> : <TrendingDown className="w-3.5 h-3.5" />}
             {Math.abs(delta)}%
           </span>
-          <span className="text-xs text-ink-400 dark:text-ink-500">عن الشهر الماضي</span>
+          <span className="text-xs text-ink-400 dark:text-ink-500">{t('ui.statCard.vsLastMonth')}</span>
         </div>
       )}
     </div>

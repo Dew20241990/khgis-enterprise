@@ -40,7 +40,7 @@ const config: CrudConfig<Doc> = {
   allowEdit: true,
   allowDelete: true,
   columns: [
-    { key: 'name', header: 'الاسم', sortable: true, searchable: true, width: 280, pinned: 'left', render: (d) => (
+    { key: 'name', header: 'الاسم', sortable: true, searchable: true, width: 280, pinned: 'start', render: (d) => (
       <div className="flex items-center gap-2">
         {typeIcons[d.type] ?? <File className="w-4 h-4 text-ink-400" />}
         <span className="font-medium text-ink-800 dark:text-ink-100">{d.name}</span>

@@ -15,19 +15,19 @@ const config: CrudConfig<Municipality> = {
   allowDuplicate: true,
   allowArchive: true,
   columns: [
-    { key: 'code', header: 'الكود', sortable: true, searchable: true, width: 90, pinned: 'left' },
+    { key: 'code', header: 'الكود', sortable: true, searchable: true, width: 90, pinned: 'start' },
     { key: 'nameAr', header: 'الاسم', sortable: true, searchable: true, width: 180, render: (m) => (
       <div>
         <p className="font-medium text-ink-800 dark:text-ink-100">{m.nameAr}</p>
         <p className="text-xs text-ink-400">{m.nameFr}</p>
       </div>
     ) },
-    { key: 'population', header: 'السكان', sortable: true, searchable: true, width: 120, align: 'right', exportValue: (m) => m.population, render: (m) => m.population.toLocaleString() },
-    { key: 'areaKm2', header: 'المساحة', sortable: true, width: 100, align: 'right', exportValue: (m) => m.areaKm2, render: (m) => `${m.areaKm2} كم²` },
-    { key: 'households', header: 'الأسر', sortable: true, width: 100, align: 'right', exportValue: (m) => m.households, render: (m) => m.households.toLocaleString() },
+    { key: 'population', header: 'السكان', sortable: true, searchable: true, width: 120, align: 'start', exportValue: (m) => m.population, render: (m) => m.population.toLocaleString() },
+    { key: 'areaKm2', header: 'المساحة', sortable: true, width: 100, align: 'start', exportValue: (m) => m.areaKm2, render: (m) => `${m.areaKm2} كم²` },
+    { key: 'households', header: 'الأسر', sortable: true, width: 100, align: 'start', exportValue: (m) => m.households, render: (m) => m.households.toLocaleString() },
     { key: 'containers', header: 'الحاويات', sortable: true, width: 90, align: 'center' },
     { key: 'openSpots', header: 'النقاط السوداء', sortable: true, width: 120, align: 'center', exportValue: (m) => m.openSpots, render: (m) => <Badge tone={m.openSpots > 5 ? 'danger' : m.openSpots > 2 ? 'warning' : 'success'}>{m.openSpots}</Badge> },
-    { key: 'collectionRate', header: 'نسبة الجمع', sortable: true, width: 140, align: 'right', exportValue: (m) => m.collectionRate, render: (m) => (
+    { key: 'collectionRate', header: 'نسبة الجمع', sortable: true, width: 140, align: 'start', exportValue: (m) => m.collectionRate, render: (m) => (
       <div className="flex items-center gap-2">
         <div className="w-16 h-1.5 rounded-full bg-ink-100 dark:bg-ink-800 overflow-hidden">
           <div className={`h-full rounded-full ${m.collectionRate > 80 ? 'bg-success-500' : m.collectionRate > 65 ? 'bg-warning-500' : 'bg-danger-500'}`} style={{ width: `${m.collectionRate}%` }} />

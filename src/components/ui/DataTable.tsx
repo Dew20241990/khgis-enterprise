@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/cn';
+import { useApp } from '@/store/appStore';
 
 interface Column<T> {
   key: string;
@@ -22,8 +23,9 @@ interface DataTableProps<T> {
 }
 
 export function DataTable<T extends object>({
-  columns, rows, rowKey, onRowClick, selectable, selected = [], onToggleSelect, onToggleSelectAll, emptyText = 'لا توجد بيانات',
+  columns, rows, rowKey, onRowClick, selectable, selected = [], onToggleSelect, onToggleSelectAll, emptyText,
 }: DataTableProps<T>) {
+  const { t } = useApp();
   const allSelected = rows.length > 0 && rows.every((r) => selected.includes(rowKey(r)));
   return (
     <div className="overflow-x-auto">
@@ -36,7 +38,7 @@ export function DataTable<T extends object>({
               </th>
             )}
             {columns.map((c) => (
-              <th key={c.key} className={cn('text-right px-4 py-3 text-xs font-semibold text-ink-500 dark:text-ink-400 uppercase tracking-wide whitespace-nowrap', c.className)}>
+              <th key={c.key} className={cn('text-start px-4 py-3 text-xs font-semibold text-ink-500 dark:text-ink-400 uppercase tracking-wide whitespace-nowrap', c.className)}>
                 {c.header}
               </th>
             ))}
@@ -45,7 +47,7 @@ export function DataTable<T extends object>({
         <tbody>
           {rows.length === 0 ? (
             <tr>
-              <td colSpan={columns.length + (selectable ? 1 : 0)} className="px-4 py-12 text-center text-ink-400 dark:text-ink-500">{emptyText}</td>
+              <td colSpan={columns.length + (selectable ? 1 : 0)} className="px-4 py-12 text-center text-ink-400 dark:text-ink-500">{emptyText ?? t('noData')}</td>
             </tr>
           ) : (
             rows.map((row) => {

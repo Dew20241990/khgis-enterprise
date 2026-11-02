@@ -14,11 +14,11 @@ const config: CrudConfig<IllegalDump> = {
   allowEdit: true,
   allowDelete: true,
   columns: [
-    { key: 'code', header: 'الكود', sortable: true, searchable: true, width: 100, pinned: 'left', render: (d) => <span className="font-mono font-semibold text-brand-600 dark:text-brand-400">{d.code}</span> },
+    { key: 'code', header: 'الكود', sortable: true, searchable: true, width: 100, pinned: 'start', render: (d) => <span className="font-mono font-semibold text-brand-600 dark:text-brand-400">{d.code}</span> },
     { key: 'location', header: 'الموقع', searchable: true, width: 200, render: (d) => <span className="flex items-center gap-1.5 text-ink-600 dark:text-ink-300"><MapPin className="w-3.5 h-3.5 text-ink-400" /> {d.location}</span> },
     { key: 'municipality', header: 'البلدية', sortable: true, searchable: true, width: 120 },
     { key: 'type', header: 'النوع', sortable: true, width: 120, render: (d) => <Badge tone="neutral">{typeLabels[d.type]}</Badge> },
-    { key: 'volume', header: 'الحجم (م³)', sortable: true, width: 100, align: 'right', exportValue: (d) => d.volume, render: (d) => `${d.volume} م³` },
+    { key: 'volume', header: 'الحجم (م³)', sortable: true, width: 100, align: 'start', exportValue: (d) => d.volume, render: (d) => `${d.volume} م³` },
     { key: 'status', header: 'الحالة', sortable: true, width: 120, render: (d) => <StatusBadge status={d.status} /> },
     { key: 'reportedAt', header: 'التاريخ', sortable: true, width: 120, render: (d) => <span className="text-xs text-ink-500">{new Date(d.reportedAt).toLocaleDateString('ar-DZ')}</span> },
   ],

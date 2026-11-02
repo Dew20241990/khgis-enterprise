@@ -13,12 +13,12 @@ const config: CrudConfig<Neighborhood> = {
   allowEdit: true,
   allowDelete: true,
   columns: [
-    { key: 'nameAr', header: 'الاسم', sortable: true, searchable: true, width: 160, pinned: 'left', render: (n) => <span className="font-medium text-ink-800 dark:text-ink-100">{n.nameAr}</span> },
+    { key: 'nameAr', header: 'الاسم', sortable: true, searchable: true, width: 160, pinned: 'start', render: (n) => <span className="font-medium text-ink-800 dark:text-ink-100">{n.nameAr}</span> },
     { key: 'municipality', header: 'البلدية', sortable: true, searchable: true, width: 140 },
-    { key: 'population', header: 'السكان', sortable: true, width: 110, align: 'right', exportValue: (n) => n.population, render: (n) => n.population.toLocaleString() },
+    { key: 'population', header: 'السكان', sortable: true, width: 110, align: 'start', exportValue: (n) => n.population, render: (n) => n.population.toLocaleString() },
     { key: 'containers', header: 'الحاويات', sortable: true, width: 90, align: 'center' },
     { key: 'openSpots', header: 'النقاط السوداء', sortable: true, width: 120, align: 'center', exportValue: (n) => n.openSpots, render: (n) => <Badge tone={n.openSpots > 3 ? 'danger' : n.openSpots > 0 ? 'warning' : 'success'}>{n.openSpots}</Badge> },
-    { key: 'fillRate', header: 'نسبة الامتلاء', sortable: true, width: 130, align: 'right', exportValue: (n) => n.fillRate, render: (n) => (
+    { key: 'fillRate', header: 'نسبة الامتلاء', sortable: true, width: 130, align: 'start', exportValue: (n) => n.fillRate, render: (n) => (
       <div className="flex items-center gap-2">
         <div className="w-16 h-1.5 rounded-full bg-ink-100 dark:bg-ink-800 overflow-hidden">
           <div className={`h-full rounded-full ${n.fillRate > 80 ? 'bg-success-500' : n.fillRate > 60 ? 'bg-warning-500' : 'bg-danger-500'}`} style={{ width: `${n.fillRate}%` }} />

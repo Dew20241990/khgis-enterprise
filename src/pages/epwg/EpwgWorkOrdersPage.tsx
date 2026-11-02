@@ -67,7 +67,7 @@ export function EpwgWorkOrdersPage() {
   ];
 
   const columns: EnterpriseColumn<EpwgWorkOrder>[] = [
-    { key: 'code', header: locale === 'ar' ? 'الرمز' : 'Code', sortable: true, searchable: true, pinned: 'left', width: 110,
+    { key: 'code', header: locale === 'ar' ? 'الرمز' : 'Code', sortable: true, searchable: true, pinned: 'start', width: 110,
       render: (w) => <span className="font-mono text-xs font-semibold text-brand-600 dark:text-brand-400">{w.code}</span> },
     { key: 'titleAr', header: locale === 'ar' ? 'العنوان' : 'Title', sortable: true, searchable: true, width: 240,
       render: (w) => (
@@ -104,7 +104,7 @@ export function EpwgWorkOrdersPage() {
           <span className="text-[10px] font-semibold text-ink-500">{w.progress}%</span>
         </div>
       ) },
-    { key: 'estimatedCost', header: locale === 'ar' ? 'التكلفة' : 'Cost', sortable: true, width: 110, align: 'left',
+    { key: 'estimatedCost', header: locale === 'ar' ? 'التكلفة' : 'Cost', sortable: true, width: 110, align: 'end',
       render: (w) => <span className="text-xs font-semibold text-ink-700 dark:text-ink-200">{w.estimatedCost.toLocaleString()} دج</span> },
     { key: 'dueDate', header: locale === 'ar' ? 'الاستحقاق' : 'Due', sortable: true, width: 110,
       render: (w) => <span className="text-xs text-ink-500">{w.dueDate}</span> },

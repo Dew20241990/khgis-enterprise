@@ -61,7 +61,7 @@ export function EpwgEquipmentPage() {
   ];
 
   const columns: EnterpriseColumn<EpwgEquipment>[] = [
-    { key: 'id', header: locale === 'ar' ? 'المعرّف' : 'ID', sortable: true, searchable: true, pinned: 'left', width: 90,
+    { key: 'id', header: locale === 'ar' ? 'المعرّف' : 'ID', sortable: true, searchable: true, pinned: 'start', width: 90,
       render: (e) => <span className="font-mono text-xs font-semibold text-brand-600 dark:text-brand-400">{e.id}</span> },
     { key: 'nameAr', header: locale === 'ar' ? 'الاسم' : 'Name', sortable: true, searchable: true, width: 180,
       render: (e) => (

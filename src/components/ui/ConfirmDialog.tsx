@@ -4,7 +4,9 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertTriangle, X } from 'lucide-react';
+import { useEffect } from 'react';
 import { cn } from '@/lib/cn';
+import { useApp } from '@/store/appStore';
 
 interface ConfirmDialogProps {
   open: boolean;
@@ -18,9 +20,16 @@ interface ConfirmDialogProps {
 }
 
 export function ConfirmDialog({
-  open, title, message, confirmLabel = 'تأكيد', cancelLabel = 'إلغاء',
+  open, title, message, confirmLabel, cancelLabel,
   tone = 'danger', onConfirm, onCancel,
 }: ConfirmDialogProps) {
+  const { t } = useApp();
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onCancel(); };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open, onCancel]);
   const toneClass = {
     danger: 'bg-danger-500 hover:bg-danger-600',
     warning: 'bg-warning-500 hover:bg-warning-600',
@@ -40,6 +49,7 @@ export function ConfirmDialog({
             initial={{ opacity: 0, scale: 0.95, y: 12 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 12 }}
+            role="alertdialog" aria-modal="true" aria-label={title}
             className="relative w-full max-w-sm glass-strong rounded-xl3 shadow-lifted overflow-hidden"
           >
             <div className="p-5">
@@ -55,14 +65,14 @@ export function ConfirmDialog({
                   <h3 className="text-sm font-semibold text-ink-900 dark:text-white">{title}</h3>
                   <p className="text-sm text-ink-500 dark:text-ink-400 mt-1">{message}</p>
                 </div>
-                <button onClick={onCancel} className="p-1 rounded-lg text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
+                <button onClick={onCancel} aria-label={t('ui.dialog.close')} className="p-1 rounded-lg text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 transition">
                   <X className="w-4 h-4" />
                 </button>
               </div>
             </div>
             <div className="flex items-center justify-end gap-2 px-5 py-3.5 border-t border-ink-200/70 dark:border-ink-800/70">
-              <button onClick={onCancel} className="btn-ghost text-sm">{cancelLabel}</button>
-              <button onClick={onConfirm} className={cn('btn text-sm text-white', toneClass)}>{confirmLabel}</button>
+              <button onClick={onCancel} className="btn-ghost text-sm">{cancelLabel ?? t('cancel')}</button>
+              <button onClick={onConfirm} className={cn('btn text-sm text-white', toneClass)}>{confirmLabel ?? t('confirm')}</button>
             </div>
           </motion.div>
         </div>

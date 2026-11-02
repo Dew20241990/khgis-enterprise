@@ -33,7 +33,7 @@ export function EpwgDocumentsPage() {
   }), [typeFilter]);
 
   const columns: EnterpriseColumn<EpwgDocument>[] = [
-    { key: 'id', header: locale === 'ar' ? 'المعرّف' : 'ID', sortable: true, searchable: true, pinned: 'left', width: 90,
+    { key: 'id', header: locale === 'ar' ? 'المعرّف' : 'ID', sortable: true, searchable: true, pinned: 'start', width: 90,
       render: (d) => <span className="font-mono text-xs font-semibold text-brand-600 dark:text-brand-400">{d.id}</span> },
     { key: 'titleAr', header: locale === 'ar' ? 'العنوان' : 'Title', sortable: true, searchable: true, width: 300,
       render: (d) => (
@@ -50,11 +50,11 @@ export function EpwgDocumentsPage() {
       exportValue: (d) => facilityName(d.facilityId) },
     { key: 'date', header: locale === 'ar' ? 'التاريخ' : 'Date', sortable: true, width: 120,
       render: (d) => <span className="text-xs text-ink-500">{d.date}</span> },
-    { key: 'size', header: locale === 'ar' ? 'الحجم' : 'Size', sortable: true, width: 100, align: 'left',
+    { key: 'size', header: locale === 'ar' ? 'الحجم' : 'Size', sortable: true, width: 100, align: 'end',
       render: (d) => <span className="text-xs text-ink-500">{d.size}</span> },
     { key: 'author', header: locale === 'ar' ? 'المؤلف' : 'Author', sortable: true, searchable: true, width: 160,
       render: (d) => <span className="text-xs text-ink-500">{d.author}</span> },
-    { key: 'actions', header: '', width: 80, pinned: 'right',
+    { key: 'actions', header: '', width: 80, pinned: 'end',
       render: () => (
         <button className="p-2 rounded-lg text-ink-400 hover:bg-brand-50 dark:hover:bg-brand-600/10 hover:text-brand-600 transition" title={t('export')}>
           <Download className="w-4 h-4" />

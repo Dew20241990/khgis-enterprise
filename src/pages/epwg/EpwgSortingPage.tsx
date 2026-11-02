@@ -41,18 +41,18 @@ export function EpwgSortingPage() {
   });
 
   const columns: EnterpriseColumn<typeof epwgSortingRecords[number]>[] = [
-    { key: 'facilityId', header: t('epwgFacilities'), sortable: true, searchable: true, pinned: 'left',
+    { key: 'facilityId', header: t('epwgFacilities'), sortable: true, searchable: true, pinned: 'start',
       render: (r) => <span className="text-sm font-medium">{facilityName(r.facilityId)}</span>,
       exportValue: (r) => facilityName(r.facilityId) },
     { key: 'date', header: locale === 'ar' ? 'الشهر' : 'Month', sortable: true, width: 100,
       render: (r) => <span className="text-xs">{r.date}</span> },
-    { key: 'inputTons', header: locale === 'ar' ? 'المدخلات' : 'Input', sortable: true, width: 110, align: 'left',
+    { key: 'inputTons', header: locale === 'ar' ? 'المدخلات' : 'Input', sortable: true, width: 110, align: 'end',
       render: (r) => <span className="text-sm font-semibold text-brand-600 dark:text-brand-400">{r.inputTons}</span> },
-    { key: 'sortedTons', header: locale === 'ar' ? 'المفرز' : 'Sorted', sortable: true, width: 110, align: 'left',
+    { key: 'sortedTons', header: locale === 'ar' ? 'المفرز' : 'Sorted', sortable: true, width: 110, align: 'end',
       render: (r) => <span className="text-sm font-semibold text-warning-600 dark:text-warning-400">{r.sortedTons}</span> },
-    { key: 'recycledTons', header: locale === 'ar' ? 'المعاد تدويره' : 'Recycled', sortable: true, width: 120, align: 'left',
+    { key: 'recycledTons', header: locale === 'ar' ? 'المعاد تدويره' : 'Recycled', sortable: true, width: 120, align: 'end',
       render: (r) => <span className="text-sm font-semibold text-success-600 dark:text-success-400">{r.recycledTons}</span> },
-    { key: 'compostedTons', header: locale === 'ar' ? 'المسمّد' : 'Composted', sortable: true, width: 110, align: 'left',
+    { key: 'compostedTons', header: locale === 'ar' ? 'المسمّد' : 'Composted', sortable: true, width: 110, align: 'end',
       render: (r) => <span className="text-sm font-semibold text-accent-600 dark:text-accent-400">{r.compostedTons}</span> },
     { key: 'recoveryRate', header: locale === 'ar' ? 'نسبة الاسترجاع' : 'Recovery Rate', sortable: true, width: 140,
       render: (r) => (

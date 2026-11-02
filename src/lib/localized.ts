@@ -13,6 +13,11 @@ const ORDER: Record<Locale, readonly (keyof LocalizedNames)[]> = {
   en: ['name', 'nameFr', 'nameAr'],
 };
 
+/** Picks the value for the active language from an explicit per-language record (used for data that carries its own labels). */
+export function pickByLocale<T>(locale: Locale, values: Record<Locale, T>): T {
+  return values[locale];
+}
+
 /**
  * The entity's name in the active language, falling back to another spelling when that one is empty so a record is
  * never rendered without a name. Official proper names and user-entered text are data, not translations.

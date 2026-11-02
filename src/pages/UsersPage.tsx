@@ -33,7 +33,7 @@ const config: CrudConfig<User> = {
   allowEdit: true,
   allowDelete: true,
   columns: [
-    { key: 'name', header: 'الاسم', sortable: true, searchable: true, width: 200, pinned: 'left', render: (u) => (
+    { key: 'name', header: 'الاسم', sortable: true, searchable: true, width: 200, pinned: 'start', render: (u) => (
       <div className="flex items-center gap-2.5">
         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-success-500 text-white flex items-center justify-center text-xs font-bold shrink-0">{u.name[0]}</div>
         <div>

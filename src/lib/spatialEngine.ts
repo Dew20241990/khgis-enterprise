@@ -10,6 +10,8 @@
 
 import * as turf from '@turf/turf';
 import type { Feature, FeatureCollection, Geometry, MultiPolygon, Point, Polygon } from 'geojson';
+import { translate, type Locale } from '@/i18n/translations';
+import { formatNumber } from '@/lib/format';
 
 export type PolygonalFeature = Feature<Polygon | MultiPolygon>;
 
@@ -215,12 +217,12 @@ export function formatCoordinates(lat: number, lng: number): string {
   return `${Math.abs(lat).toFixed(6)}°${latDir}, ${Math.abs(lng).toFixed(6)}°${lngDir}`;
 }
 
-export function formatDistance(km: number): string {
-  if (km < 1) return `${(km * 1000).toFixed(0)} م`;
-  return `${km.toFixed(2)} كم`;
+export function formatDistance(km: number, locale: Locale): string {
+  if (km < 1) return `${formatNumber(locale, Math.round(km * 1000))} ${translate(locale, 'shared.unit.m')}`;
+  return `${formatNumber(locale, km, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ${translate(locale, 'shared.unit.km')}`;
 }
 
-export function formatArea(sqMeters: number): string {
-  if (sqMeters < 10000) return `${sqMeters.toFixed(0)} م²`;
-  return `${(sqMeters / 1000000).toFixed(3)} كم²`;
+export function formatArea(sqMeters: number, locale: Locale): string {
+  if (sqMeters < 10000) return `${formatNumber(locale, Math.round(sqMeters))} ${translate(locale, 'shared.unit.m2')}`;
+  return `${formatNumber(locale, sqMeters / 1000000, { minimumFractionDigits: 3, maximumFractionDigits: 3 })} ${translate(locale, 'shared.unit.km2')}`;
 }

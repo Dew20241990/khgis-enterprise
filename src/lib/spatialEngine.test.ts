@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { Feature, Polygon } from 'geojson';
 import {
   calcBBox, calcCenter, calcDistance, calcInspectionCoverage, intersect, isPointInPolygon,
-  isPolygonal, nearestFeature, spatialFilter, validateGeometry, validatePolygon,
+  isPolygonal, nearestFeature, spatialFilter, validateGeometry, validatePolygon, formatDistance, formatArea,
 } from './spatialEngine';
 
 const square = (x: number, y: number, size: number): Feature<Polygon> => ({
@@ -114,5 +114,17 @@ describe('validation', () => {
   it('flags out-of-range points', () => {
     expect(validateGeometry({ type: 'Point', coordinates: [200, 10] }).valid).toBe(false);
     expect(validateGeometry({ type: 'Point', coordinates: [7, 35] }).valid).toBe(true);
+  });
+});
+
+describe('measurement formatting', () => {
+  it('uses the units of the active language', () => {
+    expect(formatDistance(0.25, 'en')).toBe('250 m');
+    expect(formatDistance(0.25, 'ar')).toBe('250 م');
+    expect(formatDistance(2.5, 'fr')).toMatch(/^2,50 km$/);
+    expect(formatDistance(2.5, 'en')).toBe('2.50 km');
+    expect(formatArea(900, 'en')).toBe('900 m²');
+    expect(formatArea(2_500_000, 'ar')).toMatch(/كم²$/);
+    expect(formatArea(2_500_000, 'fr')).toContain('km²');
   });
 });

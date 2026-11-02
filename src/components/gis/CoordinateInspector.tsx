@@ -5,6 +5,7 @@
 import { MapPin, Crosshair, Ruler, Square, Copy, Check } from 'lucide-react';
 import { useState } from 'react';
 import { formatCoordinates, formatDistance, formatArea } from '@/lib/spatialEngine';
+import { useApp } from '@/store/appStore';
 
 interface CoordinateInspectorProps {
   lat: number | null;
@@ -17,6 +18,7 @@ interface CoordinateInspectorProps {
 export function CoordinateInspector({
   lat, lng, measureMode, measureValue, crs = 'EPSG:4326',
 }: CoordinateInspectorProps) {
+  const { t, locale } = useApp();
   const [copied, setCopied] = useState(false);
 
   const copyCoords = () => {
@@ -40,14 +42,14 @@ export function CoordinateInspector({
           {copied ? <Check className="w-3 h-3 text-success-500" /> : <Copy className="w-3 h-3 text-ink-400" />}
         </button>
       ) : (
-        <span className="text-ink-400 text-xs">حرك الماوس لعرض الإحداثيات</span>
+        <span className="text-ink-400 text-xs">{t('ui.coords.hint')}</span>
       )}
       {measureMode && measureValue != null && (
         <>
           <div className="w-px h-4 bg-ink-200 dark:bg-ink-700" />
           <span className="flex items-center gap-1.5 text-brand-600 dark:text-brand-400 font-medium">
             {measureMode === 'distance' ? <Ruler className="w-3.5 h-3.5" /> : <Square className="w-3.5 h-3.5" />}
-            {measureMode === 'distance' ? formatDistance(measureValue) : formatArea(measureValue)}
+            {measureMode === 'distance' ? formatDistance(measureValue, locale) : formatArea(measureValue, locale)}
           </span>
         </>
       )}

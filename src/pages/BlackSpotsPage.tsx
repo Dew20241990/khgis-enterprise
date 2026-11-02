@@ -25,7 +25,7 @@ export function BlackSpotsPage() {
       { key: 'status', header: t('status'), sortable: true, render: (r) => <StatusBadge status={r.status} /> },
       { key: 'reportedAt', header: t('date'), sortable: true, render: (r) => <span className="text-xs text-ink-500">{new Date(r.reportedAt).toLocaleDateString('ar-DZ')}</span> },
       {
-        key: 'actions', header: t('actions'), pinned: 'right',
+        key: 'actions', header: t('actions'), pinned: 'end',
         render: (r) => (
           <div className="flex items-center gap-1" onClick={(e) => e.stopPropagation()}>
             <button onClick={() => navigate(`/black-spots/${r.id}`)} className="p-1.5 rounded-lg text-brand-600 hover:bg-brand-50 dark:hover:bg-brand-600/10 transition" title="عرض"><MapPin className="w-4 h-4" /></button>
