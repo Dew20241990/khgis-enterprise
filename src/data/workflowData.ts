@@ -3,6 +3,7 @@
 
 import { municipalities, neighborhoods, KHENCHELA_CENTER, contractors, cetCenters } from './mockData';
 import { seededUnit } from '../lib/seededRandom';
+import type { LocationSource } from '../lib/observationLocation';
 
 export type ResponsibleEntity = 'municipality' | 'cet' | 'contractor' | 'environment';
 export type ObservationType =
@@ -48,6 +49,11 @@ export interface Observation {
   riskLevel: RiskLevel;
   lat: number;
   lng: number;
+  /**
+   * Where `lat`/`lng` came from. Absent on the generated demo records; observations created in the UI are either
+   * typed by the inspector ('entered') or placed at the municipality centre ('municipality-centre', shown as approximate).
+   */
+  locationSource?: LocationSource;
   googleMapsLink: string;
   responsibleEntity: ResponsibleEntity;
   responsibleEntityLabel: string;

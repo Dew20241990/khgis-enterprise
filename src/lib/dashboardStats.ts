@@ -4,7 +4,7 @@ export interface RateSource { containers: number; collectionRate: number }
 export interface CountSource { id: string; containers: number }
 
 /** Collection rate averaged over municipalities, weighted by container count. Returns 0 for no data. */
-export function weightedCollectionRate(items: RateSource[]): number {
+export function weightedCollectionRate(items: readonly RateSource[]): number {
   const total = items.reduce((s, m) => s + m.containers, 0);
   if (total === 0) return 0;
   return Math.round(items.reduce((s, m) => s + m.collectionRate * m.containers, 0) / total);

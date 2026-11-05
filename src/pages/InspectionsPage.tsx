@@ -9,6 +9,7 @@ import { Modal, StatCard, Badge } from '@/components/ui';
 import { municipalities, neighborhoods, KHENCHELA_CENTER } from '@/data/mockData';
 import { workflowObservations, workflowWorkOrders, statusColors, statusLabels, priorityLabels, riskLabels, observationTypeData, responsibleEntityLabels, type Observation, type Priority, type RiskLevel, type ObservationType, type ResponsibleEntity, type TimelineEvent } from '@/data/workflowData';
 import { cn } from '@/lib/cn';
+import { resolveObservationLocation } from '@/lib/observationLocation';
 
 const priorityTone: Record<string, 'danger' | 'warning' | 'info' | 'neutral'> = {
   critical: 'danger', high: 'warning', medium: 'info', low: 'neutral',
@@ -119,6 +120,9 @@ function ObservationDetail({ observation, onClose }: { observation: Observation;
           <div className="flex-1">
             <p className="text-[10px] text-ink-400">{t('wfGpsCoordinates')}</p>
             <p className="text-xs font-mono text-ink-700 dark:text-ink-200">{observation.lat.toFixed(6)}, {observation.lng.toFixed(6)}</p>
+            {observation.locationSource === 'municipality-centre' && (
+              <p className="text-[10px] text-warning-700 dark:text-warning-300 mt-0.5">{t('inspections.location.approximate')}</p>
+            )}
           </div>
           <a href={observation.googleMapsLink} target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-500 text-white text-xs font-medium hover:bg-brand-600 transition">
@@ -204,15 +208,22 @@ function NewObservationModal({ open, onClose, onAdd }: {
     requiresIntervention: true,
   });
 
+  // Optional position typed by the inspector. It is never invented: without it the record gets the municipality
+  // centre and is flagged as approximate.
+  const [coords, setCoords] = useState({ lat: '', lng: '' });
+  const [locationError, setLocationError] = useState<'incomplete' | 'invalid' | null>(null);
+
   const handleSubmit = () => {
     const m = municipalities.find((m) => m.id === form.municipalityId)!;
-    const lat = m.center[0] + (Math.random() - 0.5) * 0.02;
-    const lng = m.center[1] + (Math.random() - 0.5) * 0.02;
+    const location = resolveObservationLocation(coords, m.center);
+    if (!location.ok) { setLocationError(location.error); return; }
     onAdd({
       ...form,
       municipality: m.nameAr,
-      lat, lng,
+      lat: location.lat, lng: location.lng, locationSource: location.source,
     });
+    setCoords({ lat: '', lng: '' });
+    setLocationError(null);
     onClose();
   };
 
@@ -316,6 +327,23 @@ function NewObservationModal({ open, onClose, onAdd }: {
           </select>
         </div>
         <div className="col-span-2">
+          <p className={labelClass}>{t('wfGpsCoordinates')}</p>
+          <div className="grid grid-cols-2 gap-3">
+            <input type="text" inputMode="decimal" dir="ltr" className={fieldClass} value={coords.lat}
+              aria-label={t('ui.form.latitude')} placeholder={t('ui.form.latitude')}
+              onChange={(e) => { setCoords({ ...coords, lat: e.target.value }); setLocationError(null); }} />
+            <input type="text" inputMode="decimal" dir="ltr" className={fieldClass} value={coords.lng}
+              aria-label={t('ui.form.longitude')} placeholder={t('ui.form.longitude')}
+              onChange={(e) => { setCoords({ ...coords, lng: e.target.value }); setLocationError(null); }} />
+          </div>
+          <p className="mt-1.5 text-[11px] text-ink-500 dark:text-ink-400">{t('inspections.form.locationHint')}</p>
+          {locationError && (
+            <p role="alert" className="mt-1 text-xs text-danger-600 dark:text-danger-400">
+              {locationError === 'incomplete' ? t('inspections.form.locationIncomplete') : t('ui.form.invalidCoords')}
+            </p>
+          )}
+        </div>
+        <div className="col-span-2">
           <label className={labelClass}>{t('description') || 'الوصف'}</label>
           <textarea className={fieldClass} rows={2} value={form.description}
             onChange={(e) => setForm({ ...form, description: e.target.value })}
@@ -373,6 +401,7 @@ export function InspectionsPage() {
       riskLevel: partial.riskLevel ?? 'medium',
       lat: partial.lat ?? m.center[0],
       lng: partial.lng ?? m.center[1],
+      locationSource: partial.locationSource ?? (partial.lat === undefined ? 'municipality-centre' : 'entered'),
       googleMapsLink: `https://www.google.com/maps?q=${partial.lat ?? m.center[0]},${partial.lng ?? m.center[1]}`,
       responsibleEntity: partial.responsibleEntity ?? 'municipality',
       responsibleEntityLabel: responsibleEntityLabels[partial.responsibleEntity ?? 'municipality'].ar,
